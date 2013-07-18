@@ -13,5 +13,5 @@ tags:
 publish: true
 ---
 
-# Tutorial: Intro 
+# Introduction
 
