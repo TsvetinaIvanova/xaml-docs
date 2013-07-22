@@ -6,5 +6,5 @@ In this article we will explore the process of using custom appointments in RadS
 [Creating a Custom Appointment class](#Creating a Custom Appointment class)
 
 ##Creating a Custom Appointment class
-##Creating a custom Appointment Dialog
-##Changing the Style of the AppointmentItem
+###Creating a custom Appointment Dialog
+####Changing the Style of the AppointmentItem
