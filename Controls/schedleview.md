@@ -1,4 +1,4 @@
-Enter file contents here<?xml version="1.0" encoding="utf-8"?>
+
   
     
       This article describes the release history of the control.
