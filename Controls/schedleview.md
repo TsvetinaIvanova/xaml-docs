@@ -1,4 +1,4 @@
   
   				
-    [What's New Section](http://www.telerik.com/products/silverlight/whats-new.com/)
+    [What's New Section](http://www.telerik.com)
 [This link](http://example.net/)
