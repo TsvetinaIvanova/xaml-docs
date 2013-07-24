@@ -7,6 +7,7 @@ For the complete Release History of RadControls for SilverlightWPF go to
 .
 
  #Q1_2013Q1 2013
+ 
  #What's New
 * Add OccurrenceFilter property
 
