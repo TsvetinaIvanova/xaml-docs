@@ -9,11 +9,11 @@ This article describes the release history of the control.For the complete Relea
 
 #What's New
 
-*Add OccurrenceFilter property
+* Add OccurrenceFilter property
 
-*Add ToolTipStyle property
+* Add ToolTipStyle property
 
-*Provide a way to make the row expand automatically in MonthViewDefinition when there are more appointments 
+* Provide a way to make the row expand automatically in MonthViewDefinition when there are more appointments 
 
 #What's Fixed
 
