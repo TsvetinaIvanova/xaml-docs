@@ -5,14 +5,14 @@ For the complete Release History of RadControls for SilverlightWPF go to
 
   [What's New Section](http://www.telerik.com/products/wpf/whats-new.aspx)
 
- #What's New
+ # What's New
 * Add OccurrenceFilter property
 
 * Add ToolTipStyle property
 
 * Provide a way to make the row expand automatically in MonthViewDefinition when there are more appointments 
 
- #What's Fixed
+ # What's Fixed
 * ScheduleView should not use the Local time zone for its internal calculations
 
 * When adding an appointment with Start = End, the appointment is added to the appointment source, but it is not displayed on the ScheduleView
