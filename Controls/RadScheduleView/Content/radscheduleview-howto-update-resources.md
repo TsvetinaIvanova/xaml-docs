@@ -145,9 +145,9 @@ private void UpdateGroupFilter()
 
 So checking/unchecking the checkboxes will update the visible Resources in the ViewDefintion:
 
-![radscheduleview updateresources 4](Media\radscheduleview_updateresources_4.png)
+![radscheduleview updateresources 4](../Media\radscheduleview_updateresources_4.png)
 
-![radscheduleview updateresources 3](Media\radscheduleview_updateresources_3.png)
+![radscheduleview updateresources 3](../Media\radscheduleview_updateresources_3.png)
     ![tip](tip.jpg)
     	
 
@@ -168,7 +168,7 @@ When adding/removing resources from the Resources collection of  a certain resou
 
 For example, if we have the RadScheduleView grouped again by “Location” ResourceType:
 
-![radscheduleview updateresources 1](Media\radscheduleview_updateresources_1.png)
+![radscheduleview updateresources 1](../Media\radscheduleview_updateresources_1.png)
 
 Calling the following code will add an additional “Room4” resource:
 
@@ -184,4 +184,4 @@ where __ResourceTypes__ is the collection to which ResourceTypesSource property 
 
 This will lead to the following result:
 
-![radscheduleview updateresources 2](Media\radscheduleview_updateresources_2.png)[Implementing View-ViewModel ](http://radscheduleview-populating-with-data-implementing-view-model.md)[Resources](http://radscheduleview-features-resources.md)
+![radscheduleview updateresources 2](../Media\radscheduleview_updateresources_2.png)[Implementing View-ViewModel ](http://radscheduleview-populating-with-data-implementing-view-model.md)[Resources](http://radscheduleview-features-resources.md)

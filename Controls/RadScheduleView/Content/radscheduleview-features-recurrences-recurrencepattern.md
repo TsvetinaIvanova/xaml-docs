@@ -240,7 +240,7 @@ Dim pattern = New RecurrencePattern() With {
 }
 appointment.RecurrenceRule = New RecurrenceRule(pattern)
 
-The result can be seen on the next figure. As you can see the appointment with subject "Example" occurs on every day of the week.![RadScheduleView RecurrencePattern](Media\radscheduleview_recurrencypattern_1.png)
+The result can be seen on the next figure. As you can see the appointment with subject "Example" occurs on every day of the week.![RadScheduleView RecurrencePattern](../Media\radscheduleview_recurrencypattern_1.png)
 
 # every_week_day_recurring_appointmentHow to Create Every Week Day Recurring Appointment?
 
@@ -264,7 +264,7 @@ appointment.RecurrenceRule = New RecurrenceRule(pattern)
 
 
           The result of the above example will be a __RecurrencePattern__ which will create an appointment every week day, like on the image below.
-        ![RadScheduleView RecurrencePattern](Media\radscheduleview_recurrencypattern_2.png)
+        ![RadScheduleView RecurrencePattern](../Media\radscheduleview_recurrencypattern_2.png)
     ![tip](tip.jpg)
     	
           Sometimes you may want to create an appointment that occurs during the __weekend__ days, instead of every __week__ day. The only thing you should change is to set the __DaysOfWeekMask__ property to __RecurrenceDays.WeekendDays__.
@@ -298,7 +298,7 @@ Dim pattern = New RecurrencePattern() With {
 }
 appointment.RecurrenceRule = New RecurrenceRule(pattern)
 
-Executing the previous pattern will result in creating an appointment that occurs on every third day. See the next image for the result.![RadScheduleView RecurrencePattern](Media\radscheduleview_recurrencypattern_3.png)
+Executing the previous pattern will result in creating an appointment that occurs on every third day. See the next image for the result.![RadScheduleView RecurrencePattern](../Media\radscheduleview_recurrencypattern_3.png)
     ![tip](tip.jpg)
     	
           In this example, the key moment is setting the __Interval__ property. For example, if you want the number of days between each recurrence to be 4, 5, 6 or n days, then you just need to set the correct value to the __Interval__ property.
@@ -408,4 +408,4 @@ Dim pattern = New RecurrencePattern() With {
 }
 appointment.RecurrenceRule = New RecurrenceRule(pattern)
 
-The appointment that starts on 11.05.201 will occur until 24.05.2011. See the next image.![](Media\radscheduleview_recurrencypattern_4.png)
+The appointment that starts on 11.05.201 will occur until 24.05.2011. See the next image.![](../Media\radscheduleview_recurrencypattern_4.png)

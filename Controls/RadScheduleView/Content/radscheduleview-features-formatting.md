@@ -86,7 +86,7 @@ Let’s for example set the formatting properties of DayViewDefinition:
 
 
                
-            ![DayViewDefinition Formatting Properties](Media\radscheduleview_features_formatstringsdayview.png)
+            ![DayViewDefinition Formatting Properties](../Media\radscheduleview_features_formatstringsdayview.png)
 
 
 
@@ -111,7 +111,7 @@ Let’s for example set the formatting properties of DayViewDefinition:
 
 
                
-            ![WeekViewDefinition Formatting Properties](Media\radscheduleview_features_formatstringsweekview.png)
+            ![WeekViewDefinition Formatting Properties](../Media\radscheduleview_features_formatstringsweekview.png)
 
 
 
@@ -135,7 +135,7 @@ And the result is:
 
 
                
-            ![MonthViewDefinition Formatting Properties](Media\radscheduleview_features_formatstringsmonthview.png)
+            ![MonthViewDefinition Formatting Properties](../Media\radscheduleview_features_formatstringsmonthview.png)
 
 
 
@@ -163,7 +163,7 @@ results in the following look:
 
 
                
-            ![TimelineView Formatting Properties](Media\radscheduleview_features_formatstringstimelineview.png)
+            ![TimelineView Formatting Properties](../Media\radscheduleview_features_formatstringstimelineview.png)
 
 
 

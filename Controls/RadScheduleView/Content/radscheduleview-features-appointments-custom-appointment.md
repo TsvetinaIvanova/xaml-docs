@@ -129,7 +129,7 @@ Dim data = New ObservableCollection(Of Task)(Enumerable.Range(9, 14).[Select](Fu
 }))
 Me.DataContext = data
 
-And here is the result so far:![](Media\custom_appointment1.png)
+And here is the result so far:![](../Media\custom_appointment1.png)
 
 # Creating_a_custom_Appointment_DialogCreating a custom Appointment Dialog
 
@@ -141,7 +141,7 @@ And here is the result so far:![](Media\custom_appointment1.png)
 
 
           Here is our customized EditAppointment dialog:
-        ![](Media\custom_appointment2.PNG)
+        ![](../Media\custom_appointment2.PNG)
     ![tip](tip.jpg)
     	
 
@@ -154,7 +154,7 @@ And here is the result so far:![](Media\custom_appointment1.png)
 #  Changing the Style of the AppointmentItem
 
 
-          Next, we are going to change the ControlTemplate of the AppointmentItem to reflect which tasks are done and which are not. We will do that by using the __AppointmentItemStyleSelector__ property of the __RadScheduleView:__![](Media\custom_appointment3.png)
+          Next, we are going to change the ControlTemplate of the AppointmentItem to reflect which tasks are done and which are not. We will do that by using the __AppointmentItemStyleSelector__ property of the __RadScheduleView:__![](../Media\custom_appointment3.png)
 
 
 
@@ -172,7 +172,7 @@ And here is the result so far:![](Media\custom_appointment1.png)
 
           This step is, of course, optional. The customization of the Appointment ToolTip is achieved by the __ToolTipTemplate__ property of __RadScheduleView__.The DataContext in this template is once again of type __AppointmentProxy__ so we can use the same approach we used in the AppointmentItem ContentTemplate. Generate the ToolTipTemplate:
 
-        ![](Media\custom_appointment6.png)
+        ![](../Media\custom_appointment6.png)
 
 
           Now we will add in the Appointment ToolTip the text (Done) only for the tasks which are already done:
@@ -184,6 +184,6 @@ And here is the result so far:![](Media\custom_appointment1.png)
    </StackPanel> 
 </DataTemplate>
 
-This is what the Appointment ToolTip should look like now:![](Media\custom_appointment7.png)
+This is what the Appointment ToolTip should look like now:![](../Media\custom_appointment7.png)
 
 By completing this last modification, we have reached the end of the process needed to create a custom appointment in RadScheduleView control.[Understanding Appointments](http://radscheduleview-getting-started-add-edit-delete-appointment.md)

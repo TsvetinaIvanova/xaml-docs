@@ -46,7 +46,7 @@ Next we will need to set the newly created Style to the ResizeHighlightStyle of 
 	</telerik:RadScheduleView.ViewDefinitions>
 </telerik:RadScheduleView>
 
-The next screenshot shows the final result when resizing an appointment:![radscheduleview-styles-and-templates-customizing-resize-drag-highlight-1](Media\radscheduleview-styles-and-templates-customizing-resize-drag-highlight-1.png)
+The next screenshot shows the final result when resizing an appointment:![radscheduleview-styles-and-templates-customizing-resize-drag-highlight-1](../Media\radscheduleview-styles-and-templates-customizing-resize-drag-highlight-1.png)
 
 # CustomizingDragDropHighlightStyleCustomizing the DragDropHighlightStyle
 
@@ -65,4 +65,4 @@ Next we will need to set the newly created Style to the DragDropHighlightStyle o
 	</telerik:RadScheduleView.ViewDefinitions>
 </telerik:RadScheduleView>
 
-The next screenshot shows the final result when dragging an appointment:![radscheduleview-styles-and-templates-customizing-resize-drag-highlight-2](Media\radscheduleview-styles-and-templates-customizing-resize-drag-highlight-2.png)[Appointment Style](http://radscheduleview-styles-and-templates-appointment-style.md)
+The next screenshot shows the final result when dragging an appointment:![radscheduleview-styles-and-templates-customizing-resize-drag-highlight-2](../Media\radscheduleview-styles-and-templates-customizing-resize-drag-highlight-2.png)[Appointment Style](http://radscheduleview-styles-and-templates-appointment-style.md)

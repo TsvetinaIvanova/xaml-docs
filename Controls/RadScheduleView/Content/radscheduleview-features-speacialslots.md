@@ -143,7 +143,7 @@ and define the Style:
 ...
 </telerik:RadScheduleView>
 
-Here is the result:![Special Slots](Media\radscheduleview_special_slots.png)
+Here is the result:![Special Slots](../Media\radscheduleview_special_slots.png)
 
 # readonlyslots Setting all the slots for a given resource to be read-only
 
@@ -179,7 +179,7 @@ ReadOnlySlots.Add(readOnlyslot);
 ...
 </telerik:RadScheduleView>
 
- The read-only slots will look like this:![ReadOnly Slots](Media\radscheduler_readonly_slots.png)
+ The read-only slots will look like this:![ReadOnly Slots](../Media\radscheduler_readonly_slots.png)
 
 
           Note that EditAppointmentDialog is shown even for appointments which are visualized in the read-only slots. In order to prevent it, susbscribe to ShowDialog event of the RadScheduleView:

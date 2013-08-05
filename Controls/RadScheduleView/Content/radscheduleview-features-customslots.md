@@ -146,4 +146,4 @@ Finally, bind them to __SpecialSlotsSource__ and __SpecialSlotsStyleSelector__ p
 	...
 </telerik:RadScheduleView>
 
-Here is the result:![radscheduleview custom slots](Media\radscheduleview_custom_slots.png)
+Here is the result:![radscheduleview custom slots](../Media\radscheduleview_custom_slots.png)

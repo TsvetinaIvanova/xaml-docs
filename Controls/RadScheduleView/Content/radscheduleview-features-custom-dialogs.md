@@ -20,7 +20,7 @@ __RadScheduleView__ provides the following dialogs:
 
 
                
-            ![RadScheduleView EditAppointmentDialog](Media\radscheduleview_editappointmentdialog.png)
+            ![RadScheduleView EditAppointmentDialog](../Media\radscheduleview_editappointmentdialog.png)
 
 
           In order to create a custom EditAppointmentDialog, use __EditAppointmentDialogStyle__ property of the __RadScheduleView__ control.  The DataContext of this Style target is an AppointmentDialogViewModel object. This class contains all the needed data for editing an appointment including the appointment itself. It can be reached by using the Occurrence property of the ViewModel and its Appointment property:
@@ -43,7 +43,7 @@ Other important properties of the AppointmentDialogViewModel class include:
         EditRecurrenceDialog – shown when a recurrence is created or edited: 
 
                
-            ![RadScheduleView EditRecurrenceDialog](Media\radscheduleview_recurrenceeditdialog.png)
+            ![RadScheduleView EditRecurrenceDialog](../Media\radscheduleview_recurrenceeditdialog.png)
 
 __EditRecurrenceDialogStyle__ property is used to customize this dialog.  The DataContext of the dialog is a RecurrenceDialogViewModel object. It provides information about the RecurrencePattern which is set to the RecurrenceRule of the appointment.
         
@@ -54,21 +54,21 @@ __EditRecurrenceDialogStyle__ property is used to customize this dialog.  The Da
 
 
                
-            ![RadScheduleView DeleteAppointmentConfirmDialog](Media\radscheduleview_deleteappointmentconfirmdialog.png)
+            ![RadScheduleView DeleteAppointmentConfirmDialog](../Media\radscheduleview_deleteappointmentconfirmdialog.png)
 
 __DeleteAppointmentConfirmDialogStyle__ property should be set to modify this dialog.  The DataContext of this Style target is of type ConfirmDialogViewModel.  It contains  a reference to the marked for deletion appointments through its Appointments property.
         RecurrenceChoiceDialog/RecurrenceChoiceDeleteDialog – shown when a recurrent appointment is about to be edited/deleted: 
 
 
                
-            ![RadScheduleView RecurrenceChoiceDialogs](Media\radscheduleview_recurrencechoicedialogs_1.png)
+            ![RadScheduleView RecurrenceChoiceDialogs](../Media\radscheduleview_recurrencechoicedialogs_1.png)
 
 __RecurrenceChoiceDialogStyle__/__RecurrenceChoiceDeleteDialogStyle__ properties are used to edit these dialogs.
         RecurrenceChoiceDragDropDialog / RecurrenceChoiceResizeDialog – shown when a recurrent appointment is dragged/resized: 
 
 
                
-            ![RadScheduleView RecurrenceChoiceDialogs](Media\radscheduleview_recurrencechoicedialogs.png)
+            ![RadScheduleView RecurrenceChoiceDialogs](../Media\radscheduleview_recurrencechoicedialogs.png)
 
 __RecurrenceChoiceDragDropDialogStyle / RecurrenceChoiceResizeDialogStyle __properties should be used to customize the corresponding dialogs.
 

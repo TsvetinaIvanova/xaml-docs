@@ -18,7 +18,7 @@ We are ready with the implementation on the service side and we can focus on the
 					With the current version (v1.0 SP2) WCF RIA Services doesn’t support Many-To-Many relationships between the Entities,
 					but we have such ones in the database. To work around this limitation, we use an additional property which forces EF to create a
 					Many-To-Many table:
-				![radscheduleview populating with data Many To Many Workaround](Media\radscheduleview_populating_with_data_Many_To_Many_Workaround.png)
+				![radscheduleview populating with data Many To Many Workaround](../Media\radscheduleview_populating_with_data_Many_To_Many_Workaround.png)
 
 Once the table is created we have to update manually the data in it.
 
