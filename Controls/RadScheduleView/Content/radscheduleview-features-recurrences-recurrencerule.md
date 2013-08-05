@@ -150,6 +150,6 @@ fitnessAppointment.RecurrenceRule = rule
 
 
                
-            
+            ![](Media\radscheduleview_recurrencerule.png)
 
 

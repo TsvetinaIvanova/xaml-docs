@@ -144,4 +144,4 @@ private void ScheduleView_DialogClosing(object sender, CancelRoutedEventArgs e)
 
     // you can also cancel the event
     eventArgs.Cancel = true;
-}[](598C6122-0FC6-429B-BF7F-C512EE468432)
+}[Understanding Appointments](http://radscheduleview-getting-started-add-edit-delete-appointment.md)

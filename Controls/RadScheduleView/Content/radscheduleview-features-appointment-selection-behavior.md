@@ -95,16 +95,16 @@ The end result is:
 
 With the default AppointmentSelectionBehavior (before selection):
 
-
+![radscheduleview features appointment selection behavior 0](Media\radscheduleview_features_appointment_selection_behavior_0.png)
 
 With the default AppointmentSelectionBehavior (after selection with pressed Ctrl or Shift keyboard key):
 
-
+![radscheduleview features appointment selection behavior 1](Media\radscheduleview_features_appointment_selection_behavior_1.png)
 
 With the custom AppointmentSelectionBehavior (before selection):
 
-
+![radscheduleview features appointment selection behavior 2](Media\radscheduleview_features_appointment_selection_behavior_2.png)
 
 With the custom AppointmentSelectionBehavior (after selection with pressed Ctrl or Shift keyboard key):
 
-[](D7C21926-1825-4792-9FC1-2ED2170D2AC2)[](15453be3-aed2-47c1-856d-b47da5927741)
+![radscheduleview features appointment selection behavior 3](Media\radscheduleview_features_appointment_selection_behavior_3.png)[Resources](http://radscheduleview-features-resources.md)[SlotSelectionBehavior](http://radscheduleview-features-slot-selection-behavior.md)

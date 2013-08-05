@@ -113,7 +113,7 @@ Here is the result:
 
 
                
-            
+            ![RadComboBox in EditAppointmentDialog](Media\radscheduleview_addcomboboxtoeditappointmentdialog.png)
 
 
     ![tip](tip.jpg)

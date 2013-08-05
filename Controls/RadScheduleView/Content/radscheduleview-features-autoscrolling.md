@@ -72,12 +72,12 @@ The next screenshots show the ScrollAreaPadding property set to its default valu
 
 Without ScrollAreaPadding set (__default value__):
 
+![radscheduleview features autoscrolling 1](Media\radscheduleview_features_autoscrolling_1.png)
 
-
-
+![radscheduleview features autoscrolling 3](Media\radscheduleview_features_autoscrolling_3.png)
 
 With ScrollAreaPadding set to 50px:
 
+![radscheduleview features autoscrolling 2](Media\radscheduleview_features_autoscrolling_2.png)
 
-
-
+![radscheduleview features autoscrolling 4](Media\radscheduleview_features_autoscrolling_4.png)

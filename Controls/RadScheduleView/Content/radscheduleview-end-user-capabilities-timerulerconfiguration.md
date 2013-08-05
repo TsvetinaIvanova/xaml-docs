@@ -35,7 +35,7 @@ In this scenario, if the RadScheduleView control is resized so that the viewport
 
 
                
-            __Setting the MaxTimeRulerExtent__
+            ![Configurate TimeRuler 01](Media\radscheduleview_end_user_capabilities_configurate_timeRuler_01.png)__Setting the MaxTimeRulerExtent__
 
 In this scenario, if the RadScheduleView control is resized so that the extend is greater than the value of the MaxTimeRulerExtent property, the SlotItems stop resizing and the remained space is left empty.
 
@@ -43,4 +43,4 @@ In this scenario, if the RadScheduleView control is resized so that the extend i
 
 
                
-            [ScheduleView Overview](38074B84-4633-4940-A221-20D1697CC6C8)
+            ![Configurate TimeRuler 02](Media\radscheduleview_end_user_capabilities_configurate_timeRuler_02.png)[Overview](http://radscheduleview-overview.md)

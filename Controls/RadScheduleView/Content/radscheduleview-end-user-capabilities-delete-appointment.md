@@ -18,7 +18,7 @@ ___
 
 
                
-            If the appointment is part of a recurrence series, a more complex confirmation dialog appears asking you what do you want to delete.You can choose between two options:__'Delete this occurrence'__ - delete only this specific occurrence of the whole series.
+            ![RadScheduleView Delete Appointment](Media\radscheduleview_end_user_capabilities_delete_appointment_01.png)If the appointment is part of a recurrence series, a more complex confirmation dialog appears asking you what do you want to delete.You can choose between two options:__'Delete this occurrence'__ - delete only this specific occurrence of the whole series.
           __'Delete the series'__ - delete all appointments that belong to this series.
           
 
@@ -34,4 +34,4 @@ Select the option you wish and click 'OK' to confirm the deletion or 'Cancel' to
               __Remove(Occurrence occurrence)__ - the passed occurrence is deleting.
               
 this.radScheduleView.Remove(appointment);
-Me.radScheduleView.Remove(appointment)[](598C6122-0FC6-429B-BF7F-C512EE468432)[](6FF9911E-35C8-4ED6-910E-CB43DCE581DB)[](FBFB41F6-FD40-497B-AEAB-DB882D0763AE)
+Me.radScheduleView.Remove(appointment)[Understanding Appointments](http://radscheduleview-getting-started-add-edit-delete-appointment.md)[Create Appointment](http://radscheduleview-end-user-capabilities-create-appointment.md)[Edit Appointment](http://radscheduleview-end-user-capabilities-edit-appointment.md)

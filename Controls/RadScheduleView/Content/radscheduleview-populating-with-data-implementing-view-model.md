@@ -155,4 +155,4 @@ End Sub
             Finally, set the DataContext:
             
 this.DataContext = new MyViewModel();
-Me.DataContext = New MyViewModel()[](16E2654A-2813-4277-999A-6B510F045C43)
+Me.DataContext = New MyViewModel()[Implementing View-ViewModel ](http://radscheduleview-populating-with-data-implementing-view-model.md)

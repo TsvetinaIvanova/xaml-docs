@@ -106,7 +106,7 @@ And assign the AppointmentStyleSelector to the ScheduleView:
 	...
 </telerik:RadScheduleView>
 
-The end result in DayViewDefinition with both Horizontal and Vertical Orientation is displayed below:
+The end result in DayViewDefinition with both Horizontal and Vertical Orientation is displayed below:![radscheduleview appointment style 1](Media\radscheduleview_appointment_style_1.png)
 
 # Using_the_AppointmentStyleSelector_to_style_AppointmentsCreate a custom AppointmentStyleSelector
 
@@ -254,4 +254,4 @@ The end result in DayViewDefinition with both Horizontal and Vertical Orientatio
 
 
 					Now that we have our Resources set and our __AppointmentStyleSelector__ ready, let's see the final result. The appointment styles are applied in accordance with each Resource:
-				[](D7C21926-1825-4792-9FC1-2ED2170D2AC2)[](598C6122-0FC6-429B-BF7F-C512EE468432)[](401E5B97-3FC0-47ED-9C4A-2DDE80D769A3)
+				![radscheduleview appointment style 2](Media\radscheduleview_appointment_style_2.png)[Resources](http://radscheduleview-features-resources.md)[Understanding Appointments](http://radscheduleview-getting-started-add-edit-delete-appointment.md)[Custom Appointment](http://radscheduleview-features-appointments-custom-appointment.md)

@@ -19,7 +19,7 @@ __RadScheduleView__ uses one and the same dialog to create and edit appointments
 
 
                
-            Enter Subject, Description, Start and End time of the appointment. Keep in mind that the subject text will be displayed as label for this appointment in the schedule view.You can also assign a category, time marker or importance by using the tool bar controls.
+            ![RadScheduleView Create Appointment](Media\radscheduleview_end_user_capabilities_create_appointment_01.png)Enter Subject, Description, Start and End time of the appointment. Keep in mind that the subject text will be displayed as label for this appointment in the schedule view.You can also assign a category, time marker or importance by using the tool bar controls.
             If you have completed the appointment edit, click the 'OK' button or press the __Enter__ key. If you want to cancel the appointment creation, click the X button, the Close button or press the __Esc__ key.
           
 
@@ -43,4 +43,4 @@ appointment.End = DateTime.Now.AddHours(1)
 appointment.Subject = "New appointment"
 Me.radScheduleView.Commit()
 
-[](598C6122-0FC6-429B-BF7F-C512EE468432)[](FBFB41F6-FD40-497B-AEAB-DB882D0763AE)[](256FEDC9-8A6E-4251-BF3E-CC1B4496F11A)
+[Understanding Appointments](http://radscheduleview-getting-started-add-edit-delete-appointment.md)[Edit Appointment](http://radscheduleview-end-user-capabilities-edit-appointment.md)[Delete Appointment](http://radscheduleview-end-user-capabilities-delete-appointment.md)

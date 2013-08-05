@@ -83,4 +83,4 @@ You can add more than only one ViewDefinition. There are four view definitions a
 
 
           To learn more about the Appointments of the RadScheduleView take a look at the [Getting Started - Add/Edit/Delete Appointments](598C6122-0FC6-429B-BF7F-C512EE468432) topic.
-        [](598C6122-0FC6-429B-BF7F-C512EE468432)
+        [Understanding Appointments](http://radscheduleview-getting-started-add-edit-delete-appointment.md)

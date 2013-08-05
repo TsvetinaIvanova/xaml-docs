@@ -57,4 +57,4 @@ Check [here](F8D12A6D-38B0-43CC-A6B3-1D7E8E8FC3A8) for more details about adding
 
         You can download the complete project from 
         [here](http://www.telerik.com/community/code-library/wpf/scheduleview/binding-to-database-example.aspx).
-        [](143e34f8-f486-4df4-a70a-346d74347a66)
+        [RadScheduleView Types and Sources](http://radscheduleview-populating-with-data-binding-to-db-sources.md)

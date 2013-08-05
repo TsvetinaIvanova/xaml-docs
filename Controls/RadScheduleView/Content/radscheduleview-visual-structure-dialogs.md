@@ -2,4 +2,4 @@
 
 # 
 
-[Visual Structure - ScheduleView](16372A60-27C3-4BD2-A72E-B1BB6A9D44B6)[Visual Structure - Views](5A770DF6-A424-4970-AD36-0C67390891E3)[](F8D12A6D-38B0-43CC-A6B3-1D7E8E8FC3A8)
+[Visual Structure - ScheduleView](16372A60-27C3-4BD2-A72E-B1BB6A9D44B6)[Visual Structure - Views](5A770DF6-A424-4970-AD36-0C67390891E3)[Getting Started](http://radscheduleview-getting-started.md)

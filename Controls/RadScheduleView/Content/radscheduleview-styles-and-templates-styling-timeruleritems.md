@@ -20,39 +20,39 @@ This article discusses how to use the TimeRulerItemStyleSelector to customize th
           Any change on the appearance of a TimeRulerItem depends on the TimeRulerItemStyleSelector and the containing styles. The selector is oriented, meaning it contains orientation dependant styles – horizontal and vertical. The TimeRulerItemStyleSelector contains the following styles:
         ExpandMonthViewButtonStyle: 
 
-GoToDayButtonStyle: 
+![radscheduleview timeruler 01](Media\radscheduleview_timeruler_01.PNG)GoToDayButtonStyle: 
 
-GoToDayTodayButtonStyle: 
+![radscheduleview timeruler 02](Media\radscheduleview_timeruler_02.PNG)GoToDayTodayButtonStyle: 
 
-GoToDayVerticalButtonStyle: 
+![radscheduleview timeruler 03](Media\radscheduleview_timeruler_03.PNG)GoToDayVerticalButtonStyle: 
 
-MajorHorizontalTimeRulerItemStyle: 
+![radscheduleview timeruler 04](Media\radscheduleview_timeruler_04.PNG)MajorHorizontalTimeRulerItemStyle: 
 
-MajorVerticalTimeRulerItemStyle: 
+![radscheduleview timeruler 05](Media\radscheduleview_timeruler_05.PNG)MajorVerticalTimeRulerItemStyle: 
 
-MinorHorizontalTimeRulerItemStyle: 
+![radscheduleview timeruler 06](Media\radscheduleview_timeruler_06.PNG)MinorHorizontalTimeRulerItemStyle: 
 
-MinorVerticalTimeRulerItemStyle: 
+![radscheduleview timeruler 07](Media\radscheduleview_timeruler_07.PNG)MinorVerticalTimeRulerItemStyle: 
 
-TimeRulerGroupItemStyle: 
+![radscheduleview timeruler 08](Media\radscheduleview_timeruler_08.PNG)TimeRulerGroupItemStyle: 
 
-TimeRulerLineStyle: 
+![radscheduleview timeruler 09](Media\radscheduleview_timeruler_09.PNG)TimeRulerLineStyle: 
 
-
+![radscheduleview timeruler 10](Media\radscheduleview_timeruler_10.PNG)
 
 TimeRulerMonthViewGroupItemStyle: 
 
-
+![radscheduleview timeruler 11](Media\radscheduleview_timeruler_11.PNG)
 
 TimeRulerMonthViewItemStyle: 
 
 
 
-
+![radscheduleview timeruler 12](Media\radscheduleview_timeruler_12.PNG)
 
 TimeRulerMonthViewTodayItemStyle: 
 
-
+![radscheduleview timeruler 13](Media\radscheduleview_timeruler_13.PNG)
 
 
 
@@ -76,7 +76,7 @@ __Get TimeRulerItemStyleSelector from RadScheduleView control template__
 
 
 
-
+![](Media\timeruler_13.PNG)
 
 
 
@@ -187,13 +187,13 @@ Now that all TimeRulerItem styles are in place, we can apply any desired customi
 
 The TimeRulerGroupItemStyle has been modified:
 
-
+![](Media\timeruler_10.PNG)
 
 # create-custom-timeruleritemstyleselectorCreate a custom TimeRulerItemStyleSelector
 
 Let’s say we wish to customize the lines that correspond to the minor and major ticks in Timeline view:
 
-
+![](Media\timeruler_11.PNG)
 
 Because both lines share one and the same __TimeRulerLineStyle__, in order to style them differently, we are going to need two separate styles.  We need to create a custom TimeRulerItemStyleSelector that provides these additional styles.
 
@@ -338,6 +338,6 @@ The next step is to prepare the actual styles for both types of TimeRulerLines. 
 			</Style>
 		</local:CustomTimeRulerItemStyleSelector.MinorTickLineStyle>
 
-
+![](Media\timeruler_12.PNG)
 
 

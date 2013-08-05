@@ -10,7 +10,7 @@ ___
 
 
         The built-in localization mechanism in Silverlight and WPF allows you to localize any string resource used by the standard __RadScheduleView__ control. Once translated you might use your resources in Silverlight and WPF projects without changing anything.
-      
+      ![RadScheduleView Localization 01](Media\radscheduleview_localization01.png)
 
 # LocalizationManager
 
@@ -38,7 +38,7 @@ __RadScheduleView__ is a complex user interface control and its strings for loca
 
           On the picture below you can see some of the resource keys and the strings they are associated with. A complete list of the __RadScheduleView__ resource keys can be found 
           [here](#RadScheduler_Resource_Keys).
-        
+        ![RadScheduleView Localization 01](Media\radscheduleview_localization06.png)
 
 # Localization Using ResourceManager
 
@@ -49,7 +49,7 @@ __RadScheduleView__ is a complex user interface control and its strings for loca
 Imagine that you want to translate your schedule control into English, German and Dutch. For that purpose you will have to add three new resource files to your project:__ScheduleViewResources.resx__ - this resource file will store the __English(default)__ resources for the ScheduleView control. Set the __AccessModifier__ property to __Public__.
           __ScheduleViewResources.de.resx__ - this resource file will store the __German__ resources for the ScheduleView control. Set the __AccessModifier__ property to __No code generation__.
           __ScheduleViewResources.nl.resx__ - this resource file will store the __Dutch__ resources for the ScheduleView control. Set the __AccessModifier__ property to __No code generation__.
-          
+          ![RadScheduleView Localization04](Media\radscheduleview_localization04.png)
 
 Now, having the needed files, it's time to illustrate the idea and localize for example the text for the Day, Week, Month and Timeline navigation strings. For that purpose you need to create four resource strings in each one of the three resource files and translate them to the appropriate language.
     ![note](note.jpg)
@@ -60,7 +60,7 @@ Now, having the needed files, it's time to illustrate the idea and localize for 
           
 
 The snapshot below shows the content of the __ScheduleViewResources.de.resx__ file. The resource name of the other two files should be the same. The Value column will contain the translation for the appropriate language.
-        
+        ![RadScheduleView Localization3](Media\radscheduleview_localization03.png)
 
 
           The last step is to instantiate the __LocalizationManager__ class and set its __ResourceManager__ to the resources that have been just created.
@@ -84,7 +84,7 @@ LocalizationManager.Manager.ResourceManager = ScheduleViewResources.ResourceMana
 
 
           Here is how the localized __RadScheduleView__ looks like:
-        
+        ![RadScheduleView Localization 06](Media\radscheduleview_localization05.png)
 
 #  Localization Using Custom Localization Manager
 

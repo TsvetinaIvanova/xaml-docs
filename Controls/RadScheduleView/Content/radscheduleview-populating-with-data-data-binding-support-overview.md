@@ -61,4 +61,4 @@ ___
 
 
                   Note that the data source passed to the property __GroupDescriptionsSource__ should contain only objects of type __GroupDescription__.
-                [](16E2654A-2813-4277-999A-6B510F045C43)
+                [Implementing View-ViewModel ](http://radscheduleview-populating-with-data-implementing-view-model.md)

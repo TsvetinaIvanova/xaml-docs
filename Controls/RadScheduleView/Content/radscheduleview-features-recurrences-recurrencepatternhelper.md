@@ -72,4 +72,4 @@ Dim serializedPattern As String = "FREQ=DAILY;COUNT=10;INTERVAL=3;BYDAY=MO,TU,WE
 Dim pattern As RecurrencePattern
 RecurrencePatternHelper.TryParseRecurrencePattern(serializedPattern, pattern)
 
-The result will be a new daily recurrence pattern that occurs only in the week days. The interval between each occurrence is three days. The pattern has a limit of ten occurrences.[RecurrencePattern](3F113E6D-5519-40FD-A3B3-6A46B2489318)[RecurrenceRule](048F4BD6-35B4-486C-A03D-44EED6F6D33D)
+The result will be a new daily recurrence pattern that occurs only in the week days. The interval between each occurrence is three days. The pattern has a limit of ten occurrences.[RecurrencePattern](http://radscheduleview-features-recurrences-recurrencepattern.md)[RecurrenceRule](http://radscheduleview-features-recurrences-recurrencerule.md)

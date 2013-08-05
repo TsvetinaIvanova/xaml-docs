@@ -17,11 +17,11 @@ This chapter will cover the following topics:[Assign Time Marker to an Appointme
 
 Run-time you can define the time marker of your appointment via the drop down menu in the EditAppointmentDialog.
 
-
+![radscheduleview timemarkers 01](Media\radscheduleview_timemarkers_01.png)
 
 On the snapshot below you can see four appointments where three of them have time markers set, while the fourth does not have. Notice the color markers in the left part of the appointments.
 
-
+![radscheduleview timemarkers 02](Media\radscheduleview_timemarkers_02.png)
 
 # Adding_TimeMarkersAdding TimeMarkers to the RadScheduleView
 
@@ -75,4 +75,4 @@ this.DataContext = new MyViewModel();
 
 Here is the result:
 
-[](16E2654A-2813-4277-999A-6B510F045C43)
+![radscheduleview timemarkers 03](Media\radscheduleview_timemarkers_03.png)[Implementing View-ViewModel ](http://radscheduleview-populating-with-data-implementing-view-model.md)

@@ -78,4 +78,4 @@ WeekViewDefinition
             this.scheduleView.ViewDefinitions.Add(dayDefintion);
             this.scheduleView.ViewDefinitions.Add(timelineDefinition);
             this.scheduleView.ViewDefinitions.Add(weekDefinition);
-[](0973c9f2-dad2-400b-be85-93bdef8c4de0)[](ba38cb94-0cf5-43e4-95a9-39a3d3536d5b)[](bf4f850f-bcee-4427-bd39-9f78832ce8c4)
+[Configuration](http://radscheduleview-viewdefinitions-configuration.md)[View specific properties](http://radscheduleview-viewdefinitions-specificproperties.md)[How to configure the VisibleRange](http://radscheduleview-features-viewdefinitions-configure-visiblerange.md)
