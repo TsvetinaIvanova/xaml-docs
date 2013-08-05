@@ -154,5 +154,5 @@ public class CustomScheduleViewDialogHostFactory : IScheduleViewDialogHostFactor
 		<local:CustomScheduleViewDialogHostFactory />
 	</telerik:RadScheduleView.SchedulerDialogHostFactory>
 </telerik:RadScheduleView>         
-      		![radscheduleview customizingdialogs wpf](../Media\radscheduleview_customizingdialogs_wpf.png)         
-      		![radscheduleview customizingdialogs](../Media\radscheduleview_customizingdialogs.png)
+      		![radscheduleview customizingdialogs wpf](../Media/radscheduleview_customizingdialogs_wpf.png)         
+      		![radscheduleview customizingdialogs](../Media/radscheduleview_customizingdialogs.png)

@@ -8,7 +8,7 @@ publish :True
 ___
 
 
-This help article explains how you could customize the visual element that is shown while the user is dragging an appointment in the __ScheduleView__ control.![radscheduleview dragvisual 1](../Media\radscheduleview_dragvisual_1.png)
+This help article explains how you could customize the visual element that is shown while the user is dragging an appointment in the __ScheduleView__ control.![radscheduleview dragvisual 1](../Media/radscheduleview_dragvisual_1.png)
 
 You could change its look by setting DragVisualTemplate and DragVisualStyle properties.  We will go through each of them separately:
 
@@ -29,7 +29,7 @@ Here is the default DragVisualTemplate:
 		TextTrimming="WordEllipsis" />
 </DataTemplate>  
 
-Note the use of DraggedAppointmentsToLocalizedStringConverter – it is needed to cover  the cases when multiple appointments are dragged:![radscheduleview dragvisual 2](../Media\radscheduleview_dragvisual_2.png)
+Note the use of DraggedAppointmentsToLocalizedStringConverter – it is needed to cover  the cases when multiple appointments are dragged:![radscheduleview dragvisual 2](../Media/radscheduleview_dragvisual_2.png)
 
 Let’s for example, change the DataTemplate  as following:
 <DataTemplate x:Key="DragVisualContentTemplate">
@@ -59,7 +59,7 @@ Then set the newly created template to the DragVisualTemplate property of the Sc
 	...
 </telerik:RadScheduleView>
 
-Here is the result:![radscheduleview dragvisual 3](../Media\radscheduleview_dragvisual_3.png)
+Here is the result:![radscheduleview dragvisual 3](../Media/radscheduleview_dragvisual_3.png)
 
 # DragVisualStyleDragVisualStyle
 
@@ -123,4 +123,4 @@ Either approach you’ve selected, the final step is to set the custom DragVisua
 	...
 </telerik:RadScheduleView>
 
-The result is:![radscheduleview dragvisual 4](../Media\radscheduleview_dragvisual_4.png)
+The result is:![radscheduleview dragvisual 4](../Media/radscheduleview_dragvisual_4.png)

@@ -16,13 +16,13 @@ RadScheduleView supports inline editing of the displayed appointment's subject. 
 Inline editing lets you edit the appointment's subject right where you see it in the appointment. Just select the appointment, press F2 and type your changes.Select the target appointment:
           	
 
-![radscheduleview inline editing 01](../Media\radscheduleview_inline_editing_01.png)Press __F12__ and type the changes:
+![radscheduleview inline editing 01](../Media/radscheduleview_inline_editing_01.png)Press __F12__ and type the changes:
           	
 
-![radscheduleview inline editing 02](../Media\radscheduleview_inline_editing_02.png)Press __Enter__ or click outside the textbox in order to apply the change:
+![radscheduleview inline editing 02](../Media/radscheduleview_inline_editing_02.png)Press __Enter__ or click outside the textbox in order to apply the change:
           	
 
-![radscheduleview inline editing 03](../Media\radscheduleview_inline_editing_03.png)
+![radscheduleview inline editing 03](../Media/radscheduleview_inline_editing_03.png)
     ![tip](tip.jpg)
     	
 
