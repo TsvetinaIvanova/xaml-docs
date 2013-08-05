@@ -1,3 +1,12 @@
+---
+title: Custom Appointmnets
+meta_title: Tutorial for implementing a custom appointments
+meta_description: Tutorial for implementing a custom appointments.
+slug: custom-appointments
+tags: customization
+publish: true
+---
+
 A very common scenario when using RadScheduleView is the usage of custom appointments. When you create a **Custom Appointment** class you gain the ability to append additional properties to the base Appointment class, to add them to your custom AppointmentItem and optionally to its ToolTip, display them in the EditAppointment dialog while supporting the cancelation of editing. 
 
 In this article we will explore the process of using custom appointments in RadScheduleView. We will go through the following steps:
@@ -51,6 +60,8 @@ public class Task:Appointment
 }
 ```
 
+!wpf
+
 ```Vb.NET
 Public Class Task
  Inherits Appointment
@@ -81,6 +92,9 @@ Public Class Task
  End Sub
 End Class
 ```
+
+!wpf
+
 For the next step, it is important to set the AppointmentsSource of RadScheduleView to be of type `IList<Task>`, because this way the ScheduleView knows that our custom appointments should be of type Task. Let's create an **ObservableCollection\<Task\>** using the following approach: 
 ## Creating a custom Appointment Dialog
 ## Changing the Style of the AppointmentItem
