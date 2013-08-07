@@ -11,7 +11,7 @@ A very common scenario when using RadScheduleView is the usage of custom appoint
 
 In this article we will explore the process of using custom appointments in RadScheduleView. We will go through the following steps:
 
-
+[Understanding Appointments]({{slug:understanding-appointments}})
 [Create a custom appointment class and populate the RadScheduleView control with custom appointments](#Creating-a-Custom-Appointment-class)
 
 [Modify the EditAppointment dialog to display the custom data of the newly created custom appointment class](#Creating-a-Custom-Appointment-dialog)
