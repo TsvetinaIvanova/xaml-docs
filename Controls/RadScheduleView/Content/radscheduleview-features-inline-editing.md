@@ -43,5 +43,21 @@ The RadScheduleView exposes a property __IsInlineEditingEnabled__ which allows y
 The default value of the __IsInlineEditingEnabled__ property is True. Which means that the inline editing behavior is allowed by default.
       	If you want to disable the inline editing behavior, you should set the __IsInlineEditingEnabled__ property to False.
       	
+
+```XAML
+
+
 <telerik:RadScheduleView x:Name="scheduleView" IsInlineEditingEnabled="False"/>
+
+```
+
+
+
+```C#
+
+
 scheduleView.IsInlineEditingEnabled = false;
+
+```
+
+

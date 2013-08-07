@@ -35,6 +35,10 @@ This article will cover the following topics:
 
 					The end result should include the following:
 				
+
+```XAML
+
+
 <local:OrientedAppointmentItemStyleSelector x:Key="AppointmentItemStyleSelector">
     <local:OrientedAppointmentItemStyleSelector.MonthViewStyle>
         <Style TargetType="local:AppointmentItem" BasedOn="{StaticResource AppointmentItemBaseStyle}">
@@ -54,8 +58,20 @@ This article will cover the following topics:
 	</local:OrientedAppointmentItemStyleSelector.VerticalStyle>
 </local:OrientedAppointmentItemStyleSelector>
 
+```
+
+
+
 where "*local*" is:
+
+```XAML
+
+
 xmlns:local="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.ScheduleView"
+
+```
+
+
 
 
 						If you are using the default OfficeBlack theme or you've set a different theme with StyleManager, you should copy all the referenced resources from the RadScheduleView XAML file into your project.
@@ -77,6 +93,10 @@ xmlns:local="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Con
 					
 
 So, let's for example modify the background color and style of the appointments:
+
+```XAML
+
+
 <local:OrientedAppointmentItemStyleSelector x:Key="AppointmentItemStyleSelector">
 	<local:OrientedAppointmentItemStyleSelector.MonthViewStyle>
 		<Style TargetType="local:AppointmentItem" BasedOn="{StaticResource AppointmentItemBaseStyle}">
@@ -100,11 +120,23 @@ So, let's for example modify the background color and style of the appointments:
 	</local:OrientedAppointmentItemStyleSelector.VerticalStyle>
 </local:OrientedAppointmentItemStyleSelector>
 
+```
+
+
+
 And assign the AppointmentStyleSelector to the ScheduleView:
+
+```XAML
+
+
 <telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" 
 						 AppointmentStyleSelector="{StaticResource AppointmentItemStyleSelector}">
 	...
 </telerik:RadScheduleView>
+
+```
+
+
 
 The end result in DayViewDefinition with both Horizontal and Vertical Orientation is displayed below:![radscheduleview appointment style 1](../Media/radscheduleview_appointment_style_1.png)
 
@@ -123,6 +155,10 @@ The end result in DayViewDefinition with both Horizontal and Vertical Orientatio
 
 					Next ,we are going to use these resources and create the selector. Create a new Class which inherits __OrientedAppointmentItemStyleSelector__. Override its __SelectStyle()__ method and use __activeViewDefinition.GetOrientation()__ to determine whether to apply a horizontal or a vertical Style in your selector.  Then, your AppointmentStyleSelector would look like this:
 				
+
+```C#
+
+
 	public class AppointmentStyleSelector : OrientedAppointmentItemStyleSelector
 	{
 		public Style Room402AHorizontalStyle { get; set; }
@@ -168,6 +204,10 @@ The end result in DayViewDefinition with both Horizontal and Vertical Orientatio
 			return base.SelectStyle(item, container, activeViewDefinition);
 		}
 	}
+
+```
+
+
     ![tip](tip.jpg)
     	
 
@@ -178,6 +218,10 @@ The end result in DayViewDefinition with both Horizontal and Vertical Orientatio
 
 					We add all needed Resources and group our ScheduleView  by the "Room" ResourceType:
 				
+
+```XAML
+
+
 <telerik:RadScheduleView AppointmentsSource="{Binding Appointments}">
    <telerik:RadScheduleView.ViewDefinitions>
     <telerik:DayViewDefinition />
@@ -204,9 +248,17 @@ The end result in DayViewDefinition with both Horizontal and Vertical Orientatio
 
   </telerik:RadScheduleView>
 
+```
+
+
+
 
 					Add the custom AppointmentStyleSelector with all the defined Styles:
 				
+
+```XAML
+
+
 <SolidColorBrush x:Key="Room402ABackground_Normal" Color="#FF3366CC" />
 <SolidColorBrush x:Key="Room401BBackground_Normal" Color="#FF8EC441" />
 <SolidColorBrush x:Key="Room605ABackground_Normal" Color="#FFFFB520" />
@@ -244,13 +296,25 @@ The end result in DayViewDefinition with both Horizontal and Vertical Orientatio
 	</example:AppointmentStyleSelector.Room605AVerticalStyle>
 </example:AppointmentStyleSelector>
 
+```
+
+
+
 
 					And assign it to the ScheduleView:
 				
+
+```XAML
+
+
 <telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" 
 						 AppointmentStyleSelector="{StaticResource CustomAppointmentStyleSelector}">
 ...
  </telerik:RadScheduleView>						 
+
+```
+
+
 
 
 					Now that we have our Resources set and our __AppointmentStyleSelector__ ready, let's see the final result. The appointment styles are applied in accordance with each Resource:

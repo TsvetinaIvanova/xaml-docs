@@ -21,6 +21,10 @@ RadScheduleView uses the __IScheduleViewDialogHostFactory__ and __IScheduleViewD
 # Customizing RadWindow properties
 
 Create a new class, deriving from ScheduleViewDialogHostFactory and override the CreateNew method:
+
+```C#
+
+
 public class CustomScheduleViewDialogHostFactory : ScheduleViewDialogHostFactory
 {
     protected override IScheduleViewDialogHost CreateNew(ScheduleViewBase scheduleView, DialogType dialogType)
@@ -32,17 +36,33 @@ public class CustomScheduleViewDialogHostFactory : ScheduleViewDialogHostFactory
     }
 }
 
+```
+
+
+
 Configure RadScheduleView to use the new class:
+
+```XAML
+
+
 <telerik:RadScheduleView . . .>
 	<telerik:RadScheduleView.SchedulerDialogHostFactory>
 		<local:CustomScheduleViewDialogHostFactory />
 	</telerik:RadScheduleView.SchedulerDialogHostFactory>
 </telerik:RadScheduleView>
 
+```
+
+
+
 # Replacing RadWindow with ChildWindowWindow
 
 Create a new class, deriving from WindowChildWindow and implement the __IScheduleViewDialogHost__ interface:
     
+
+```C#
+
+
 public class WindowDialogHost : Window, IScheduleViewDialogHost
 {
 	public new event EventHandler<WindowClosedEventArgs> Closed;
@@ -75,6 +95,14 @@ public class WindowDialogHost : Window, IScheduleViewDialogHost
 		}
 	}
 }
+
+```
+
+
+
+```C#
+
+
 public class WindowDialogHost : ChildWindow, IScheduleViewDialogHost
 {
 	private bool opened;
@@ -112,9 +140,17 @@ public class WindowDialogHost : ChildWindow, IScheduleViewDialogHost
 	}
 }
 
+```
+
+
+
 
     Create a new class and implement the __IScheduleViewDialogHostFactory__:
     
+
+```C#
+
+
 public class CustomScheduleViewDialogHostFactory : ScheduleViewDialogHostFactory
 {
     protected override IScheduleViewDialogHost CreateNew(ScheduleViewBase scheduleView, DialogType dialogType)
@@ -132,6 +168,14 @@ public class CustomScheduleViewDialogHostFactory : ScheduleViewDialogHostFactory
     }
 }
 
+
+```
+
+
+
+```C#
+
+
 public class CustomScheduleViewDialogHostFactory : IScheduleViewDialogHostFactory
 {
     public virtual IScheduleViewDialogHost CreateNew(ScheduleViewBase scheduleView, DialogType dialogType)
@@ -146,13 +190,25 @@ public class CustomScheduleViewDialogHostFactory : IScheduleViewDialogHostFactor
      }    
 }
 
+```
+
+
+
 
     Configure RadScheduleView to use the new factory:
     
+
+```XAML
+
+
 <telerik:RadScheduleView . . .>
 	<telerik:RadScheduleView.SchedulerDialogHostFactory>
 		<local:CustomScheduleViewDialogHostFactory />
 	</telerik:RadScheduleView.SchedulerDialogHostFactory>
-</telerik:RadScheduleView>         
+</telerik:RadScheduleView>
+
+```
+
+         
       		![radscheduleview customizingdialogs wpf](../Media/radscheduleview_customizingdialogs_wpf.png)         
       		![radscheduleview customizingdialogs](../Media/radscheduleview_customizingdialogs.png)

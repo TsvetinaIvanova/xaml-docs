@@ -15,6 +15,10 @@ This topic describes how to configurate the TimeRuler of the RadScheduleView con
 There are two key properties that control the Height of the TimeRuler:__MinTimeRulerExtent __- gets or sets the minimum height of the TimeRuler in pixels. If the viewport is smaller than this value, a scrollbar will appear.
           __MaxTimeRulerExtent __- gets or sets the maximum height of the TimeRuler in pixels. If the viewport is bigger than this value, empty space will appear below the time ruler.
           
+
+```XAML
+
+
 <telerik:RadScheduleView AppointmentsSource="{Binding Appointments}"  
                           MinTimeRulerExtent="300" 
                           MaxTimeRulerExtent="600" >
@@ -24,6 +28,10 @@ There are two key properties that control the Height of the TimeRuler:__MinTimeR
                 <telerik:TimelineViewDefinition />
             </telerik:RadScheduleView.ViewDefinitions>
 </telerik:RadScheduleView>
+
+```
+
+
 
 
 

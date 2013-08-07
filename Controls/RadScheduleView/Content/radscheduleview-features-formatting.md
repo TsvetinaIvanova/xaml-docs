@@ -72,6 +72,10 @@ This article covers the following topics:[Formatting properties](#formatting_pro
 
 
 Let’s for example set the formatting properties of DayViewDefinition:
+
+```XAML
+
+
 <telerik:RadScheduleView  AppointmentsSource="{Binding Appointments}">
     <telerik:RadScheduleView.ViewDefinitions>
         <telerik:DayViewDefinition
@@ -81,6 +85,10 @@ Let’s for example set the formatting properties of DayViewDefinition:
         ...  
     </telerik:RadScheduleView.ViewDefinitions>
  </telerik:RadScheduleView>
+
+```
+
+
 
 
 
@@ -98,6 +106,10 @@ Let’s for example set the formatting properties of DayViewDefinition:
           Setting these properties to WeekViewDefinition will lead to similar
           result:
         
+
+```XAML
+
+
 <telerik:RadScheduleView  AppointmentsSource="{Binding Appointments}">
     <telerik:RadScheduleView.ViewDefinitions>
         ...
@@ -108,6 +120,10 @@ Let’s for example set the formatting properties of DayViewDefinition:
         ...  
     </telerik:RadScheduleView.ViewDefinitions>
  </telerik:RadScheduleView>
+
+```
+
+
 
 
                
@@ -120,6 +136,10 @@ Let’s for example set the formatting properties of DayViewDefinition:
 
 
 In MonthViewDefinition you can set the following formatting properties:
+
+```XAML
+
+
 <telerik:RadScheduleView  AppointmentsSource="{Binding Appointments}">
     <telerik:RadScheduleView.ViewDefinitions>
         ...                     
@@ -130,6 +150,10 @@ In MonthViewDefinition you can set the following formatting properties:
         ...
     </telerik:RadScheduleView.ViewDefinitions>
 </telerik:RadScheduleView>
+
+```
+
+
 
 And the result is:
 
@@ -144,6 +168,10 @@ And the result is:
 
 
 Setting the formatting properties in TimelineViewDefinition like this:
+
+```XAML
+
+
 <telerik:RadScheduleView  AppointmentsSource="{Binding Appointments}">
     <telerik:RadScheduleView.ViewDefinitions>
         ...       
@@ -158,6 +186,10 @@ Setting the formatting properties in TimelineViewDefinition like this:
          ...
         </telerik:RadScheduleView.ViewDefinitions>
 </telerik:RadScheduleView>
+
+```
+
+
 
 results in the following look:
 

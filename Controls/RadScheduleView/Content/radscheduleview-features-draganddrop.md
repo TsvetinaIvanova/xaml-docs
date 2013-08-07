@@ -37,9 +37,17 @@ __RadScheduleView__ uses __DragDropManager__ to implement drag and drop of appoi
 After the CustomDragDropBehavior is implemented, all you need is to set it as RadScheduleView.DragDropBehavior:
 
 
+
+```XAML
+
+
 <telerik:RadScheduleView.DragDropBehavior>
   <local:CustomDragDropBehavior />
 </telerik:RadScheduleView.DragDropBehavior>
+
+```
+
+
 
 
           Check out the 

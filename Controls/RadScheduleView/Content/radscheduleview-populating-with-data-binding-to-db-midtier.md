@@ -27,6 +27,10 @@ Once the domain service class is added, rebuild the project as well. Let’s add
         
 
 
+
+```C#
+
+
 private int[] GetSqlAppointmentsIdsByRange(DateTime start, DateTime end)
 {
 	var result = this.ObjectContext.SqlAppointments.Where(a => (a.Start >= start && a.End <= end)).ToList<SqlAppointment>();
@@ -61,4 +65,8 @@ public IQueryable<SqlAppointment> GetSqlAppointmentsByRange(DateTime start, Date
 	}
 
 	return result.AsQueryable<SqlAppointment>();
-}[Silverlight Part](http://radscheduleview-populating-with-data-binding-to-db-silverlight.md)
+}
+
+```
+
+[Silverlight Part](http://radscheduleview-populating-with-data-binding-to-db-silverlight.md)

@@ -80,6 +80,10 @@ __SpecialSlotsStyleSelector __allows you to apply a separate Style for the speci
 
               First you should create the collection of Slot objects and set their RecurrencePattern property:
             
+
+```C#
+
+
 var NonWorkingHours = new ObservableCollection<Slot>();
 DateTime start = new DateTime(2010, 1, 1, 8, 0, 0);
 DateTime end = new DateTime(2010, 1, 1, 18, 0, 0);
@@ -96,9 +100,17 @@ NonWorkingHours.Add(
                     null, RecurrenceDays.Friday, RecurrenceFrequency.Weekly, 1, null, null)
     });
 
+```
+
+
+
 
               Then create the ScheduleViewStyleSelector class:
             
+
+```C#
+
+
 public class SpecialSlotStyleSelector : ScheduleViewStyleSelector
 {
     private Style nonworkingHourStyle;
@@ -119,7 +131,15 @@ public class SpecialSlotStyleSelector : ScheduleViewStyleSelector
     }
 }
 
+```
+
+
+
 and define the Style:
+
+```XAML
+
+
 <local:SpecialSlotStyleSelector x:Key="SpecialSlotStyleSelector">
         <local:SpecialSlotStyleSelector.NonworkingHourStyle>
             <Style TargetType="scheduleView:HighlightItem">
@@ -134,20 +154,36 @@ and define the Style:
         </local:SpecialSlotStyleSelector.NonworkingHourStyle>
     </local:SpecialSlotStyleSelector>
 
+```
+
+
+
 
               Finally, bind them to SpecialSlotsSource and SpecialSlotsStyleSelector properties:
             
+
+```XAML
+
+
 <telerik:RadScheduleView x:Name="scheduleView"
            SpecialSlotsSource="{Binding NonWorkingHours}"
            SpecialSlotStyleSelector="{StaticResource SpecialSlotStyleSelector}">
 ...
 </telerik:RadScheduleView>
 
+```
+
+
+
 Here is the result:![Special Slots](../Media/radscheduleview_special_slots.png)
 
 # readonlyslots Setting all the slots for a given resource to be read-only
 
 Let's for example have the following Resource Type defined:
+
+```XAML
+
+
 <telerik:RadScheduleView x:Name="scheduleView">
  <telerik:RadScheduleView.ResourceTypesSource>
     <telerik:ResourceTypeCollection>
@@ -160,9 +196,17 @@ Let's for example have the following Resource Type defined:
   ...
 </telerik:RadScheduleView>
 
+```
+
+
+
 
               You can create the collection of read-only slots for "Team" Resource like this:
             
+
+```C#
+
+
 var ReadOnlySlots = new ObservableCollection<Slot>();
 Slot readOnlyslot = new Slot() { 
 		Start = DateTime.MinValue, 
@@ -172,23 +216,47 @@ Slot readOnlyslot = new Slot() {
 readOnlyslot.Resources.Add(new Resource("Team", "Calendar"));
 ReadOnlySlots.Add(readOnlyslot);
 
+```
+
+
+
 
               And assign it to the ScheduleView's SpecialSlotsSource property:
             
+
+```XAML
+
+
 <telerik:RadScheduleView  x:Name="scheduleView" SpecialSlotsSource="{Binding ReadOnlySlots}">
 ...
 </telerik:RadScheduleView>
+
+```
+
+
 
  The read-only slots will look like this:![ReadOnly Slots](../Media/radscheduler_readonly_slots.png)
 
 
           Note that EditAppointmentDialog is shown even for appointments which are visualized in the read-only slots. In order to prevent it, susbscribe to ShowDialog event of the RadScheduleView:
         
+
+```XAML
+
+
 <telerik:RadScheduleView x:Name="scheduleView" ShowDialog="scheduleView_ShowDialog">
+
+```
+
+
 
 
           and cancel it in the event handler:
         
+
+```C#
+
+
 private void scheduleView_ShowDialog(object sender, ShowDialogEventArgs e)
 {
     var appointmentDialog = e.DialogViewModel as AppointmentDialogViewModel;
@@ -197,6 +265,10 @@ private void scheduleView_ShowDialog(object sender, ShowDialogEventArgs e)
         e.Cancel = true;
     }
 }
+
+```
+
+
 
 
           Check out the 

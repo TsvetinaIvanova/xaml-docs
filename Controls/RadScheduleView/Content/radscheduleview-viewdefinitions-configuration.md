@@ -42,16 +42,32 @@ Gets or sets the date time interval with which the current will be increased
 The property is of type __DateTimeInterval__. In the following example the __LargeChangeInterval__ property of DayView is set to 2 
       days and of MonthView is set of 2 months and 4 days.
       
+
+```XAML
+
+
         <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
             <telerik:RadScheduleView.ViewDefinitions>
                 <telerik:DayViewDefinition LargeChangeInterval="2d"/>
                 <telerik:MonthViewDefinition LargeChangeInterval="2m 4d"/>
             </telerik:RadScheduleView.ViewDefinitions>
         </telerik:RadScheduleView>
+
+```
+
+
+
+```C#
+
+
 	dayDefintion.LargeChangeInterval = new Telerik.Windows.Controls.ScheduleView.
 	DateTimeInterval(2, 0);
 	monthDefinition.LargeChangeInterval = new Telerik.Windows.Controls.ScheduleView.
 	DateTimeInterval(4, 2);
+
+```
+
+
 
 # SmallChangeIntervalSmallChangeInterval
 
@@ -72,16 +88,32 @@ Setting the SmallChangeInterval property of a DayViewDefiniton and WeekViewDefin
 The following example shows how to set the __SmallChangeInterval__ property of a MonthViewDefinition 
       to 11 days and of a TimelineViewDefinition to 3 days:
       
+
+```XAML
+
+
         <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
             <telerik:RadScheduleView.ViewDefinitions>
                 <telerik:MonthViewDefinition SmallChangeInterval="11d"/>
                 <telerik:TimelineViewDefinition SmallChangeInterval="3d"/>
             </telerik:RadScheduleView.ViewDefinitions>
         </telerik:RadScheduleView>
+
+```
+
+
+
+```C#
+
+
 	monthDefintion.SmallChangeInterval = new Telerik.Windows.Controls.ScheduleView.
 	DateTimeInterval(11, 0);
 	timelineDefinition.SmallChangeInterval = new Telerik.Windows.Controls.ScheduleView.
 	DateTimeInterval(3, 0);
+
+```
+
+
 
 # DayStartTimeDayStartTime
 
@@ -93,6 +125,10 @@ The DayStartTime is of type TimeSpan. It will not affect the look of the MonthVi
 
 The following example illustrates how to set the DayStartTime for DayView, WeekView and TimelineView:
       
+
+```XAML
+
+
         <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
             <telerik:RadScheduleView.ViewDefinitions>
                 <telerik:DayViewDefinition DayStartTime="07:30:00"/>
@@ -100,9 +136,21 @@ The following example illustrates how to set the DayStartTime for DayView, WeekV
                 <telerik:TimelineViewDefinition DayStartTime="11:30:00"/>
             </telerik:RadScheduleView.ViewDefinitions>
         </telerik:RadScheduleView>
+
+```
+
+
+
+```C#
+
+
 	dayDefintion.DayStartTime = new TimeSpan(7, 30, 00);
 	weekDefinition.DayStartTime = new TimeSpan(8, 0, 0);
 	timelineDefinition.DayStartTime = new TimeSpan(11, 30, 0);
+
+```
+
+
 
 # DayEndTimeDayEndTime
 
@@ -122,6 +170,10 @@ The DayEndTime property is of type TimeSpan. The MonthView will be affected in t
 
 The following example illustrates how to set the DayStartTime for DayView, WeekView and TimelineView:
       
+
+```XAML
+
+
         <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
             <telerik:RadScheduleView.ViewDefinitions>
                 <telerik:DayViewDefinition DayEndTime="17:30:00"/>
@@ -129,9 +181,21 @@ The following example illustrates how to set the DayStartTime for DayView, WeekV
                 <telerik:TimelineViewDefinition DayEndTime="21:30:00"/>
             </telerik:RadScheduleView.ViewDefinitions>
         </telerik:RadScheduleView>
+
+```
+
+
+
+```C#
+
+
 	dayDefintion.DayStartTime = new TimeSpan(17, 30, 00);
 	weekDefinition.DayStartTime = new TimeSpan(18, 0, 0);
 	timelineDefinition.DayStartTime = new TimeSpan(21, 30, 0);
+
+```
+
+
 
 # VisibleDaysVisibleDays
 
@@ -150,6 +214,10 @@ Gets or sets the visible dates in the view. It indicates the count of the dates 
 
 The following code-snippet illustrates how to set the VisibleDays property in XAML and in code-behind for all predefined views:
       
+
+```XAML
+
+
         <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
             <telerik:RadScheduleView.ViewDefinitions>
                 <telerik:DayViewDefinition VisibleDays="4"/>
@@ -158,10 +226,22 @@ The following code-snippet illustrates how to set the VisibleDays property in XA
                 <telerik:TimelineViewDefinition VisibleDays="9"/>
             </telerik:RadScheduleView.ViewDefinitions>
         </telerik:RadScheduleView>
+
+```
+
+
+
+```C#
+
+
 	dayDefintion.VisibleDays = 4;
 	weekDefinition.VisibleDays = 11;
 	monthDefintion.VisibleDays = 21;
 	timelineDefinition.VisibleDays = 9;
+
+```
+
+
 
 And the result is shown on the next figure for DayView and TimelineView:
                
@@ -195,6 +275,10 @@ Horizontal for TimelineView
 
 The following code-snippets show how to set the Orientation property in XAML and code-behind:
       
+
+```XAML
+
+
         <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
             <telerik:RadScheduleView.ViewDefinitions>
                 <telerik:DayViewDefinition Orientation="Horizontal" />
@@ -202,9 +286,21 @@ The following code-snippets show how to set the Orientation property in XAML and
                 <telerik:TimelineViewDefinition Orientation="Vertical"/>
             </telerik:RadScheduleView.ViewDefinitions>
         </telerik:RadScheduleView>
+
+```
+
+
+
+```C#
+
+
 	dayDefintion.Orientation = Orientation.Horizontal;
 	weekDefinition.Orientation = Orientation.Horizontal;
 	timelineDefinition.Orientation = Orientation.Vertical;
+
+```
+
+
 
 This is how the views look like after setting the Orientation property:
                

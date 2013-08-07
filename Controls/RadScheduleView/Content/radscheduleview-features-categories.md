@@ -43,6 +43,10 @@ The categories used by the RadScheduleView control are represented by the class 
 Each category has three important characteristics:__CategoryName__ - each category has a name assigned. It is used to distinguish that category amongst the others in your application. You can set or get it using the property __Category.CategoryName__ or __Category.DisplayName__.__CategoryBrush__ - each category has a color brush assigned. It is used to mark all of the appointments of that category in your application. You can set it or get it using the property __Category.CategoryBrush__.__Ischecked__ - Used to identify whether or not this category is selected.
 
 The categories available in the RadScheduleView are defined in the CategoriesSource property (IEnumarable). Just add or remove categories to that collection in order to add or remove categories to the RadScheduleView itself.
+
+```XAML
+
+
 <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">								
 	<telerik:RadScheduleView.CategoriesSource>
 		<telerik:CategoryCollection>
@@ -68,7 +72,15 @@ The categories available in the RadScheduleView are defined in the CategoriesSou
 	</telerik:RadScheduleView.ViewDefinitions>		
 </telerik:RadScheduleView>
 
+```
+
+
+
 or
+
+```C#
+
+
 public class MyViewModel : ViewModelBase
 {
 	public ObservableCollection<Appointment> Appointments { get; set; }
@@ -84,6 +96,14 @@ public class MyViewModel : ViewModelBase
 		};
 	}
 }
+
+```
+
+
+
+```XAML
+
+
 <telerik:RadScheduleView x:Name="scheduleView" 
 					AppointmentsSource="{Binding Appointments}"
 					CategoriesSource="{Binding Categories}">		
@@ -92,8 +112,20 @@ public class MyViewModel : ViewModelBase
 	</telerik:RadScheduleView.ViewDefinitions>		
 </telerik:RadScheduleView>
 
+```
+
+
+
 Finally, set the DataContext:
+
+```C#
+
+
 this.DataContext = new MyViewModel();
+
+```
+
+
 
 Here is how the new categories look like:
 

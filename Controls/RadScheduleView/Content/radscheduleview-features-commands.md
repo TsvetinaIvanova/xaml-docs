@@ -22,15 +22,31 @@ When you want to create a new appointment and show the EditAppointmentDialog, th
 The difference between both commands is when neither the parameter nor the __SelectedSlot__ is set. In this case only the __CreateAppointmentWithDialog__ command will show EditAppointmentDialog for the first visible slot, while __CreateAppointment__ command won’t be executed.
 
 
+
+```C#
+
+
 RadScheduleViewCommands.CreateAppointment.Execute(null, ScheduleView);
 RadScheduleViewCommands.CreateAppointmentWithDialog.Execute(null, ScheduleView);
+
+```
+
+
 
 # Create_Inline_AppointmentCreateInlineAppointment Command
 
 Use it when you want to create a new appointment via the inline editing. If no parameter is passed, the __SelectedSlot__ of __RadScheduleView__ will be used for the new appointment start and end dates. If you want to explicitly specify which will be the start and end date you should pass a parameter of type __IDateSpan__ (for example __Slot__ is an __IDateSpan__):
 
 
+
+```C#
+
+
 RadScheduleViewCommands.CreateInlineAppointment.Execute(null, ScheduleView);
+
+```
+
+
     ![note](note.jpg)
     	
 
@@ -42,14 +58,30 @@ IsInlineEditingEnabled property of the RadScheduleView should be set in order to
 Use it when you want to show the edit dialog for an appointment. If no parameters are passed it uses the __SelectedAppointment__ of __RadScheduleView__. By default this command is bound to double click on appointment.
 
 
+
+```C#
+
+
 RadScheduleViewCommands.EditAppointment.Execute(null, ScheduleView);
+
+```
+
+
 
 # Delete_AppointmentDeleteAppointment Command
 
 When you want to remove an appointment from __AppointmentsSource__ collection, then you need to use the __DeleteAppointment__ command. If no parameter is passed the __SelectedAppointment__ will be used.
 
 
+
+```C#
+
+
 RadScheduleViewCommands.DeleteAppointment.Execute(null, ScheduleView);
+
+```
+
+
 
 # Edit_RecurrenceRuleEditRecurrenceRule Command
 
@@ -71,36 +103,76 @@ If you want to edit the master appointment, when the user has initiated editing 
 Executing this command will result in setting the RadScheduleView’s __ActiveViewDefinition__ property to __DayViewDefinition__.
 
 
+
+```C#
+
+
 RadScheduleViewCommands.SetDayViewMode.Execute(null, ScheduleView);
+
+```
+
+
 
 # SetWeekViewModeSetWeekViewMode Command
 
 Executing this command will result in setting the RadScheduleView's __ActiveViewDefinition__ property to __WeekViewDefinition__.
 
 
+
+```C#
+
+
 RadScheduleViewCommands.SetWeekViewMode.Execute(null, ScheduleView);
+
+```
+
+
 
 # SetMonthViewModeSetMonthViewMode Command
 
 Executing this command will result in setting the RadScheduleView's __ActiveViewDefinition__ property to __MonthViewDefinition__.
 
 
+
+```C#
+
+
 RadScheduleViewCommands.SetMonthViewMode.Execute(null, ScheduleView);
+
+```
+
+
 
 # SetTimelineViewModeSetTimelineViewMode Command
 
 Executing this command will result in setting the RadScheduleView's __ActiveViewDefinition__ property to __TimelineViewDefinition__.
 
 
+
+```C#
+
+
 RadScheduleViewCommands.SetTimelineViewMode.Execute(null, ScheduleView);
+
+```
+
+
 
 # IncreaseVisibleDateLargeIncreaseVisibleDateLarge /  DecreaseVisibleDateLarge Commands
 
 Increases/decreases the first visible date with n months or days, where n is the value of the __LargeChangeInterval__ property of the ActiveViewDefinition. Executing this command is equivalent to changing the displayed days using the navigation buttons.
 
 
+
+```C#
+
+
 RadScheduleViewCommands.IncreaseVisibleDateLarge.Execute(null, ScheduleView);
 RadScheduleViewCommands.DecreaseVisibleDateLarge.Execute(null, ScheduleView);
+
+```
+
+
 
 # SetAppointmentImportanceSetAppointmentImportance Command
 
@@ -112,5 +184,13 @@ When you want to set the Appointment's Importance property, then you need to exe
 Use these commands when you want to navigate to the previous/next appointment outside the visible range:
 
 
+
+```C#
+
+
 RadScheduleViewCommands.GoToPreviousAppointment.Execute(null, ScheduleView);
 RadScheduleViewCommands.GoToNextAppointment.Execute(null, ScheduleView);
+
+```
+
+

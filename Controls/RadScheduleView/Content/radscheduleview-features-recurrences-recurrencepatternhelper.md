@@ -26,6 +26,10 @@ The purpose of this tutorial is to show you how to:[Serialize](#Serialize_a_Recu
 
           For example, consider the following __RecurrencePattern__ declaration:
         
+
+```C#
+
+
 var pattern = new RecurrencePattern()
 {
     Frequency = RecurrenceFrequency.Daily,
@@ -33,6 +37,14 @@ var pattern = new RecurrencePattern()
     Interval = 3,
     MaxOccurrences = 10
 };
+
+```
+
+
+
+```VB.NET
+
+
 Dim pattern = New RecurrencePattern() With {
     .Frequency = RecurrenceFrequency.Daily,
     .DaysOfWeekMask = RecurrenceDays.WeekDays,
@@ -40,13 +52,33 @@ Dim pattern = New RecurrencePattern() With {
     .MaxOccurrences = 10
 }
 
+```
+
+
+
 A new daily recurrence pattern is created that occurs only in the week days. The interval between each occurrence is three days. The pattern has a limit of ten occurrences.
 
 
           The next code snippet demonstrates you how to use the __RecurrencePatternToString()__ static method.
         
+
+```C#
+
+
 var serializedPattern = RecurrencePatternHelper.RecurrencePatternToString(pattern);
+
+```
+
+
+
+```VB.NET
+
+
 Dim serializedPattern = RecurrencePatternHelper.RecurrencePatternToString(pattern)
+
+```
+
+
 
 
           After executing the above example the result string will be: __FREQ=DAILY;COUNT=10;INTERVAL=3;BYDAY=MO,TU,WE,TH,FR__.
@@ -65,11 +97,27 @@ Dim serializedPattern = RecurrencePatternHelper.RecurrencePatternToString(patter
 
           Consider the serialized string from the previous example: __FREQ=DAILY;COUNT=10;INTERVAL=3;BYDAY=MO,TU,WE,TH,FR__. If you want to produce a recurrence pattern from that string, invoke the __TryParseRecurrencePattern__ method like in the example below.
         
+
+```C#
+
+
 var serializedPattern = "FREQ=DAILY;COUNT=10;INTERVAL=3;BYDAY=MO,TU,WE,TH,FR";
 RecurrencePattern pattern;
 RecurrencePatternHelper.TryParseRecurrencePattern(serializedPattern, out pattern);
+
+```
+
+
+
+```VB.NET
+
+
 Dim serializedPattern As String = "FREQ=DAILY;COUNT=10;INTERVAL=3;BYDAY=MO,TU,WE,TH,FR"
 Dim pattern As RecurrencePattern
 RecurrencePatternHelper.TryParseRecurrencePattern(serializedPattern, pattern)
+
+```
+
+
 
 The result will be a new daily recurrence pattern that occurs only in the week days. The interval between each occurrence is three days. The pattern has a limit of ten occurrences.[RecurrencePattern](http://radscheduleview-features-recurrences-recurrencepattern.md)[RecurrenceRule](http://radscheduleview-features-recurrences-recurrencerule.md)

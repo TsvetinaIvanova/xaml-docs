@@ -53,6 +53,10 @@ The purpose of this tutorial is to show you:
     	
           The __RecurrencePattern__ is a mandatory part of the __RecurrenceRule__. Which means that when creating a new __RecurrenceRule__ you must associate the rule with a recurrence pattern.
         
+
+```C#
+
+
 var startDate = new DateTime(2011, 05, 11, 10, 0, 0);
 var fitnessAppointment = new Appointment()
 {
@@ -67,6 +71,14 @@ var recurrencePattern = new RecurrencePattern()
     DaysOfWeekMask = RecurrenceDays.Monday | RecurrenceDays.Wednesday | RecurrenceDays.Friday
 };        
 fitnessAppointment.RecurrenceRule = new RecurrenceRule(recurrencePattern);
+
+```
+
+
+
+```VB.NET
+
+
 Dim startDate = New DateTime(2011, 5, 11, 10, 0, 0)
 Dim fitnessAppointment = New Appointment() With {
     .Start = startDate,
@@ -79,6 +91,10 @@ Dim recurrencePattern = New RecurrencePattern() With {
     .DaysOfWeekMask = RecurrenceDays.Monday Or RecurrenceDays.Wednesday Or RecurrenceDays.Friday
 }
 fitnessAppointment.RecurrenceRule = New RecurrenceRule(recurrencePattern)
+
+```
+
+
 
 The above example shows you how to create a recurrence pattern, then how to associate it with a recurrence rule. Finally the recurrence rule is assigned to an appointment.
 
@@ -102,6 +118,10 @@ When you want to add an exception to a recurrence you need to use this method.
         
 
 One possible scenario of adding an exception to a recurrence rule is shown in the next example:Create a new appointment. 
+
+```C#
+
+
 var startDate = new DateTime(2011, 05, 11, 10, 0, 0);
 var fitnessAppointment = new Appointment()
 {
@@ -109,38 +129,114 @@ var fitnessAppointment = new Appointment()
     End = startDate.AddHours(2),
     Subject = "Fitness"
 };
+
+```
+
+
+
+```VB.NET
+
+
 Dim startDate = New DateTime(2011, 5, 11, 10, 0, 0)
 Dim fitnessAppointment = New Appointment() With {
     .Start = startDate,
     .[End] = startDate.AddHours(2),
     .Subject = "Fitness"
 }
+
+```
+
+
             Create a [RecurrencePattern](3F113E6D-5519-40FD-A3B3-6A46B2489318).
           
+
+```C#
+
+
 var recurrencePattern = new RecurrencePattern()
 {
     Frequency = RecurrenceFrequency.Daily,
     DaysOfWeekMask = RecurrenceDays.Wednesday,
     MaxOccurrences = 10
 };
+
+```
+
+
+
+```VB.NET
+
+
 Dim recurrencePattern = New RecurrencePattern() With {
     .Frequency = RecurrenceFrequency.Daily,
     .DaysOfWeekMask = RecurrenceDays.Wednesday,
     .MaxOccurrences = 10
-}[Create](#How_to_Create_a_Recurrence_Rule_and_Associate_it_With_an_Appointment) a __RecurrenceRule__ and associate the create recurrence pattern with it.
+}
+
+```
+
+[Create](#How_to_Create_a_Recurrence_Rule_and_Associate_it_With_an_Appointment) a __RecurrenceRule__ and associate the create recurrence pattern with it.
           
+
+```C#
+
+
 var rule = new RecurrenceRule(recurrencePattern);
-Dim rule = New RecurrenceRule(recurrencePattern)Add an exception occurrence to the recurrence rule. 
+
+```
+
+
+
+```VB.NET
+
+
+Dim rule = New RecurrenceRule(recurrencePattern)
+
+```
+
+Add an exception occurrence to the recurrence rule. 
+
+```C#
+
+
 var exceptionDate = fitnessAppointment.Copy()
 exceptionDate.Start = fitnessAppointment.Start.AddDays(-1);
 exceptionDate.End = fitnessAppointment.End.AddDays(-1);          
 rule.AddException(startDate, exceptionDate);
+
+```
+
+
+
+```VB.NET
+
+
 Dim exceptionDate = fitnessAppointment.Copy()
 exceptionDate.Start = fitnessAppointment.Start.AddDays(-1)
 exceptionDate.[End] = fitnessAppointment.[End].AddDays(-1)
-rule.AddException(startDate, exceptionDate)Associate the create recurrence rule with the appointment. 
+rule.AddException(startDate, exceptionDate)
+
+```
+
+Associate the create recurrence rule with the appointment. 
+
+```C#
+
+
 fitnessAppointment.RecurrenceRule = rule;
+
+```
+
+
+
+```VB.NET
+
+
 fitnessAppointment.RecurrenceRule = rule
+
+```
+
+
 
 
 

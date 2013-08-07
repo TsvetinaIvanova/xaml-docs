@@ -17,6 +17,10 @@ Before we proceed, check these topics:[Implementing View-ViewModel](16E2654A-281
 
         Let’s have the following __RadScheduleView__ with EditAppointmentDialogStyle set to the generated Style:
       
+
+```XAML
+
+
 <telerik:RadScheduleView x:Name="ScheduleView"
     AppointmentsSource="{Binding Appointments}"
     EditAppointmentDialogStyle="{StaticResource EditAppointmentDialogStyle}">
@@ -26,16 +30,32 @@ Before we proceed, check these topics:[Implementing View-ViewModel](16E2654A-281
    </telerik:RadScheduleView.ViewDefinitions>
 </telerik:RadScheduleView>
 
+```
+
+
+
 RadComboBox is added to the ControlTemplate of the EditAppointmentDialog:
+
+```XAML
+
+
 <ControlTemplate x:Key="EditAppointmentTemplate" TargetType="local:SchedulerDialog">
   ... 
     <telerik:RadComboBox  />
   ...    
 </ControlTemplate>
 
+```
+
+
+
 
         The ViewModel of the __ScheduleView__ has an additional property called “ComboBoxItems” which will be used to populate it:
       
+
+```C#
+
+
 public class MyViewModel:ViewModelBase
 {
     public ObservableCollection<Appointment> Appointments
@@ -62,6 +82,14 @@ public class MyViewModel:ViewModelBase
         };
     }
 }
+
+```
+
+
+
+```VB.NET
+
+
 Public Class MyViewModel
     Public Property Appointments() As ObservableCollection(Of Appointment)
         Get
@@ -98,16 +126,36 @@ Public Class MyViewModel
     End Sub
 End Class
 
+```
+
+
+
 # bindingtodatacontext
 
 If the DataContext is set in XAML:
+
+```XAML
+
+
 <UserControl.Resources>
     <my:MyViewModel x:Key="MyViewModel" />
     ...
 </UserControl.Resources>
 
+```
+
+
+
 The ItemsSource can be bound like this:
+
+```XAML
+
+
 <telerik:RadComboBox ItemsSource="{Binding Source={StaticResource MyViewModel}, Path=ComboBoxItems, Mode=TwoWay}" />
+
+```
+
+
 
 Here is the result:
 
@@ -124,5 +172,13 @@ Here is the result:
           
 
 
+
+```XAML
+
+
 <telerik:RadComboBox SelectedItem="{Binding Occurrence.Appointment.ComboBoxItem, Mode=TwoWay}"
             ItemsSource="{Binding Source={StaticResource MyViewModel}, Path=ComboBoxItems, Mode=TwoWay}" />
+
+```
+
+

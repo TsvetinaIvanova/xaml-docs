@@ -24,6 +24,10 @@ Let’s have the following ScheduleView grouped by “Location” resource type:
 		
 
 
+
+```XAML
+
+
 <telerik:RadScheduleView ResourceTypesSource="{Binding ResourceTypes}"  ...>		
 	<telerik:RadScheduleView.ViewDefinitions>
 		<telerik:DayViewDefinition GroupFilter="{Binding GroupFilter}" />
@@ -35,8 +39,16 @@ Let’s have the following ScheduleView grouped by “Location” resource type:
 	</telerik:RadScheduleView.GroupDescriptionsSource>
 </telerik:RadScheduleView>
 
+```
+
+
+
 We will add checkboxes for each resource in order to allow the user to change their Visibility:
 		
+
+
+
+```XAML
 
 
 <StackPanel>
@@ -45,7 +57,15 @@ We will add checkboxes for each resource in order to allow the user to change th
 	<CheckBox Content="Show Room3" IsChecked="{Binding ShowRoom3, Mode=TwoWay}" />
 </StackPanel>
 
+```
+
+
+
 Next step is to add the ShowRoom1, ShowRoom2, etc . Boolean properties and the GroupFilter predicate to the ViewModel:
+
+
+
+```C#
 
 
 public class ViewModel : ViewModelBase
@@ -118,7 +138,15 @@ public class ViewModel : ViewModelBase
 	}
 }
 
+```
+
+
+
 Add the UpdateGroupFilter() method:
+
+
+
+```C#
 
 
 private bool GroupFilterFunc(object groupName)
@@ -142,6 +170,10 @@ private void UpdateGroupFilter()
 {
 	this.GroupFilter = new Func<object, bool>(this.GroupFilterFunc);
 }
+
+```
+
+
 
 So checking/unchecking the checkboxes will update the visible Resources in the ViewDefintion:
 
@@ -173,14 +205,30 @@ For example, if we have the RadScheduleView grouped again by “Location” Reso
 Calling the following code will add an additional “Room4” resource:
 
 
+
+```C#
+
+
 locationResType.Resources.Add(new Resource("Room4"));
 ResourceTypes.Remove(locationResType);
 ResourceTypes.Add(locationResType);
 
+```
+
+
+
 where __ResourceTypes__ is the collection to which ResourceTypesSource property of the ScheduleView is bound:
 
 
+
+```XAML
+
+
 <telerik:RadScheduleView ResourceTypesSource="{Binding ResourceTypes}" … />
+
+```
+
+
 
 This will lead to the following result:
 

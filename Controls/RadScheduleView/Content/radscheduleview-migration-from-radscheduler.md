@@ -30,12 +30,20 @@ __AppointmentStyleSelector__ -> [http://demos.telerik.com/wpf?ScheduleView/Custo
 
                 You could use the __ResourceGroupDescription.ShowNullGroup__ property. For example:
               
+
+```XAML
+
+
 <telerik:RadScheduleView.GroupDescriptionsSource>
     <telerik:GroupDescriptionCollection>
      <telerik:ResourceGroupDescription ResourceType="Room" ShowNullGroup="True" />
      <telerik:ResourceGroupDescription ResourceType="User"  />
     </telerik:GroupDescriptionCollection>
-</telerik:RadScheduleView.GroupDescriptionsSource>__TimeRulerStyle____TimeRulerItemStyleSelector__, __TimeRulerItemTemplateSelector__ (to make it work the __TimeRulerItemTemplateSelector__ and __TimeRulerItemTemplate__ must be set to __{x:Null}__)
+</telerik:RadScheduleView.GroupDescriptionsSource>
+
+```
+
+__TimeRulerStyle____TimeRulerItemStyleSelector__, __TimeRulerItemTemplateSelector__ (to make it work the __TimeRulerItemTemplateSelector__ and __TimeRulerItemTemplate__ must be set to __{x:Null}__)
               
 
 [http://demos.telerik.com/wpf/?ScheduleView/CustomStyles/TimeRulerStyle](http://demos.telerik.com/wpf/?ScheduleView/CustomStyles/TimeRulerStyle)[http://demos.telerik.com/silverlight/#ScheduleView/CustomStyles/TimeRulerStyle](http://demos.telerik.com/silverlight/#ScheduleView/CustomStyles/TimeRulerStyle)__EditAppointmentStyle____EditAppointmentDialogStyle____IsBackAndForwardNavigationEnabled____IsViewModeNavigationEnabled____NavigationHeaderVisibility____ViewMode____ActiveViewDefinition__, __ActiveViewDefinitionIndex____GroupBy__
@@ -43,20 +51,36 @@ __AppointmentStyleSelector__ -> [http://demos.telerik.com/wpf?ScheduleView/Custo
 
                 Add __GroupDescription__ and to the __GroupDescriptionSource__. For example:
               
+
+```XAML
+
+
 <telerik:RadScheduleView.GroupDescriptionsSource>
 <telerik:GroupDescriptionCollection>     <telerik:ResourceGroupDescription ResourceType="Category" />
 <telerik:ResourceGroupDescription ResourceType="Level" />
 </telerik:GroupDescriptionCollection>
 </telerik:RadScheduleView.GroupDescriptionsSource>
 
+```
+
+
+
 [http://demos.telerik.com/wpf/?ScheduleView/Grouping/Basics](http://demos.telerik.com/wpf/?ScheduleView/Grouping/Basics)__View definitions__ and properties
             
+
+```XAML
+
+
 <telerik:RadScheduleView.ViewDefinitions>
  <telerik:DayViewDefinition VisibleDays="" FirstDayOfWeek=" " LargeChangeInterval="" MinorTickLength="" MinTimeRulerExtent="" Orientation=" " />
  <telerik:WeekViewDefinition/>
  <telerik:MonthViewDefinition/>
  <telerik:TimelineViewDefinition/>
-</telerik:RadScheduleView.ViewDefinitions>__TimeSlotTemplateSelector____SpecialSlotStyleSelector__, __SpecialSlotsSource__
+</telerik:RadScheduleView.ViewDefinitions>
+
+```
+
+__TimeSlotTemplateSelector____SpecialSlotStyleSelector__, __SpecialSlotsSource__
 
 
                 Please refer to [this article](3386B28A-7C00-4629-B290-4EDE1A0ABB9F).
@@ -69,12 +93,20 @@ __AppointmentStyleSelector__ -> [http://demos.telerik.com/wpf?ScheduleView/Custo
 
                 Depends on which __ViewDefinitions__ are defined:
               
+
+```XAML
+
+
 <telerik:RadScheduleView.ViewDefinitions>
  <telerik:DayViewDefinition  />
  <telerik:WeekViewDefinition />
  …
  <telerik:TimelineViewDefinition />
-</telerik:RadScheduleView.ViewDefinitions>__Culture__There is no such property. Use LocalizationManager.DefaultCulture instead.__TimeFormatString__, __DayHeaderFormat__, __MonthViewDayHeaderDayFormat__, __MonthViewDayHeaderMonthFormat__, __TimelineHeaderFormat____TimerulerMajorTickStringFormat__, __GroupHeaderDateStringFormat__, __TimerulerMinorTickStringFormat__ properties on the view definitions
+</telerik:RadScheduleView.ViewDefinitions>
+
+```
+
+__Culture__There is no such property. Use LocalizationManager.DefaultCulture instead.__TimeFormatString__, __DayHeaderFormat__, __MonthViewDayHeaderDayFormat__, __MonthViewDayHeaderMonthFormat__, __TimelineHeaderFormat____TimerulerMajorTickStringFormat__, __GroupHeaderDateStringFormat__, __TimerulerMinorTickStringFormat__ properties on the view definitions
             __ResourceStyleMapping____GroupHeaderStyleSelector__ and __GroupHeaderContentTemplateSelector____Edit____Appointment__ using code
               
 
@@ -83,20 +115,52 @@ __AppointmentStyleSelector__ -> [http://demos.telerik.com/wpf?ScheduleView/Custo
 
                 Using the __BeginEdit()__ method of the __RadScheduleView__, which returns whether or not the appointment or the occurrence can be edited. If __BeginEdit()__ is True the appointment or occurrence can be edited. Call __Commit()__ to commit the changes:
               
+
+```C#
+
+
 if (this.radScheduleView.BeginEdit(appointment))
 {   
     appointment.Subject = "New Subject";
     this.radScheduleView.Commit();
 }
+
+```
+
+
+
+```VB.NET
+
+
 If Me.radScheduleView.BeginEdit(appointment) Then
  appointment.Subject = "New Subject"
  Me.radScheduleView.Commit()
-End If__Delete Appointment__ using code:
+End If
+
+```
+
+__Delete Appointment__ using code:
             
 
 Using the Remove() method of the RadScheduleView(), which returns whether or not the appointment or occurrence can be removed.
+
+```C#
+
+
 this.radScheduleView.Remove(appointment);
+
+```
+
+
+
+```VB.NET
+
+
 Me.radScheduleView.Remove(appointment)
+
+```
+
+
 
 
 

@@ -21,8 +21,24 @@ publish:True
 
           To apply custom localization to your controls just instantiate your custom __LocalizationManager__ and set it to the static property __LocalizationManager.Manager__, before the creation of the UI.
         
+
+```C#
+
+
 LocalizationManager.Manager = new CustomLocalizationManager();
+
+```
+
+
+
+```VB.NET
+
+
 LocalizationManager.Manager = New CustomLocalizationManager()
+
+```
+
+
 
 
     ![note](note.jpg)
@@ -65,12 +81,28 @@ The snapshot below shows the content of the __ScheduleViewResources.de.resx__ fi
 
           The last step is to instantiate the __LocalizationManager__ class and set its __ResourceManager__ to the resources that have been just created.
         
+
+```C#
+
+
 LocalizationManager.Manager = new LocalizationManager()
 {
    ResourceManager = ScheduleViewResources.ResourceManager
 };
+
+```
+
+
+
+```VB.NET
+
+
 LocalizationManager.Manager = New LocalizationManager()
 LocalizationManager.Manager.ResourceManager = ScheduleViewResources.ResourceManager
+
+```
+
+
     ![note](note.jpg)
     	
 
@@ -91,6 +123,10 @@ LocalizationManager.Manager.ResourceManager = ScheduleViewResources.ResourceMana
 
           The other way to localize your __RadScheduleView__ control is to create a class that derives from the __LocalizationManager__ object and to override its method __GetStringOverride()__. The logic is pretty simple, you just have to create a switch statement and return the correct translation for each resource key,____as it is shown below:
         
+
+```C#
+
+
 public class CustomLocalizationManager : LocalizationManager
 {
    public override string GetStringOverride( string key )
@@ -115,6 +151,14 @@ public class CustomLocalizationManager : LocalizationManager
        return base.GetStringOverride( key );
    }
 }
+
+```
+
+
+
+```VB.NET
+
+
 Public Class CustomLocalizationManager
     Inherits LocalizationManager
     Public Overloads Overrides Function GetStringOverride(ByVal key As String) As String
@@ -138,9 +182,17 @@ Public Class CustomLocalizationManager
     End Function
 End Class
 
+```
+
+
+
 
 
 Of course, if you don't want to hard-code your translation inside your source code, you can always use resource files:
+
+
+
+```C#
 
 
 public override string GetStringOverride( string key )
@@ -154,6 +206,14 @@ public override string GetStringOverride( string key )
    }
    return base.GetStringOverride( key );
 }
+
+```
+
+
+
+```VB.NET
+
+
 Public Overloads Overrides Function GetStringOverride(ByVal key As String) As String
     Select Case key
         '----------------------
@@ -163,6 +223,10 @@ Public Overloads Overrides Function GetStringOverride(ByVal key As String) As St
     End Select
     Return MyBase.GetStringOverride(key)
 End Function
+
+```
+
+
 
 # RadScheduler_Resource_KeysRadScheduleView Resource Keys
 
@@ -180,6 +244,10 @@ __RadScheduleView__ provides you with built-in resources for several cultures:  
         
 
 
+
+```C#
+
+
 public partial class App : Application
 {
    public App()
@@ -192,3 +260,7 @@ public partial class App : Application
        InitializeComponent();
    }
 }
+
+```
+
+

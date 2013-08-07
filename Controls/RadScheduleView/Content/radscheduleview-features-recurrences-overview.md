@@ -27,40 +27,120 @@ __RadScheduleView__ includes support for recurring events on daily, weekly, mont
           
 
 Consider the following example:Create a sample appointment that starts at 11/05/2011 10:00 AM and lasts half an hour: 
+
+```C#
+
+
 var startDate = new DateTime(2011, 05, 11, 10, 0, 0);
 var appointment = new Appointment() {
     Start = startDate,
     End = startDate.AddMinutes(30),
     Subject = "Daily appointment"
 };
+
+```
+
+
+
+```VB.NET
+
+
 Dim startDate = New DateTime(2011, 5, 11, 10, 0, 0)
 Dim appointment = New Appointment() With {
     .Start = startDate,
     .End = startDate.AddMinutes(30),
     .Subject = "Daily appointment"
-}Create a daily recurrence pattern, that specifies a limit of 4 occurrences for the appointment: 
+}
+
+```
+
+Create a daily recurrence pattern, that specifies a limit of 4 occurrences for the appointment: 
+
+```C#
+
+
 var pattern = new RecurrencePattern() {
     Frequency = RecurrenceFrequency.Daily,
     DaysOfWeekMask = RecurrenceDays.EveryDay,
     MaxOccurrences = 4
 };
+
+```
+
+
+
+```VB.NET
+
+
 Dim pattern = New RecurrencePattern() With {
     .Frequency = RecurrenceFrequency.Daily,
     .DaysOfWeekMask = RecurrenceDays.EveryDay,
     .MaxOccurrences = 4
-}Set the recurrence rule to appointment: 
+}
+
+```
+
+Set the recurrence rule to appointment: 
+
+```C#
+
+
 appointment.RecurrenceRule = new RecurrenceRule(pattern);
-appointment.RecurrenceRule = New RecurrenceRule(pattern)Add exception date to the recurrence rule: 
+
+```
+
+
+
+```VB.NET
+
+
+appointment.RecurrenceRule = New RecurrenceRule(pattern)
+
+```
+
+Add exception date to the recurrence rule: 
+
+```C#
+
+
 appointment.RecurrenceRule.AddException(new DateTime(2011, 05, 14, 10, 0, 0));
-appointment.RecurrenceRule.AddException(New DateTime(2011, 5, 14, 10, 0, 0))Create an exception appointment: 
+
+```
+
+
+
+```VB.NET
+
+
+appointment.RecurrenceRule.AddException(New DateTime(2011, 5, 14, 10, 0, 0))
+
+```
+
+Create an exception appointment: 
+
+```C#
+
+
 var exceptionAppointment = (Appointment)appointment.Copy();
 exceptionAppointment.Start = new DateTime(2011, 05, 18, 11, 0, 0);
 exceptionAppointment.End = exceptionAppointment.Start.AddMinutes(45);
 appointment.RecurrenceRule.AddException(new DateTime(2011, 05, 15, 10, 0, 0), exceptionAppointment);
+
+```
+
+
+
+```VB.NET
+
+
 Dim exceptionAppointment As Appointment = DirectCast(appointment.Copy(), Appointment)
 exceptionAppointment.Start = New DateTime(2011, 5, 15, 11, 0, 0)
 exceptionAppointment.End = exceptionAppointment.Start.AddMinutes(45)
 appointment.RecurrenceRule.AddException(New DateTime(2011, 5, 15, 10, 0, 0), exceptionAppointment)
+
+```
+
+
 
 
           Finally when you add the created appointment to the collection bound to the __AppointmentsSource__ property of the __RadScheduleView__, you'll get four generated appointments:

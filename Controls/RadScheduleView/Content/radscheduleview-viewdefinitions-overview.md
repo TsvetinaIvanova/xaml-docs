@@ -62,6 +62,10 @@ WeekViewDefinition
 
          In order to include each one of the views in the RadScheduleView, they have to be defined as follows:
         
+
+```XAML
+
+
         <telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" x:Name="scheduleView">
             <telerik:RadScheduleView.ViewDefinitions>
                 <telerik:DayViewDefinition/>
@@ -70,6 +74,14 @@ WeekViewDefinition
                 <telerik:TimelineViewDefinition/>
             </telerik:RadScheduleView.ViewDefinitions>
         </telerik:RadScheduleView>
+
+```
+
+
+
+```C#
+
+
             MonthViewDefinition monthDefintion = new MonthViewDefinition();
             DayViewDefinition dayDefintion = new DayViewDefinition();
             WeekViewDefinition weekDefinition = new WeekViewDefinition();
@@ -78,4 +90,8 @@ WeekViewDefinition
             this.scheduleView.ViewDefinitions.Add(dayDefintion);
             this.scheduleView.ViewDefinitions.Add(timelineDefinition);
             this.scheduleView.ViewDefinitions.Add(weekDefinition);
+
+
+```
+
 [Configuration](http://radscheduleview-viewdefinitions-configuration.md)[View specific properties](http://radscheduleview-viewdefinitions-specificproperties.md)[How to configure the VisibleRange](http://radscheduleview-features-viewdefinitions-configure-visiblerange.md)

@@ -13,6 +13,10 @@ publish:True
 When the models are defined, we need to create the __ViewModel__ (refer to __ScheduleViewViewModel__ class) and bind the ScheduleView control in the xaml:
 
 
+
+```XAML
+
+
 <Grid x:Name="LayoutRoot" Background="White">
 	<Grid.RowDefinitions>
 		<RowDefinition Height="*"/>
@@ -42,12 +46,20 @@ When the models are defined, we need to create the __ViewModel__ (refer to __Sch
 	</telerik:RadBusyIndicator>
 	<Button Grid.Row="1" Content="Save data" HorizontalAlignment="Center" Command="{Binding SaveCommand}" VerticalAlignment="Center"/>
 </Grid>
+
+```
+
+
     ![note](note.jpg)
     	
 
 The appointments are loaded from the database when the VisibleRangeChanged command is executed.
 
 When "Save data" button is clicked, we save the data to the server.
+
+
+
+```C#
 
 
 private void OnSaveExecuted(object param) 
@@ -61,6 +73,10 @@ public static bool SaveData()
 {
 	return ScheduleViewRepository.Context.SaveChanges() > 0;
 }
+
+```
+
+
 
 # ViewModel
 
@@ -76,6 +92,10 @@ public static bool SaveData()
 Here is the code:
 
 
+
+```C#
+
+
 private void LoadData()
 {
 	this.ResourceTypes.AddRange(ScheduleViewRepository.Context.SqlResourceTypes);
@@ -85,8 +105,16 @@ private void LoadData()
 	this.Categories.AddRange(ScheduleViewRepository.Context.Categories);
 }
 
+```
+
+
+
 Also, we need to handle the Appointments.CollectionChanged event and in the handler we add or remove the items from the ObjectSets:
         
+
+
+
+```C#
 
 
 private void OnAppointmentsCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
@@ -125,6 +153,10 @@ private void OnAppointmentsCollectionChanged(object sender, NotifyCollectionChan
 		}
 	}
 }
+
+```
+
+
 
 
         You can download the complete project from 

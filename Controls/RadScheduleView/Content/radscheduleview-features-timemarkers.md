@@ -35,6 +35,10 @@ Each time marker has three important characteristics:__TimeMarkerName__ - each t
 
 The time markers available in the RadScheduleView are defined in the TimeMarkersSource property (IEnumarable). Just add or remove time markers to that collection in order to add or remove time markers to the RadScheduleView itself.
 		
+
+```XAML
+
+
 <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
 		<telerik:RadScheduleView.TimeMarkersSource>
 			<telerik:TimeMarkerCollection>
@@ -47,7 +51,15 @@ The time markers available in the RadScheduleView are defined in the TimeMarkers
 	</telerik:RadScheduleView.ViewDefinitions>		
 </telerik:RadScheduleView>
 
+```
+
+
+
 or
+
+```C#
+
+
 public class MyViewModel : ViewModelBase
 {
 	public ObservableCollection<Appointment> Appointments { get; set; }
@@ -62,6 +74,14 @@ public class MyViewModel : ViewModelBase
 		};
 	}
 }
+
+```
+
+
+
+```XAML
+
+
 <telerik:RadScheduleView x:Name="scheduleView" 
 			AppointmentsSource="{Binding Appointments}"
 			TimeMarkersSource="{Binding TimeMarkers}">		
@@ -70,8 +90,20 @@ public class MyViewModel : ViewModelBase
 	</telerik:RadScheduleView.ViewDefinitions>		
 </telerik:RadScheduleView>
 
+```
+
+
+
 Finally, set the DataContext:
+
+```C#
+
+
 this.DataContext = new MyViewModel();
+
+```
+
+
 
 Here is the result:
 

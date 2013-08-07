@@ -9,19 +9,35 @@ publish:True
 
 
 RadScheduleView provides the option to automatically snap the appointments while resizing/dragging them. This behavior is enabled through the __SnapAppointments__ Boolean property:
+
+```XAML
+
+
 <telerik:RadScheduleView SnapAppointments="True">
 ...
 </telerik:RadScheduleView>
+
+```
+
+
 
 This way during drag/resize operation the Start/End times of the appointment will be rounded according to the TimeSlots’ length:![radscheduleview snapappointments 1](../Media/radscheduleview_snapappointments_1.png)
 
 You could set MinorTickLength property of the ViewDefinition in order to snap the appointments to different duration:
      
+
+```XAML
+
+
 <telerik:RadScheduleView SnapAppointments="True">		
 	<telerik:RadScheduleView.ViewDefinitions>
 		<telerik:DayViewDefinition MinorTickLength = "15min" />		
 	</telerik:RadScheduleView.ViewDefinitions>	
 </telerik:RadScheduleView>
+
+```
+
+
 
 And the result is:![radscheduleview snapappointments 2](../Media/radscheduleview_snapappointments_2.png)
     ![tip](tip.jpg)
@@ -38,11 +54,23 @@ For more advanced scenarios when snapping of the appointments is not directly co
 In the next example it is demonstrated how to set the snapping to 5 minutes regardless of the TimeSlots length.
 
 First, create CustomSnapBehavior class:
+
+```C#
+
+
 public class CustomSnapBehavior : Telerik.Windows.Controls.ScheduleView.SnapBehavior
 {
 }
 
+```
+
+
+
 Override the needed methods:
+
+```C#
+
+
 public class CustomSnapBehavior : Telerik.Windows.Controls.ScheduleView.SnapBehavior
 {
 
@@ -82,12 +110,24 @@ public class CustomSnapBehavior : Telerik.Windows.Controls.ScheduleView.SnapBeha
 	}
 }
 
+```
+
+
+
 Attach the newly created custom behavior to the ScheduleView control:
+
+```XAML
+
+
 <telerik:RadScheduleView SnapAppointments="True">
 	...
 	<telerik:RadScheduleView.SnapBehavior>
 		<local:CustomSnapBehavior />
 	</telerik:RadScheduleView.SnapBehavior>
 </telerik:RadScheduleView>
+
+```
+
+
 
 So now the appointments are snapped to 5 minutes:![radscheduleview snapappointments 3](../Media/radscheduleview_snapappointments_3.png)

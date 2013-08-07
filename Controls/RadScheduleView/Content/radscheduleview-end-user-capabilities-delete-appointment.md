@@ -33,5 +33,21 @@ Select the option you wish and click 'OK' to confirm the deletion or 'Cancel' to
           __Remove(IAppointment appointment)__ - the passed appointment is deleting.
               __Remove(Occurrence occurrence)__ - the passed occurrence is deleting.
               
+
+```C#
+
+
 this.radScheduleView.Remove(appointment);
-Me.radScheduleView.Remove(appointment)[Understanding Appointments](http://radscheduleview-getting-started-add-edit-delete-appointment.md)[Create Appointment](http://radscheduleview-end-user-capabilities-create-appointment.md)[Edit Appointment](http://radscheduleview-end-user-capabilities-edit-appointment.md)
+
+```
+
+
+
+```XAML
+
+
+Me.radScheduleView.Remove(appointment)
+
+```
+
+[Understanding Appointments](http://radscheduleview-getting-started-add-edit-delete-appointment.md)[Create Appointment](http://radscheduleview-end-user-capabilities-create-appointment.md)[Edit Appointment](http://radscheduleview-end-user-capabilities-edit-appointment.md)

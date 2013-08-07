@@ -27,23 +27,51 @@ There are two approaches to accomplish this. You can choose one of them accordin
             
 
 
+
+```XAML
+
+
 <telerik:RadScheduleView VisibleRangeChanged="scheduleView_VisibleRangeChanged">
 ...
 </telerik:RadScheduleView>
+
+```
+
+
             Get the VisibleRange from the sender:
             
+
+
+
+```C#
 
 
 private void scheduleView_VisibleRangeChanged(object sender, System.EventArgs e)
 {
  var range = (sender as RadScheduleView).VisibleRange;
  }
+
+```
+
+
+
+```VB.NET
+
+
 Private Sub scheduleView_VisibleRangeChanged(sender As Object, e As System.EventArgs)
 
  Dim range = TryCast(sender, RadScheduleView).VisibleRange
  End Sub
+
+```
+
+
             Load the appointments:
             
+
+
+
+```C#
 
 
 private void scheduleView_VisibleRangeChanged(object sender, System.EventArgs e)
@@ -51,16 +79,32 @@ private void scheduleView_VisibleRangeChanged(object sender, System.EventArgs e)
    var range = (sender as RadScheduleView).VisibleRange;
    this.LoadAppointmentsByRange(range);
 }
+
+```
+
+
+
+```VB.NET
+
+
 Private Sub scheduleView_VisibleRangeChanged(sender As Object, e As System.EventArgs)
 
  Dim range = TryCast(sender, RadScheduleView).VisibleRange
  Me.LoadAppointmentsByRange(range)
 End Sub
 
+```
+
+
+
 # 
         Using the __VisibleRangeChangedCommand__Create a RadScheduleViewViewModel class.
             Add VisibleRangeChanged property of type ICommand:
             
+
+
+
+```C#
 
 
 private ICommand visibleRangeChanged;
@@ -75,8 +119,16 @@ private ICommand visibleRangeChanged;
     this.visibleRangeChanged = value;
    }
   }
+
+```
+
+
             Initialize the VisibleRangeChanged property in the constructor of the RadScheduleViewViewModel and load the appointments in the VisibleRangeExecuted method.
             
+
+
+
+```C#
 
 
 private ICommand visibleRangeChanged;
@@ -104,6 +156,14 @@ private bool CanVisibleRangeCanExecuted(object param)
   {
    return param != null;
   }
+
+```
+
+
+
+```VB.NET
+
+
 Private visibleRangeChanged As ICommand
 Public Property VisibleRangeChanged() As ICommand
  Get
@@ -123,7 +183,15 @@ End Sub
 Private Function CanVisibleRangeCanExecuted(param As Object) As Boolean
  Return param IsNot Nothing
 End Function
+
+```
+
+
             Bind the __VisibleRangeChangedCommand__ and __VisibleRangeChangedCommandParameter__
+
+
+
+```XAML
 
 
 <scheduleView:RadScheduleView AppointmentsSource="{Binding Appointments}" 
@@ -131,3 +199,7 @@ End Function
          VisibleRangeChangedCommandParameter="{Binding VisibleRange, RelativeSource={RelativeSource Self}}">
 ...
 </scheduleView:RadScheduleView>
+
+```
+
+

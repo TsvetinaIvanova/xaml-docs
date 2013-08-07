@@ -35,6 +35,10 @@ In this article we will explore the process of using custom appointments in RadS
           
 
 
+
+```C#
+
+
 public class Task:Appointment
 {
     private bool isDone;
@@ -70,6 +74,14 @@ public class Task:Appointment
         base.CopyFrom(other);
     }
 }
+
+```
+
+
+
+```VB.NET
+
+
 Public Class Task
  Inherits Appointment
  Private m_isDone As Boolean
@@ -99,9 +111,17 @@ Public Class Task
  End Sub
 End Class
 
+```
+
+
+
 
           For the next step, it is important to set the __AppointmentsSource__ of RadScheduleView to be of type __IList<Task>__, because this way the ScheduleView knows that our custom appointments should be of type __Task__. Let's create an __ObservableCollection<Task>__ using the following approach:
         
+
+```C#
+
+
 public class TasksCollection : ObservableCollection<Task>
 {
     public TasksCollection()
@@ -120,6 +140,14 @@ public class TasksCollection : ObservableCollection<Task>
          }
     }
 }
+
+```
+
+
+
+```VB.NET
+
+
 Dim today = DateTime.Today
 Dim data = New ObservableCollection(Of Task)(Enumerable.Range(9, 14).[Select](Function(i) New Task() With { _
  .Start = today.AddMinutes(i * 60 + 15), _
@@ -129,6 +157,10 @@ Dim data = New ObservableCollection(Of Task)(Enumerable.Range(9, 14).[Select](Fu
 }))
 Me.DataContext = data
 
+```
+
+
+
 And here is the result so far:![](../Media/custom_appointment1.png)
 
 # Creating_a_custom_Appointment_DialogCreating a custom Appointment Dialog
@@ -137,7 +169,15 @@ And here is the result so far:![](../Media/custom_appointment1.png)
           In order to create a custom appointment dialog we are going to modify the __EditAppointmentDialogStyle__ property of __RadScheduleView__ control. The DataContext of the __TargetType__ of this style is an __AppointmentDialogViewModel__ object. This class contains all needed data for editing an appointment including the Appointment itself. It can be reached by using the __Occurrence__ property of the ViewModel and subsequently the __Appointment__ property of __Occurrence.__ Now that we have our custom IsDone property, let's add a CheckBox for it and bind to it. First, you need to generate the code for the EditAppointment dialog from Expression Blend. Then, add the following snippet in the ControlTemplate of the dialog:
 
           ____
+
+```XAML
+
+
 <CheckBox Grid.Row="4" Grid.Column="1" Margin="3" Content="Is done?" IsChecked="{Binding Occurrence.Appointment.IsDone, Mode=TwoWay}"/>
+
+```
+
+
 
 
           Here is our customized EditAppointment dialog:
@@ -165,7 +205,15 @@ And here is the result so far:![](../Media/custom_appointment1.png)
 
 
 
+
+```XAML
+
+
 <Ellipse Fill="Green" Width="12" Height="12" VerticalAlignment="Top" Margin="10 5 5 5" HorizontalAlignment="Left" Visibility="{Binding Appointment.IsDone, Converter={StaticResource BooleanToVisibilityConverter}}" />
+
+```
+
+
 
 # Customizing the Appointment ToolTip
 
@@ -177,12 +225,20 @@ And here is the result so far:![](../Media/custom_appointment1.png)
 
           Now we will add in the Appointment ToolTip the text (Done) only for the tasks which are already done:
         
+
+```XAML
+
+
 <DataTemplate x:Key="ToolTipTemplate">
    <StackPanel Orientation="Horizontal" MinWidth="140" Margin="0 5">
       <TextBlock MaxWidth="200" TextWrapping="Wrap" Text="{Binding Subject}"/>
       <TextBlock Text="(Done)" Grid.Row="1" Margin="5 0 5 0" Foreground="#FF191D1A" Visibility="{Binding Appointment.IsDone, Converter={StaticResource BooleanToVisibilityConverter}}" FontStyle="Italic" />
    </StackPanel> 
 </DataTemplate>
+
+```
+
+
 
 This is what the Appointment ToolTip should look like now:![](../Media/custom_appointment7.png)
 

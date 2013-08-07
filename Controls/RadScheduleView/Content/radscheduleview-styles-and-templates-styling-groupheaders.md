@@ -14,6 +14,10 @@ publish:True
       
 
 Let's have the following RadScheduleView grouped by  Date, "Calendar" and “Room” Resources:
+
+```XAML
+
+
 <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}" >         
     <telerik:RadScheduleView.ResourceTypesSource>
         <telerik:ResourceTypeCollection>
@@ -41,6 +45,10 @@ Let's have the following RadScheduleView grouped by  Date, "Calendar" and “Roo
         <telerik:TimelineViewDefinition />
     </telerik:RadScheduleView.ViewDefinitions>
 </telerik:RadScheduleView>
+
+```
+
+
 
 This article will cover the following topics:[How to generate and use the GroupHeaderStyleSelector;](#generate-and-use-groupheaderstyleselector)[How to create a custom GroupHeaderStyleSelector.](#create-custom-groupheaderstyleselector)
 
@@ -82,6 +90,10 @@ In the RadControls installation folder on your computer, go to Themes folder and
 Generate first the RadScheduleView template from Expression Blend ( Edit Template > Edit a Copy). Search for the GroupHeaderStyleSelector and copy the style together with all needed resources that it uses.
 
 The end result should include the following:
+
+```XAML
+
+
 <!-- Brushes -->
 ...
 <!-- Styles-->
@@ -149,13 +161,37 @@ The end result should include the following:
 			MonthViewBottomLevelWeekGroupStyle="{StaticResource MonthViewBottomLevelWeekGroupStyle}">
 		</local:OrientedGroupHeaderStyleSelector>
 
+```
+
+
+
 Note the use of the local namespace from the raw source:
+
+```XAML
+
+
 xmlns:local="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.ScheduleView"
 
+```
+
+
+
 The selector is applied to our instance of RadScheduleView:
+
+```XAML
+
+
 <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}" GroupHeaderStyleSelector="{StaticResource GroupHeaderStyleSelector}">
 
+```
+
+
+
 Now we can apply any customization to the GroupHeaders and watch the change. Let’s for example modify __HorizontalBottomLevelStyle__ – change the color and style of the headers:
+
+```XAML
+
+
 <Style x:Key="HorizontalBottomLevelGroupHeaderStyle" TargetType="telerik:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
 	<Setter Property="Margin" Value="0 0 -1 0" />
 	<Setter Property="Padding" Value="0 0 5 0" />
@@ -163,6 +199,10 @@ Now we can apply any customization to the GroupHeaders and watch the change. Let
 	<Setter Property="Foreground" Value="Red"/>
 	<Setter Property="FontStyle" Value="Italic"/>
 </Style>
+
+```
+
+
 
 Here is the result:
 
@@ -173,6 +213,10 @@ Here is the result:
 # create-custom-groupheaderstyleselectorCreate a custom GroupHeaderStyleSelector
 
 In order to set different styles to the different Resource GroupHeaders , we should create a custom class which inherits OrientedGroupHeaderStyleSelector class and overrides its SelectStyle method.  Also we need to add Style properties for Date and "Calendar" Resource headers and return the corresponding Style:
+
+```C#
+
+
 public class CustomGroupHeaderStyleSelector : OrientedGroupHeaderStyleSelector 
 {
     public Style CalendarStyle { get; set; }
@@ -195,6 +239,14 @@ public class CustomGroupHeaderStyleSelector : OrientedGroupHeaderStyleSelector
         return base.SelectStyle(item, container, activeViewDeifinition);
     }
 }
+
+```
+
+
+
+
+
+```VB.NET
 
 
 Public Class CustomGroupHeaderStyleSelector
@@ -231,7 +283,15 @@ Public Class CustomGroupHeaderStyleSelector
     End Function
 End Class
 
+```
+
+
+
 Add the Styles to the XAML:
+
+```XAML
+
+
 <local:CustomGroupHeaderStyleSelector x:Key="CustomGroupHeaderStyleSelector">
      <local:CustomGroupHeaderStyleSelector.CalendarStyle>
           <Style TargetType="telerik:GroupHeader">
@@ -246,8 +306,20 @@ Add the Styles to the XAML:
       </local:CustomGroupHeaderStyleSelector.DateStyle>
 </local:CustomGroupHeaderStyleSelector>
 
+```
+
+
+
 And finally set the GroupHeaderStyleSelector property of the RadScheduleView:
+
+```XAML
+
+
 <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}"   GroupHeaderStyleSelector="{StaticResource CustomGroupHeaderStyleSelector}">
+
+```
+
+
 
 
 

@@ -17,6 +17,10 @@ publish:True
 Let’s have the RadScheduleView defined like this:
 
 
+
+```XAML
+
+
 <telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" >
 	<telerik:RadScheduleView.ViewDefinitions>
 		<telerik:DayViewDefinition MinorTickLength="30min" MajorTickLength="2h"  />
@@ -24,6 +28,10 @@ Let’s have the RadScheduleView defined like this:
 		<telerik:TimelineViewDefinition MinorTickLength="6h" MajorTickLength="1d" GroupTickLength="2d" />
 	</telerik:RadScheduleView.ViewDefinitions>
 </telerik:RadScheduleView>
+
+```
+
+
 
 This will lead to the following results:In DayViewDefinition:
     	
@@ -54,13 +62,25 @@ You can use the following formats:
 Here are some examples:
 
 
+
+```XAML
+
+
 <telerik:DayViewDefinition MinorTickLength="5min" MajorTickLength="1h" />				
 <telerik:TimelineViewDefinition MinorTickLength="1day" MajorTickLength="2days" GroupTickLength="1week" />
+
+```
+
+
 
 In Code-Behind:
        
 
 The same can be set in code-behind like this:
+
+
+
+```C#
 
 
 var dayView = new DayViewDefinition()
@@ -78,6 +98,10 @@ var timelineView = new TimelineViewDefinition()
 	GroupTickLength = new FixedTickProvider(new DateTimeInterval(0, 0, 1))
 };
 this.ScheduleView.ViewDefinitions.Add(timelineView);
+
+```
+
+
 
 
       	You can check the ScheduleView Configurator example at 

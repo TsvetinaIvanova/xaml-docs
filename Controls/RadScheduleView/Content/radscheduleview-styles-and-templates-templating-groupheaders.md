@@ -30,6 +30,10 @@ Choose one of the following approaches to obtain the source code of GroupHeaderC
         	
 
 The end result should include the following XAML code:
+
+```XAML
+
+
 <local:GroupHeaderTemplateSelector x:Key="GroupHeaderContentTemplateSelector">
 	<local:GroupHeaderTemplateSelector.HorizontalTemplate>
 		<DataTemplate>
@@ -50,26 +54,58 @@ The end result should include the following XAML code:
 	</local:GroupHeaderTemplateSelector.VerticalTemplate>
 </local:GroupHeaderTemplateSelector>
 
+```
+
+
+
 Note the use of the local  and telerikPrimitives namespaces from the raw source:
+
+```XAML
+
+
 xmlns:local="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.ScheduleView"
 xmlns:telerikPrimitives="clr-namespace:Telerik.Windows.Controls.Primitives;assembly=Telerik.Windows.Controls"
 
+```
+
+
+
 The selector is applied to our instance of RadScheduleView:
+
+```XAML
+
+
 <telerik:RadScheduleView x:Name="scheduleView" 
         AppointmentsSource="{Binding Appointments}" 
         GroupHeaderContentTemplateSelector="{StaticResource GroupHeaderContentTemplateSelector }">
 
+```
+
+
+
 # How_to_Create_GroupHeaderContentTemplateSelectorHow to create a custom GroupHeaderContentTemplateSelector
 
 Let’s, for example, create a custom Resource like this:
+
+```C#
+
+
 public class EmployeeResource : Resource
 {
 	public string Photo { get; set; }
 	public Brush Brush { get; set; }
 }
 
+```
+
+
+
 And add the EmployeeResource to “Employee” ResourceType. Note that the RadScheduleView is grouped by this resource type.
        
+
+```XAML
+
+
 <telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" >
 	<telerik:RadScheduleView.ViewDefinitions>
 		<telerik:DayViewDefinition />		
@@ -91,8 +127,16 @@ And add the EmployeeResource to “Employee” ResourceType. Note that the RadSc
 	</telerik:RadScheduleView.ResourceTypesSource>
 </telerik:RadScheduleView>   
 
+```
+
+
+
 In order to set different templates  to the GroupHeaders , we should create a custom class which inherits ScheduleViewDataTemplateSelector  and overrides its SelectTemplate method. Also we need to add the DataTemplates  for resource  and date GroupHeaders and return the corresponding template:
        
+
+```C#
+
+
 public class CustomGroupHeaderContentTemplateSelector : ScheduleViewDataTemplateSelector
 {
 	public DataTemplate HorizontalTemplate { set; get; }
@@ -136,7 +180,15 @@ public class CustomGroupHeaderContentTemplateSelector : ScheduleViewDataTemplate
 	}
 }
 
+```
+
+
+
 Add the DataTemplates to the XAML:
+
+```XAML
+
+
 <local:CustomGroupHeaderContentTemplateSelector x:Key="CustomGroupHeaderContentTemplateSelector">
 	<local:CustomGroupHeaderContentTemplateSelector.HorizontalTemplate>
 		<DataTemplate>
@@ -174,17 +226,37 @@ Add the DataTemplates to the XAML:
 		</DataTemplate>
 	</local:CustomGroupHeaderContentTemplateSelector.VerticalResourceTemplate>
 </local:CustomGroupHeaderContentTemplateSelector>
+
+```
+
+
     ![note](note.jpg)
     	
 
 Note how the properties of the custom resource are binded using Name property:
+
+```XAML
+
+
 Source="{Binding Name.Photo}"
 
+```
+
+
+
 Finally, set the GroupHeaderContentTemplateSelector property of the ScheduleView:
+
+```XAML
+
+
 <telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" 
 		GroupHeaderContentTemplateSelector="{StaticResource CustomGroupHeaderContentTemplateSelector}">
 	...	
 </telerik:RadScheduleView>
+
+```
+
+
 
 Here is the result:
 

@@ -134,6 +134,10 @@ __DialogClosing__ - occurs when a ScheduleView dialog is about to be closed. The
                 __DialogViewModel__ -  gets the scheduler dialog. The property can be cast to the following types:
                     AppointmentDialogViewModelRecurrenceChoiceDialogViewModelRecurrenceDialogViewModelConfirmDialogViewModel__Cancel__ - set this boolean property to __True__, when you want to cancel the event.
                   
+
+```C#
+
+
 private void ScheduleView_DialogClosing(object sender, CancelRoutedEventArgs e)
 {
     // cast to CloseDialogEventArgs
@@ -144,4 +148,8 @@ private void ScheduleView_DialogClosing(object sender, CancelRoutedEventArgs e)
 
     // you can also cancel the event
     eventArgs.Cancel = true;
-}[Understanding Appointments](http://radscheduleview-getting-started-add-edit-delete-appointment.md)
+}
+
+```
+
+[Understanding Appointments](http://radscheduleview-getting-started-add-edit-delete-appointment.md)

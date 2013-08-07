@@ -26,13 +26,29 @@ __WeekGroupHeaderStringFormat__ – gets or sets the format that will be applied
 
 The following code snippet shows how to set the __ShowWeekGroupHeaders__ and __WeekGroupHeaderStringFormat__ property in WeekView:
         
+
+```XAML
+
+
         <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
             <telerik:RadScheduleView.ViewDefinitions>
                 <telerik:WeekViewDefinition ShowWeekGroupHeaders="True" WeekGroupHeaderStringFormat="Week number {0}, {1:D}" />
             </telerik:RadScheduleView.ViewDefinitions>
         </telerik:RadScheduleView>
+
+```
+
+
+
+```C#
+
+
      weekDefinition.ShowWeekGroupHeaders = true;
 	 weekDefinition.WeekGroupHeaderStringFormat = "Week number {0}, {1:D}";
+
+```
+
+
 
 Here is the end result:
 

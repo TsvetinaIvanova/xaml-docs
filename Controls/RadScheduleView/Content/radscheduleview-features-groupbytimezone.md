@@ -13,6 +13,10 @@ publish:True
       
 
 
+
+```XAML
+
+
 <telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" TimeZonesSource="{Binding TimeZones}">
    <telerik:RadScheduleView.ViewDefinitions>
       <telerik:DayViewDefinition />
@@ -26,6 +30,10 @@ publish:True
       </telerik:GroupDescriptionCollection>
    </telerik:RadScheduleView.GroupDescriptionsSource>
 </telerik:RadScheduleView>
+
+```
+
+
 
 This type of grouping groups the appointments by their TimeZone property. One appointment cannot be displayed in two timezones.
 

@@ -38,6 +38,10 @@ The purpose of this tutorial is to show you how to work with resources. The foll
 
           First of all, let's set a __ResourceTypesCollection__:
         
+
+```XAML
+
+
 <telerik:RadScheduleView>
    ...
    <telerik:RadScheduleView.ResourceTypesSource>
@@ -45,9 +49,17 @@ The purpose of this tutorial is to show you how to work with resources. The foll
    </telerik:RadScheduleView.ResourceTypesSource>
 </telerik:RadScheduleView>
 
+```
+
+
+
 
           After this, we need to create a __ResourceTypeCollection__, where we can assign the __ResourceType__:
         
+
+```XAML
+
+
 <telerik:RadScheduleView>
     ...
     <telerik:RadScheduleView.ResourceTypesSource>
@@ -57,6 +69,10 @@ The purpose of this tutorial is to show you how to work with resources. The foll
     </telerik:RadScheduleView.ResourceTypesSource>
 </telerik:RadScheduleView>
 
+```
+
+
+
 # 
         Assigning ResourceType to a ResourceTypeCollection
       
@@ -64,6 +80,10 @@ The purpose of this tutorial is to show you how to work with resources. The foll
 
           After we have created a __ResourceTypeCollection__, we can add our __ResourceType__. Here is an example of creating __ResourceType__ with name "Location":
         
+
+
+
+```XAML
 
 
 <telerik:RadScheduleView>
@@ -77,6 +97,10 @@ The purpose of this tutorial is to show you how to work with resources. The foll
     </telerik:RadScheduleView.ResourceTypesSource>
 </telerik:RadScheduleView>
 
+```
+
+
+
 # 
 
 Assigning a Resource to a ResourceType (group)
@@ -84,6 +108,10 @@ Assigning a Resource to a ResourceType (group)
 
           Once we've created the __ResourceType__, we should create and assign __Resources__ to this group (__ResourceType__):
         
+
+
+
+```XAML
 
 
 <telerik:RadScheduleView>
@@ -99,11 +127,19 @@ Assigning a Resource to a ResourceType (group)
     </telerik:RadScheduleView.ResourceTypesSource>
 </telerik:RadScheduleView>
 
+```
+
+
+
 # Grouping appointments by Resources
 
 
           Now if you want to group the appointments by Location, you can use __GroupDescriptionsSource__ property:
         
+
+```XAML
+
+
 <telerik:RadScheduleView>
     ...
     <telerik:RadScheduleView.GroupDescriptionsSource>
@@ -113,6 +149,10 @@ Assigning a Resource to a ResourceType (group)
     </telerik:RadScheduleView.GroupDescriptionsSource>
 </telerik:RadScheduleView>
 
+```
+
+
+
 The code above will group RadScheduleView by resource type named Location. Day view and Week view are always grouped by date, so the new group description will be inserted before the standard DateGroupDescription:
 
 
@@ -120,6 +160,10 @@ The code above will group RadScheduleView by resource type named Location. Day v
             ![](../Media/scheduleview_features_resources_image1.png)
 
 If you want to change the group order you could use the following syntax:
+
+```XAML
+
+
 <telerik:RadScheduleView>
     ...
     <telerik:RadScheduleView.GroupDescriptionsSource>
@@ -129,6 +173,10 @@ If you want to change the group order you could use the following syntax:
         </telerik:GroupDescriptionCollection>
     </telerik:RadScheduleView.GroupDescriptionsSource>
 </telerik:RadScheduleView>
+
+```
+
+
 
 The result will be the following (note the changed group order):
 

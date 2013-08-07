@@ -39,12 +39,28 @@ You can edit an appointment using the code. Here are the steps to accomplish thi
           
             Call __Commit()__ method to commit the changes and to update the __UI__.
           
+
+```C#
+
+
 if (this.radScheduleView.BeginEdit(appointment))
 {
     appointment.Subject = "New Subject";
     this.radScheduleView.Commit();
 }
+
+```
+
+
+
+```VB.NET
+
+
 If Me.radScheduleView.BeginEdit(appointment) Then
  appointment.Subject = "New Subject"
  Me.radScheduleView.Commit()
-End If[Understanding Appointments](http://radscheduleview-getting-started-add-edit-delete-appointment.md)[Create Appointment](http://radscheduleview-end-user-capabilities-create-appointment.md)[Delete Appointment](http://radscheduleview-end-user-capabilities-delete-appointment.md)
+End If
+
+```
+
+[Understanding Appointments](http://radscheduleview-getting-started-add-edit-delete-appointment.md)[Create Appointment](http://radscheduleview-end-user-capabilities-create-appointment.md)[Delete Appointment](http://radscheduleview-end-user-capabilities-delete-appointment.md)

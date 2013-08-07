@@ -39,6 +39,10 @@ In the SqlRecurrenceRule.CreateNew() method we create a new instance of SqlExept
 			
 
 
+
+```C#
+
+
 	internal static class SolidColorBrushHelper
 	{
 		public static Brush FromNameString(string brushName)
@@ -65,6 +69,10 @@ In the SqlRecurrenceRule.CreateNew() method we create a new instance of SqlExept
 			return new SolidColorBrush(Color.FromArgb(a, r, g, b));
 		}
 	}
+
+```
+
+
 
 # See Also
 
