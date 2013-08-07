@@ -80,8 +80,8 @@ In the SqlRecurrenceRule.CreateNew() method we create a new instance of SqlExept
 
 # See Also
 
-# Other Resources[](fd6aa057-699f-4d00-8881-ce5401508c46)
+# Other Resources[View and ViewModel]({{slug:view-and-viewmodel}})
 
 # See Also
 
-# Other Resources[](022f9398-339a-4468-85cd-69db0bb54f28)
+# Other Resources[View and ViewModel]({{slug:view-and-viewmodel}})

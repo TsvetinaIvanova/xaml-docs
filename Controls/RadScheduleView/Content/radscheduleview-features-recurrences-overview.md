@@ -13,7 +13,7 @@ publish:True
 __RadScheduleView__ provides the functionality to configure repeating appointments. The user has the ability to apply recurring scheduling patterns such as daily, weekly, monthly or set a range of recurrence from date to date. The flexible rule mechanism covers all possible recurrence scenarios. Furthermore, you also have the option to handle the exceptions from this rule.
         
 
-The purpose of this overview is to give you a straight-forward way how to create and apply a recurrence pattern, rule and exception. If you want to dive deeper into the recurrence feature of the RadScheduler, check out the following topics:[Recurrence Pattern](3F113E6D-5519-40FD-A3B3-6A46B2489318)[Recurrence Rule](048F4BD6-35B4-486C-A03D-44EED6F6D33D)[Exception Occurrence](#Exceptions)
+The purpose of this overview is to give you a straight-forward way how to create and apply a recurrence pattern, rule and exception. If you want to dive deeper into the recurrence feature of the RadScheduler, check out the following topics:[RecurrencePattern]({{slug:recurrencepattern}})[RecurrenceRule]({{slug:recurrencerule}})[Exception Occurrence](#Exceptions)
 
 
 

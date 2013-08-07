@@ -9,7 +9,7 @@ publish:True
 
 
 
-        When working with saving [recurrence patterns](3F113E6D-5519-40FD-A3B3-6A46B2489318), the __RadScheduleView__'s API provides us with the __RecurrencePatternHelper__ class, which comes from the
+        When working with saving [RecurrencePattern]({{slug:recurrencepattern}}), the __RadScheduleView__'s API provides us with the __RecurrencePatternHelper__ class, which comes from the
         __Telerik.Windows.Controls.ScheduleView.ICalendar__ namespace. The helper provides two main functions - turning a recurrence pattern into a nicely serialized string for storage and producing a recurrence pattern when you provide that string back to it.
       
 

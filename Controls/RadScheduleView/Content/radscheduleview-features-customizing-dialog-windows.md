@@ -11,7 +11,7 @@ publish:True
     	
 
 To customize the ScheduleView dialogs, e.g. the window content, please read the following article:
-  		[](85B3264C-F847-4860-95E8-45BD51423977)
+  		[Custom Dialogs]({{slug:custom-dialogs}})
 
 
 	The dialogs in RadScheduleView are displayed by default in RadWindow instances. The RadWindow properties can be customized or it can be entirely replaced with any other ContentControl.

@@ -16,7 +16,7 @@ AppointmentSelectionBehavior is responsible for executing the selection logic of
 
 This tutorial will go through on how to create a custom AppointmentSelectionBehavior in the scenario when there are different resources in the ScheduleView control and it is required to disable simultaneous selection of appointments in different resource groups.
     ![note](note.jpg)
-    	Before proceeding with this tutorial first read about [Resources in RadScheduleView](D7C21926-1825-4792-9FC1-2ED2170D2AC2).
+    	Before proceeding with this tutorial first read about [Resources]({{slug:resources}}).
 
 
 

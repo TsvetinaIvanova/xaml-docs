@@ -51,7 +51,7 @@ Other important properties of the AppointmentDialogViewModel class include:
 -  IsReadOnly – a boolean property bound to the IsEnabled property of all the controls in the dialog. This allows to make the dialog read-only by cancelling the AppointmentEditing event of the ScheduleView – in this case the EditAppointmetDialog will be shown but all the fields will be disabled.
     ![tip](tip.jpg)
     	
-          Check [here](401E5B97-3FC0-47ED-9C4A-2DDE80D769A3) for more details about customizing EditAppointmentDialog.
+          Check [Custom Appointment]({{slug:custom-appointment}}) for more details about customizing EditAppointmentDialog.
         EditRecurrenceDialog – shown when a recurrence is created or edited: 
 
                
@@ -61,7 +61,7 @@ __EditRecurrenceDialogStyle__ property is used to customize this dialog.  The Da
         
     ![tip](tip.jpg)
     	
-          More information about the recurring patterns can be found [here](BCB6FF3C-AD83-450A-91D5-1617A42A3A0E).
+          More information about the recurring patterns can be found [Overview]({{slug:overview}}).
         DeleteAppointmentConfirmDialog - shown when the selected appointments are going to be deleted: 
 
 

@@ -161,7 +161,7 @@ The end result in DayViewDefinition with both Horizontal and Vertical Orientatio
 
 
 
-					The __AppointmentStyleSelector__ is a regular Style Selector and allows you to apply different appointment styles based on some custom logic. In the following example, we will apply a different style to appointments belonging to different [Resource Types](D7C21926-1825-4792-9FC1-2ED2170D2AC2).
+					The __AppointmentStyleSelector__ is a regular Style Selector and allows you to apply different appointment styles based on some custom logic. In the following example, we will apply a different style to appointments belonging to different [Resources]({{slug:resources}}).
 				
 
 

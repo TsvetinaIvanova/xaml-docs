@@ -51,7 +51,7 @@ And the result is:![radscheduleview snapappointments 2](images/radscheduleview_s
     ![tip](tip.jpg)
     	
 
-You can check [](8e7ade44-944f-4507-8555-95a35fe0abd5) article for more details about MinorTickLength property.
+You can check [Configuring the TimeRuler ticks]({{slug:configuring-the-timeruler-ticks}}) article for more details about MinorTickLength property.
 
 # Section1Customizing the SnapBehavior
 

@@ -12,7 +12,7 @@ __RadScheduleView__ includes support for recurring events on daily, weekly, mont
       
 
 
-        The [RecurrenceRule](048F4BD6-35B4-486C-A03D-44EED6F6D33D) class is the engine for creating and evaluating recurrence rules. It has a mandatory property __Pattern__ of type __RecurrencePattern__.
+        The [RecurrenceRule]({{slug:recurrencerule}}) class is the engine for creating and evaluating recurrence rules. It has a mandatory property __Pattern__ of type __RecurrencePattern__.
       
 
 The purpose of this tutorial is to show you:
@@ -83,7 +83,7 @@ __However, these values are invalid recurrence frequency and should not be used.
     ![note](note.jpg)
     	
 
-Minutely and Hourly Frequency can be set only with code ( not from the EditAppointmentDialog).  In order to display these options, you should [customize the EditAppointmentDialogStyle](85B3264C-F847-4860-95E8-45BD51423977) and add them in the template manually. 
+Minutely and Hourly Frequency can be set only with code ( not from the EditAppointmentDialog).  In order to display these options, you should [Custom Dialogs]({{slug:custom-dialogs}}) and add them in the template manually. 
 
 # MinutesOfHourMinutesOfHour
 

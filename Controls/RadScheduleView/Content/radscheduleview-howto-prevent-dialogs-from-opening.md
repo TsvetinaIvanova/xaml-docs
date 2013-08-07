@@ -69,7 +69,7 @@ End Sub
     ![note](note.jpg)
     	
 
-To learn more about __RadScheduleView__ events, check [here](DA2E2C18-FE43-486A-B8E2-055460967DE8).
+To learn more about __RadScheduleView__ events, check [Overview]({{slug:overview}}).
 
 # skipconfirmdeletedialogHow to skip ConfirmDeleteDialog
 
@@ -157,4 +157,4 @@ End Sub
 
 
     ![tip](tip.jpg)
-    	Check [here](85B3264C-F847-4860-95E8-45BD51423977) for more information about RadScheduleView dialogs.
+    	Check [Custom Dialogs]({{slug:custom-dialogs}}) for more information about RadScheduleView dialogs.

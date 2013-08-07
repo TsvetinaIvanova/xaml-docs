@@ -36,7 +36,7 @@ Add the following references to the Silverlight project:Telerik.Windows.Controls
     ![note](note.jpg)
     	
 
-Check [here](F8D12A6D-38B0-43CC-A6B3-1D7E8E8FC3A8) for more details about adding the RadScheduleView to the page.
+Check [Getting Started]({{slug:getting-started}}) for more details about adding the RadScheduleView to the page.
 
 
         You can download the complete project from 
@@ -52,7 +52,7 @@ Add the following references to the project:Telerik.Windows.Controls.dllTelerik.
     ![note](note.jpg)
     	
 
-Check [here](F8D12A6D-38B0-43CC-A6B3-1D7E8E8FC3A8) for more details about adding the RadScheduleView to the project.
+Check [Getting Started]({{slug:getting-started}}) for more details about adding the RadScheduleView to the project.
 
 
         You can download the complete project from 

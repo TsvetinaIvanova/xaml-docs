@@ -17,7 +17,7 @@ publish:True
     	
 
 
-            Before reading this tutorial you should get familiar with the [Data Binding](2268BE7E-A271-4468-B0CC-9958C1357EF0) support of the __RadScheduleView__ control.
+            Before reading this tutorial you should get familiar with the [Data Binding Support Overview]({{slug:data-binding-support-overview}}) support of the __RadScheduleView__ control.
           
             Add a new __RadScheduleView__ declaration in your XAML
             

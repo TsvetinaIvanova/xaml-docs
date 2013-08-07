@@ -27,7 +27,7 @@ __RadScheduleView__ key features list:
 ____
 
 
-          A complete list with all key features can be found [here](E04CB0D0-76CC-4AE5-AB3A-3C621B40DDED).
+          A complete list with all key features can be found [Key Features]({{slug:key-features}}).
         
 
 

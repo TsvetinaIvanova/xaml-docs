@@ -15,7 +15,7 @@ RadScheduleView's four predefined ViewDefinitions have various properties, which
     ![note](note.jpg)
     	
 
-For more information about the view specific properties, check [here](ba38cb94-0cf5-43e4-95a9-39a3d3536d5b).
+For more information about the view specific properties, check [View specific properties]({{slug:view-specific-properties}}).
 
 [Title](#Title)[LargeChangeInterval](#LargeChangeInterval)[SmallChangeInterval](#SmallChangeInterval)[DayStartTime](#DayStartTime)[DayEndTime](#DayEndTime)[VisibleDays](#VisibleDays)[FirstDayOfWeek](#FirstDayOfWeek)[StretchGroupHeaders](#StretchGroupHeaders)[Orientation](#Orientation)
 

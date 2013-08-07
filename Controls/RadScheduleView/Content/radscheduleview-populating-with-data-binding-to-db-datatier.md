@@ -32,8 +32,8 @@ Here are some explanations about the keys and the relationships in the data tabl
 
 # See Also
 
-# Other Resources[](8a08ec3e-82bb-428f-b234-8b0cb6b79467)
+# Other Resources[Entity Model]({{slug:entity-model}})
 
 # See Also
 
-# Other Resources[](166f61dd-1051-4a41-8546-a054773902c1)
+# Other Resources[Entity Model, DomainContext]({{slug:entity-model,-domaincontext}})

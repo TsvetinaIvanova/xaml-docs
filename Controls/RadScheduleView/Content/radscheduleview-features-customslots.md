@@ -12,7 +12,7 @@ This article describes how you can create a custom SpecialSlot, add custom prope
     ![note](note.jpg)
     	
 
-Please check [here](3386B28A-7C00-4629-B290-4EDE1A0ABB9F) for more details about SpecialSlots.
+Please check [Special and ReadOnly slots]({{slug:special-and-readonly-slots}}) for more details about SpecialSlots.
 
 # 
 

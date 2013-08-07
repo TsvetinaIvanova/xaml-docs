@@ -50,7 +50,7 @@ This will lead to the following results:In DayViewDefinition:
     	
 
 
-    	You can check [this article](20DD7341-C49F-4A33-AA28-7C7968DE4E40) where it is explained how the dates and times on the time ruler can be formatted.
+    	You can check [Formatting]({{slug:formatting}}) where it is explained how the dates and times on the time ruler can be formatted.
     	
 
 # Setting the properties

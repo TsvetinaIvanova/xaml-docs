@@ -41,8 +41,8 @@ Also, through defining different properties you can create your own custom view.
     	
 
 More information about the common for all views properties can be found 
-      	[here](0973c9f2-dad2-400b-be85-93bdef8c4de0) and for view specific properties - 
-      	[here](ba38cb94-0cf5-43e4-95a9-39a3d3536d5b).
+      	[Configuration]({{slug:configuration}}) and for view specific properties - 
+      	[View specific properties]({{slug:view-specific-properties}}).
 
 # How to set the views
 

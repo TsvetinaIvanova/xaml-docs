@@ -10,7 +10,7 @@ publish:True
     ![note](note.jpg)
     	
 
-You can check [](0973c9f2-dad2-400b-be85-93bdef8c4de0) article for more information about the common for all views properties.
+You can check [Configuration]({{slug:configuration}}) article for more information about the common for all views properties.
 
 # DayView and WeekView specific properties
 
