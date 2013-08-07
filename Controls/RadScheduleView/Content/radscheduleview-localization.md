@@ -1,10 +1,10 @@
 ___
 title: Localization
 meta_title: Localization
-meta_description: 
-slug :localization
-tags :localization
-publish :True
+meta_description:description
+slug:localization
+tags:localization
+publish:True
 ___
 
 

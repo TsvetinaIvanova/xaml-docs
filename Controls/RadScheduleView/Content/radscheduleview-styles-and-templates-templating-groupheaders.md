@@ -1,10 +1,10 @@
 ___
 title: Templating the GroupHeaders
 meta_title: Templating the GroupHeaders
-meta_description: 
-slug :templating the groupheaders
-tags :templating,the,groupheaders
-publish :True
+meta_description:description
+slug:templating_the_groupheaders
+tags:templating,the,groupheaders
+publish:True
 ___
 
 

@@ -1,10 +1,10 @@
 ___
 title: AppointmentSelectionBehavior
 meta_title: AppointmentSelectionBehavior
-meta_description: 
-slug :appointmentselectionbehavior
-tags :appointmentselectionbehavior
-publish :True
+meta_description:description
+slug:appointmentselectionbehavior
+tags:appointmentselectionbehavior
+publish:True
 ___
 
 

@@ -1,10 +1,10 @@
 ___
 title: How to configure the VisibleRange
 meta_title: How to configure the VisibleRange
-meta_description: 
-slug :how to configure the visiblerange
-tags :how,to,configure,the,visiblerange
-publish :True
+meta_description:description
+slug:how_to_configure_the_visiblerange
+tags:how,to,configure,the,visiblerange
+publish:True
 ___
 
 

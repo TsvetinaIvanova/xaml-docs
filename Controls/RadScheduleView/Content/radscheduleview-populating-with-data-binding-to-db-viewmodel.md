@@ -1,10 +1,10 @@
 ___
 title: View and ViewModel
 meta_title: View and ViewModel
-meta_description: 
-slug :view and viewmodel
-tags :view,and,viewmodel
-publish :True
+meta_description:description
+slug:view_and_viewmodel
+tags:view,and,viewmodel
+publish:True
 ___
 
 

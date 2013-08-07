@@ -1,10 +1,10 @@
 ___
 title: RecurrencePatternHelper
 meta_title: RecurrencePatternHelper
-meta_description: 
-slug :recurrencepatternhelper
-tags :recurrencepatternhelper
-publish :True
+meta_description:description
+slug:recurrencepatternhelper
+tags:recurrencepatternhelper
+publish:True
 ___
 
 

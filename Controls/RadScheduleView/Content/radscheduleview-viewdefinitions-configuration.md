@@ -1,10 +1,10 @@
 ___
 title: Configuration
 meta_title: Configuration
-meta_description: 
-slug :configuration
-tags :configuration
-publish :True
+meta_description:description
+slug:configuration
+tags:configuration
+publish:True
 ___
 Common properties for all views
 

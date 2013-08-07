@@ -1,10 +1,10 @@
 ___
 title: Changes
 meta_title: Changes
-meta_description: 
-slug :changes
-tags :changes
-publish :True
+meta_description:description
+slug:changes
+tags:changes
+publish:True
 ___
 
 

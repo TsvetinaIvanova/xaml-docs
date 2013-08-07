@@ -1,10 +1,10 @@
 ___
 title: Snapping Appointments
 meta_title: Snapping Appointments
-meta_description: 
-slug :snapping appointments
-tags :snapping,appointments
-publish :True
+meta_description:description
+slug:snapping_appointments
+tags:snapping,appointments
+publish:True
 ___
 
 

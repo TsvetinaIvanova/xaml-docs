@@ -1,10 +1,10 @@
 ___
 title: Appointment Style
 meta_title: Appointment Style
-meta_description: 
-slug :appointment style
-tags :appointment,style
-publish :True
+meta_description:description
+slug:appointment_style
+tags:appointment,style
+publish:True
 ___
 
 
@@ -54,7 +54,7 @@ This article will cover the following topics:
 	</local:OrientedAppointmentItemStyleSelector.VerticalStyle>
 </local:OrientedAppointmentItemStyleSelector>
 
-where "local" is:
+where "*local*" is:
 xmlns:local="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.ScheduleView"
 
 

@@ -1,10 +1,10 @@
 ___
 title: AutoScrolling
 meta_title: AutoScrolling
-meta_description: 
-slug :autoscrolling
-tags :autoscrolling
-publish :True
+meta_description:description
+slug:autoscrolling
+tags:autoscrolling
+publish:True
 ___
 
 

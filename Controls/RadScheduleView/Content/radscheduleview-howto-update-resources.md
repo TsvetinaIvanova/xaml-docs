@@ -1,10 +1,10 @@
 ___
 title: Update the Resources
 meta_title: Update the Resources
-meta_description: 
-slug :update the resources
-tags :update,the,resources
-publish :True
+meta_description:description
+slug:update_the_resources
+tags:update,the,resources
+publish:True
 ___
 
 

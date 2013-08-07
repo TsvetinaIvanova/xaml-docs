@@ -1,10 +1,10 @@
 ___
 title: RecurrenceRule
 meta_title: RecurrenceRule
-meta_description: 
-slug :recurrencerule
-tags :recurrencerule
-publish :True
+meta_description:description
+slug:recurrencerule
+tags:recurrencerule
+publish:True
 ___
 
 

@@ -1,10 +1,10 @@
 ___
 title: Resources
 meta_title: Resources
-meta_description: 
-slug :resources
-tags :resources
-publish :True
+meta_description:description
+slug:resources
+tags:resources
+publish:True
 ___
 
 

@@ -1,10 +1,10 @@
 ___
 title: Commands
 meta_title: Commands
-meta_description: 
-slug :commands
-tags :commands
-publish :True
+meta_description:description
+slug:commands
+tags:commands
+publish:True
 ___
 
 

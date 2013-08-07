@@ -1,10 +1,10 @@
 ___
 title: Categories
 meta_title: Categories
-meta_description: 
-slug :categories
-tags :categories
-publish :True
+meta_description:description
+slug:categories
+tags:categories
+publish:True
 ___
 
 

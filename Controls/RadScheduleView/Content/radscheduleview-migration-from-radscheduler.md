@@ -1,10 +1,10 @@
 ___
 title: Migration from RadScheduler
 meta_title: Migration from RadScheduler
-meta_description: 
-slug :migration from radscheduler
-tags :migration,from,radscheduler
-publish :True
+meta_description:description
+slug:migration_from_radscheduler
+tags:migration,from,radscheduler
+publish:True
 ___
 
 

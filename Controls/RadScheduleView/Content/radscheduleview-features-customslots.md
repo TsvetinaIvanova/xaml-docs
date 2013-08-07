@@ -1,10 +1,10 @@
 ___
 title: Custom Slots
 meta_title: Custom Slots
-meta_description: 
-slug :custom slots
-tags :custom,slots
-publish :True
+meta_description:description
+slug:custom_slots
+tags:custom,slots
+publish:True
 ___
 
 

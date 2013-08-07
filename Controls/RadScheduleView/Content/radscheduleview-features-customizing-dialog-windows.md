@@ -1,10 +1,10 @@
 ___
 title: Customizing Dialog Windows
 meta_title: Customizing Dialog Windows
-meta_description: 
-slug :customizing dialog windows
-tags :customizing,dialog,windows
-publish :True
+meta_description:description
+slug:customizing_dialog_windows
+tags:customizing,dialog,windows
+publish:True
 ___
 
     ![note](note.jpg)

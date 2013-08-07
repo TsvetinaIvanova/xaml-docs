@@ -1,10 +1,10 @@
 ___
 title: Customizing the DragVisual
 meta_title: Customizing the DragVisual
-meta_description: 
-slug :customizing the dragvisual
-tags :customizing,the,dragvisual
-publish :True
+meta_description:description
+slug:customizing_the_dragvisual
+tags:customizing,the,dragvisual
+publish:True
 ___
 
 
@@ -114,7 +114,7 @@ Then you will be able to make the needed customizations, for example:
 	</Setter>
 </Style>
 
-Where local is:
+Where *local* is:
 xmlns:local="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.ScheduleView”
 
 Either approach you’ve selected, the final step is to set the custom DragVisual style to DragVisualStyle property of the ScheduleView:

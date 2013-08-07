@@ -1,10 +1,10 @@
 ___
 title: Prevent Dialogs from Opening
 meta_title: Prevent Dialogs from Opening
-meta_description: 
-slug :prevent dialogs from opening
-tags :prevent,dialogs,from,opening
-publish :True
+meta_description:description
+slug:prevent_dialogs_from_opening
+tags:prevent,dialogs,from,opening
+publish:True
 ___
 
 

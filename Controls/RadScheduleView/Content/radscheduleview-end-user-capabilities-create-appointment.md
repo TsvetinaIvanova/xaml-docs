@@ -1,10 +1,10 @@
 ___
 title: Create Appointment
 meta_title: Create Appointment
-meta_description: 
-slug :create appointment
-tags :create,appointment
-publish :True
+meta_description:description
+slug:create_appointment
+tags:create,appointment
+publish:True
 ___
 
 

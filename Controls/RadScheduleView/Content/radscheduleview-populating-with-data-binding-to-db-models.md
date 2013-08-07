@@ -1,10 +1,10 @@
 ___
 title: Models
 meta_title: Models
-meta_description: 
-slug :models
-tags :models
-publish :True
+meta_description:description
+slug:models
+tags:models
+publish:True
 ___
 
 

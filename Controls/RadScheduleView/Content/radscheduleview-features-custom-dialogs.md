@@ -1,10 +1,10 @@
 ___
 title: Custom Dialogs
 meta_title: Custom Dialogs
-meta_description: 
-slug :custom dialogs
-tags :custom,dialogs
-publish :True
+meta_description:description
+slug:custom_dialogs
+tags:custom,dialogs
+publish:True
 ___
 
 

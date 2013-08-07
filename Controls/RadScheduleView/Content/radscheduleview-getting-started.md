@@ -1,10 +1,10 @@
 ___
 title: Getting Started
 meta_title: Getting Started
-meta_description: 
-slug :getting started
-tags :getting,started
-publish :True
+meta_description:description
+slug:getting_started
+tags:getting,started
+publish:True
 ___
 
 

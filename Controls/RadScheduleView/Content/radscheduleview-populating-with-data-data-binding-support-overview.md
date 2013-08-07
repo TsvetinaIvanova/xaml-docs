@@ -1,10 +1,10 @@
 ___
 title: Data Binding Support Overview
 meta_title: Data Binding Support Overview
-meta_description: 
-slug :data binding support overview
-tags :data,binding,support,overview
-publish :True
+meta_description:description
+slug:data_binding_support_overview
+tags:data,binding,support,overview
+publish:True
 ___
 
 

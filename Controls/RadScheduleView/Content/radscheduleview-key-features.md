@@ -1,10 +1,10 @@
 ___
 title: Key Features
 meta_title: Key Features
-meta_description: 
-slug :key features
-tags :key,features
-publish :True
+meta_description:description
+slug:key_features
+tags:key,features
+publish:True
 ___
 
 

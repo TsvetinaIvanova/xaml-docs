@@ -1,10 +1,10 @@
 ___
 title: Table Definitions and Relationships
 meta_title: Table Definitions and Relationships
-meta_description: 
-slug :table definitions and relationships
-tags :table,definitions,and,relationships
-publish :True
+meta_description:description
+slug:table_definitions_and_relationships
+tags:table,definitions,and,relationships
+publish:True
 ___
 
 

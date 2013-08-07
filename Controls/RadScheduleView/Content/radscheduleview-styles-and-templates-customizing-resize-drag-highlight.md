@@ -1,10 +1,10 @@
 ___
 title: Customizing the Resize and DragDropHighlight
 meta_title: Customizing the Resize and DragDropHighlight
-meta_description: 
-slug :customizing the resize and dragdrophighlight
-tags :customizing,the,resize,and,dragdrophighlight
-publish :True
+meta_description:description
+slug:customizing_the_resize_and_dragdrophighlight
+tags:customizing,the,resize,and,dragdrophighlight
+publish:True
 ___
 
 

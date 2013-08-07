@@ -1,10 +1,10 @@
 ___
 title: Inline Editing
 meta_title: Inline Editing
-meta_description: 
-slug :inline editing
-tags :inline,editing
-publish :True
+meta_description:description
+slug:inline_editing
+tags:inline,editing
+publish:True
 ___
 
 

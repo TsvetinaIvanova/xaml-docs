@@ -1,10 +1,10 @@
 ___
 title: Formatting
 meta_title: Formatting
-meta_description: 
-slug :formatting
-tags :formatting
-publish :True
+meta_description:description
+slug:formatting
+tags:formatting
+publish:True
 ___
 
 

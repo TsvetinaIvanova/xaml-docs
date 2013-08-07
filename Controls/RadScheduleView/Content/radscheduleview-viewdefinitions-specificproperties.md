@@ -1,10 +1,10 @@
 ___
 title: View specific properties
 meta_title: View specific properties
-meta_description: 
-slug :view specific properties
-tags :view,specific,properties
-publish :True
+meta_description:description
+slug:view_specific_properties
+tags:view,specific,properties
+publish:True
 ___
 
     ![note](note.jpg)

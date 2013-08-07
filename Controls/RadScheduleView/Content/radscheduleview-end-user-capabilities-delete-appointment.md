@@ -1,10 +1,10 @@
 ___
 title: Delete Appointment
 meta_title: Delete Appointment
-meta_description: 
-slug :delete appointment
-tags :delete,appointment
-publish :True
+meta_description:description
+slug:delete_appointment
+tags:delete,appointment
+publish:True
 ___
 
 

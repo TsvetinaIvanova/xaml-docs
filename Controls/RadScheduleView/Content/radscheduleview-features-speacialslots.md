@@ -1,10 +1,10 @@
 ___
 title: Special and ReadOnly slots
 meta_title: Special and ReadOnly slots
-meta_description: 
-slug :special and readonly slots
-tags :special,and,readonly,slots
-publish :True
+meta_description:description
+slug:special_and_readonly_slots
+tags:special,and,readonly,slots
+publish:True
 ___
 
 

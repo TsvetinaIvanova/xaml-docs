@@ -1,10 +1,10 @@
 ___
 title: TimeRuler Configuration
 meta_title: TimeRuler Configuration
-meta_description: 
-slug :timeruler configuration
-tags :timeruler,configuration
-publish :True
+meta_description:description
+slug:timeruler_configuration
+tags:timeruler,configuration
+publish:True
 ___
 
 

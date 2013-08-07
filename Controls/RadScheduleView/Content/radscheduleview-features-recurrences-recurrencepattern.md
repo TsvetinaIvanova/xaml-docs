@@ -1,10 +1,10 @@
 ___
 title: RecurrencePattern
 meta_title: RecurrencePattern
-meta_description: 
-slug :recurrencepattern
-tags :recurrencepattern
-publish :True
+meta_description:description
+slug:recurrencepattern
+tags:recurrencepattern
+publish:True
 ___
 
 

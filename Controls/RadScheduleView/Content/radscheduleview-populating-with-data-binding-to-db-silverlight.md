@@ -1,10 +1,10 @@
 ___
 title: Silverlight Part
 meta_title: Silverlight Part
-meta_description: 
-slug :silverlight part
-tags :silverlight,part
-publish :True
+meta_description:description
+slug:silverlight_part
+tags:silverlight,part
+publish:True
 ___
 
 

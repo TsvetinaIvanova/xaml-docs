@@ -1,10 +1,10 @@
 ___
 title: Edit Appointment
 meta_title: Edit Appointment
-meta_description: 
-slug :edit appointment
-tags :edit,appointment
-publish :True
+meta_description:description
+slug:edit_appointment
+tags:edit,appointment
+publish:True
 ___
 
 
