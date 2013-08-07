@@ -32,7 +32,7 @@ __AppointmentStyleSelector__ -> [http://demos.telerik.com/wpf?ScheduleView/Custo
               
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -57,7 +57,7 @@ __TimeRulerStyle____TimeRulerItemStyleSelector__, __TimeRulerItemTemplateSelecto
               
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -77,7 +77,7 @@ __TimeRulerStyle____TimeRulerItemStyleSelector__, __TimeRulerItemTemplateSelecto
             
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -107,7 +107,7 @@ __TimeSlotTemplateSelector____SpecialSlotStyleSelector__, __SpecialSlotsSource__
               
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -133,7 +133,7 @@ __Culture__There is no such property. Use LocalizationManager.DefaultCulture ins
               
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -150,7 +150,7 @@ if (this.radScheduleView.BeginEdit(appointment))
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -169,7 +169,7 @@ __Delete Appointment__ using code:
 Using the Remove() method of the RadScheduleView(), which returns whether or not the appointment or occurrence can be removed.
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -182,7 +182,7 @@ this.radScheduleView.Remove(appointment);
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET

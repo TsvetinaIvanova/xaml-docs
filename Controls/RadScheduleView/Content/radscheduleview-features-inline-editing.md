@@ -45,7 +45,7 @@ The default value of the __IsInlineEditingEnabled__ property is True. Which mean
       	
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -58,7 +58,7 @@ The default value of the __IsInlineEditingEnabled__ property is True. Which mean
 
 
 
-    __C#__
+ __C#__
     
 
 ```C#

@@ -17,7 +17,7 @@ There are two key properties that control the Height of the TimeRuler:__MinTimeR
           
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML

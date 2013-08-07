@@ -37,7 +37,7 @@ The time markers available in the RadScheduleView are defined in the TimeMarkers
 		
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -62,7 +62,7 @@ The time markers available in the RadScheduleView are defined in the TimeMarkers
 or
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -88,7 +88,7 @@ public class MyViewModel : ViewModelBase
 
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -109,7 +109,7 @@ public class MyViewModel : ViewModelBase
 Finally, set the DataContext:
 
 
-    __C#__
+ __C#__
     
 
 ```C#

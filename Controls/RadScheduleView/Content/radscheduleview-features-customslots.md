@@ -19,7 +19,7 @@ Please check [here](3386B28A-7C00-4629-B290-4EDE1A0ABB9F) for more details about
 Let's for example have the following RadScheduleView grouped by "Calendar" ResourceType:
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -54,7 +54,7 @@ We will define a custom Slot class, create a collection of custom Slot objects w
 First, create a class which inherits __Telerik.Windows.Controls.ScheduleView.Slot__ class:
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -100,7 +100,7 @@ Note how __Copy__ and __CopyFrom__ methods in the custom slot class are override
 Then you should create the collection of __BreakSlot__ objects and set their additional properties:
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -127,7 +127,7 @@ this.SpecialSlots = new ObservableCollection<Slot>()
 The next step is to create the __ScheduleViewStyleSelector__ class:
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -167,7 +167,7 @@ public class SpecialSlotStyleSelector : ScheduleViewStyleSelector
 and to define the Style:
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -199,7 +199,7 @@ and to define the Style:
 Finally, bind them to __SpecialSlotsSource__ and __SpecialSlotsStyleSelector__ properties:
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML

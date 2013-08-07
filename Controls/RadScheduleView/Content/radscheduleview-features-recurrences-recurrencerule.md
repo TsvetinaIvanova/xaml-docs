@@ -55,7 +55,7 @@ The purpose of this tutorial is to show you:
         
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -81,7 +81,7 @@ fitnessAppointment.RecurrenceRule = new RecurrenceRule(recurrencePattern);
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -128,7 +128,7 @@ When you want to add an exception to a recurrence you need to use this method.
 One possible scenario of adding an exception to a recurrence rule is shown in the next example:Create a new appointment. 
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -147,7 +147,7 @@ var fitnessAppointment = new Appointment()
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -167,7 +167,7 @@ Dim fitnessAppointment = New Appointment() With {
           
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -185,7 +185,7 @@ var recurrencePattern = new RecurrencePattern()
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -203,7 +203,7 @@ Dim recurrencePattern = New RecurrencePattern() With {
           
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -216,7 +216,7 @@ var rule = new RecurrenceRule(recurrencePattern);
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -229,7 +229,7 @@ Dim rule = New RecurrenceRule(recurrencePattern)
 Add an exception occurrence to the recurrence rule. 
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -245,7 +245,7 @@ rule.AddException(startDate, exceptionDate);
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -261,7 +261,7 @@ rule.AddException(startDate, exceptionDate)
 Associate the create recurrence rule with the appointment. 
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -274,7 +274,7 @@ fitnessAppointment.RecurrenceRule = rule;
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET

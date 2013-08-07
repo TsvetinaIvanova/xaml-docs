@@ -29,7 +29,7 @@ __RadScheduleView__ includes support for recurring events on daily, weekly, mont
 Consider the following example:Create a sample appointment that starts at 11/05/2011 10:00 AM and lasts half an hour: 
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -47,7 +47,7 @@ var appointment = new Appointment() {
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -65,7 +65,7 @@ Dim appointment = New Appointment() With {
 Create a daily recurrence pattern, that specifies a limit of 4 occurrences for the appointment: 
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -82,7 +82,7 @@ var pattern = new RecurrencePattern() {
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -99,7 +99,7 @@ Dim pattern = New RecurrencePattern() With {
 Set the recurrence rule to appointment: 
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -112,7 +112,7 @@ appointment.RecurrenceRule = new RecurrenceRule(pattern);
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -125,7 +125,7 @@ appointment.RecurrenceRule = New RecurrenceRule(pattern)
 Add exception date to the recurrence rule: 
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -138,7 +138,7 @@ appointment.RecurrenceRule.AddException(new DateTime(2011, 05, 14, 10, 0, 0));
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -151,7 +151,7 @@ appointment.RecurrenceRule.AddException(New DateTime(2011, 5, 14, 10, 0, 0))
 Create an exception appointment: 
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -167,7 +167,7 @@ appointment.RecurrenceRule.AddException(new DateTime(2011, 05, 15, 10, 0, 0), ex
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET

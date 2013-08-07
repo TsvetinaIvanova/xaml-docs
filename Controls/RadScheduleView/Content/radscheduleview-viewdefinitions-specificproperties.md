@@ -28,7 +28,7 @@ The following code snippet shows how to set the __ShowWeekGroupHeaders__ and __W
         
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -45,7 +45,7 @@ The following code snippet shows how to set the __ShowWeekGroupHeaders__ and __W
 
 
 
-    __C#__
+ __C#__
     
 
 ```C#

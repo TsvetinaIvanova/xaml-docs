@@ -23,7 +23,7 @@ publish:True
         
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -36,7 +36,7 @@ LocalizationManager.Manager = new CustomLocalizationManager();
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -91,7 +91,7 @@ The snapshot below shows the content of the __ScheduleViewResources.de.resx__ fi
         
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -107,7 +107,7 @@ LocalizationManager.Manager = new LocalizationManager()
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -141,7 +141,7 @@ LocalizationManager.Manager.ResourceManager = ScheduleViewResources.ResourceMana
         
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -177,7 +177,7 @@ public class CustomLocalizationManager : LocalizationManager
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -217,7 +217,7 @@ Of course, if you don't want to hard-code your translation inside your source co
 
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -240,7 +240,7 @@ public override string GetStringOverride( string key )
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -278,7 +278,7 @@ __RadScheduleView__ provides you with built-in resources for several cultures:  
 
 
 
-    __C#__
+ __C#__
     
 
 ```C#

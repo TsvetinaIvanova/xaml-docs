@@ -82,7 +82,7 @@ __SpecialSlotsStyleSelector __allows you to apply a separate Style for the speci
             
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -113,7 +113,7 @@ NonWorkingHours.Add(
             
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -146,7 +146,7 @@ public class SpecialSlotStyleSelector : ScheduleViewStyleSelector
 and define the Style:
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -175,7 +175,7 @@ and define the Style:
             
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -198,7 +198,7 @@ Here is the result:![Special Slots](../Media/radscheduleview_special_slots.png)
 Let's for example have the following Resource Type defined:
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -225,7 +225,7 @@ Let's for example have the following Resource Type defined:
             
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -249,7 +249,7 @@ ReadOnlySlots.Add(readOnlyslot);
             
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -270,7 +270,7 @@ ReadOnlySlots.Add(readOnlyslot);
         
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -287,7 +287,7 @@ ReadOnlySlots.Add(readOnlyslot);
         
 
 
-    __C#__
+ __C#__
     
 
 ```C#

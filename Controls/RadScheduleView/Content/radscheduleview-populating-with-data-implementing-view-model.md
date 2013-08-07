@@ -23,7 +23,7 @@ publish:True
             
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -38,7 +38,7 @@ publish:True
             
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -55,7 +55,7 @@ public class MyViewModel
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -73,7 +73,7 @@ End Class
               
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -111,7 +111,7 @@ public ObservableCollection<ResourceType> ResourcesTypes
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -145,7 +145,7 @@ End Property
             
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -181,7 +181,7 @@ private ObservableCollection<ResourceType> GenerateResourceTypes()
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -213,7 +213,7 @@ End Function
             
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -230,7 +230,7 @@ public MyViewModel()
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -247,7 +247,7 @@ End Sub
             The ViewModel is complete. Now, let's return to the View. Add some __ViewDefinitions__, __GroupDescriptionsSource__ and bind the __AppointmentsSource__ and __ResourceTypes__
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -276,7 +276,7 @@ End Sub
             
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -289,7 +289,7 @@ this.DataContext = new MyViewModel();
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET

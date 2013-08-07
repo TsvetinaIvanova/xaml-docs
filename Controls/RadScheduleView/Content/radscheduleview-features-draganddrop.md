@@ -39,7 +39,7 @@ After the CustomDragDropBehavior is implemented, all you need is to set it as Ra
 
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML

@@ -41,7 +41,7 @@ You can edit an appointment using the code. Here are the steps to accomplish thi
           
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -58,7 +58,7 @@ if (this.radScheduleView.BeginEdit(appointment))
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET

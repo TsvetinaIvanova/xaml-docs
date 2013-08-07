@@ -34,7 +34,7 @@ You can add new appointment using the code. Here are the steps to accomplish thi
           
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -51,7 +51,7 @@ this.radScheduleView.Commit();
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET

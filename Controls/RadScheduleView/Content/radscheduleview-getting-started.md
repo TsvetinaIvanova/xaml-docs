@@ -28,7 +28,7 @@ In order to add RadScheduleView control in your projects you have to add referen
           
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -56,7 +56,7 @@ Two lines of code are important here:First is the import of the Telerik URL name
 
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -71,7 +71,7 @@ xmlns:telerik=http://schemas.telerik.com/2008/xaml/presentation
           
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -110,7 +110,7 @@ You can add more than only one ViewDefinition. There are four view definitions a
         
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML

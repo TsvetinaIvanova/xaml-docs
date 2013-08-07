@@ -41,7 +41,7 @@ In the SqlRecurrenceRule.CreateNew() method we create a new instance of SqlExept
 
 
 
-    __C#__
+ __C#__
     
 
 ```C#

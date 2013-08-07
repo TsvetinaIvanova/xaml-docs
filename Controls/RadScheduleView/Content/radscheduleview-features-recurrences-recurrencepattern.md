@@ -173,7 +173,7 @@ When you want to specify the hours of the day when the appointment occurs, you s
         
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -190,7 +190,7 @@ var copyPattern = pattern.Copy();
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -217,7 +217,7 @@ Dim copyPattern = pattern.Copy()
         
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -235,7 +235,7 @@ newPattern.CopyFrom(pattern);
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -261,7 +261,7 @@ newPattern.CopyFrom(pattern)
 For the next examples the following appointment declaration will be used.
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -279,7 +279,7 @@ var appointment = new Appointment() {
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -305,7 +305,7 @@ A simple appointment that starts at 11/05/2011 10:00 AM and lasts two hours is c
         
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -321,7 +321,7 @@ appointment.RecurrenceRule = new RecurrenceRule(pattern);
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -349,7 +349,7 @@ The result can be seen on the next figure. As you can see the appointment with s
         
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -366,7 +366,7 @@ appointment.RecurrenceRule = new RecurrenceRule(pattern);
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -407,7 +407,7 @@ appointment.RecurrenceRule = New RecurrenceRule(pattern)
           
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -425,7 +425,7 @@ appointment.RecurrenceRule = new RecurrenceRule(pattern);
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -461,7 +461,7 @@ Executing the previous pattern will result in creating an appointment that occur
           
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -479,7 +479,7 @@ appointment.RecurrenceRule = new RecurrenceRule(pattern);
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -509,7 +509,7 @@ For example, if you want to create an appointment that occurs on every second Mo
           
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -528,7 +528,7 @@ appointment.RecurrenceRule = new RecurrenceRule(pattern);
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -557,7 +557,7 @@ For example, if you want to create an appointment that occurs on 13th of Novembe
           
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -575,7 +575,7 @@ appointment.RecurrenceRule = new RecurrenceRule(pattern);
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -599,7 +599,7 @@ appointment.RecurrenceRule = New RecurrenceRule(pattern)
         
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -616,7 +616,7 @@ appointment.RecurrenceRule = new RecurrenceRule(pattern);
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -639,7 +639,7 @@ appointment.RecurrenceRule = New RecurrenceRule(pattern)
         
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -656,7 +656,7 @@ appointment.RecurrenceRule = new RecurrenceRule(pattern);
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET

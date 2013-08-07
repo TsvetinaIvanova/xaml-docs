@@ -37,7 +37,7 @@ This article will cover the following topics:
 				
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -69,7 +69,7 @@ This article will cover the following topics:
 where "*local*" is:
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -103,7 +103,7 @@ xmlns:local="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Con
 So, let's for example modify the background color and style of the appointments:
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -139,7 +139,7 @@ So, let's for example modify the background color and style of the appointments:
 And assign the AppointmentStyleSelector to the ScheduleView:
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -173,7 +173,7 @@ The end result in DayViewDefinition with both Horizontal and Vertical Orientatio
 				
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -240,7 +240,7 @@ The end result in DayViewDefinition with both Horizontal and Vertical Orientatio
 				
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -281,7 +281,7 @@ The end result in DayViewDefinition with both Horizontal and Vertical Orientatio
 				
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -333,7 +333,7 @@ The end result in DayViewDefinition with both Horizontal and Vertical Orientatio
 				
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML

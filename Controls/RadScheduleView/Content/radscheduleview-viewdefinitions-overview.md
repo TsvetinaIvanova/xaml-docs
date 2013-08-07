@@ -64,7 +64,7 @@ WeekViewDefinition
         
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -84,7 +84,7 @@ WeekViewDefinition
 
 
 
-    __C#__
+ __C#__
     
 
 ```C#

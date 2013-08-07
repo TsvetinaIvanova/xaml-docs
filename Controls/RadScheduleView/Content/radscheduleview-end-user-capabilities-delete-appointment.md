@@ -35,7 +35,7 @@ Select the option you wish and click 'OK' to confirm the deletion or 'Cancel' to
               
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -48,7 +48,7 @@ this.radScheduleView.Remove(appointment);
 
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML

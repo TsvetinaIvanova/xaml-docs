@@ -29,7 +29,7 @@ By default the auto scrolling functionality is enabled. In order to disable it y
 
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -56,7 +56,7 @@ The next code snippet demonstrates how to change the scrolling step in order to 
 
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -79,7 +79,7 @@ The next code snippet demonstrates how to set the scroll time interval to half a
 
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -102,7 +102,7 @@ The next example shows how to set the ScrollAreaPadding in order to achieve top/
 
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML

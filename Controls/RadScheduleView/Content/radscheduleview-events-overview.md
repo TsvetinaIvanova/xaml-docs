@@ -136,7 +136,7 @@ __DialogClosing__ - occurs when a ScheduleView dialog is about to be closed. The
                   
 
 
-    __C#__
+ __C#__
     
 
 ```C#

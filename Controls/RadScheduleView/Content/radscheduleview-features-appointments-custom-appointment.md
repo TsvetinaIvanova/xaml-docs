@@ -37,7 +37,7 @@ In this article we will explore the process of using custom appointments in RadS
 
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -84,7 +84,7 @@ public class Task:Appointment
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -128,7 +128,7 @@ End Class
         
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -158,7 +158,7 @@ public class TasksCollection : ObservableCollection<Task>
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -187,7 +187,7 @@ And here is the result so far:![](../Media/custom_appointment1.png)
           ____
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -227,7 +227,7 @@ And here is the result so far:![](../Media/custom_appointment1.png)
 
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -251,7 +251,7 @@ And here is the result so far:![](../Media/custom_appointment1.png)
         
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML

@@ -23,7 +23,7 @@ RadScheduleView uses the __IScheduleViewDialogHostFactory__ and __IScheduleViewD
 Create a new class, deriving from ScheduleViewDialogHostFactory and override the CreateNew method:
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -47,7 +47,7 @@ public class CustomScheduleViewDialogHostFactory : ScheduleViewDialogHostFactory
 Configure RadScheduleView to use the new class:
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -69,7 +69,7 @@ Create a new class, deriving from WindowChildWindow and implement the __ISchedul
     
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -113,7 +113,7 @@ public class WindowDialogHost : Window, IScheduleViewDialogHost
 
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -165,7 +165,7 @@ public class WindowDialogHost : ChildWindow, IScheduleViewDialogHost
     
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -194,7 +194,7 @@ public class CustomScheduleViewDialogHostFactory : ScheduleViewDialogHostFactory
 
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -223,7 +223,7 @@ public class CustomScheduleViewDialogHostFactory : IScheduleViewDialogHostFactor
     
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML

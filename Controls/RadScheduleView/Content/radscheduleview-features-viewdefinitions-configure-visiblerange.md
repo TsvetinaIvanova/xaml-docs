@@ -31,7 +31,7 @@ The easiest way to create a WeekViewDefinition that behaves like the DayViewDefi
 				
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -52,7 +52,7 @@ For example, the following class represents a MonthViewDefinition that starts fr
    				
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -77,7 +77,7 @@ Since VisibleDays is 42 by default, this CustomMonthViewDefinition will display 
 Here is how to use the CustomMonthViewDefinition:
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML

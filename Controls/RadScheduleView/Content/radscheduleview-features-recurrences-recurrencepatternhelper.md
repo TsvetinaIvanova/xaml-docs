@@ -28,7 +28,7 @@ The purpose of this tutorial is to show you how to:[Serialize](#Serialize_a_Recu
         
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -47,7 +47,7 @@ var pattern = new RecurrencePattern()
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -71,7 +71,7 @@ A new daily recurrence pattern is created that occurs only in the week days. The
         
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -84,7 +84,7 @@ var serializedPattern = RecurrencePatternHelper.RecurrencePatternToString(patter
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -115,7 +115,7 @@ Dim serializedPattern = RecurrencePatternHelper.RecurrencePatternToString(patter
         
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -130,7 +130,7 @@ RecurrencePatternHelper.TryParseRecurrencePattern(serializedPattern, out pattern
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET

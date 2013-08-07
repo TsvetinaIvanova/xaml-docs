@@ -25,7 +25,7 @@ Add reference to the ScheduleView NoXaml binaries.
 Merge the necessary ResourceDictionary in the App.xaml file (the Office Black theme is used in this example):
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -48,7 +48,7 @@ Merge the necessary ResourceDictionary in the App.xaml file (the Office Black th
 Create a Style that targets the __HighlightItem__, base it on the StaticResource ResizeHighlightStyle and set the Background property:
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -65,7 +65,7 @@ Create a Style that targets the __HighlightItem__, base it on the StaticResource
 Next we will need to set the newly created Style to the ResizeHighlightStyle of the ScheduleView control:
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -91,7 +91,7 @@ In order to customize the __DragDropHighlightStyle__ using Implicit Styles you w
 Create a Style that targets the __HighlightItem__, base it on the StaticResource DragDropHighlightStyle and set the Background property:
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -108,7 +108,7 @@ Create a Style that targets the __HighlightItem__, base it on the StaticResource
 Next we will need to set the newly created Style to the DragDropHighlightStyle of the ScheduleView control:
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML

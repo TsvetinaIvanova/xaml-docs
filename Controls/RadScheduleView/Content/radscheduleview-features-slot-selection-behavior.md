@@ -25,7 +25,7 @@ Create a custom SlotSelectionBehavior class that inherits SlotSelectionBehavior 
 
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -44,7 +44,7 @@ Override the GetSelectionOverride method:
 
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -68,7 +68,7 @@ All that is left is to attach the newly create custom behavior to the ScheduleVi
 
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -91,7 +91,7 @@ Finally the ScheduleView control in the XAML should look like this:
 
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML

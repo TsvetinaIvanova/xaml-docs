@@ -23,7 +23,7 @@ __DragVisualTemplate__ property is of type DataTemplate and is used to define th
 Here is the default DragVisualTemplate:
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -46,7 +46,7 @@ Note the use of DraggedAppointmentsToLocalizedStringConverter – it is needed t
 Let’s for example, change the DataTemplate  as following:
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -80,7 +80,7 @@ Let’s for example, change the DataTemplate  as following:
 Then set the newly created template to the DragVisualTemplate property of the ScheduleView:
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -106,7 +106,7 @@ There are two approaches for customizing the DragVisualStyle according to the wa
 In case you’re using [Implicit Styles](f7b879d9-62ca-42c3-a919-983c7cbc79a2) and merge the needed XAML files as ResourceDictionaries:
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -126,7 +126,7 @@ In case you’re using [Implicit Styles](f7b879d9-62ca-42c3-a919-983c7cbc79a2) a
 In this case you could create a new Style for DragVisual element based on the default Style and modify only certain properties. Here is a simple example:
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -154,7 +154,7 @@ You should extract the complete DragVisualStyle from the RadScheduleView XAML fi
 Then you will be able to make the needed customizations, for example:
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -189,7 +189,7 @@ Then you will be able to make the needed customizations, for example:
 Where *local* is:
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -204,7 +204,7 @@ xmlns:local="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Con
 Either approach you’ve selected, the final step is to set the custom DragVisual style to DragVisualStyle property of the ScheduleView:
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML

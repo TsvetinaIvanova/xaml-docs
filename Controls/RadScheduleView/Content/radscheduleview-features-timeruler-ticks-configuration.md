@@ -19,7 +19,7 @@ Let’s have the RadScheduleView defined like this:
 
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -68,7 +68,7 @@ Here are some examples:
 
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -89,7 +89,7 @@ The same can be set in code-behind like this:
 
 
 
-    __C#__
+ __C#__
     
 
 ```C#

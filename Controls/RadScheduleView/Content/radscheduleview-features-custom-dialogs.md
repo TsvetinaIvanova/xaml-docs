@@ -27,7 +27,7 @@ __RadScheduleView__ provides the following dialogs:
         
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML

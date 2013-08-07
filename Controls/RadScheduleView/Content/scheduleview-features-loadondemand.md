@@ -29,7 +29,7 @@ There are two approaches to accomplish this. You can choose one of them accordin
 
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -48,7 +48,7 @@ There are two approaches to accomplish this. You can choose one of them accordin
 
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -64,7 +64,7 @@ private void scheduleView_VisibleRangeChanged(object sender, System.EventArgs e)
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -84,7 +84,7 @@ Private Sub scheduleView_VisibleRangeChanged(sender As Object, e As System.Event
 
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -101,7 +101,7 @@ private void scheduleView_VisibleRangeChanged(object sender, System.EventArgs e)
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -125,7 +125,7 @@ End Sub
 
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -153,7 +153,7 @@ private ICommand visibleRangeChanged;
 
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -190,7 +190,7 @@ private bool CanVisibleRangeCanExecuted(object param)
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -224,7 +224,7 @@ End Function
 
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML

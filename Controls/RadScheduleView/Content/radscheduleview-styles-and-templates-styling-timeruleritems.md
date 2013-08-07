@@ -87,7 +87,7 @@ __Get TimeRulerItemStyleSelector from RadScheduleView control template__
 
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -166,7 +166,7 @@ __Get TimeRulerItemStyleSelector from RadScheduleView control template__
 Note the use of the __local__ namespace from the raw source:
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -181,7 +181,7 @@ xmlns:local="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Con
 The selector is applied to our instance of RadScheduleView:
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -196,7 +196,7 @@ The selector is applied to our instance of RadScheduleView:
 Now that all TimeRulerItem styles are in place, we can apply any desired customizations and watch the TimeRulerItems change. Let’s modify the __TimeRulerGroupItemStyle__, for example – make the item bold and with a different font color:
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -250,7 +250,7 @@ To create a custom TimeRulerItemStyleSelector, inherit the __OrientedTimeRulerIt
 
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -282,7 +282,7 @@ public class CustomTimeRulerItemStyleSelector : OrientedTimeRulerItemStyleSelect
 
 
 
-    __VB.NET__
+ __VB.NET__
     
 
 ```VB.NET
@@ -337,7 +337,7 @@ The next step is to prepare the actual styles for both types of TimeRulerLines. 
 
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -385,7 +385,7 @@ The next step is to prepare the actual styles for both types of TimeRulerLines. 
 
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML

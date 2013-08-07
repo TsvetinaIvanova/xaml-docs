@@ -74,7 +74,7 @@ This article covers the following topics:[Formatting properties](#formatting_pro
 Let’s for example set the formatting properties of DayViewDefinition:
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -112,7 +112,7 @@ Let’s for example set the formatting properties of DayViewDefinition:
         
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -146,7 +146,7 @@ Let’s for example set the formatting properties of DayViewDefinition:
 In MonthViewDefinition you can set the following formatting properties:
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -182,7 +182,7 @@ And the result is:
 Setting the formatting properties in TimelineViewDefinition like this:
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML

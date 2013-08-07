@@ -40,7 +40,7 @@ The purpose of this tutorial is to show you how to work with resources. The foll
         
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -62,7 +62,7 @@ The purpose of this tutorial is to show you how to work with resources. The foll
         
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -92,7 +92,7 @@ The purpose of this tutorial is to show you how to work with resources. The foll
 
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -124,7 +124,7 @@ Assigning a Resource to a ResourceType (group)
 
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -154,7 +154,7 @@ Assigning a Resource to a ResourceType (group)
         
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -182,7 +182,7 @@ The code above will group RadScheduleView by resource type named Location. Day v
 If you want to change the group order you could use the following syntax:
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML

@@ -44,7 +44,7 @@ The property is of type __DateTimeInterval__. In the following example the __Lar
       
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -62,7 +62,7 @@ The property is of type __DateTimeInterval__. In the following example the __Lar
 
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -98,7 +98,7 @@ The following example shows how to set the __SmallChangeInterval__ property of a
       
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -116,7 +116,7 @@ The following example shows how to set the __SmallChangeInterval__ property of a
 
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -143,7 +143,7 @@ The following example illustrates how to set the DayStartTime for DayView, WeekV
       
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -162,7 +162,7 @@ The following example illustrates how to set the DayStartTime for DayView, WeekV
 
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -196,7 +196,7 @@ The following example illustrates how to set the DayStartTime for DayView, WeekV
       
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -215,7 +215,7 @@ The following example illustrates how to set the DayStartTime for DayView, WeekV
 
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -248,7 +248,7 @@ The following code-snippet illustrates how to set the VisibleDays property in XA
       
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -268,7 +268,7 @@ The following code-snippet illustrates how to set the VisibleDays property in XA
 
 
 
-    __C#__
+ __C#__
     
 
 ```C#
@@ -317,7 +317,7 @@ The following code-snippets show how to set the Orientation property in XAML and
       
 
 
-    __XAML__
+ __XAML__
     
 
 ```XAML
@@ -336,7 +336,7 @@ The following code-snippets show how to set the Orientation property in XAML and
 
 
 
-    __C#__
+ __C#__
     
 
 ```C#
