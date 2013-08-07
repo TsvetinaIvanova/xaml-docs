@@ -125,4 +125,4 @@ Next we will need to set the newly created Style to the DragDropHighlightStyle o
 
 
 
-The next screenshot shows the final result when dragging an appointment:![radscheduleview-styles-and-templates-customizing-resize-drag-highlight-2](images/radscheduleview-styles-and-templates-customizing-resize-drag-highlight-2.png)[Appointment Style](http://radscheduleview-styles-and-templates-appointment-style.md)
+The next screenshot shows the final result when dragging an appointment:![radscheduleview-styles-and-templates-customizing-resize-drag-highlight-2](images/radscheduleview-styles-and-templates-customizing-resize-drag-highlight-2.png)[Appointment Style](&#123;&#123appointment-style&#125;&#125;)

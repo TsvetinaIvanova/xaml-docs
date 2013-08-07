@@ -256,4 +256,4 @@ where __ResourceTypes__ is the collection to which ResourceTypesSource property 
 
 This will lead to the following result:
 
-![radscheduleview updateresources 2](images/radscheduleview_updateresources_2.png)[Implementing View-ViewModel ](http://radscheduleview-populating-with-data-implementing-view-model.md)[Resources](http://radscheduleview-features-resources.md)
+![radscheduleview updateresources 2](images/radscheduleview_updateresources_2.png)[Implementing View-ViewModel ](&#123;&#123implementing-view-viewmodel-&#125;&#125;)[Resources](&#123;&#123resources&#125;&#125;)

@@ -55,4 +55,4 @@ In this scenario, if the RadScheduleView control is resized so that the extend i
 
 
                
-            ![Configurate TimeRuler 02](images/radscheduleview_end_user_capabilities_configurate_timeRuler_02.png)[Overview](http://radscheduleview-overview.md)
+            ![Configurate TimeRuler 02](images/radscheduleview_end_user_capabilities_configurate_timeRuler_02.png)[Overview](&#123;&#123overview&#125;&#125;)

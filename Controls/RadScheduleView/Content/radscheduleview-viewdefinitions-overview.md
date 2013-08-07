@@ -102,4 +102,4 @@ WeekViewDefinition
 
 ```
 
-[Configuration](http://radscheduleview-viewdefinitions-configuration.md)[View specific properties](http://radscheduleview-viewdefinitions-specificproperties.md)[How to configure the VisibleRange](http://radscheduleview-features-viewdefinitions-configure-visiblerange.md)
+[Configuration](&#123;&#123configuration&#125;&#125;)[View specific properties](&#123;&#123view-specific-properties&#125;&#125;)[How to configure the VisibleRange](&#123;&#123how-to-configure-the-visiblerange&#125;&#125;)

@@ -350,4 +350,4 @@ The end result in DayViewDefinition with both Horizontal and Vertical Orientatio
 
 
 					Now that we have our Resources set and our __AppointmentStyleSelector__ ready, let's see the final result. The appointment styles are applied in accordance with each Resource:
-				![radscheduleview appointment style 2](images/radscheduleview_appointment_style_2.png)[Resources](http://radscheduleview-features-resources.md)[Understanding Appointments](http://radscheduleview-getting-started-add-edit-delete-appointment.md)[Custom Appointment](http://radscheduleview-features-appointments-custom-appointment.md)
+				![radscheduleview appointment style 2](images/radscheduleview_appointment_style_2.png)[Resources](&#123;&#123resources&#125;&#125;)[Understanding Appointments](&#123;&#123understanding-appointments&#125;&#125;)[Custom Appointment](&#123;&#123custom-appointment&#125;&#125;)

@@ -129,4 +129,4 @@ With the custom SlotSelectionBehavior:
 
 With the custom SlotSelectionBehavior (creating new appointment with double click on a slot):
 
-![radscheduleview features slot selection behavior 3](images/radscheduleview_features_slot_selection_behavior_3.png)[AppointmentSelectionBehavior](http://radscheduleview-features-appointment-selection-behavior.md)[Custom Slots](http://radscheduleview-features-customslots.md)[Special and ReadOnly slots](http://radscheduleview-features-speacialslots.md)
+![radscheduleview features slot selection behavior 3](images/radscheduleview_features_slot_selection_behavior_3.png)[AppointmentSelectionBehavior](&#123;&#123appointmentselectionbehavior&#125;&#125;)[Custom Slots](&#123;&#123custom-slots&#125;&#125;)[Special and ReadOnly slots](&#123;&#123special-and-readonly-slots&#125;&#125;)

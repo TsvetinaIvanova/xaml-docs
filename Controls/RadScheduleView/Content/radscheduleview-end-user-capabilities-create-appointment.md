@@ -67,4 +67,4 @@ Me.radScheduleView.Commit()
 
 
 
-[Understanding Appointments](http://radscheduleview-getting-started-add-edit-delete-appointment.md)[Edit Appointment](http://radscheduleview-end-user-capabilities-edit-appointment.md)[Delete Appointment](http://radscheduleview-end-user-capabilities-delete-appointment.md)
+[Understanding Appointments](&#123;&#123understanding-appointments&#125;&#125;)[Edit Appointment](&#123;&#123edit-appointment&#125;&#125;)[Delete Appointment](&#123;&#123delete-appointment&#125;&#125;)

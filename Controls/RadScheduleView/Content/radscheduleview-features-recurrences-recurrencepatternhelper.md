@@ -144,4 +144,4 @@ RecurrencePatternHelper.TryParseRecurrencePattern(serializedPattern, pattern)
 
 
 
-The result will be a new daily recurrence pattern that occurs only in the week days. The interval between each occurrence is three days. The pattern has a limit of ten occurrences.[RecurrencePattern](http://radscheduleview-features-recurrences-recurrencepattern.md)[RecurrenceRule](http://radscheduleview-features-recurrences-recurrencerule.md)
+The result will be a new daily recurrence pattern that occurs only in the week days. The interval between each occurrence is three days. The pattern has a limit of ten occurrences.[RecurrencePattern](&#123;&#123recurrencepattern&#125;&#125;)[RecurrenceRule](&#123;&#123recurrencerule&#125;&#125;)

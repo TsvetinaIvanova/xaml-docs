@@ -71,4 +71,4 @@ End If
 
 ```
 
-[Understanding Appointments](http://radscheduleview-getting-started-add-edit-delete-appointment.md)[Create Appointment](http://radscheduleview-end-user-capabilities-create-appointment.md)[Delete Appointment](http://radscheduleview-end-user-capabilities-delete-appointment.md)
+[Understanding Appointments](&#123;&#123understanding-appointments&#125;&#125;)[Create Appointment](&#123;&#123create-appointment&#125;&#125;)[Delete Appointment](&#123;&#123delete-appointment&#125;&#125;)

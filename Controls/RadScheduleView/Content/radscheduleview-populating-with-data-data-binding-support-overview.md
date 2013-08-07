@@ -61,4 +61,4 @@ publish:True
 
 
                   Note that the data source passed to the property __GroupDescriptionsSource__ should contain only objects of type __GroupDescription__.
-                [Implementing View-ViewModel ](http://radscheduleview-populating-with-data-implementing-view-model.md)
+                [Implementing View-ViewModel ](&#123;&#123implementing-view-viewmodel-&#125;&#125;)

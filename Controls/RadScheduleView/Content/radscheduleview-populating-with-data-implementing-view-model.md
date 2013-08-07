@@ -299,4 +299,4 @@ Me.DataContext = New MyViewModel()
 
 ```
 
-[Implementing View-ViewModel ](http://radscheduleview-populating-with-data-implementing-view-model.md)
+[Implementing View-ViewModel ](&#123;&#123implementing-view-viewmodel-&#125;&#125;)

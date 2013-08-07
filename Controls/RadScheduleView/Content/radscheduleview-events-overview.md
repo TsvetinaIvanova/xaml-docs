@@ -156,4 +156,4 @@ private void ScheduleView_DialogClosing(object sender, CancelRoutedEventArgs e)
 
 ```
 
-[Understanding Appointments](http://radscheduleview-getting-started-add-edit-delete-appointment.md)
+[Understanding Appointments](&#123;&#123understanding-appointments&#125;&#125;)

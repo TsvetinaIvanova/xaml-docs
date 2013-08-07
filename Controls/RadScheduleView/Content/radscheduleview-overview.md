@@ -31,4 +31,4 @@ ____
         
 
 
-          Check out the online demo at:[http://demos.telerik.com/wpf/](http://demos.telerik.com/wpf/)[http://demos.telerik.com/silverlight/](http://demos.telerik.com/silverlight/)[Key Features](http://radscheduleview-key-features.md)[Getting Started](http://radscheduleview-getting-started.md)[Understanding Appointments](http://radscheduleview-getting-started-add-edit-delete-appointment.md)
+          Check out the online demo at:[http://demos.telerik.com/wpf/](http://demos.telerik.com/wpf/)[http://demos.telerik.com/silverlight/](http://demos.telerik.com/silverlight/)[Key Features](&#123;&#123key-features&#125;&#125;)[Getting Started](&#123;&#123getting-started&#125;&#125;)[Understanding Appointments](&#123;&#123understanding-appointments&#125;&#125;)

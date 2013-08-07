@@ -73,4 +73,4 @@ public IQueryable<SqlAppointment> GetSqlAppointmentsByRange(DateTime start, Date
 
 ```
 
-[Silverlight Part](http://radscheduleview-populating-with-data-binding-to-db-silverlight.md)
+[Silverlight Part](&#123;&#123silverlight-part&#125;&#125;)
