@@ -102,4 +102,4 @@ WeekViewDefinition
 
 ```
 
-[Configuration](&#123;&#123configuration&#125;&#125;)[View specific properties](&#123;&#123view-specific-properties&#125;&#125;)[How to configure the VisibleRange](&#123;&#123how-to-configure-the-visiblerange&#125;&#125;)
+[Configuration](&#123;&#123slug:configuration&#125;&#125;)[View specific properties](&#123;&#123slug:view-specific-properties&#125;&#125;)[How to configure the VisibleRange](&#123;&#123slug:how-to-configure-the-visiblerange&#125;&#125;)

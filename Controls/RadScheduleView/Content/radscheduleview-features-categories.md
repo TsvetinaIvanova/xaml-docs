@@ -145,4 +145,4 @@ this.DataContext = new MyViewModel();
 
 Here is how the new categories look like:
 
-![radscheduleview categories 03](images/radscheduleview_categories_03.png)[Implementing View-ViewModel ](&#123;&#123implementing-view-viewmodel-&#125;&#125;)
+![radscheduleview categories 03](images/radscheduleview_categories_03.png)[Implementing View-ViewModel ](&#123;&#123slug:implementing-view-viewmodel-&#125;&#125;)

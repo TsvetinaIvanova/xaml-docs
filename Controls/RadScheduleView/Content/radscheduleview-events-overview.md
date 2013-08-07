@@ -156,4 +156,4 @@ private void ScheduleView_DialogClosing(object sender, CancelRoutedEventArgs e)
 
 ```
 
-[Understanding Appointments](&#123;&#123understanding-appointments&#125;&#125;)
+[Understanding Appointments](&#123;&#123slug:understanding-appointments&#125;&#125;)

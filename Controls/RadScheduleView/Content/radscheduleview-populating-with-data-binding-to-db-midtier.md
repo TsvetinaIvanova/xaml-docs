@@ -73,4 +73,4 @@ public IQueryable<SqlAppointment> GetSqlAppointmentsByRange(DateTime start, Date
 
 ```
 
-[Silverlight Part](&#123;&#123silverlight-part&#125;&#125;)
+[Silverlight Part](&#123;&#123slug:silverlight-part&#125;&#125;)

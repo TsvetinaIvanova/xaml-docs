@@ -58,4 +58,4 @@ Me.radScheduleView.Remove(appointment)
 
 ```
 
-[Understanding Appointments](&#123;&#123understanding-appointments&#125;&#125;)[Create Appointment](&#123;&#123create-appointment&#125;&#125;)[Edit Appointment](&#123;&#123edit-appointment&#125;&#125;)
+[Understanding Appointments](&#123;&#123slug:understanding-appointments&#125;&#125;)[Create Appointment](&#123;&#123slug:create-appointment&#125;&#125;)[Edit Appointment](&#123;&#123slug:edit-appointment&#125;&#125;)

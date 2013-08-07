@@ -123,4 +123,4 @@ this.DataContext = new MyViewModel();
 
 Here is the result:
 
-![radscheduleview timemarkers 03](images/radscheduleview_timemarkers_03.png)[Implementing View-ViewModel ](&#123;&#123implementing-view-viewmodel-&#125;&#125;)
+![radscheduleview timemarkers 03](images/radscheduleview_timemarkers_03.png)[Implementing View-ViewModel ](&#123;&#123slug:implementing-view-viewmodel-&#125;&#125;)

@@ -31,4 +31,4 @@ ____
         
 
 
-          Check out the online demo at:[http://demos.telerik.com/wpf/](http://demos.telerik.com/wpf/)[http://demos.telerik.com/silverlight/](http://demos.telerik.com/silverlight/)[Key Features](&#123;&#123key-features&#125;&#125;)[Getting Started](&#123;&#123getting-started&#125;&#125;)[Understanding Appointments](&#123;&#123understanding-appointments&#125;&#125;)
+          Check out the online demo at:[http://demos.telerik.com/wpf/](http://demos.telerik.com/wpf/)[http://demos.telerik.com/silverlight/](http://demos.telerik.com/silverlight/)[Key Features](&#123;&#123slug:key-features&#125;&#125;)[Getting Started](&#123;&#123slug:getting-started&#125;&#125;)[Understanding Appointments](&#123;&#123slug:understanding-appointments&#125;&#125;)

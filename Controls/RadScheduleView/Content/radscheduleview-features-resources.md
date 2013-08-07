@@ -208,4 +208,4 @@ The result will be the following (note the changed group order):
                
             ![](images/scheduleview_features_resources_image2.png)
 
-[Data Binding Support Overview](&#123;&#123data-binding-support-overview&#125;&#125;)
+[Data Binding Support Overview](&#123;&#123slug:data-binding-support-overview&#125;&#125;)
