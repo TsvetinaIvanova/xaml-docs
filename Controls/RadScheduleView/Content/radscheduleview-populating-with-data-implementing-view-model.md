@@ -1,11 +1,11 @@
-___
+---
 title: Implementing View-ViewModel 
 meta_title: Implementing View-ViewModel 
-meta_description:description
-slug:implementing_view-viewmodel_
+meta_description: description.
+slug: implementing-view-viewmodel-
 tags:implementing,view-viewmodel,
 publish:True
-___
+---
 
 
 # 

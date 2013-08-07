@@ -1,11 +1,11 @@
-___
+---
 title: Inline Editing
 meta_title: Inline Editing
-meta_description:description
-slug:inline_editing
+meta_description: description.
+slug: inline-editing
 tags:inline,editing
 publish:True
-___
+---
 
 
 RadScheduleView supports inline editing of the displayed appointment's subject. The purpose of this tutorial is to show you:

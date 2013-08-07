@@ -1,11 +1,11 @@
-___
+---
 title: Configuring the TimeRuler ticks
 meta_title: Configuring the TimeRuler ticks
-meta_description:description
-slug:configuring_the_timeruler_ticks
+meta_description: description.
+slug: configuring-the-timeruler-ticks
 tags:configuring,the,timeruler,ticks
 publish:True
-___
+---
 
 
 # Overview

@@ -1,11 +1,11 @@
-___
+---
 title: AutoScrolling
 meta_title: AutoScrolling
-meta_description:description
-slug:autoscrolling
+meta_description: description.
+slug: autoscrolling
 tags:autoscrolling
 publish:True
-___
+---
 
 
 With the official Q2 SP1 release of RadControls we introduce the auto scrolling feature for __RadScheduleView__. This feature will help end users by auto scrolling the visible area of the view while dragging appointments in the control.

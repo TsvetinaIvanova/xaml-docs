@@ -1,11 +1,11 @@
-___
+---
 title: Styling the GroupHeaders
 meta_title: Styling the GroupHeaders
-meta_description:description
-slug:styling_the_groupheaders
+meta_description: description.
+slug: styling-the-groupheaders
 tags:styling,the,groupheaders
 publish:True
-___
+---
 
 
 

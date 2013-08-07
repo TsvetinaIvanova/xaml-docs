@@ -1,11 +1,11 @@
-___
+---
 title: TimeRuler Configuration
 meta_title: TimeRuler Configuration
-meta_description:description
-slug:timeruler_configuration
+meta_description: description.
+slug: timeruler-configuration
 tags:timeruler,configuration
 publish:True
-___
+---
 
 
 This topic describes how to configurate the TimeRuler of the RadScheduleView control.

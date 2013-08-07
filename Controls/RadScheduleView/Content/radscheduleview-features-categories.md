@@ -1,11 +1,11 @@
-___
+---
 title: Categories
 meta_title: Categories
-meta_description:description
-slug:categories
+meta_description: description.
+slug: categories
 tags:categories
 publish:True
-___
+---
 
 
 __RadScheduleView__ provides you with a built-in categories support. You can assign a category to each one of your appointments, thus making them easily distinguishable.

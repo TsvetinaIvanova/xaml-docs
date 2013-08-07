@@ -1,11 +1,11 @@
-___
+---
 title: Customizing the DragVisual
 meta_title: Customizing the DragVisual
-meta_description:description
-slug:customizing_the_dragvisual
+meta_description: description.
+slug: customizing-the-dragvisual
 tags:customizing,the,dragvisual
 publish:True
-___
+---
 
 
 This help article explains how you could customize the visual element that is shown while the user is dragging an appointment in the __ScheduleView__ control.![radscheduleview dragvisual 1](../Media/radscheduleview_dragvisual_1.png)

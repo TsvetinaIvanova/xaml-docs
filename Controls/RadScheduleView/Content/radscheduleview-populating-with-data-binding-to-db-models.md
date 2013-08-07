@@ -1,11 +1,11 @@
-___
+---
 title: Models
 meta_title: Models
-meta_description:description
-slug:models
+meta_description: description.
+slug: models
 tags:models
 publish:True
-___
+---
 
 
 Here we will explain the tricky moments when defining the models.

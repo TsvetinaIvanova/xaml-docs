@@ -1,11 +1,11 @@
-___
+---
 title: Customizing the Resize and DragDropHighlight
 meta_title: Customizing the Resize and DragDropHighlight
-meta_description:description
-slug:customizing_the_resize_and_dragdrophighlight
+meta_description: description.
+slug: customizing-the-resize-and-dragdrophighlight
 tags:customizing,the,resize,and,dragdrophighlight
 publish:True
-___
+---
 
 
 In __RadScheduleView__ it is possible to customize the resize and drag and drop highlight of appointments in the control.

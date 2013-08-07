@@ -1,11 +1,11 @@
-___
+---
 title: Migration from RadScheduler
 meta_title: Migration from RadScheduler
-meta_description:description
-slug:migration_from_radscheduler
+meta_description: description.
+slug: migration-from-radscheduler
 tags:migration,from,radscheduler
 publish:True
-___
+---
 
 
 The following article describes the migration process from the RadScheduler to the RadScheduleView control.

@@ -1,11 +1,11 @@
-___
+---
 title: SlotSelectionBehavior
 meta_title: SlotSelectionBehavior
-meta_description:description
-slug:slotselectionbehavior
+meta_description: description.
+slug: slotselectionbehavior
 tags:slotselectionbehavior
 publish:True
-___
+---
 
 
 In RadScheduleView there are plugin selection behaviors that make it possible to customize the logic behind all selections in the control. There are selection behaviors like AppointmentSelectionBehavior, SlotSelectionBehavior etc.

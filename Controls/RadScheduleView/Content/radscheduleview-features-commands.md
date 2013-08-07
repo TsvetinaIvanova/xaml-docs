@@ -1,11 +1,11 @@
-___
+---
 title: Commands
 meta_title: Commands
-meta_description:description
-slug:commands
+meta_description: description.
+slug: commands
 tags:commands
 publish:True
-___
+---
 
 
 __RadScheduleView__ exposes its functionality through various commands that can be executed on its behalf. All commands are placed in the static class __RadScheduleViewCommands__. 

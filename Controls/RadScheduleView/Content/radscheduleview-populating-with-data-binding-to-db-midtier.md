@@ -1,11 +1,11 @@
-___
+---
 title: Entity Model, DomainContext
 meta_title: Entity Model, DomainContext
-meta_description:description
-slug:entity_model,_domaincontext
+meta_description: description.
+slug: entity-model,-domaincontext
 tags:entity,model,,domaincontext
 publish:True
-___
+---
 
 
 # 

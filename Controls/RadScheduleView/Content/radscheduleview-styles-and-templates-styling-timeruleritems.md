@@ -1,11 +1,11 @@
-___
+---
 title: Styling the TimeRulerItems
 meta_title: Styling the TimeRulerItems
-meta_description:description
-slug:styling_the_timeruleritems
+meta_description: description.
+slug: styling-the-timeruleritems
 tags:styling,the,timeruleritems
 publish:True
-___
+---
 
 
 

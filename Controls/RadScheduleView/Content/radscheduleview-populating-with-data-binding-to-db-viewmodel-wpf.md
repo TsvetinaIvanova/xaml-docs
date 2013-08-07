@@ -1,11 +1,11 @@
-___
+---
 title: View and ViewModel
 meta_title: View and ViewModel
-meta_description:description
-slug:view_and_viewmodel
+meta_description: description.
+slug: view-and-viewmodel
 tags:view,and,viewmodel
 publish:True
-___
+---
 
 
 # Presentation tier (xaml)

@@ -1,11 +1,11 @@
-___
+---
 title: Prevent Dialogs from Opening
 meta_title: Prevent Dialogs from Opening
-meta_description:description
-slug:prevent_dialogs_from_opening
+meta_description: description.
+slug: prevent-dialogs-from-opening
 tags:prevent,dialogs,from,opening
 publish:True
-___
+---
 
 
 This article covers the following topics:[How to hide a RadScheduleView dialog](#hidedialog)[How to skip ConfirmDeleteDialog.](#skipconfirmdeletedialog)[How to preselect a certain option in RecurrenceChoiceDialog.](#preselectrecurrencechoicedialog)

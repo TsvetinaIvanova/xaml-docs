@@ -1,11 +1,11 @@
-___
+---
 title: Understanding Appointments
 meta_title: Understanding Appointments
-meta_description:description
-slug:understanding_appointments
+meta_description: description.
+slug: understanding-appointments
 tags:understanding,appointments
 publish:True
-___
+---
 
 
 

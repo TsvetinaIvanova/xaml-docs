@@ -1,11 +1,11 @@
-___
+---
 title: RadScheduleView Types and Sources
 meta_title: RadScheduleView Types and Sources
-meta_description:description
-slug:radscheduleview_types_and_sources
+meta_description: description.
+slug: radscheduleview-types-and-sources
 tags:radscheduleview,types,and,sources
 publish:True
-___
+---
 
 
 # 

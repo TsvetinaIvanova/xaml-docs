@@ -1,11 +1,11 @@
-___
+---
 title: Add RadComboBox to a custom EditAppointmentDialog
 meta_title: Add RadComboBox to a custom EditAppointmentDialog
-meta_description:description
-slug:add_radcombobox_to_a_custom_editappointmentdialog
+meta_description: description.
+slug: add-radcombobox-to-a-custom-editappointmentdialog
 tags:add,radcombobox,to,a,custom,editappointmentdialog
 publish:True
-___
+---
 
 
 

@@ -1,11 +1,11 @@
-___
+---
 title: Load on demand with RadScheduleView
 meta_title: Load on demand with RadScheduleView
-meta_description:description
-slug:load_on_demand_with_radscheduleview
+meta_description: description.
+slug: load-on-demand-with-radscheduleview
 tags:load,on,demand,with,radscheduleview
 publish:True
-___
+---
 
 
 This tutorial demonstrates how you can load the appointments depending on the visible range of the RadScheduleView. This can be very useful in one real-time scenario when the number of appointments it's very large.

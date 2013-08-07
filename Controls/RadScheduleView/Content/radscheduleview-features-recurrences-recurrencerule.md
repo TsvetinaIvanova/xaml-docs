@@ -1,11 +1,11 @@
-___
+---
 title: RecurrenceRule
 meta_title: RecurrenceRule
-meta_description:description
-slug:recurrencerule
+meta_description: description.
+slug: recurrencerule
 tags:recurrencerule
 publish:True
-___
+---
 
 
 __RadScheduleView__ includes support for recurring events on daily, weekly, monthly and yearly basis. Exceptions to the recurrence rules are also permitted. To support this recurrence behavior, the __IAppointment__ interface includes the __RecurrenceRule__ property. When an appointment is promoted into a recurring event its __RecurrenceRule__ is set with correct [RecurrencePattern](3F113E6D-5519-40FD-A3B3-6A46B2489318).

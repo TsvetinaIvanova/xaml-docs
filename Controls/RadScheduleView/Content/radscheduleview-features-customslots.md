@@ -1,11 +1,11 @@
-___
+---
 title: Custom Slots
 meta_title: Custom Slots
-meta_description:description
-slug:custom_slots
+meta_description: description.
+slug: custom-slots
 tags:custom,slots
 publish:True
-___
+---
 
 
 This article describes how you can create a custom SpecialSlot, add custom properties to it and bind the properties in the Slot template.

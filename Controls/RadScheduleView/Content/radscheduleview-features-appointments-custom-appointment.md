@@ -1,11 +1,11 @@
-___
+---
 title: Custom Appointment
 meta_title: Custom Appointment
-meta_description:description
-slug:custom_appointment
+meta_description: description.
+slug: custom-appointment
 tags:custom,appointment
 publish:True
-___
+---
 
 
 

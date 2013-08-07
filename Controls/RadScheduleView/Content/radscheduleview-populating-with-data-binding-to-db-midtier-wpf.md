@@ -1,11 +1,11 @@
-___
+---
 title: Entity Model
 meta_title: Entity Model
-meta_description:description
-slug:entity_model
+meta_description: description.
+slug: entity-model
 tags:entity,model
 publish:True
-___
+---
 
 
 # 

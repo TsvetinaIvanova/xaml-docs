@@ -1,11 +1,11 @@
-___
+---
 title: Update the Resources
 meta_title: Update the Resources
-meta_description:description
-slug:update_the_resources
+meta_description: description.
+slug: update-the-resources
 tags:update,the,resources
 publish:True
-___
+---
 
 
 This article will show how you can update the visible resources by which the RadScheduleView is grouped.

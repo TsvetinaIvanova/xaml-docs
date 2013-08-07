@@ -1,11 +1,11 @@
-___
+---
 title: Time Markers
 meta_title: Time Markers
-meta_description:description
-slug:time_markers
+meta_description: description.
+slug: time-markers
 tags:time,markers
 publish:True
-___
+---
 
 
 __RadScheduleView__ provides you with a built-in time markers support. You can assign a time marker to each one of your appointments, thus making them easily distinguishable.

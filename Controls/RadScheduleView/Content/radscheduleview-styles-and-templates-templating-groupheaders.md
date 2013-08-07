@@ -1,11 +1,11 @@
-___
+---
 title: Templating the GroupHeaders
 meta_title: Templating the GroupHeaders
-meta_description:description
-slug:templating_the_groupheaders
+meta_description: description.
+slug: templating-the-groupheaders
 tags:templating,the,groupheaders
 publish:True
-___
+---
 
 
 This help article explains in details how to use GroupHeaderContentTemplateSelector in order to set different DataTemplates to the GroupHeaders of __RadScheduleView__.

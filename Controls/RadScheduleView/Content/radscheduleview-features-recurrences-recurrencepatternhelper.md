@@ -1,11 +1,11 @@
-___
+---
 title: RecurrencePatternHelper
 meta_title: RecurrencePatternHelper
-meta_description:description
-slug:recurrencepatternhelper
+meta_description: description.
+slug: recurrencepatternhelper
 tags:recurrencepatternhelper
 publish:True
-___
+---
 
 
 

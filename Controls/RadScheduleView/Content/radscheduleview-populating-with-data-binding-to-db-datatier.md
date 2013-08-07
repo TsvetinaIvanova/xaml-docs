@@ -1,11 +1,11 @@
-___
+---
 title: Table Definitions and Relationships
 meta_title: Table Definitions and Relationships
-meta_description:description
-slug:table_definitions_and_relationships
+meta_description: description.
+slug: table-definitions-and-relationships
 tags:table,definitions,and,relationships
 publish:True
-___
+---
 
 
 The database diagram is very common to the class diagram of the RadScheduleView interfaces:

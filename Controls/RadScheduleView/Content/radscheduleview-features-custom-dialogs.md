@@ -1,11 +1,11 @@
-___
+---
 title: Custom Dialogs
 meta_title: Custom Dialogs
-meta_description:description
-slug:custom_dialogs
+meta_description: description.
+slug: custom-dialogs
 tags:custom,dialogs
 publish:True
-___
+---
 
 
 __RadScheduleView__ makes it easy to customize its dialogs. Each RadWindow dialog contains an instance of the SchedulerDialog control as Content. The ViewModel in the DataContext of the SchedulerDialog control is automatically provided and contains all needed properties for the corresponding dialog. __RadScheduleView__ exposes a Style property for each dialog which allows you to apply a Style on the SchedulerDialog control and modify its Template.

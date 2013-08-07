@@ -1,11 +1,11 @@
-___
+---
 title: Drag and Drop with RadScheduleView
 meta_title: Drag and Drop with RadScheduleView
-meta_description:description
-slug:drag_and_drop_with_radscheduleview
+meta_description: description.
+slug: drag-and-drop-with-radscheduleview
 tags:drag,and,drop,with,radscheduleview
 publish:True
-___
+---
 
 
 # 
