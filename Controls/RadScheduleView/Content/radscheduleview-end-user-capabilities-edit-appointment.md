@@ -71,4 +71,4 @@ End If
 
 ```
 
-[Understanding Appointments](&#123;&#123slug:understanding-appointments&#125;&#125;)[Create Appointment](&#123;&#123slug:create-appointment&#125;&#125;)[Delete Appointment](&#123;&#123slug:delete-appointment&#125;&#125;)
+[Understanding Appointments]({{slug:understanding-appointments}})[Create Appointment]({{slug:create-appointment}})[Delete Appointment]({{slug:delete-appointment}})

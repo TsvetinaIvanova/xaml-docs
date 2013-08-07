@@ -270,4 +270,4 @@ And here is the result so far:![](images/custom_appointment1.png)
 
 This is what the Appointment ToolTip should look like now:![](images/custom_appointment7.png)
 
-By completing this last modification, we have reached the end of the process needed to create a custom appointment in RadScheduleView control.[Understanding Appointments](&#123;&#123slug:understanding-appointments&#125;&#125;)
+By completing this last modification, we have reached the end of the process needed to create a custom appointment in RadScheduleView control.[Understanding Appointments]({{slug:understanding-appointments}})

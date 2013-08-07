@@ -155,4 +155,4 @@ With the custom AppointmentSelectionBehavior (before selection):
 
 With the custom AppointmentSelectionBehavior (after selection with pressed Ctrl or Shift keyboard key):
 
-![radscheduleview features appointment selection behavior 3](images/radscheduleview_features_appointment_selection_behavior_3.png)[Resources](&#123;&#123slug:resources&#125;&#125;)[SlotSelectionBehavior](&#123;&#123slug:slotselectionbehavior&#125;&#125;)
+![radscheduleview features appointment selection behavior 3](images/radscheduleview_features_appointment_selection_behavior_3.png)[Resources]({{slug:resources}})[SlotSelectionBehavior]({{slug:slotselectionbehavior}})

@@ -299,4 +299,4 @@ Me.DataContext = New MyViewModel()
 
 ```
 
-[Implementing View-ViewModel ](&#123;&#123slug:implementing-view-viewmodel-&#125;&#125;)
+[Implementing View-ViewModel ]({{slug:implementing-view-viewmodel-}})
