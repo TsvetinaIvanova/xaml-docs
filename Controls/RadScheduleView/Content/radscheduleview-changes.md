@@ -6,7 +6,10 @@ slug: changes
 tags:changes
 publish:True
 ---
+<<<<<<< HEAD
 
+=======
+>>>>>>> dd0175cd8cf5b8ccb7964a3f935bb3f0753e197c
 
 This article describes the release history of the control.
 
