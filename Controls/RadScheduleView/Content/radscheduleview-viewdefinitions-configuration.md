@@ -285,7 +285,7 @@ The following code-snippet illustrates how to set the VisibleDays property in XA
 
 And the result is shown on the next figure for DayView and TimelineView:
                
-      		![radschedule View viewdefinitions configuration 01](../Media/radscheduleView_viewdefinitions_configuration_01.png)
+      		![radschedule View viewdefinitions configuration 01](images\radscheduleView_viewdefinitions_configuration_01.png)
 
 # FirstDayOfWeekFirstDayOfWeek
 
@@ -352,16 +352,16 @@ The following code-snippets show how to set the Orientation property in XAML and
 
 This is how the views look like after setting the Orientation property:
                
-      		![radschedule View viewdefinitions configuration 05](../Media/radscheduleView_viewdefinitions_configuration_05.png)
+      		![radschedule View viewdefinitions configuration 05](images\radscheduleView_viewdefinitions_configuration_05.png)
 
 DayView with Orientation property set to Horizontal.
                
-      		![radschedule View viewdefinitions configuration 06](../Media/radscheduleView_viewdefinitions_configuration_06.png)
+      		![radschedule View viewdefinitions configuration 06](images\radscheduleView_viewdefinitions_configuration_06.png)
 
 WeekView with Orientation property set to Horizontal.
       
                
-            ![radschedule View viewdefinitions configuration 07](../Media/radscheduleView_viewdefinitions_configuration_07.png)
+            ![radschedule View viewdefinitions configuration 07](images\radscheduleView_viewdefinitions_configuration_07.png)
 
 TimelineView with Orientation property set to Horizontal.
       

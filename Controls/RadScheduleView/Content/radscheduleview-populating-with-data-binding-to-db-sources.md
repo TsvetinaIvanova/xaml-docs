@@ -18,4 +18,4 @@ With its current version RadScheduleView exposes several important interfaces: _
 
 Here you could refer to the class diagram for more detailed information about the interfaces:
 
-![radscheduleview populating with data schedule View Types Diagram](../Media/radscheduleview_populating_with_data_scheduleViewTypesDiagram.png)[Table Definitions and Relationships](http://radscheduleview-populating-with-data-binding-to-db-datatier.md)
+![radscheduleview populating with data schedule View Types Diagram](images\radscheduleview_populating_with_data_scheduleViewTypesDiagram.png)[Table Definitions and Relationships](http://radscheduleview-populating-with-data-binding-to-db-datatier.md)

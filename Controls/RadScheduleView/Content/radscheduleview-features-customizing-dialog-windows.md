@@ -238,5 +238,5 @@ public class CustomScheduleViewDialogHostFactory : IScheduleViewDialogHostFactor
 ```
 
          
-      		![radscheduleview customizingdialogs wpf](../Media/radscheduleview_customizingdialogs_wpf.png)         
-      		![radscheduleview customizingdialogs](../Media/radscheduleview_customizingdialogs.png)
+      		![radscheduleview customizingdialogs wpf](images\radscheduleview_customizingdialogs_wpf.png)         
+      		![radscheduleview customizingdialogs](images\radscheduleview_customizingdialogs.png)

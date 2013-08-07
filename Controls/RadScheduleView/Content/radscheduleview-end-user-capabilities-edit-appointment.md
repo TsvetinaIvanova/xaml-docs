@@ -19,7 +19,7 @@ __RadScheduleView__ uses one and the same dialog to create and edit appointments
 
 
                
-            ![RadScheduleView Edit Appointment](../Media/radscheduleview_end_user_capabilities_edit_appointment_01.png)
+            ![RadScheduleView Edit Appointment](images\radscheduleview_end_user_capabilities_edit_appointment_01.png)
             In order to edit an appointment just double click it in the __RadScheduleView__.
           If the appointment is not a recurrent one, the edit appointment dialog appears immediately. After the edit appointment dialog is opened, you can change the Subject, Description, Start and End time of the appointment.You can also change or assign category, time marker or importance by using the tool bar controls.You can also change the appointment recurrent.
             If you have completed the appointment edit, click the 'Save & Close' button or press the __Enter__ key.

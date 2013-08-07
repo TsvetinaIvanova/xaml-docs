@@ -117,16 +117,16 @@ The end result is:
 
 With the default SlotSelectionBehavior:
 
-![radscheduleview features slot selection behavior 0](../Media/radscheduleview_features_slot_selection_behavior_0.png)
+![radscheduleview features slot selection behavior 0](images\radscheduleview_features_slot_selection_behavior_0.png)
 
 With the default SlotSelectionBehavior (creating new appointment with double click on a slot):
 
-![radscheduleview features slot selection behavior 1](../Media/radscheduleview_features_slot_selection_behavior_1.png)
+![radscheduleview features slot selection behavior 1](images\radscheduleview_features_slot_selection_behavior_1.png)
 
 With the custom SlotSelectionBehavior:
 
-![radscheduleview features slot selection behavior 2](../Media/radscheduleview_features_slot_selection_behavior_2.png)
+![radscheduleview features slot selection behavior 2](images\radscheduleview_features_slot_selection_behavior_2.png)
 
 With the custom SlotSelectionBehavior (creating new appointment with double click on a slot):
 
-![radscheduleview features slot selection behavior 3](../Media/radscheduleview_features_slot_selection_behavior_3.png)[AppointmentSelectionBehavior](http://radscheduleview-features-appointment-selection-behavior.md)[Custom Slots](http://radscheduleview-features-customslots.md)[Special and ReadOnly slots](http://radscheduleview-features-speacialslots.md)
+![radscheduleview features slot selection behavior 3](images\radscheduleview_features_slot_selection_behavior_3.png)[AppointmentSelectionBehavior](http://radscheduleview-features-appointment-selection-behavior.md)[Custom Slots](http://radscheduleview-features-customslots.md)[Special and ReadOnly slots](http://radscheduleview-features-speacialslots.md)

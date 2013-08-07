@@ -25,7 +25,7 @@ RadScheduleView provides the option to automatically snap the appointments while
 
 
 
-This way during drag/resize operation the Start/End times of the appointment will be rounded according to the TimeSlots’ length:![radscheduleview snapappointments 1](../Media/radscheduleview_snapappointments_1.png)
+This way during drag/resize operation the Start/End times of the appointment will be rounded according to the TimeSlots’ length:![radscheduleview snapappointments 1](images\radscheduleview_snapappointments_1.png)
 
 You could set MinorTickLength property of the ViewDefinition in order to snap the appointments to different duration:
      
@@ -47,7 +47,7 @@ You could set MinorTickLength property of the ViewDefinition in order to snap th
 
 
 
-And the result is:![radscheduleview snapappointments 2](../Media/radscheduleview_snapappointments_2.png)
+And the result is:![radscheduleview snapappointments 2](images\radscheduleview_snapappointments_2.png)
     ![tip](tip.jpg)
     	
 
@@ -150,4 +150,4 @@ Attach the newly created custom behavior to the ScheduleView control:
 
 
 
-So now the appointments are snapped to 5 minutes:![radscheduleview snapappointments 3](../Media/radscheduleview_snapappointments_3.png)
+So now the appointments are snapped to 5 minutes:![radscheduleview snapappointments 3](images\radscheduleview_snapappointments_3.png)

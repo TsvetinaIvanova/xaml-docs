@@ -18,13 +18,13 @@ __RadScheduleView__ provides you with a built-in categories support. You can ass
 
 Run-time you can define the category of your appointment via the drop down menu in the EditAppointmentDialog:
 
-![radscheduleview categories 01](../Media/radscheduleview_categories_01.png)
+![radscheduleview categories 01](images\radscheduleview_categories_01.png)
 
 
       	On the snapshot below you can see four appointments where three of them have categories set, while the fourth does not have. Note how the background color of the appointments is taken from their categories.
       	
 
-![radscheduleview categories 02](../Media/radscheduleview_categories_02.png)
+![radscheduleview categories 02](images\radscheduleview_categories_02.png)
 
 # Adding_CategoriesAdding Categories to the RadScheduleView
 
@@ -145,4 +145,4 @@ this.DataContext = new MyViewModel();
 
 Here is how the new categories look like:
 
-![radscheduleview categories 03](../Media/radscheduleview_categories_03.png)[Implementing View-ViewModel ](http://radscheduleview-populating-with-data-implementing-view-model.md)
+![radscheduleview categories 03](images\radscheduleview_categories_03.png)[Implementing View-ViewModel ](http://radscheduleview-populating-with-data-implementing-view-model.md)

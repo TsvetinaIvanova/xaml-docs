@@ -190,4 +190,4 @@ appointment.RecurrenceRule.AddException(New DateTime(2011, 5, 15, 10, 0, 0), exc
 
 
                
-            ![Recurrent Appointment Overview](../Media/radscheduleview_recurrencyoverview.png)
+            ![Recurrent Appointment Overview](images\radscheduleview_recurrencyoverview.png)
