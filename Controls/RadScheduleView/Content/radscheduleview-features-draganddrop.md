@@ -12,7 +12,7 @@ publish:True
 
 
                  
-              ![RadScheduleView - Drag And Drop](images\scheduleview_features_draganddrop.png)
+              ![RadScheduleView - Drag And Drop](images/scheduleview_features_draganddrop.png)
 
 __RadScheduleView__ uses __DragDropManager__ to implement drag and drop of appointments. In order to add some custom logic for drag and drop, you can inherit __Telerik.Windows.Controls.ScheduleViewDragDropBehavior__ class. There are several method you can override:
         __CanDrop__(*DragDropState* state) - Gets the value specifying whether the drag and drop operation can be finished, or not.

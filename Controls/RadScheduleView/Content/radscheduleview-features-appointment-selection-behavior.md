@@ -143,16 +143,16 @@ The end result is:
 
 With the default AppointmentSelectionBehavior (before selection):
 
-![radscheduleview features appointment selection behavior 0](images\radscheduleview_features_appointment_selection_behavior_0.png)
+![radscheduleview features appointment selection behavior 0](images/radscheduleview_features_appointment_selection_behavior_0.png)
 
 With the default AppointmentSelectionBehavior (after selection with pressed Ctrl or Shift keyboard key):
 
-![radscheduleview features appointment selection behavior 1](images\radscheduleview_features_appointment_selection_behavior_1.png)
+![radscheduleview features appointment selection behavior 1](images/radscheduleview_features_appointment_selection_behavior_1.png)
 
 With the custom AppointmentSelectionBehavior (before selection):
 
-![radscheduleview features appointment selection behavior 2](images\radscheduleview_features_appointment_selection_behavior_2.png)
+![radscheduleview features appointment selection behavior 2](images/radscheduleview_features_appointment_selection_behavior_2.png)
 
 With the custom AppointmentSelectionBehavior (after selection with pressed Ctrl or Shift keyboard key):
 
-![radscheduleview features appointment selection behavior 3](images\radscheduleview_features_appointment_selection_behavior_3.png)[Resources](http://radscheduleview-features-resources.md)[SlotSelectionBehavior](http://radscheduleview-features-slot-selection-behavior.md)
+![radscheduleview features appointment selection behavior 3](images/radscheduleview_features_appointment_selection_behavior_3.png)[Resources](http://radscheduleview-features-resources.md)[SlotSelectionBehavior](http://radscheduleview-features-slot-selection-behavior.md)

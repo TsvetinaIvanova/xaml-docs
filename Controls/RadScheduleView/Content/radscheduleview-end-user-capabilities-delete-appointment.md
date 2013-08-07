@@ -18,7 +18,7 @@ publish:True
 
 
                
-            ![RadScheduleView Delete Appointment](images\radscheduleview_end_user_capabilities_delete_appointment_01.png)If the appointment is part of a recurrence series, a more complex confirmation dialog appears asking you what do you want to delete.You can choose between two options:__'Delete this occurrence'__ - delete only this specific occurrence of the whole series.
+            ![RadScheduleView Delete Appointment](images/radscheduleview_end_user_capabilities_delete_appointment_01.png)If the appointment is part of a recurrence series, a more complex confirmation dialog appears asking you what do you want to delete.You can choose between two options:__'Delete this occurrence'__ - delete only this specific occurrence of the whole series.
           __'Delete the series'__ - delete all appointments that belong to this series.
           
 

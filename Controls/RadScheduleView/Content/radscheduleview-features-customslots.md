@@ -218,4 +218,4 @@ Finally, bind them to __SpecialSlotsSource__ and __SpecialSlotsStyleSelector__ p
 
 
 
-Here is the result:![radscheduleview custom slots](images\radscheduleview_custom_slots.png)
+Here is the result:![radscheduleview custom slots](images/radscheduleview_custom_slots.png)

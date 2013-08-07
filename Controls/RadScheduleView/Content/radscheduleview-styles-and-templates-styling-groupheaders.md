@@ -67,23 +67,23 @@ The GroupHeaderStyleSelector contains the following styles:HorizontalGroupHeader
 
 
          
-      ![](images\radscheduleview_horizontalgroupheaderstyle.png)HorizontalTodayGroupHeaderStyle, HorizontalBottomLevelTodayGroupHeaderStyle
+      ![](images/radscheduleview_horizontalgroupheaderstyle.png)HorizontalTodayGroupHeaderStyle, HorizontalBottomLevelTodayGroupHeaderStyle
 
 
          
-      ![](images\radscheduleview_horizontaltodaygroupheaderstyle.png)VerticalGroupHeaderStyle, VerticalBottomLevelGroupHeaderStyle
+      ![](images/radscheduleview_horizontaltodaygroupheaderstyle.png)VerticalGroupHeaderStyle, VerticalBottomLevelGroupHeaderStyle
 
 
          
-      ![](images\radscheduleview_verticalgroupheaderstyle.png)VerticalTodayGroupHeaderStyle,  VerticalBottomLevelTodayGroupHeaderStyle
+      ![](images/radscheduleview_verticalgroupheaderstyle.png)VerticalTodayGroupHeaderStyle,  VerticalBottomLevelTodayGroupHeaderStyle
 
 
          
-      ![](images\radscheduleview_verticaltodaygroupheaderstyle.png)MonthViewWeekGroupStyle, MonthViewBottomLevelWeekGroupStyle
+      ![](images/radscheduleview_verticaltodaygroupheaderstyle.png)MonthViewWeekGroupStyle, MonthViewBottomLevelWeekGroupStyle
 
 
          
-      ![](images\radscheduleview_monthviewweekgroupstyle.png)
+      ![](images/radscheduleview_monthviewweekgroupstyle.png)
 
 
 
@@ -228,7 +228,7 @@ Here is the result:
 
 
          
-      ![](images\radscheduleview_horizontalgroupheaderstyleexample.png)
+      ![](images/radscheduleview_horizontalgroupheaderstyleexample.png)
 
 # create-custom-groupheaderstyleselectorCreate a custom GroupHeaderStyleSelector
 
@@ -361,4 +361,4 @@ And finally set the GroupHeaderStyleSelector property of the RadScheduleView:
 
 
          
-      ![](images\radscheduleview_customgroupheaderexample.png)
+      ![](images/radscheduleview_customgroupheaderexample.png)

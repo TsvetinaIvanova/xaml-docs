@@ -177,7 +177,7 @@ The code above will group RadScheduleView by resource type named Location. Day v
 
 
                
-            ![](images\scheduleview_features_resources_image1.png)
+            ![](images/scheduleview_features_resources_image1.png)
 
 If you want to change the group order you could use the following syntax:
 
@@ -206,6 +206,6 @@ The result will be the following (note the changed group order):
 
 
                
-            ![](images\scheduleview_features_resources_image2.png)
+            ![](images/scheduleview_features_resources_image2.png)
 
 [Data Binding Support Overview](http://radscheduleview-populating-with-data-data-binding-support-overview.md)

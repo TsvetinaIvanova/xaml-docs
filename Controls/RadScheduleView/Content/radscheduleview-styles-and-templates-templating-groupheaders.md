@@ -296,7 +296,7 @@ Finally, set the GroupHeaderContentTemplateSelector property of the ScheduleView
 
 Here is the result:
 
-![](images\radscheduleview_groupheadercontenttemplate.png)
+![](images/radscheduleview_groupheadercontenttemplate.png)
 
 Check out the 
       	[online demo](http://demos.telerik.com/silverlight/#ScheduleView/CustomStyles/GroupHeaderTemplate)GroupHeaderTemplate Example at 

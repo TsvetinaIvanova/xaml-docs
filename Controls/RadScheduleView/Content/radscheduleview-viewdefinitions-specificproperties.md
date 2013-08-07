@@ -60,7 +60,7 @@ The following code snippet shows how to set the __ShowWeekGroupHeaders__ and __W
 
 Here is the end result:
 
-![scheduleview features specific properties 1](images\scheduleview_features_specific_properties_1.png)
+![scheduleview features specific properties 1](images/scheduleview_features_specific_properties_1.png)
 
 # Timeline specific properties
 

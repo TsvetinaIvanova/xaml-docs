@@ -40,12 +40,12 @@ Let’s have the RadScheduleView defined like this:
 This will lead to the following results:In DayViewDefinition:
     	
 
-![radscheduleview features timeruler day View](images\radscheduleview_features_timeruler_dayView.png)In WeekViewDefinition:
+![radscheduleview features timeruler day View](images/radscheduleview_features_timeruler_dayView.png)In WeekViewDefinition:
     	
 
-![radscheduleview features timeruler week View](images\radscheduleview_features_timeruler_weekView.png)In TimelineViewDefinition:
+![radscheduleview features timeruler week View](images/radscheduleview_features_timeruler_weekView.png)In TimelineViewDefinition:
 
-![radscheduleview features timeruler timeline View](images\radscheduleview_features_timeruler_timelineView.png)
+![radscheduleview features timeruler timeline View](images/radscheduleview_features_timeruler_timelineView.png)
     ![note](note.jpg)
     	
 
