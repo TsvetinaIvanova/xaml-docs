@@ -1,12 +1,11 @@
-___
+---
 title: Changes
 meta_title: Changes
 meta_description:description
 slug:changes
 tags:changes
 publish:True
-___
-
+---
 
 This article describes the release history of the control.
 
