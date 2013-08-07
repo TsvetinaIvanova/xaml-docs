@@ -36,6 +36,10 @@ This article will cover the following topics:
 					The end result should include the following:
 				
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -63,6 +67,10 @@ This article will cover the following topics:
 
 
 where "*local*" is:
+
+
+    __XAML__
+    
 
 ```XAML
 
@@ -93,6 +101,10 @@ xmlns:local="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Con
 					
 
 So, let's for example modify the background color and style of the appointments:
+
+
+    __XAML__
+    
 
 ```XAML
 
@@ -126,6 +138,10 @@ So, let's for example modify the background color and style of the appointments:
 
 And assign the AppointmentStyleSelector to the ScheduleView:
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -155,6 +171,10 @@ The end result in DayViewDefinition with both Horizontal and Vertical Orientatio
 
 					Next ,we are going to use these resources and create the selector. Create a new Class which inherits __OrientedAppointmentItemStyleSelector__. Override its __SelectStyle()__ method and use __activeViewDefinition.GetOrientation()__ to determine whether to apply a horizontal or a vertical Style in your selector.  Then, your AppointmentStyleSelector would look like this:
 				
+
+
+    __C#__
+    
 
 ```C#
 
@@ -219,6 +239,10 @@ The end result in DayViewDefinition with both Horizontal and Vertical Orientatio
 					We add all needed Resources and group our ScheduleView  by the "Room" ResourceType:
 				
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -255,6 +279,10 @@ The end result in DayViewDefinition with both Horizontal and Vertical Orientatio
 
 					Add the custom AppointmentStyleSelector with all the defined Styles:
 				
+
+
+    __XAML__
+    
 
 ```XAML
 
@@ -303,6 +331,10 @@ The end result in DayViewDefinition with both Horizontal and Vertical Orientatio
 
 					And assign it to the ScheduleView:
 				
+
+
+    __XAML__
+    
 
 ```XAML
 

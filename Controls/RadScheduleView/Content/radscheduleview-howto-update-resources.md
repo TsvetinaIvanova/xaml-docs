@@ -25,6 +25,10 @@ Let’s have the following ScheduleView grouped by “Location” resource type:
 
 
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -48,6 +52,10 @@ We will add checkboxes for each resource in order to allow the user to change th
 
 
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -64,6 +72,10 @@ We will add checkboxes for each resource in order to allow the user to change th
 Next step is to add the ShowRoom1, ShowRoom2, etc . Boolean properties and the GroupFilter predicate to the ViewModel:
 
 
+
+
+    __C#__
+    
 
 ```C#
 
@@ -146,6 +158,10 @@ Add the UpdateGroupFilter() method:
 
 
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -206,6 +222,10 @@ Calling the following code will add an additional “Room4” resource:
 
 
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -220,6 +240,10 @@ ResourceTypes.Add(locationResType);
 where __ResourceTypes__ is the collection to which ResourceTypesSource property of the ScheduleView is bound:
 
 
+
+
+    __XAML__
+    
 
 ```XAML
 

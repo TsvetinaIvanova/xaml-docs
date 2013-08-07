@@ -28,6 +28,10 @@ There are two approaches to accomplish this. You can choose one of them accordin
 
 
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -43,6 +47,10 @@ There are two approaches to accomplish this. You can choose one of them accordin
 
 
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -54,6 +62,10 @@ private void scheduleView_VisibleRangeChanged(object sender, System.EventArgs e)
 ```
 
 
+
+
+    __VB.NET__
+    
 
 ```VB.NET
 
@@ -71,6 +83,10 @@ Private Sub scheduleView_VisibleRangeChanged(sender As Object, e As System.Event
 
 
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -83,6 +99,10 @@ private void scheduleView_VisibleRangeChanged(object sender, System.EventArgs e)
 ```
 
 
+
+
+    __VB.NET__
+    
 
 ```VB.NET
 
@@ -103,6 +123,10 @@ End Sub
             
 
 
+
+
+    __C#__
+    
 
 ```C#
 
@@ -127,6 +151,10 @@ private ICommand visibleRangeChanged;
             
 
 
+
+
+    __C#__
+    
 
 ```C#
 
@@ -161,6 +189,10 @@ private bool CanVisibleRangeCanExecuted(object param)
 
 
 
+
+    __VB.NET__
+    
+
 ```VB.NET
 
 
@@ -190,6 +222,10 @@ End Function
             Bind the __VisibleRangeChangedCommand__ and __VisibleRangeChangedCommandParameter__
 
 
+
+
+    __XAML__
+    
 
 ```XAML
 

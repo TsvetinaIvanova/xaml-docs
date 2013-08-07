@@ -31,6 +31,10 @@ __AppointmentStyleSelector__ -> [http://demos.telerik.com/wpf?ScheduleView/Custo
                 You could use the __ResourceGroupDescription.ShowNullGroup__ property. For example:
               
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -52,6 +56,10 @@ __TimeRulerStyle____TimeRulerItemStyleSelector__, __TimeRulerItemTemplateSelecto
                 Add __GroupDescription__ and to the __GroupDescriptionSource__. For example:
               
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -67,6 +75,10 @@ __TimeRulerStyle____TimeRulerItemStyleSelector__, __TimeRulerItemTemplateSelecto
 
 [http://demos.telerik.com/wpf/?ScheduleView/Grouping/Basics](http://demos.telerik.com/wpf/?ScheduleView/Grouping/Basics)__View definitions__ and properties
             
+
+
+    __XAML__
+    
 
 ```XAML
 
@@ -94,6 +106,10 @@ __TimeSlotTemplateSelector____SpecialSlotStyleSelector__, __SpecialSlotsSource__
                 Depends on which __ViewDefinitions__ are defined:
               
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -116,6 +132,10 @@ __Culture__There is no such property. Use LocalizationManager.DefaultCulture ins
                 Using the __BeginEdit()__ method of the __RadScheduleView__, which returns whether or not the appointment or the occurrence can be edited. If __BeginEdit()__ is True the appointment or occurrence can be edited. Call __Commit()__ to commit the changes:
               
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -128,6 +148,10 @@ if (this.radScheduleView.BeginEdit(appointment))
 ```
 
 
+
+
+    __VB.NET__
+    
 
 ```VB.NET
 
@@ -144,6 +168,10 @@ __Delete Appointment__ using code:
 
 Using the Remove() method of the RadScheduleView(), which returns whether or not the appointment or occurrence can be removed.
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -152,6 +180,10 @@ this.radScheduleView.Remove(appointment);
 ```
 
 
+
+
+    __VB.NET__
+    
 
 ```VB.NET
 

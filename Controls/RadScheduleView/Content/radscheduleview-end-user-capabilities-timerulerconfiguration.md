@@ -16,6 +16,10 @@ There are two key properties that control the Height of the TimeRuler:__MinTimeR
           __MaxTimeRulerExtent __- gets or sets the maximum height of the TimeRuler in pixels. If the viewport is bigger than this value, empty space will appear below the time ruler.
           
 
+
+    __XAML__
+    
+
 ```XAML
 
 

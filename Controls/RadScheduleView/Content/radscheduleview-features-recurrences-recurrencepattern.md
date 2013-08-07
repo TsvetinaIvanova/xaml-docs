@@ -172,6 +172,10 @@ When you want to specify the hours of the day when the appointment occurs, you s
           When you want to create a new instance of __RecurrencePattern__ with the same values as a specified __RecurrencePattern__, then you need to use the __Copy()__ method.
         
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -184,6 +188,10 @@ var copyPattern = pattern.Copy();
 ```
 
 
+
+
+    __VB.NET__
+    
 
 ```VB.NET
 
@@ -208,6 +216,10 @@ Dim copyPattern = pattern.Copy()
           Use the __CopyFrom()__ method to duplicate the pattern properties of the specified __RecurrencePattern__ object in the __RecurrencePattern__ object that calls this method.
         
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -221,6 +233,10 @@ newPattern.CopyFrom(pattern);
 ```
 
 
+
+
+    __VB.NET__
+    
 
 ```VB.NET
 
@@ -244,6 +260,10 @@ newPattern.CopyFrom(pattern)
 
 For the next examples the following appointment declaration will be used.
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -257,6 +277,10 @@ var appointment = new Appointment() {
 ```
 
 
+
+
+    __VB.NET__
+    
 
 ```VB.NET
 
@@ -280,6 +304,10 @@ A simple appointment that starts at 11/05/2011 10:00 AM and lasts two hours is c
           If you want to create an appointment that occurs every day, the only thing you should do is to set the __RecurrencePattern__'s __Frequency__ property to __RecurrenceFrequency.Daily__.
         
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -291,6 +319,10 @@ appointment.RecurrenceRule = new RecurrenceRule(pattern);
 ```
 
 
+
+
+    __VB.NET__
+    
 
 ```VB.NET
 
@@ -316,6 +348,10 @@ The result can be seen on the next figure. As you can see the appointment with s
             property, too. See the following example:
         
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -328,6 +364,10 @@ appointment.RecurrenceRule = new RecurrenceRule(pattern);
 ```
 
 
+
+
+    __VB.NET__
+    
 
 ```VB.NET
 
@@ -366,6 +406,10 @@ appointment.RecurrenceRule = New RecurrenceRule(pattern)
             Set the __Interval__ property to 3.
           
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -379,6 +423,10 @@ appointment.RecurrenceRule = new RecurrenceRule(pattern);
 ```
 
 
+
+
+    __VB.NET__
+    
 
 ```VB.NET
 
@@ -412,6 +460,10 @@ Executing the previous pattern will result in creating an appointment that occur
             Set the __Interval__ property to 2.
           
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -425,6 +477,10 @@ appointment.RecurrenceRule = new RecurrenceRule(pattern);
 ```
 
 
+
+
+    __VB.NET__
+    
 
 ```VB.NET
 
@@ -452,6 +508,10 @@ For example, if you want to create an appointment that occurs on every second Mo
             Set the __Interval__ property to 2.
           
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -466,6 +526,10 @@ appointment.RecurrenceRule = new RecurrenceRule(pattern);
 ```
 
 
+
+
+    __VB.NET__
+    
 
 ```VB.NET
 
@@ -492,6 +556,10 @@ For example, if you want to create an appointment that occurs on 13th of Novembe
             Set the __DayOfMonth__ to 13.
           
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -505,6 +573,10 @@ appointment.RecurrenceRule = new RecurrenceRule(pattern);
 ```
 
 
+
+
+    __VB.NET__
+    
 
 ```VB.NET
 
@@ -526,6 +598,10 @@ appointment.RecurrenceRule = New RecurrenceRule(pattern)
           When you want to specify a limit of the occurrences for the appointment, then you need to set the __MaxOccurrences__ property. For example if you want to specify a limit of 3 occurences for a daily appointment, then you should set the __MaxOccurrences__ property to 3.
         
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -538,6 +614,10 @@ appointment.RecurrenceRule = new RecurrenceRule(pattern);
 ```
 
 
+
+
+    __VB.NET__
+    
 
 ```VB.NET
 
@@ -558,6 +638,10 @@ appointment.RecurrenceRule = New RecurrenceRule(pattern)
           When you want to specify the end date of the appointment's occurrences, then you need to set the __RepatUntil__ property.
         
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -570,6 +654,10 @@ appointment.RecurrenceRule = new RecurrenceRule(pattern);
 ```
 
 
+
+
+    __VB.NET__
+    
 
 ```VB.NET
 

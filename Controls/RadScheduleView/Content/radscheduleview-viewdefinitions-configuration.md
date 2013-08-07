@@ -43,6 +43,10 @@ The property is of type __DateTimeInterval__. In the following example the __Lar
       days and of MonthView is set of 2 months and 4 days.
       
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -56,6 +60,10 @@ The property is of type __DateTimeInterval__. In the following example the __Lar
 ```
 
 
+
+
+    __C#__
+    
 
 ```C#
 
@@ -89,6 +97,10 @@ The following example shows how to set the __SmallChangeInterval__ property of a
       to 11 days and of a TimelineViewDefinition to 3 days:
       
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -102,6 +114,10 @@ The following example shows how to set the __SmallChangeInterval__ property of a
 ```
 
 
+
+
+    __C#__
+    
 
 ```C#
 
@@ -126,6 +142,10 @@ The DayStartTime is of type TimeSpan. It will not affect the look of the MonthVi
 The following example illustrates how to set the DayStartTime for DayView, WeekView and TimelineView:
       
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -140,6 +160,10 @@ The following example illustrates how to set the DayStartTime for DayView, WeekV
 ```
 
 
+
+
+    __C#__
+    
 
 ```C#
 
@@ -171,6 +195,10 @@ The DayEndTime property is of type TimeSpan. The MonthView will be affected in t
 The following example illustrates how to set the DayStartTime for DayView, WeekView and TimelineView:
       
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -185,6 +213,10 @@ The following example illustrates how to set the DayStartTime for DayView, WeekV
 ```
 
 
+
+
+    __C#__
+    
 
 ```C#
 
@@ -215,6 +247,10 @@ Gets or sets the visible dates in the view. It indicates the count of the dates 
 The following code-snippet illustrates how to set the VisibleDays property in XAML and in code-behind for all predefined views:
       
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -230,6 +266,10 @@ The following code-snippet illustrates how to set the VisibleDays property in XA
 ```
 
 
+
+
+    __C#__
+    
 
 ```C#
 
@@ -276,6 +316,10 @@ Horizontal for TimelineView
 The following code-snippets show how to set the Orientation property in XAML and code-behind:
       
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -290,6 +334,10 @@ The following code-snippets show how to set the Orientation property in XAML and
 ```
 
 
+
+
+    __C#__
+    
 
 ```C#
 

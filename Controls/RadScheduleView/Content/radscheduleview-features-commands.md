@@ -23,6 +23,10 @@ The difference between both commands is when neither the parameter nor the __Sel
 
 
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -38,6 +42,10 @@ RadScheduleViewCommands.CreateAppointmentWithDialog.Execute(null, ScheduleView);
 Use it when you want to create a new appointment via the inline editing. If no parameter is passed, the __SelectedSlot__ of __RadScheduleView__ will be used for the new appointment start and end dates. If you want to explicitly specify which will be the start and end date you should pass a parameter of type __IDateSpan__ (for example __Slot__ is an __IDateSpan__):
 
 
+
+
+    __C#__
+    
 
 ```C#
 
@@ -59,6 +67,10 @@ Use it when you want to show the edit dialog for an appointment. If no parameter
 
 
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -73,6 +85,10 @@ RadScheduleViewCommands.EditAppointment.Execute(null, ScheduleView);
 When you want to remove an appointment from __AppointmentsSource__ collection, then you need to use the __DeleteAppointment__ command. If no parameter is passed the __SelectedAppointment__ will be used.
 
 
+
+
+    __C#__
+    
 
 ```C#
 
@@ -104,6 +120,10 @@ Executing this command will result in setting the RadScheduleView’s __ActiveVi
 
 
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -118,6 +138,10 @@ RadScheduleViewCommands.SetDayViewMode.Execute(null, ScheduleView);
 Executing this command will result in setting the RadScheduleView's __ActiveViewDefinition__ property to __WeekViewDefinition__.
 
 
+
+
+    __C#__
+    
 
 ```C#
 
@@ -134,6 +158,10 @@ Executing this command will result in setting the RadScheduleView's __ActiveView
 
 
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -149,6 +177,10 @@ Executing this command will result in setting the RadScheduleView's __ActiveView
 
 
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -163,6 +195,10 @@ RadScheduleViewCommands.SetTimelineViewMode.Execute(null, ScheduleView);
 Increases/decreases the first visible date with n months or days, where n is the value of the __LargeChangeInterval__ property of the ActiveViewDefinition. Executing this command is equivalent to changing the displayed days using the navigation buttons.
 
 
+
+
+    __C#__
+    
 
 ```C#
 
@@ -184,6 +220,10 @@ When you want to set the Appointment's Importance property, then you need to exe
 Use these commands when you want to navigate to the previous/next appointment outside the visible range:
 
 
+
+
+    __C#__
+    
 
 ```C#
 

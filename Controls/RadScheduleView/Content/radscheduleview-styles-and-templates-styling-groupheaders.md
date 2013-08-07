@@ -15,6 +15,10 @@ publish:True
 
 Let's have the following RadScheduleView grouped by  Date, "Calendar" and “Room” Resources:
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -90,6 +94,10 @@ In the RadControls installation folder on your computer, go to Themes folder and
 Generate first the RadScheduleView template from Expression Blend ( Edit Template > Edit a Copy). Search for the GroupHeaderStyleSelector and copy the style together with all needed resources that it uses.
 
 The end result should include the following:
+
+
+    __XAML__
+    
 
 ```XAML
 
@@ -167,6 +175,10 @@ The end result should include the following:
 
 Note the use of the local namespace from the raw source:
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -178,6 +190,10 @@ xmlns:local="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Con
 
 The selector is applied to our instance of RadScheduleView:
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -188,6 +204,10 @@ The selector is applied to our instance of RadScheduleView:
 
 
 Now we can apply any customization to the GroupHeaders and watch the change. Let’s for example modify __HorizontalBottomLevelStyle__ – change the color and style of the headers:
+
+
+    __XAML__
+    
 
 ```XAML
 
@@ -213,6 +233,10 @@ Here is the result:
 # create-custom-groupheaderstyleselectorCreate a custom GroupHeaderStyleSelector
 
 In order to set different styles to the different Resource GroupHeaders , we should create a custom class which inherits OrientedGroupHeaderStyleSelector class and overrides its SelectStyle method.  Also we need to add Style properties for Date and "Calendar" Resource headers and return the corresponding Style:
+
+
+    __C#__
+    
 
 ```C#
 
@@ -245,6 +269,10 @@ public class CustomGroupHeaderStyleSelector : OrientedGroupHeaderStyleSelector
 
 
 
+
+
+    __VB.NET__
+    
 
 ```VB.NET
 
@@ -289,6 +317,10 @@ End Class
 
 Add the Styles to the XAML:
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -311,6 +343,10 @@ Add the Styles to the XAML:
 
 
 And finally set the GroupHeaderStyleSelector property of the RadScheduleView:
+
+
+    __XAML__
+    
 
 ```XAML
 

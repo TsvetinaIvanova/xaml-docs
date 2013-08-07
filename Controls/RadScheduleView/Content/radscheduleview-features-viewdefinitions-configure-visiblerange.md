@@ -30,6 +30,10 @@ The easiest way to create a WeekViewDefinition that behaves like the DayViewDefi
 					For advanced customization of the VisibleRange the ViewDefinitionBase class provides two virtual methods:
 				
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -46,6 +50,10 @@ protected virtual DateTime GetVisibleRangeEnd(DateTime currentDate, CultureInfo 
 
 For example, the following class represents a MonthViewDefinition that starts from the first week of CurrentDate:
    				
+
+
+    __C#__
+    
 
 ```C#
 
@@ -67,6 +75,10 @@ public class CustomMonthViewDefinition : MonthViewDefinition
 Since VisibleDays is 42 by default, this CustomMonthViewDefinition will display 6 weeks, as the standard MonthViewDefinition does.
 
 Here is how to use the CustomMonthViewDefinition:
+
+
+    __XAML__
+    
 
 ```XAML
 

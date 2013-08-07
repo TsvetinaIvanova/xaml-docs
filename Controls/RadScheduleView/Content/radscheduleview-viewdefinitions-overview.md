@@ -63,6 +63,10 @@ WeekViewDefinition
          In order to include each one of the views in the RadScheduleView, they have to be defined as follows:
         
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -78,6 +82,10 @@ WeekViewDefinition
 ```
 
 
+
+
+    __C#__
+    
 
 ```C#
 

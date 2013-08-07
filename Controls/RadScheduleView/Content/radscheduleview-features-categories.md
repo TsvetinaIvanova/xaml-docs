@@ -44,6 +44,10 @@ Each category has three important characteristics:__CategoryName__ - each catego
 
 The categories available in the RadScheduleView are defined in the CategoriesSource property (IEnumarable). Just add or remove categories to that collection in order to add or remove categories to the RadScheduleView itself.
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -78,6 +82,10 @@ The categories available in the RadScheduleView are defined in the CategoriesSou
 
 or
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -101,6 +109,10 @@ public class MyViewModel : ViewModelBase
 
 
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -117,6 +129,10 @@ public class MyViewModel : ViewModelBase
 
 
 Finally, set the DataContext:
+
+
+    __C#__
+    
 
 ```C#
 

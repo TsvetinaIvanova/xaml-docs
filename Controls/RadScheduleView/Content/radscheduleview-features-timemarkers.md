@@ -36,6 +36,10 @@ Each time marker has three important characteristics:__TimeMarkerName__ - each t
 The time markers available in the RadScheduleView are defined in the TimeMarkersSource property (IEnumarable). Just add or remove time markers to that collection in order to add or remove time markers to the RadScheduleView itself.
 		
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -56,6 +60,10 @@ The time markers available in the RadScheduleView are defined in the TimeMarkers
 
 
 or
+
+
+    __C#__
+    
 
 ```C#
 
@@ -79,6 +87,10 @@ public class MyViewModel : ViewModelBase
 
 
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -95,6 +107,10 @@ public class MyViewModel : ViewModelBase
 
 
 Finally, set the DataContext:
+
+
+    __C#__
+    
 
 ```C#
 

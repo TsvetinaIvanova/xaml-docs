@@ -18,6 +18,10 @@ In order to prevent a specific dialog from appearing , the ShowDialog event of t
 
 For example the view model for the __EditAppointmentDialog__ is __AppointmentDialogViewModel__. The following code snippet shows how it can be cancelled:
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -28,6 +32,10 @@ For example the view model for the __EditAppointmentDialog__ is __AppointmentDia
 ```
 
 
+
+
+    __C#__
+    
 
 ```C#
 
@@ -41,6 +49,10 @@ private void RadScheduleView_ShowDialog(object sender, ShowDialogEventArgs e)
 ```
 
 
+
+
+    __VB.NET__
+    
 
 ```VB.NET
 
@@ -63,6 +75,10 @@ To learn more about __RadScheduleView__ events, check [here](DA2E2C18-FE43-486A-
 
 In this case __DefaultDialogResult __ property of the event args should be set in order to stimulate pressing OK/Cancel in the dialog. If __DefaultDialogResult__ is set to “true”, the appointment will be directly deleted:
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -78,6 +94,10 @@ private void RadScheduleView_ShowDialog(object sender, ShowDialogEventArgs e)
 ```
 
 
+
+
+    __VB.NET__
+    
 
 ```VB.NET
 
@@ -99,6 +119,10 @@ End Sub
 
 By default  “Open/Delete the occurrence” option is selected in RecurrenceChoiceDialog.  This can be changed in ShowDialog event by setting __IsSeriesModeSelected__ property of the RecurrenceChoiceDialogViewModel:
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -114,6 +138,10 @@ private void RadScheduleView_ShowDialog(object sender, ShowDialogEventArgs e)
 ```
 
 
+
+
+    __VB.NET__
+    
 
 ```VB.NET
 

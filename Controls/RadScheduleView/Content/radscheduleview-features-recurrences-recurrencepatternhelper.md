@@ -27,6 +27,10 @@ The purpose of this tutorial is to show you how to:[Serialize](#Serialize_a_Recu
           For example, consider the following __RecurrencePattern__ declaration:
         
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -41,6 +45,10 @@ var pattern = new RecurrencePattern()
 ```
 
 
+
+
+    __VB.NET__
+    
 
 ```VB.NET
 
@@ -62,6 +70,10 @@ A new daily recurrence pattern is created that occurs only in the week days. The
           The next code snippet demonstrates you how to use the __RecurrencePatternToString()__ static method.
         
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -70,6 +82,10 @@ var serializedPattern = RecurrencePatternHelper.RecurrencePatternToString(patter
 ```
 
 
+
+
+    __VB.NET__
+    
 
 ```VB.NET
 
@@ -98,6 +114,10 @@ Dim serializedPattern = RecurrencePatternHelper.RecurrencePatternToString(patter
           Consider the serialized string from the previous example: __FREQ=DAILY;COUNT=10;INTERVAL=3;BYDAY=MO,TU,WE,TH,FR__. If you want to produce a recurrence pattern from that string, invoke the __TryParseRecurrencePattern__ method like in the example below.
         
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -108,6 +128,10 @@ RecurrencePatternHelper.TryParseRecurrencePattern(serializedPattern, out pattern
 ```
 
 
+
+
+    __VB.NET__
+    
 
 ```VB.NET
 

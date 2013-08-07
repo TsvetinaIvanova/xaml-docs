@@ -27,6 +27,10 @@ In order to add RadScheduleView control in your projects you have to add referen
             Now add a __RadScheduleView__ control to the MainWindow control. You can add the control by dragging it from the __Toolbox__ and dropping it over the XAML or do it manually by writing the XAML code that is shown below:
           
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -51,6 +55,10 @@ Two lines of code are important here:First is the import of the Telerik URL name
 
 
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -61,6 +69,10 @@ xmlns:telerik=http://schemas.telerik.com/2008/xaml/presentation
 
             And second is the declaration of the __RadScheduleView__ control inside the Grid:
           
+
+
+    __XAML__
+    
 
 ```XAML
 
@@ -96,6 +108,10 @@ You can add more than only one ViewDefinition. There are four view definitions a
 
           Now, lets bind the __AppointmentsSource__ to a collection of appointments in our ViewModel, named Appointments:
         
+
+
+    __XAML__
+    
 
 ```XAML
 

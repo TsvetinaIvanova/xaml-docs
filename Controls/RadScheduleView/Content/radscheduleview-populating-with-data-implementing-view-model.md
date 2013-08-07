@@ -22,6 +22,10 @@ publish:True
             Add a new __RadScheduleView__ declaration in your XAML
             
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -32,6 +36,10 @@ publish:True
 
             Create a new class named __MyViewModel__.
             
+
+
+    __C#__
+    
 
 ```C#
 
@@ -46,6 +54,10 @@ public class MyViewModel
 
 
 
+
+    __VB.NET__
+    
+
 ```VB.NET
 
 
@@ -59,6 +71,10 @@ End Class
             __Appointments__ - we will bind the __AppointmentsSource__ property of the __RadScheduleView__ to this property.
               __ResourcesTypes __- we will bind the __ResourceTypesSource __property of the __RadScheduleView__ to this property.
               
+
+
+    __C#__
+    
 
 ```C#
 
@@ -94,6 +110,10 @@ public ObservableCollection<ResourceType> ResourcesTypes
 
 
 
+
+    __VB.NET__
+    
+
 ```VB.NET
 
 
@@ -123,6 +143,10 @@ End Property
 
             Let's create a method in the ViewModel that generates some Resources:
             
+
+
+    __C#__
+    
 
 ```C#
 
@@ -156,6 +180,10 @@ private ObservableCollection<ResourceType> GenerateResourceTypes()
 
 
 
+
+    __VB.NET__
+    
+
 ```VB.NET
 
 
@@ -184,6 +212,10 @@ End Function
             All we have to do is to initialize the __resourceTypes__ and __appointments__ fields:
             
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -197,6 +229,10 @@ public MyViewModel()
 
 
 
+
+    __VB.NET__
+    
+
 ```VB.NET
 
 
@@ -209,6 +245,10 @@ End Sub
 
 
             The ViewModel is complete. Now, let's return to the View. Add some __ViewDefinitions__, __GroupDescriptionsSource__ and bind the __AppointmentsSource__ and __ResourceTypes__
+
+
+    __XAML__
+    
 
 ```XAML
 
@@ -235,6 +275,10 @@ End Sub
             Finally, set the DataContext:
             
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -243,6 +287,10 @@ this.DataContext = new MyViewModel();
 ```
 
 
+
+
+    __VB.NET__
+    
 
 ```VB.NET
 

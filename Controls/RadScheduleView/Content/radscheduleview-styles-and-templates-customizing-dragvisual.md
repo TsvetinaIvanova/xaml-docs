@@ -22,6 +22,10 @@ __DragVisualTemplate__ property is of type DataTemplate and is used to define th
 
 Here is the default DragVisualTemplate:
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -40,6 +44,10 @@ Here is the default DragVisualTemplate:
 Note the use of DraggedAppointmentsToLocalizedStringConverter – it is needed to cover  the cases when multiple appointments are dragged:![radscheduleview dragvisual 2](../Media/radscheduleview_dragvisual_2.png)
 
 Let’s for example, change the DataTemplate  as following:
+
+
+    __XAML__
+    
 
 ```XAML
 
@@ -71,6 +79,10 @@ Let’s for example, change the DataTemplate  as following:
 
 Then set the newly created template to the DragVisualTemplate property of the ScheduleView:
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -93,6 +105,10 @@ There are two approaches for customizing the DragVisualStyle according to the wa
 
 In case you’re using [Implicit Styles](f7b879d9-62ca-42c3-a919-983c7cbc79a2) and merge the needed XAML files as ResourceDictionaries:
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -108,6 +124,10 @@ In case you’re using [Implicit Styles](f7b879d9-62ca-42c3-a919-983c7cbc79a2) a
 
 
 In this case you could create a new Style for DragVisual element based on the default Style and modify only certain properties. Here is a simple example:
+
+
+    __XAML__
+    
 
 ```XAML
 
@@ -132,6 +152,10 @@ In case you’re using the default OfficeBlack theme or you've set a different t
 You should extract the complete DragVisualStyle from the RadScheduleView XAML file. The needed XAML file can be found in the RadControls installation folder. Go into the Themes folder and select the theme that you have chosen to use. Drill down to find the Telerik.Windows.Controls.ScheduleView.xaml file in the directory that corresponds to your theme.  From this resource dictionary extract the DragVisualStyle and all the resources it uses, such as brushes and styles, into your own project.  
 
 Then you will be able to make the needed customizations, for example:
+
+
+    __XAML__
+    
 
 ```XAML
 
@@ -164,6 +188,10 @@ Then you will be able to make the needed customizations, for example:
 
 Where *local* is:
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -174,6 +202,10 @@ xmlns:local="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Con
 
 
 Either approach you’ve selected, the final step is to set the custom DragVisual style to DragVisualStyle property of the ScheduleView:
+
+
+    __XAML__
+    
 
 ```XAML
 

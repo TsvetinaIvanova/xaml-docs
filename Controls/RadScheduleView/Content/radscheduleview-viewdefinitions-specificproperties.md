@@ -27,6 +27,10 @@ __WeekGroupHeaderStringFormat__ – gets or sets the format that will be applied
 The following code snippet shows how to set the __ShowWeekGroupHeaders__ and __WeekGroupHeaderStringFormat__ property in WeekView:
         
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -39,6 +43,10 @@ The following code snippet shows how to set the __ShowWeekGroupHeaders__ and __W
 ```
 
 
+
+
+    __C#__
+    
 
 ```C#
 

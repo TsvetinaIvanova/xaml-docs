@@ -39,6 +39,10 @@ The purpose of this tutorial is to show you how to work with resources. The foll
           First of all, let's set a __ResourceTypesCollection__:
         
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -56,6 +60,10 @@ The purpose of this tutorial is to show you how to work with resources. The foll
 
           After this, we need to create a __ResourceTypeCollection__, where we can assign the __ResourceType__:
         
+
+
+    __XAML__
+    
 
 ```XAML
 
@@ -82,6 +90,10 @@ The purpose of this tutorial is to show you how to work with resources. The foll
         
 
 
+
+
+    __XAML__
+    
 
 ```XAML
 
@@ -111,6 +123,10 @@ Assigning a Resource to a ResourceType (group)
 
 
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -137,6 +153,10 @@ Assigning a Resource to a ResourceType (group)
           Now if you want to group the appointments by Location, you can use __GroupDescriptionsSource__ property:
         
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -160,6 +180,10 @@ The code above will group RadScheduleView by resource type named Location. Day v
             ![](../Media/scheduleview_features_resources_image1.png)
 
 If you want to change the group order you could use the following syntax:
+
+
+    __XAML__
+    
 
 ```XAML
 

@@ -14,6 +14,10 @@ When the models are defined, we need to create the __ViewModel__ (refer to __Sch
 
 
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -57,6 +61,10 @@ When "Save data" button is clicked, we save the data to the server.
 
 
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -99,6 +107,10 @@ Here is the code:
 
 
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -133,6 +145,10 @@ Also, we need to handle the Appointments.CollectionChanged event and in the hand
         
 
 
+
+
+    __C#__
+    
 
 ```C#
 

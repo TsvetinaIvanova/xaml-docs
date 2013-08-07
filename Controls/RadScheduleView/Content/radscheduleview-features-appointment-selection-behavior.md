@@ -24,6 +24,10 @@ Create CustomAppointmentSelectionBehavior class that inherits AppointmentSelecti
 
 
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -38,6 +42,10 @@ public class CustomAppointmentSelectionBehavior : AppointmentSelectionBehavior
 Override the GetSelectedAppointments method:
 
 
+
+
+    __C#__
+    
 
 ```C#
 
@@ -73,6 +81,10 @@ All that is left is to attach the newly created custom behavior to the ScheduleV
 
 
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -91,6 +103,10 @@ All that is left is to attach the newly created custom behavior to the ScheduleV
 Finally the ScheduleView control in the XAML should look like this:
 
 
+
+
+    __XAML__
+    
 
 ```XAML
 

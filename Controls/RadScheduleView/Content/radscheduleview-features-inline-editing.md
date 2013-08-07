@@ -44,6 +44,10 @@ The default value of the __IsInlineEditingEnabled__ property is True. Which mean
       	If you want to disable the inline editing behavior, you should set the __IsInlineEditingEnabled__ property to False.
       	
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -52,6 +56,10 @@ The default value of the __IsInlineEditingEnabled__ property is True. Which mean
 ```
 
 
+
+
+    __C#__
+    
 
 ```C#
 

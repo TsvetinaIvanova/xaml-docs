@@ -31,6 +31,10 @@ Choose one of the following approaches to obtain the source code of GroupHeaderC
 
 The end result should include the following XAML code:
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -60,6 +64,10 @@ The end result should include the following XAML code:
 
 Note the use of the local  and telerikPrimitives namespaces from the raw source:
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -71,6 +79,10 @@ xmlns:telerikPrimitives="clr-namespace:Telerik.Windows.Controls.Primitives;assem
 
 
 The selector is applied to our instance of RadScheduleView:
+
+
+    __XAML__
+    
 
 ```XAML
 
@@ -87,6 +99,10 @@ The selector is applied to our instance of RadScheduleView:
 
 Let’s, for example, create a custom Resource like this:
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -102,6 +118,10 @@ public class EmployeeResource : Resource
 
 And add the EmployeeResource to “Employee” ResourceType. Note that the RadScheduleView is grouped by this resource type.
        
+
+
+    __XAML__
+    
 
 ```XAML
 
@@ -133,6 +153,10 @@ And add the EmployeeResource to “Employee” ResourceType. Note that the RadSc
 
 In order to set different templates  to the GroupHeaders , we should create a custom class which inherits ScheduleViewDataTemplateSelector  and overrides its SelectTemplate method. Also we need to add the DataTemplates  for resource  and date GroupHeaders and return the corresponding template:
        
+
+
+    __C#__
+    
 
 ```C#
 
@@ -186,6 +210,10 @@ public class CustomGroupHeaderContentTemplateSelector : ScheduleViewDataTemplate
 
 Add the DataTemplates to the XAML:
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -235,6 +263,10 @@ Add the DataTemplates to the XAML:
 
 Note how the properties of the custom resource are binded using Name property:
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -245,6 +277,10 @@ Source="{Binding Name.Photo}"
 
 
 Finally, set the GroupHeaderContentTemplateSelector property of the ScheduleView:
+
+
+    __XAML__
+    
 
 ```XAML
 

@@ -26,6 +26,10 @@ __RadScheduleView__ provides the following dialogs:
           In order to create a custom EditAppointmentDialog, use __EditAppointmentDialogStyle__ property of the __RadScheduleView__ control.  The DataContext of this Style target is an AppointmentDialogViewModel object. This class contains all the needed data for editing an appointment including the appointment itself. It can be reached by using the Occurrence property of the ViewModel and its Appointment property:
         
 
+
+    __XAML__
+    
+
 ```XAML
 
 

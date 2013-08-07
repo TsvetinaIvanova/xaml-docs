@@ -40,6 +40,10 @@ You can edit an appointment using the code. Here are the steps to accomplish thi
             Call __Commit()__ method to commit the changes and to update the __UI__.
           
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -52,6 +56,10 @@ if (this.radScheduleView.BeginEdit(appointment))
 ```
 
 
+
+
+    __VB.NET__
+    
 
 ```VB.NET
 

@@ -33,6 +33,10 @@ You can add new appointment using the code. Here are the steps to accomplish thi
             Call __Commit()__ method to commit the changes to this object and to update the __UI__.
           
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -45,6 +49,10 @@ this.radScheduleView.Commit();
 ```
 
 
+
+
+    __VB.NET__
+    
 
 ```VB.NET
 

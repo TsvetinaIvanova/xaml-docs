@@ -135,6 +135,10 @@ __DialogClosing__ - occurs when a ScheduleView dialog is about to be closed. The
                     AppointmentDialogViewModelRecurrenceChoiceDialogViewModelRecurrenceDialogViewModelConfirmDialogViewModel__Cancel__ - set this boolean property to __True__, when you want to cancel the event.
                   
 
+
+    __C#__
+    
+
 ```C#
 
 

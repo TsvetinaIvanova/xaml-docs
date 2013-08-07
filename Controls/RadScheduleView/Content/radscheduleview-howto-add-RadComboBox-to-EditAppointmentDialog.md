@@ -18,6 +18,10 @@ Before we proceed, check these topics:[Implementing View-ViewModel](16E2654A-281
         Let’s have the following __RadScheduleView__ with EditAppointmentDialogStyle set to the generated Style:
       
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -36,6 +40,10 @@ Before we proceed, check these topics:[Implementing View-ViewModel](16E2654A-281
 
 RadComboBox is added to the ControlTemplate of the EditAppointmentDialog:
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -52,6 +60,10 @@ RadComboBox is added to the ControlTemplate of the EditAppointmentDialog:
 
         The ViewModel of the __ScheduleView__ has an additional property called “ComboBoxItems” which will be used to populate it:
       
+
+
+    __C#__
+    
 
 ```C#
 
@@ -86,6 +98,10 @@ public class MyViewModel:ViewModelBase
 ```
 
 
+
+
+    __VB.NET__
+    
 
 ```VB.NET
 
@@ -134,6 +150,10 @@ End Class
 
 If the DataContext is set in XAML:
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -147,6 +167,10 @@ If the DataContext is set in XAML:
 
 
 The ItemsSource can be bound like this:
+
+
+    __XAML__
+    
 
 ```XAML
 
@@ -172,6 +196,10 @@ Here is the result:
           
 
 
+
+
+    __XAML__
+    
 
 ```XAML
 

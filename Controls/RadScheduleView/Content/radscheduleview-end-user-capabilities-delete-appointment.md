@@ -34,6 +34,10 @@ Select the option you wish and click 'OK' to confirm the deletion or 'Cancel' to
               __Remove(Occurrence occurrence)__ - the passed occurrence is deleting.
               
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -42,6 +46,10 @@ this.radScheduleView.Remove(appointment);
 ```
 
 
+
+
+    __XAML__
+    
 
 ```XAML
 

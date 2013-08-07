@@ -81,6 +81,10 @@ __SpecialSlotsStyleSelector __allows you to apply a separate Style for the speci
               First you should create the collection of Slot objects and set their RecurrencePattern property:
             
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -107,6 +111,10 @@ NonWorkingHours.Add(
 
               Then create the ScheduleViewStyleSelector class:
             
+
+
+    __C#__
+    
 
 ```C#
 
@@ -137,6 +145,10 @@ public class SpecialSlotStyleSelector : ScheduleViewStyleSelector
 
 and define the Style:
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -162,6 +174,10 @@ and define the Style:
               Finally, bind them to SpecialSlotsSource and SpecialSlotsStyleSelector properties:
             
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -180,6 +196,10 @@ Here is the result:![Special Slots](../Media/radscheduleview_special_slots.png)
 # readonlyslots Setting all the slots for a given resource to be read-only
 
 Let's for example have the following Resource Type defined:
+
+
+    __XAML__
+    
 
 ```XAML
 
@@ -204,6 +224,10 @@ Let's for example have the following Resource Type defined:
               You can create the collection of read-only slots for "Team" Resource like this:
             
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -224,6 +248,10 @@ ReadOnlySlots.Add(readOnlyslot);
               And assign it to the ScheduleView's SpecialSlotsSource property:
             
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -241,6 +269,10 @@ ReadOnlySlots.Add(readOnlyslot);
           Note that EditAppointmentDialog is shown even for appointments which are visualized in the read-only slots. In order to prevent it, susbscribe to ShowDialog event of the RadScheduleView:
         
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -253,6 +285,10 @@ ReadOnlySlots.Add(readOnlyslot);
 
           and cancel it in the event handler:
         
+
+
+    __C#__
+    
 
 ```C#
 

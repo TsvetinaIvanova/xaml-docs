@@ -36,6 +36,10 @@ In this article we will explore the process of using custom appointments in RadS
 
 
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -79,6 +83,10 @@ public class Task:Appointment
 
 
 
+
+    __VB.NET__
+    
+
 ```VB.NET
 
 
@@ -119,6 +127,10 @@ End Class
           For the next step, it is important to set the __AppointmentsSource__ of RadScheduleView to be of type __IList<Task>__, because this way the ScheduleView knows that our custom appointments should be of type __Task__. Let's create an __ObservableCollection<Task>__ using the following approach:
         
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -145,6 +157,10 @@ public class TasksCollection : ObservableCollection<Task>
 
 
 
+
+    __VB.NET__
+    
+
 ```VB.NET
 
 
@@ -169,6 +185,10 @@ And here is the result so far:![](../Media/custom_appointment1.png)
           In order to create a custom appointment dialog we are going to modify the __EditAppointmentDialogStyle__ property of __RadScheduleView__ control. The DataContext of the __TargetType__ of this style is an __AppointmentDialogViewModel__ object. This class contains all needed data for editing an appointment including the Appointment itself. It can be reached by using the __Occurrence__ property of the ViewModel and subsequently the __Appointment__ property of __Occurrence.__ Now that we have our custom IsDone property, let's add a CheckBox for it and bind to it. First, you need to generate the code for the EditAppointment dialog from Expression Blend. Then, add the following snippet in the ControlTemplate of the dialog:
 
           ____
+
+
+    __XAML__
+    
 
 ```XAML
 
@@ -206,6 +226,10 @@ And here is the result so far:![](../Media/custom_appointment1.png)
 
 
 
+
+    __XAML__
+    
+
 ```XAML
 
 
@@ -225,6 +249,10 @@ And here is the result so far:![](../Media/custom_appointment1.png)
 
           Now we will add in the Appointment ToolTip the text (Done) only for the tasks which are already done:
         
+
+
+    __XAML__
+    
 
 ```XAML
 

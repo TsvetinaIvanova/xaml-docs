@@ -54,6 +54,10 @@ The purpose of this tutorial is to show you:
           The __RecurrencePattern__ is a mandatory part of the __RecurrenceRule__. Which means that when creating a new __RecurrenceRule__ you must associate the rule with a recurrence pattern.
         
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -75,6 +79,10 @@ fitnessAppointment.RecurrenceRule = new RecurrenceRule(recurrencePattern);
 ```
 
 
+
+
+    __VB.NET__
+    
 
 ```VB.NET
 
@@ -119,6 +127,10 @@ When you want to add an exception to a recurrence you need to use this method.
 
 One possible scenario of adding an exception to a recurrence rule is shown in the next example:Create a new appointment. 
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -133,6 +145,10 @@ var fitnessAppointment = new Appointment()
 ```
 
 
+
+
+    __VB.NET__
+    
 
 ```VB.NET
 
@@ -150,6 +166,10 @@ Dim fitnessAppointment = New Appointment() With {
             Create a [RecurrencePattern](3F113E6D-5519-40FD-A3B3-6A46B2489318).
           
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -163,6 +183,10 @@ var recurrencePattern = new RecurrencePattern()
 ```
 
 
+
+
+    __VB.NET__
+    
 
 ```VB.NET
 
@@ -178,6 +202,10 @@ Dim recurrencePattern = New RecurrencePattern() With {
 [Create](#How_to_Create_a_Recurrence_Rule_and_Associate_it_With_an_Appointment) a __RecurrenceRule__ and associate the create recurrence pattern with it.
           
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -187,6 +215,10 @@ var rule = new RecurrenceRule(recurrencePattern);
 
 
 
+
+    __VB.NET__
+    
+
 ```VB.NET
 
 
@@ -195,6 +227,10 @@ Dim rule = New RecurrenceRule(recurrencePattern)
 ```
 
 Add an exception occurrence to the recurrence rule. 
+
+
+    __C#__
+    
 
 ```C#
 
@@ -208,6 +244,10 @@ rule.AddException(startDate, exceptionDate);
 
 
 
+
+    __VB.NET__
+    
+
 ```VB.NET
 
 
@@ -220,6 +260,10 @@ rule.AddException(startDate, exceptionDate)
 
 Associate the create recurrence rule with the appointment. 
 
+
+    __C#__
+    
+
 ```C#
 
 
@@ -228,6 +272,10 @@ fitnessAppointment.RecurrenceRule = rule;
 ```
 
 
+
+
+    __VB.NET__
+    
 
 ```VB.NET
 
