@@ -6,9 +6,7 @@ slug: view-specific-properties
 tags:view,specific,properties
 publish:True
 ---
-
-    ![note](note.jpg)
-    	
+	>
 
 You can check [Configuration]({{slug:configuration}}) article for more information about the common for all views properties.
 

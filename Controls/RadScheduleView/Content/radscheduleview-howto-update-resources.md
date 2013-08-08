@@ -13,7 +13,11 @@ This article will show how you can update the visible resources by which the Rad
 There are two approaches you can use:
    		
 
-[Using Filtering feature of the ScheduleView;](#Using_Filtering)[Adding/removing resources at run time.](#Adding_Resources)
+
+
+* Using Filtering feature of the ScheduleView;
+
+* Adding/removing resources at run time.
 
 # Using_FilteringUsing Filtering feature of the ScheduleView
 
@@ -206,12 +210,9 @@ You can check this approach in RadScheduleView Grouping and Filtering demo
 # Adding_ResourcesAdding/removing resources at run time
 
 When adding/removing resources from the Resources collection of  a certain resource type, the changes will not be reflected in the View immediately - you should also reset the whole ResourceType.  Just remove and add it again to the ResourceTypesSource collection of the ScheduleView.
-    	
-    ![note](note.jpg)
-    	
+    		>
 
-
-    		We intentionally do not listen for changes in the Resources collection of a ResourceType (actually all of its properties) because of performance considerations. That’s why resetting the ResourceType is needed in these cases.
+We intentionally do not listen for changes in the Resources collection of a ResourceType (actually all of its properties) because of performance considerations. That’s why resetting the ResourceType is needed in these cases.
     		
 
 For example, if we have the RadScheduleView grouped again by “Location” ResourceType:

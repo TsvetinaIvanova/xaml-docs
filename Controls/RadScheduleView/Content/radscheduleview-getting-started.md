@@ -8,24 +8,35 @@ publish:True
 ---
 
 
+This tutorial will walk you through the creation of a sample application that contains __RadScheduleView__ and will show you how to:
+      
 
-        This tutorial will walk you through the creation of a sample application that contains __RadScheduleView__ and will show you how to:
-      [Add RadScheduleView in your projects](#Adding_RadScheduleView_to_the_project)[Add a ViewDefinition to the RadScheduleView control](#Adding_a_ViewDefinition_to_the_RadScheduleView_control)[Bind your RadScheduleView control to a collection of appointments](#Bind_your_RadScheduleView_control_to_a_collection_of_appointments)
+* Add RadScheduleView in your projects#Adding_RadScheduleView_to_the_project
+
+* Add a ViewDefinition to the RadScheduleView control#Adding_a_ViewDefinition_to_the_RadScheduleView_control
+
+* Bind your RadScheduleView control to a collection of appointments#Bind_your_RadScheduleView_control_to_a_collection_of_appointments
 
 
 
 # Adding_RadScheduleView_to_the_projectAdding RadScheduleView to the project
 
+For the purpose of this example, you will need to create an empty WPFSilverlight Application project and open it in Visual Studio.	>
 
-          For the purpose of this example, you will need to create an empty WPFSilverlight Application project and open it in Visual Studio.
-    ![note](note.jpg)
-    	
+In order to add RadScheduleView control in your projects you have to add references to the following assemblies:
 
+* Telerik.Windows.Controls
 
+* Telerik.Windows.Controls.Input
 
-In order to add RadScheduleView control in your projects you have to add references to the following assemblies:__Telerik.Windows.Controls____Telerik.Windows.Controls.Input____Telerik.Windows.Controls.Navigation ____Telerik.Windows.Controls.ScheduleView____Telerik.Windows.Data__
-            Now add a __RadScheduleView__ control to the MainWindow control. You can add the control by dragging it from the __Toolbox__ and dropping it over the XAML or do it manually by writing the XAML code that is shown below:
-          
+* Telerik.Windows.Controls.Navigation 
+
+* Telerik.Windows.Controls.ScheduleView
+
+* Telerik.Windows.Data
+
+* 
+            Now add a 
 
 
  __XAML__
@@ -46,66 +57,37 @@ In order to add RadScheduleView control in your projects you have to add referen
 
 ```
 
+Two lines of code are important here:
 
-
-
-
-Two lines of code are important here:First is the import of the Telerik URL namespace:
+* First is the import of the Telerik URL namespace:
           
 
-
-
-
- __XAML__
-    
-
-```XAML
-
-
-xmlns:telerik=http://schemas.telerik.com/2008/xaml/presentation
-
-```
-
-
-            And second is the declaration of the __RadScheduleView__ control inside the Grid:
-          
-
-
- __XAML__
-    
-
-```XAML
-
-
-<telerik:RadScheduleView />
-
-```
-
-
-
-
+* 
+            And second is the declaration of the 
           There are two things you should do in order to use __RadScheduleView__ control:
         
-            First is to set a __ViewDefinition __to the __RadScheduleView__ control.
-          
-            Second is to set a collection of Appointments for __AppointmentsSource__.
-          
+
+* 
+            First is to set a 
+
+* 
+            Second is to set a collection of Appointments for 
 
 # Adding_a_ViewDefinition_to_the_RadScheduleView_controlAdding a ViewDefinition to the RadScheduleView control
-
-
           The following lines will add a DayViewDefinition to the __RadScheduleView__ control:
-        
-    ![note](note.jpg)
-    	
+        	>You can add more than only one ViewDefinition. There are four view definitions available:
 
+* DayViewDefinition
 
+* WeekViewDefinition
 
-You can add more than only one ViewDefinition. There are four view definitions available:DayViewDefinitionWeekViewDefinitionTimelineViewDefinitionMonthViewDefinitionCustomViewDefinition
+* TimelineViewDefinition
+
+* MonthViewDefinition
+
+* CustomViewDefinition
 
 # Bind_your_RadScheduleView_control_to_a_collection_of_appointmentsBind your RadScheduleView control to a collection of appointments
-
-
           Now, lets bind the __AppointmentsSource__ to a collection of appointments in our ViewModel, named Appointments:
         
 
@@ -124,10 +106,6 @@ You can add more than only one ViewDefinition. There are four view definitions a
 </telerik:RadScheduleView>
 
 ```
-
-
-
-
 
 
           To learn more about the Appointments of the RadScheduleView take a look at the [Understanding Appointments]({{slug:understanding-appointments}}) topic.

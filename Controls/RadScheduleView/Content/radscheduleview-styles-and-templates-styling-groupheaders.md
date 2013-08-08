@@ -8,8 +8,7 @@ publish:True
 ---
 
 
-
-        It is a common scenario to use resources in RadScheduleView and group the appointments according to the resource they are assigned to. 
+It is a common scenario to use resources in RadScheduleView and group the appointments according to the resource they are assigned to. 
         This article discussed how the GroupHeaders can be customized. Also it explains the use of GroupHeaderStyleSelector in order to apply separate styles to the GroupHeaders.
       
 
@@ -54,32 +53,44 @@ Let's have the following RadScheduleView grouped by  Date, "Calendar" and “Roo
 
 
 
-This article will cover the following topics:[How to generate and use the GroupHeaderStyleSelector;](#generate-and-use-groupheaderstyleselector)[How to create a custom GroupHeaderStyleSelector.](#create-custom-groupheaderstyleselector)
+This article will cover the following topics:
+
+* How to generate and use the GroupHeaderStyleSelector;#generate-and-use-groupheaderstyleselector
+
+* How to create a custom GroupHeaderStyleSelector.#create-custom-groupheaderstyleselector
 
 # generate-and-use-groupheaderstyleselectorGenerate and use the GroupHeaderStyleSelector
 
-
-          Any change on the appearance of a GroupHeader depends on the GroupHeaderStyleSelector and the containing styles. The selector is oriented, meaning it contains orientation dependant styles – horizontal and vertical.
+Any change on the appearance of a GroupHeader depends on the GroupHeaderStyleSelector and the containing styles. The selector is oriented, meaning it contains orientation dependant styles – horizontal and vertical.
         
 
+The GroupHeaderStyleSelector contains the following styles:
 
-The GroupHeaderStyleSelector contains the following styles:HorizontalGroupHeaderStyle, HorizontalBottomLevelGroupHeaderStyle
-
-
-         
-      ![](images/radscheduleview_horizontalgroupheaderstyle.png)HorizontalTodayGroupHeaderStyle, HorizontalBottomLevelTodayGroupHeaderStyle
+* HorizontalGroupHeaderStyle, HorizontalBottomLevelGroupHeaderStyle
 
 
          
-      ![](images/radscheduleview_horizontaltodaygroupheaderstyle.png)VerticalGroupHeaderStyle, VerticalBottomLevelGroupHeaderStyle
+      ![](images/radscheduleview_horizontalgroupheaderstyle.png)
+
+* HorizontalTodayGroupHeaderStyle, HorizontalBottomLevelTodayGroupHeaderStyle
 
 
          
-      ![](images/radscheduleview_verticalgroupheaderstyle.png)VerticalTodayGroupHeaderStyle,  VerticalBottomLevelTodayGroupHeaderStyle
+      ![](images/radscheduleview_horizontaltodaygroupheaderstyle.png)
+
+* VerticalGroupHeaderStyle, VerticalBottomLevelGroupHeaderStyle
 
 
          
-      ![](images/radscheduleview_verticaltodaygroupheaderstyle.png)MonthViewWeekGroupStyle, MonthViewBottomLevelWeekGroupStyle
+      ![](images/radscheduleview_verticalgroupheaderstyle.png)
+
+* VerticalTodayGroupHeaderStyle,  VerticalBottomLevelTodayGroupHeaderStyle
+
+
+         
+      ![](images/radscheduleview_verticaltodaygroupheaderstyle.png)
+
+* MonthViewWeekGroupStyle, MonthViewBottomLevelWeekGroupStyle
 
 
          
@@ -87,9 +98,13 @@ The GroupHeaderStyleSelector contains the following styles:HorizontalGroupHeader
 
 
 
-Choose one of the following approaches to obtain the source code of GroupHeaderStyleSelector:__Generate GroupHeaderStyleSelector from installation folder__
+Choose one of the following approaches to obtain the source code of GroupHeaderStyleSelector:
 
-In the RadControls installation folder on your computer, go to Themes folder and select the theme that you use in your application. Drill down to find the ScheduleView.xaml file in that directory. From this resource dictionary you can extract the GroupHeaderStyleSelector and any needed resources that it uses. __Generate GroupHeaderStyleSelector from RadScheduleView template__
+* Generate GroupHeaderStyleSelector from installation folder
+
+In the RadControls installation folder on your computer, go to Themes folder and select the theme that you use in your application. Drill down to find the ScheduleView.xaml file in that directory. From this resource dictionary you can extract the GroupHeaderStyleSelector and any needed resources that it uses. 
+
+* Generate GroupHeaderStyleSelector from RadScheduleView template
 
 Generate first the RadScheduleView template from Expression Blend ( Edit Template > Edit a Copy). Search for the GroupHeaderStyleSelector and copy the style together with all needed resources that it uses.
 

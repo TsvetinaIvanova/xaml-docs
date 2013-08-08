@@ -13,20 +13,25 @@ publish:True
 __RadScheduleView__ provides the functionality to configure repeating appointments. The user has the ability to apply recurring scheduling patterns such as daily, weekly, monthly or set a range of recurrence from date to date. The flexible rule mechanism covers all possible recurrence scenarios. Furthermore, you also have the option to handle the exceptions from this rule.
         
 
-The purpose of this overview is to give you a straight-forward way how to create and apply a recurrence pattern, rule and exception. If you want to dive deeper into the recurrence feature of the RadScheduler, check out the following topics:[RecurrencePattern]({{slug:recurrencepattern}})[RecurrenceRule]({{slug:recurrencerule}})[Exception Occurrence](#Exceptions)
+The purpose of this overview is to give you a straight-forward way how to create and apply a recurrence pattern, rule and exception. If you want to dive deeper into the recurrence feature of the RadScheduler, check out the following topics:
+
+* [RecurrencePattern]({{slug:recurrencepattern}})
+
+* [RecurrenceRule]({{slug:recurrencerule}})
+
+* Exception Occurrence#Exceptions
 
 
 
 __RadScheduleView__ includes support for recurring events on daily, weekly, monthly and yearly basis. Exceptions to the recurrence rules are also permitted. To support this recurrence behavior, the __IAppointment__ interface includes the __RecurrenceRule__ property. When an appointment is promoted into a recurring event its __RecurrenceRule__ is set with correct __RecurrencePattern__.
-        
-    ![note](note.jpg)
-    	
+        	>
 
-
-            If the user modifies an individual appointment occurrence, an exception is created. This exception is added to the __ReccurenceRule__ of the master appointment along with its specific date.
+If the user modifies an individual appointment occurrence, an exception is created. This exception is added to the __ReccurenceRule__ of the master appointment along with its specific date.
           
 
-Consider the following example:Create a sample appointment that starts at 11/05/2011 10:00 AM and lasts half an hour: 
+Consider the following example:
+
+* Create a sample appointment that starts at 11/05/2011 10:00 AM and lasts half an hour: 
 
 
  __C#__
@@ -62,7 +67,9 @@ Dim appointment = New Appointment() With {
 
 ```
 
-Create a daily recurrence pattern, that specifies a limit of 4 occurrences for the appointment: 
+
+
+* Create a daily recurrence pattern, that specifies a limit of 4 occurrences for the appointment: 
 
 
  __C#__
@@ -96,7 +103,9 @@ Dim pattern = New RecurrencePattern() With {
 
 ```
 
-Set the recurrence rule to appointment: 
+
+
+* Set the recurrence rule to appointment: 
 
 
  __C#__
@@ -122,7 +131,9 @@ appointment.RecurrenceRule = New RecurrenceRule(pattern)
 
 ```
 
-Add exception date to the recurrence rule: 
+
+
+* Add exception date to the recurrence rule: 
 
 
  __C#__
@@ -148,7 +159,9 @@ appointment.RecurrenceRule.AddException(New DateTime(2011, 5, 14, 10, 0, 0))
 
 ```
 
-Create an exception appointment: 
+
+
+* Create an exception appointment: 
 
 
  __C#__
@@ -182,8 +195,7 @@ appointment.RecurrenceRule.AddException(New DateTime(2011, 5, 15, 10, 0, 0), exc
 
 
 
-
-          Finally when you add the created appointment to the collection bound to the __AppointmentsSource__ property of the __RadScheduleView__, you'll get four generated appointments:
+Finally when you add the created appointment to the collection bound to the __AppointmentsSource__ property of the __RadScheduleView__, you'll get four generated appointments:
         
 
 

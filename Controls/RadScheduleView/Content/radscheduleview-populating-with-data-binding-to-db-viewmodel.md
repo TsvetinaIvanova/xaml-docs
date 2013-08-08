@@ -51,9 +51,7 @@ When the models are defined, we need to create the __ViewModel__ (refer to __Sch
 
 ```
 
-
-    ![note](note.jpg)
-    	
+	>
 
 The appointments are loaded from the database when the VisibleRangeChanged command is executed.
 
@@ -189,7 +187,6 @@ private void OnAppointmentsCollectionChanged(object sender, NotifyCollectionChan
 
 
 
-
-        You can download the complete project from 
+You can download the complete project from 
         [here](http://www.telerik.com/community/code-library/silverlight/scheduleview/binding-to-database-example.aspx).
         

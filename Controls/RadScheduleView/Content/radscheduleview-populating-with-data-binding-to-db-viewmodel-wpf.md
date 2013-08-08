@@ -53,9 +53,7 @@ When the models are defined, we need to create the __ViewModel__ (refer to __Sch
 
 ```
 
-
-    ![note](note.jpg)
-    	
+	>
 
 The appointments are loaded from the database when the VisibleRangeChanged command is executed.
 
@@ -88,13 +86,11 @@ public static bool SaveData()
 
 # ViewModel
 
-
-					In the constructor we load the data for the ScheduleView control (without appointments, they are loaded later).
+In the constructor we load the data for the ScheduleView control (without appointments, they are loaded later).
 					First, we need to load the SqlResource and SqlResourceTypes. When both are loaded, we can added the resources to the ResourceTypes collection.
 				
 
-
-					Load the SqlTimeMarkers and the SqlCategories and add them to the TimeMarkers and Categories collections.
+Load the SqlTimeMarkers and the SqlCategories and add them to the TimeMarkers and Categories collections.
 				
 
 Here is the code:
@@ -174,7 +170,6 @@ private void OnAppointmentsCollectionChanged(object sender, NotifyCollectionChan
 
 
 
-
-        You can download the complete project from 
+You can download the complete project from 
         [here](http://www.telerik.com/community/code-library/wpf/scheduleview/binding-to-database-example.aspx).
         

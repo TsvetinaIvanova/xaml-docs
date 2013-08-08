@@ -12,15 +12,9 @@ With the official Q2 SP1 release of RadControls we introduce the auto scrolling 
 
 This article covers the following topics:
 
-[Enabling and disabling auto scrolling;](#EnablingAndDisablingAutoScrolling)
+* Enabling and disabling auto scrolling;
 
-[Customizing the auto scrolling:](#CustomizingTheAutoScrollingFeature)
-
-[ScrollStep;](#ScrollStep)
-
-[ScrollStepTime;](#ScrollStepTime)
-
-[ScrollAreaPadding.](#ScrollAreaPadding)
+* Customizing the auto scrolling:
 
 # EnablingAndDisablingAutoScrollingEnabling and disabling auto scrolling
 
@@ -118,14 +112,6 @@ The next example shows how to set the ScrollAreaPadding in order to achieve top/
 
 The next screenshots show the ScrollAreaPadding property set to its default value and to 50px:
 
-Without ScrollAreaPadding set (__default value__):
+* Without ScrollAreaPadding set (default value):
 
-![radscheduleview features autoscrolling 1](images/radscheduleview_features_autoscrolling_1.png)
-
-![radscheduleview features autoscrolling 3](images/radscheduleview_features_autoscrolling_3.png)
-
-With ScrollAreaPadding set to 50px:
-
-![radscheduleview features autoscrolling 2](images/radscheduleview_features_autoscrolling_2.png)
-
-![radscheduleview features autoscrolling 4](images/radscheduleview_features_autoscrolling_4.png)
+* With ScrollAreaPadding set to 50px:

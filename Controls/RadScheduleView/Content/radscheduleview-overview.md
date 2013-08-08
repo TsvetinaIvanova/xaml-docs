@@ -12,8 +12,7 @@ publish:True
 
 ![RadScheduleView Logo](images/scheduleview_logo.png)![RadScheduleView Logo](images/scheduleview_silverlight_logo.png)
 
-
-          Thank you for choosing Telerik __RadScheduleView__!
+Thank you for choosing Telerik __RadScheduleView__!
         
 
 __RadScheduleView __is a radically different scheduling component, going beyond the standard Microsoft Outlook-style control. The __RadScheduleView__ empowers end users with unprecedented control over precision and flexibility when handling their appointments. This is achieved through features such as multi-level grouping, powerful zoom for smart navigation through a large number of appointments and blazing fast scrolling.
@@ -22,13 +21,37 @@ __RadScheduleView __is a radically different scheduling component, going beyond 
 ![](images/scheduleview_overview_030.png.png)
 
 __RadScheduleView__ key features list:
-        __Performance____Edit Forms____Built-in and Custom Views____Multi-level Grouping____Orientation____Exact Rendering of Appointments____Dragging multiple appointments____Zooming____Snap____Appointments____Creating Recurrent Appointment using TimeSlot selection____Truly Lookless, Stylable Control____Rich User Experience____Flexible Recurring Appointments Support__
+        
+
+* Performance
+
+* Edit Forms
+
+* Built-in and Custom Views
+
+* Multi-level Grouping
+
+* Orientation
+
+* Exact Rendering of Appointments
+
+* Dragging multiple appointments
+
+* Zooming
+
+* Snap
+
+* Creating Recurrent Appointment using TimeSlot selection
+
+* Truly Lookless, Stylable Control
+
+* Rich User Experience
+
+* Flexible Recurring Appointments Support
 
 ____
 
-
-          A complete list with all key features can be found [Key Features]({{slug:key-features}}).
+A complete list with all key features can be found [Key Features]({{slug:key-features}}).
         
 
-
-          Check out the online demo at:[http://demos.telerik.com/wpf/](http://demos.telerik.com/wpf/)[http://demos.telerik.com/silverlight/](http://demos.telerik.com/silverlight/)[Key Features]({{slug:key-features}})[Getting Started]({{slug:getting-started}})[Understanding Appointments]({{slug:understanding-appointments}})
+Check out the online demo at:[http://demos.telerik.com/wpf/](http://demos.telerik.com/wpf/)[http://demos.telerik.com/silverlight/](http://demos.telerik.com/silverlight/)[Key Features]({{slug:key-features}})[Getting Started]({{slug:getting-started}})[Understanding Appointments]({{slug:understanding-appointments}})

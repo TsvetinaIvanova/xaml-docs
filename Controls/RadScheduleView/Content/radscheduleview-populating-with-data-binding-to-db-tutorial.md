@@ -1,3 +1,17 @@
 ﻿
 
-This section includes the following articles:[Overview]({{slug:overview}})[RadScheduleView Types and Sources]({{slug:radscheduleview-types-and-sources}})[Table Definitions and Relationships]({{slug:table-definitions-and-relationships}})[Entity Model, DomainContext]({{slug:entity-model,-domaincontext}})[Silverlight Part]({{slug:silverlight-part}})[Models]({{slug:models}})[View and ViewModel]({{slug:view-and-viewmodel}})
+This section includes the following articles:
+
+* [Overview]({{slug:overview}})
+
+* [RadScheduleView Types and Sources]({{slug:radscheduleview-types-and-sources}})
+
+* [Table Definitions and Relationships]({{slug:table-definitions-and-relationships}})
+
+* [Entity Model, DomainContext]({{slug:entity-model,-domaincontext}})
+
+* [Silverlight Part]({{slug:silverlight-part}})
+
+* [Models]({{slug:models}})
+
+* [View and ViewModel]({{slug:view-and-viewmodel}})

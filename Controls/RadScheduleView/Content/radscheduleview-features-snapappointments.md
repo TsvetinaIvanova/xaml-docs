@@ -61,93 +61,10 @@ For more advanced scenarios when snapping of the appointments is not directly co
 
 In the next example it is demonstrated how to set the snapping to 5 minutes regardless of the TimeSlots length.
 
-First, create CustomSnapBehavior class:
+* First, create CustomSnapBehavior class:
 
+* Override the needed methods:
 
- __C#__
-    
-
-```C#
-
-
-public class CustomSnapBehavior : Telerik.Windows.Controls.ScheduleView.SnapBehavior
-{
-}
-
-```
-
-
-
-Override the needed methods:
-
-
- __C#__
-    
-
-```C#
-
-
-public class CustomSnapBehavior : Telerik.Windows.Controls.ScheduleView.SnapBehavior
-{
-
-	public override DateTime SnapEnd(SnapData snapData, DateTime timeToSnap)
-	{
-		if (timeToSnap >= snapData.OriginalData.End)
-		{
-			return SnapToTimeSpan(TimeSpan.FromMinutes(5), timeToSnap, true);
-		}
-		else
-		{
-			return SnapToTimeSpan(TimeSpan.FromMinutes(5), timeToSnap, false);
-		}
-	}
-
-	public override DateTime SnapStart(SnapData snapData, DateTime timeToSnap)
-	{
-		if (timeToSnap >= snapData.OriginalData.End)
-		{
-			return SnapToTimeSpan(TimeSpan.FromMinutes(5), timeToSnap, true);
-		}
-		else
-		{
-			return SnapToTimeSpan(TimeSpan.FromMinutes(5), timeToSnap, false);
-		}
-	}
-
-	public static DateTime SnapToTimeSpan(TimeSpan timeSpan, DateTime timeToSnap, bool roundToBiggestNumber)
-	{
-		var difference = timeToSnap.Ticks % timeSpan.Ticks;
-		if (roundToBiggestNumber)
-		{
-			return timeToSnap.AddTicks(timeSpan.Ticks - difference);
-		}
-
-		return timeToSnap.AddTicks(-difference);
-	}
-}
-
-```
-
-
-
-Attach the newly created custom behavior to the ScheduleView control:
-
-
- __XAML__
-    
-
-```XAML
-
-
-<telerik:RadScheduleView SnapAppointments="True">
-	...
-	<telerik:RadScheduleView.SnapBehavior>
-		<local:CustomSnapBehavior />
-	</telerik:RadScheduleView.SnapBehavior>
-</telerik:RadScheduleView>
-
-```
-
-
+* Attach the newly created custom behavior to the ScheduleView control:
 
 So now the appointments are snapped to 5 minutes:![radscheduleview snapappointments 3](images/radscheduleview_snapappointments_3.png)

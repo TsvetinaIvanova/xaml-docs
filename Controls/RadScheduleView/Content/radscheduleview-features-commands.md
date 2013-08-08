@@ -9,7 +9,35 @@ publish:True
 
 
 __RadScheduleView__ exposes its functionality through various commands that can be executed on its behalf. All commands are placed in the static class __RadScheduleViewCommands__. 
-      The purpose of this tutorial is to show you all of the commands exposed by the __RadScheduleViewCommands__ class and how to execute them.[CreateAppointment / CreateAppointmentWithDialog Commands](#Create_Appointment)[CreateInlineAppointment Command](#Create_Inline_Appointment)[EditAppointment Command](#Edit_Appointment)[DeleteAppointment Command](#Delete_Appointment)[EditRecurrenceRule Command](#Edit_RecurrenceRule)[DeleteRecurrenceRule Command](#Delete_RecurrenceRule)[EditParentAppointment Command](#Edit_ParentAppointment)[SetDayViewMode Command](#SetDayViewMode)[SetWeekViewMode Command](#SetWeekViewMode)[SetMonthViewMode Command](#SetMonthViewMode)[SetTimelineViewMode Command](#SetTimelineViewMode)[IncreaseVisibleDateLarge /  DecreaseVisibleDateLarge Commands](#IncreaseVisibleDateLarge)[SetAppointmentImportance Command](#SetAppointmentImportance)[GoToPreviousAppointment / GoToNextAppointment Commands](#GoToPreviousAppointment)
+      The purpose of this tutorial is to show you all of the commands exposed by the __RadScheduleViewCommands__ class and how to execute them.
+
+* CreateAppointment / CreateAppointmentWithDialog Commands
+
+* CreateInlineAppointment Command
+
+* EditAppointment Command
+
+* DeleteAppointment Command
+
+* EditRecurrenceRule Command
+
+* DeleteRecurrenceRule Command
+
+* EditParentAppointment Command
+
+* SetDayViewMode Command
+
+* SetWeekViewMode Command
+
+* SetMonthViewMode Command
+
+* SetTimelineViewMode Command
+
+* IncreaseVisibleDateLarge /  DecreaseVisibleDateLarge Commands
+
+* SetAppointmentImportance Command
+
+* GoToPreviousAppointment / GoToNextAppointment Commands
 
 # Create_AppointmentCreateAppointment / CreateAppointmentWithDialog Commands
 
@@ -54,9 +82,7 @@ RadScheduleViewCommands.CreateInlineAppointment.Execute(null, ScheduleView);
 
 ```
 
-
-    ![note](note.jpg)
-    	
+	>
 
 IsInlineEditingEnabled property of the RadScheduleView should be set in order to use the command.
       		

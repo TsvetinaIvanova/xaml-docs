@@ -11,65 +11,53 @@ publish:True
 __RadScheduleView__ includes support for recurring events on daily, weekly, monthly and yearly basis. [Exceptions](#Exceptions) to the recurrence rules are also permitted. To support this recurrence behavior, the __IAppointment__ interface includes the __RecurrenceRule__ property. When an appointment is promoted into a recurring event its __RecurrenceRule__ is set with correct __RecurrencePattern__.
       
 
-
-        The [RecurrenceRule]({{slug:recurrencerule}}) class is the engine for creating and evaluating recurrence rules. It has a mandatory property __Pattern__ of type __RecurrencePattern__.
+The [RecurrenceRule]({{slug:recurrencerule}}) class is the engine for creating and evaluating recurrence rules. It has a mandatory property __Pattern__ of type __RecurrencePattern__.
       
 
 The purpose of this tutorial is to show you:
-          The main properties exposed by the __RecurrencePattern__ class:
-          [Frequency](#Frequency)[MinutesOfHour](#MinutesOfHour)[HoursOfDay](#HoursOfDay)[DaysOfWeekMask](#DaysOfWeekMask)[Interval](#Interval)[DayOfMonth](#DayOfMonth)[DayOrdinal](#DayOrdinal)[MonthOfYear](#MonthOfYear)[MaxOccurrences](#MaxOccurrences)[RepeatUntil](#RepeatUntil)
-          The main methods exposed by the __RecurrencePattern__ class:
-          [Copy()](#Copy())[CopyFrom](#CopyFrom)[Examples](#Examples)
-					 - show you how to combine the exposed by the __RecurrencePattern__ class properties to configure repeating appointments with ultimate flexibility. The following cases will be examined:
-          [Create](#every_day_recurring_appointment)
-							 every day recurring appointment.
-            [Create](#every_week_day_recurring_appointment)
-							 every __week__ day recurring appointment.
-            [Create](#every_n_days_appointment)
-							 an appointment that occurs on every "n" days.
-            [Create](#every_n-th_day_and_interval_is_m-months)
-							 an appointment that occurs on every "n-th" day of the month and the interval between each recurrence is "m" months.
-            [Create](#n-th_week_day_and_interval_is_m-months)
-							 an appointment that occurs on every "n-th" __week__ day and the interval between each recurrence is "m" months.
-            [Create](#yearly_appointment)
-							 a yearly appointment.
-            [Set](#Set_the_maximum_occurrences_of_the_appointment)
-							 the maximum occurrences of the appointment.
-            [Set](#Set_the_end_date_of_the_appointment)
-						 the end date of the appointment's occurrences.
-            
+
+* 
+          The main properties exposed by the 
+
+* 
+          The main methods exposed by the 
+
+* Examples
 
 # RecurrencePattern_ClassRecurrencePattern Class
 
-
-          While the __RecurrenceRule__ class is the engine for creating and evaluating recurrence rules, the __RecurrencePattern__ class carries the main information about the occurrence.
+While the __RecurrenceRule__ class is the engine for creating and evaluating recurrence rules, the __RecurrencePattern__ class carries the main information about the occurrence.
         
 
-
-          The __RecurrencePattern__ class is located in the __Telerik.Windows.Controls.ScheduleView__ namespace of the __Telerik.Windows.Controls.ScheduleView.dll__ assembly.
+The __RecurrencePattern__ class is located in the __Telerik.Windows.Controls.ScheduleView__ namespace of the __Telerik.Windows.Controls.ScheduleView.dll__ assembly.
         
 
-
-          The next several sections describe the main properties and methods exposed by the __RecurrencePattern__ class.
+The next several sections describe the main properties and methods exposed by the __RecurrencePattern__ class.
         
 
 # FrequencyFrequency
 
+If you want to set the __frequency__ of the recurrence, you need to set the __RecurrencePattern__'s __Frequency__ property. Its values are predefined in the __RecurrenceFrequency__ enumeration, which exposes the following values:
+        
 
-          If you want to set the __frequency__ of the recurrence, you need to set the __RecurrencePattern__'s __Frequency__ property. Its values are predefined in the __RecurrenceFrequency__ enumeration, which exposes the following values:
-        __Minutely__ (available since Q3 2012 SP1) - use __RecurrenceFrequency.Minutely__ whenever you want the appointment to occur every minute.
-					__Hourly__ (available since Q3 2012 SP1) - use __RecurrenceFrequency.Hourly__ whenever you want the appointment to occur every hour.
-					__Daily__ - use __RecurrenceFrequency.Daily__ whenever you want the appointment to occur every day.
-          __Monthly__ - use __RecurrenceFrequency.Monthly__ whenever you want the appointment to occur every month.
-          __Weekly__ - use __RecurrenceFrequency.Weekly__ whenever you want the appointment to occur every week.
-          __Yearly__ - use __RecurrenceFrequency.Yearly__ whenever you want the appointment to occur every year.
-          
-    ![note](note.jpg)
-    	
+* Minutely
 
+* Hourly
 
-              The __RecurrenceFrequency__ enumeration exposes also the following values:
-            __Secondly____None__
+* Daily
+
+* Monthly
+
+* Weekly
+
+* Yearly	>
+
+The __RecurrenceFrequency__ enumeration exposes also the following values:
+            
+
+* Secondly
+
+* None
 
 __However, these values are invalid recurrence frequency and should not be used.__
 
@@ -77,11 +65,8 @@ __However, these values are invalid recurrence frequency and should not be used.
     ![tip](tip.jpg)
     	
 
-
-          The default value of the __RecurrencePattern__'s __Frequency__ property is __RecurrenceFrequency.None__. Which means that the __Frequency__ property is a mandatory property and you should always set it.
-					
-    ![note](note.jpg)
-    	
+The default value of the __RecurrencePattern__'s __Frequency__ property is __RecurrenceFrequency.None__. Which means that the __Frequency__ property is a mandatory property and you should always set it.
+						>
 
 Minutely and Hourly Frequency can be set only with code ( not from the EditAppointmentDialog).  In order to display these options, you should [Custom Dialogs]({{slug:custom-dialogs}}) and add them in the template manually. 
 
@@ -95,9 +80,30 @@ When you want to specify the hours of the day when the appointment occurs, you s
 
 # DaysOfWeekMaskDaysOfWeekMask
 
+When you want to set the days of the week of the recurrence, you need to set the __RecurrencePattern__'s __DaysOfWeekMask__ property. Its values are predefined in the __RecurrenceDays__ enumeration, which exposes the following values:
+        
 
-          When you want to set the days of the week of the recurrence, you need to set the __RecurrencePattern__'s __DaysOfWeekMask__ property. Its values are predefined in the __RecurrenceDays__ enumeration, which exposes the following values:
-        __EveryDay____Friday____Monday____Saturday____Sunday____Thursday____Tuesday____Wednesday____WeekDays____WeekendDays____None__
+* EveryDay
+
+* Friday
+
+* Monday
+
+* Saturday
+
+* Sunday
+
+* Thursday
+
+* Tuesday
+
+* Wednesday
+
+* WeekDays
+
+* WeekendDays
+
+* None
     ![tip](tip.jpg)
     	
           The default value of the __RecurrencePattern__'s __DaysOfWeekMask__ property is __RecurrenceDays.None__. However, the __DaysOfWeekMask__ is not a mandatory property.
@@ -118,8 +124,7 @@ When you want to specify the hours of the day when the appointment occurs, you s
 
 # IntervalInterval
 
-
-          If you want to set the number of days between each recurrence, you need to specify the __RecurrencePattern__'s __Interval__ property.
+If you want to set the number of days between each recurrence, you need to specify the __RecurrencePattern__'s __Interval__ property.
         
     ![tip](tip.jpg)
     	
@@ -133,43 +138,37 @@ When you want to specify the hours of the day when the appointment occurs, you s
 
 # DayOfMonthDayOfMonth
 
-
-          When you want to specify on which day of the month the appointment occurs, you need to set the __DayOfMonth__ property.
+When you want to specify on which day of the month the appointment occurs, you need to set the __DayOfMonth__ property.
         
 
 # DayOrdinalDayOrdinal
 
-
-          When you want to specify the day ordinal (first, second, third, fourth, etc.), you need to set the __DayOrdinal__ property. For example, you may want to create an appointment that occurs on every second Monday of every third month. Check out the solution 
+When you want to specify the day ordinal (first, second, third, fourth, etc.), you need to set the __DayOrdinal__ property. For example, you may want to create an appointment that occurs on every second Monday of every third month. Check out the solution 
             [here](#every_n_days_appointment).
         
 
 # MonthOfYearMonthOfYear
 
-
-          When you want to specify on which month of the year the appointment occurs, you need to set the __MonthOfYear__ property. This property is used mainly in the __Yearly__ appointments. Check out the 
+When you want to specify on which month of the year the appointment occurs, you need to set the __MonthOfYear__ property. This property is used mainly in the __Yearly__ appointments. Check out the 
 					[Example](#Examples) section for more information.
         
 
 # MaxOccurrencesMaxOccurrences
 
-
-          When you want to specify a limit of the occurrences for the appointment, then you need to set the __MaxOccurrences__ property. Check out the 
+When you want to specify a limit of the occurrences for the appointment, then you need to set the __MaxOccurrences__ property. Check out the 
             [example](#Set_the_maximum_occurrences_of_the_appointment)
             at the end of the topic.
         
 
 # RepeatUntilRepeatUntil
 
-
-          When you want to specify the end date of the appointment's occurrences, then you need to set the __RepatUntil__ property. Check out the 
+When you want to specify the end date of the appointment's occurrences, then you need to set the __RepatUntil__ property. Check out the 
             [example](#Set_the_end_date_of_the_appointment) at the end of the topic.
         
 
 # Copy()Copy()
 
-
-          When you want to create a new instance of __RecurrencePattern__ with the same values as a specified __RecurrencePattern__, then you need to use the __Copy()__ method.
+When you want to create a new instance of __RecurrencePattern__ with the same values as a specified __RecurrencePattern__, then you need to use the __Copy()__ method.
         
 
 
@@ -206,14 +205,12 @@ Dim copyPattern = pattern.Copy()
 
 
 
-
-          In the above example, a new __monthly__ recurrence pattern is created. It also has a limit of __10 occurrences__. When you invoke the __pattern.Copy()__ method this creates a new instance of the __RecurrencePattern__ class with exactly the same characteristics as the source object (the __Frequency__ property will be set to __RecurrenceFrequency.Monthly__ and the __MaxOccurrences__ property will be set to 10).
+In the above example, a new __monthly__ recurrence pattern is created. It also has a limit of __10 occurrences__. When you invoke the __pattern.Copy()__ method this creates a new instance of the __RecurrencePattern__ class with exactly the same characteristics as the source object (the __Frequency__ property will be set to __RecurrenceFrequency.Monthly__ and the __MaxOccurrences__ property will be set to 10).
         
 
 # CopyFrom()CopyFrom()
 
-
-          Use the __CopyFrom()__ method to duplicate the pattern properties of the specified __RecurrencePattern__ object in the __RecurrencePattern__ object that calls this method.
+Use the __CopyFrom()__ method to duplicate the pattern properties of the specified __RecurrencePattern__ object in the __RecurrencePattern__ object that calls this method.
         
 
 
@@ -252,8 +249,7 @@ newPattern.CopyFrom(pattern)
 
 
 
-
-          All properties in the current instance (newPattern object) will be replaced by the corresponding properties in the specified __RecurrencePattern__ object.
+All properties in the current instance (newPattern object) will be replaced by the corresponding properties in the specified __RecurrencePattern__ object.
         
 
 # ExamplesExamples
@@ -300,8 +296,7 @@ A simple appointment that starts at 11/05/2011 10:00 AM and lasts two hours is c
 
 # every_day_recurring_appointmentHow to Create Every Day Recurring Appointment?
 
-
-          If you want to create an appointment that occurs every day, the only thing you should do is to set the __RecurrencePattern__'s __Frequency__ property to __RecurrenceFrequency.Daily__.
+If you want to create an appointment that occurs every day, the only thing you should do is to set the __RecurrencePattern__'s __Frequency__ property to __RecurrenceFrequency.Daily__.
         
 
 
@@ -340,8 +335,7 @@ The result can be seen on the next figure. As you can see the appointment with s
 
 # every_week_day_recurring_appointmentHow to Create Every Week Day Recurring Appointment?
 
-
-          Creating an every day recurring event is extremely simple - you just need to set the 
+Creating an every day recurring event is extremely simple - you just need to set the 
             [Frequency](#Frequency)           
            property. However, if you want to create every week (working) day recurring event, setting only the __Frequency__ property won't be enough. You will need to set the 
             [DaysOfWeekMask](#DaysOfWeekMask)
@@ -382,8 +376,7 @@ appointment.RecurrenceRule = New RecurrenceRule(pattern)
 
 
 
-
-          The result of the above example will be a __RecurrencePattern__ which will create an appointment every week day, like on the image below.
+The result of the above example will be a __RecurrencePattern__ which will create an appointment every week day, like on the image below.
         ![RadScheduleView RecurrencePattern](images/radscheduleview_recurrencypattern_2.png)
     ![tip](tip.jpg)
     	
@@ -396,15 +389,17 @@ appointment.RecurrenceRule = New RecurrenceRule(pattern)
 
 # every_n_days_appointmentHow to Create an Appointment that Occurs on Every "n" Days?
 
-
-          When you want to create an appointment that occurs on every "n" days, you should set the __Frequency__, __DaysOfWeekMask__ and the __Interval__ properties of the __RecurrencePattern__ object. For example, in order to create an appointment that occurs on every third day (that means the number of days between each recurrence is 3), you should:
+When you want to create an appointment that occurs on every "n" days, you should set the __Frequency__, __DaysOfWeekMask__ and the __Interval__ properties of the __RecurrencePattern__ object. For example, in order to create an appointment that occurs on every third day (that means the number of days between each recurrence is 3), you should:
         
-            Set the __Frequency__ property to __RecurrenceFrequency.Daily__.
-          
-            Set the __DaysOfWeekMask__ property to __RecurrenceDays.EveryDay__.
-          
-            Set the __Interval__ property to 3.
-          
+
+* 
+            Set the 
+
+* 
+            Set the 
+
+* 
+            Set the 
 
 
  __C#__
@@ -450,15 +445,17 @@ Executing the previous pattern will result in creating an appointment that occur
 
 # every_n-th_day_and_interval_is_m-monthsHow to Create an Appointment that Occurs on Every "n-th" Day of the Month and the Interval Between Each Recurrence is "m" Months?
 
-
-          For example, if you want to create an appointment that occurs on every __fifth__ day of the month and the interval between each recurrence is __two__ months, then you should perform the following steps:
+For example, if you want to create an appointment that occurs on every __fifth__ day of the month and the interval between each recurrence is __two__ months, then you should perform the following steps:
         
-            Set the __DayOfMonth__ property to 5.
-          
-            Set the __Frequency__ property to __RecurrenceFrequency.Monthly__.
-          
-            Set the __Interval__ property to 2.
-          
+
+* 
+            Set the 
+
+* 
+            Set the 
+
+* 
+            Set the 
 
 
  __C#__
@@ -499,14 +496,18 @@ appointment.RecurrenceRule = New RecurrenceRule(pattern)
 # n-th_week_day_and_interval_is_m-monthsHow to Create an Appointment that Occurs on Every "n-th" Week Day and the Interval Between Each Recurrence is "m" Months?
 
 For example, if you want to create an appointment that occurs on every second Monday of the month and the interval between each recurrence is two months, then you should perform the following steps:
-            Set the __DayOrdinal__ to 2.
-          
-            Set the __Frequency__ property to __RecurrenceFrequency.Monthly__.
-          
-            Set the __DaysOfWeekMask__ property to __RecurrenceDays.Monday__.
-          
-            Set the __Interval__ property to 2.
-          
+
+* 
+            Set the 
+
+* 
+            Set the 
+
+* 
+            Set the 
+
+* 
+            Set the 
 
 
  __C#__
@@ -549,12 +550,15 @@ appointment.RecurrenceRule = New RecurrenceRule(pattern)
 # yearly_appointmentHow to Create an Yearly Appointment?
 
 For example, if you want to create an appointment that occurs on 13th of November each year, then you should perform the following steps:
-            Set the __Frequency__ property to __RecurrenceFrequency.Yearly__.
-          
-            Set the __MonthOfYear__ to 11.
-          
-            Set the __DayOfMonth__ to 13.
-          
+
+* 
+            Set the 
+
+* 
+            Set the 
+
+* 
+            Set the 
 
 
  __C#__
@@ -594,8 +598,7 @@ appointment.RecurrenceRule = New RecurrenceRule(pattern)
 
 # Set_the_maximum_occurrences_of_the_appointmentSet the Maximum Occurrences of the Appointment
 
-
-          When you want to specify a limit of the occurrences for the appointment, then you need to set the __MaxOccurrences__ property. For example if you want to specify a limit of 3 occurences for a daily appointment, then you should set the __MaxOccurrences__ property to 3.
+When you want to specify a limit of the occurrences for the appointment, then you need to set the __MaxOccurrences__ property. For example if you want to specify a limit of 3 occurences for a daily appointment, then you should set the __MaxOccurrences__ property to 3.
         
 
 
@@ -634,8 +637,7 @@ appointment.RecurrenceRule = New RecurrenceRule(pattern)
 
 # Set_the_end_date_of_the_appointmentSet the End Date of the Appointment's Occurrences
 
-
-          When you want to specify the end date of the appointment's occurrences, then you need to set the __RepatUntil__ property.
+When you want to specify the end date of the appointment's occurrences, then you need to set the __RepatUntil__ property.
         
 
 

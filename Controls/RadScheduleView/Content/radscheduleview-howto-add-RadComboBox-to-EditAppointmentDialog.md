@@ -8,14 +8,18 @@ publish:True
 ---
 
 
-
-        This tutorial explains how to bind additional controls in a custom EditAppointmentDialog to properties in the ViewModel of the __RadScheduleView__.
+This tutorial explains how to bind additional controls in a custom EditAppointmentDialog to properties in the ViewModel of the __RadScheduleView__.
       
 
-Before we proceed, check these topics:[Implementing View-ViewModel ]({{slug:implementing-view-viewmodel-}})[Custom Dialogs]({{slug:custom-dialogs}})[Custom Appointment]({{slug:custom-appointment}})
+Before we proceed, check these topics:
 
+* [Implementing View-ViewModel ]({{slug:implementing-view-viewmodel-}})
 
-        Let’s have the following __RadScheduleView__ with EditAppointmentDialogStyle set to the generated Style:
+* [Custom Dialogs]({{slug:custom-dialogs}})
+
+* [Custom Appointment]({{slug:custom-appointment}})
+
+Let’s have the following __RadScheduleView__ with EditAppointmentDialogStyle set to the generated Style:
       
 
 
@@ -57,8 +61,7 @@ RadComboBox is added to the ControlTemplate of the EditAppointmentDialog:
 
 
 
-
-        The ViewModel of the __ScheduleView__ has an additional property called “ComboBoxItems” which will be used to populate it:
+The ViewModel of the __ScheduleView__ has an additional property called “ComboBoxItems” which will be used to populate it:
       
 
 
@@ -191,8 +194,7 @@ Here is the result:
     ![tip](tip.jpg)
     	
 
-
-            In order to preselect a certain item in the RadComboBox,  bind __SelectedItem__  to a  property in your [Custom Appointment]({{slug:custom-appointment}}) class:
+In order to preselect a certain item in the RadComboBox,  bind __SelectedItem__  to a  property in your [Custom Appointment]({{slug:custom-appointment}}) class:
           
 
 

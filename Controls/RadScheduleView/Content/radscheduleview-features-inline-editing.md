@@ -9,28 +9,28 @@ publish:True
 
 
 RadScheduleView supports inline editing of the displayed appointment's subject. The purpose of this tutorial is to show you:
-	[How to start, commit and cancel the inline process run-time](#HowTo)[How to enable\disable the inline editing behavior](#HowTo_Enable_Disable)
+	
+
+* How to start, commit and cancel the inline process run-time
+
+* How to enable\disable the inline editing behavior
 
 # HowToHow to start, commit and cancel the inline process run-time.
 
-Inline editing lets you edit the appointment's subject right where you see it in the appointment. Just select the appointment, press F2 and type your changes.Select the target appointment:
+Inline editing lets you edit the appointment's subject right where you see it in the appointment. Just select the appointment, press F2 and type your changes.
+
+* Select the target appointment:
           	
 
-![radscheduleview inline editing 01](images/radscheduleview_inline_editing_01.png)Press __F12__ and type the changes:
-          	
+* Press 
 
-![radscheduleview inline editing 02](images/radscheduleview_inline_editing_02.png)Press __Enter__ or click outside the textbox in order to apply the change:
-          	
-
-![radscheduleview inline editing 03](images/radscheduleview_inline_editing_03.png)
+* Press 
     ![tip](tip.jpg)
     	
 
 Pressing the __Enter__ key will apply your changes, while pressing the __Esc__ key will reject them.
 
-
-    ![note](note.jpg)
-    	
+	>
 
 It is important to know that if you edit an appointment which is result of recurrence, then the changes will be applied to the whole series.
 

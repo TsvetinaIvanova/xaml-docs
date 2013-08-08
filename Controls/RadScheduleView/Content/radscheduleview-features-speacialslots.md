@@ -8,77 +8,60 @@ publish:True
 ---
 
 
-
-        Using __RadScheduleView for SilverlightWPF__ you can define special and read-only slots and apply different styles to them.  You just need to prepare a collection of Slot objects and assign it to __SpecialSlotsSource__ property of the ScheduleView.
+Using __RadScheduleView for __ you can define special and read-only slots and apply different styles to them.  You just need to prepare a collection of Slot objects and assign it to __SpecialSlotsSource__ property of the ScheduleView.
       
 
 Every Slot has the following properties:
 
-
-            Start - start date of the Slot.
+* Start - start date of the Slot.
           
 
-
-            End - end date of the Slot.
+* End - end date of the Slot.
           
 
-
-            Resources - a collection of resources for which the slot is defined.
+* Resources - a collection of resources for which the slot is defined.
           
 
-
-            RecurrencePattern - defines whether the slot will be displayed for repeating days.
+* RecurrencePattern - defines whether the slot will be displayed for repeating days.
           
 
+* IsReadOnly - when set to true the slot is disabled.
+          	>
 
-            IsReadOnly - when set to __true__ the slot is disabled.
-          
-    ![note](note.jpg)
-    	
-
-
-          When a slot is disabled you cannot create, edit, delete or drag and drop appointments in it. The existing appointments in disabled slots are in read-only mode - edit appointment dialog is still shown when the appointment is clicked but its properties cannot be edited.
+When a slot is disabled you cannot create, edit, delete or drag and drop appointments in it. The existing appointments in disabled slots are in read-only mode - edit appointment dialog is still shown when the appointment is clicked but its properties cannot be edited.
         
 
-
-          ReadOnly slots have a greyed-out style applied, but it can be changed with SpecialSlotsStyleSelector.
+ReadOnly slots have a greyed-out style applied, but it can be changed with SpecialSlotsStyleSelector.
         
 
 __SpecialSlotsStyleSelector __allows you to apply a separate Style for the special slots. You can use this feature for working/nonworking hours, holidays, days off, etc.
       
 
-
-        This article will cover the following examples:
+This article will cover the following examples:
       
 
 [Setting a separate Style for nonworking hours](#specialslots)
 
 [Setting all the slots for a given resource to be read-only](#readonlyslots)
 
-
-          In some cases when using a big number of special slots there could be some __performance__ issues in the RadScheduleView control. In order to not lose performance when using Special and ReadOnly slots you should keep in mind the following measures:
+In some cases when using a big number of special slots there could be some __performance__ issues in the RadScheduleView control. In order to not lose performance when using Special and ReadOnly slots you should keep in mind the following measures:
         
 
-
-              Populate the Slots that are in the visible range only.
+* Populate the Slots that are in the visible range only.
             
 
-
-              If a Slot is in multiple Resources at the same time do not create a separate Slot for each Resource but rather assign the Resources to the Slot.
+* If a Slot is in multiple Resources at the same time do not create a separate Slot for each Resource but rather assign the Resources to the Slot.
             
 
-
-              If a Slot is recurring do not create many different separate Slots but rather create a recurring one.
+* If a Slot is recurring do not create many different separate Slots but rather create a recurring one.
             
 
-
-              Treat the Slots as Appointments, the same performance principals exist.
+* Treat the Slots as Appointments, the same performance principals exist.
             
 
 # specialslotsSetting a separate Style for nonworking hours
 
-
-              First you should create the collection of Slot objects and set their RecurrencePattern property:
+* First you should create the collection of Slot objects and set their RecurrencePattern property:
             
 
 
@@ -108,8 +91,7 @@ NonWorkingHours.Add(
 
 
 
-
-              Then create the ScheduleViewStyleSelector class:
+* Then create the ScheduleViewStyleSelector class:
             
 
 
@@ -170,8 +152,7 @@ and define the Style:
 
 
 
-
-              Finally, bind them to SpecialSlotsSource and SpecialSlotsStyleSelector properties:
+* Finally, bind them to SpecialSlotsSource and SpecialSlotsStyleSelector properties:
             
 
 
@@ -220,8 +201,7 @@ Let's for example have the following Resource Type defined:
 
 
 
-
-              You can create the collection of read-only slots for "Team" Resource like this:
+* You can create the collection of read-only slots for "Team" Resource like this:
             
 
 
@@ -244,8 +224,7 @@ ReadOnlySlots.Add(readOnlyslot);
 
 
 
-
-              And assign it to the ScheduleView's SpecialSlotsSource property:
+* And assign it to the ScheduleView's SpecialSlotsSource property:
             
 
 
@@ -263,10 +242,9 @@ ReadOnlySlots.Add(readOnlyslot);
 
 
 
- The read-only slots will look like this:![ReadOnly Slots](images/radscheduler_readonly_slots.png)
+The read-only slots will look like this:![ReadOnly Slots](images/radscheduler_readonly_slots.png)
 
-
-          Note that EditAppointmentDialog is shown even for appointments which are visualized in the read-only slots. In order to prevent it, susbscribe to ShowDialog event of the RadScheduleView:
+Note that EditAppointmentDialog is shown even for appointments which are visualized in the read-only slots. In order to prevent it, susbscribe to ShowDialog event of the RadScheduleView:
         
 
 
@@ -282,8 +260,7 @@ ReadOnlySlots.Add(readOnlyslot);
 
 
 
-
-          and cancel it in the event handler:
+and cancel it in the event handler:
         
 
 
@@ -306,7 +283,6 @@ private void scheduleView_ShowDialog(object sender, ShowDialogEventArgs e)
 
 
 
-
-          Check out the 
+Check out the 
           [online demo](http://demos.telerik.com/silverlight/#ScheduleView/SpecialSlots)[online demo](http://demos.telerik.com/wpf/?ScheduleView/SpecialSlots) to see special slots in action.
         

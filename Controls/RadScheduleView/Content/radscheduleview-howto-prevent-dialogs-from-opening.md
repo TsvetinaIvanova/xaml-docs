@@ -8,7 +8,13 @@ publish:True
 ---
 
 
-This article covers the following topics:[How to hide a RadScheduleView dialog](#hidedialog)[How to skip ConfirmDeleteDialog.](#skipconfirmdeletedialog)[How to preselect a certain option in RecurrenceChoiceDialog.](#preselectrecurrencechoicedialog)
+This article covers the following topics:
+
+* How to hide a RadScheduleView dialog#hidedialog
+
+* How to skip ConfirmDeleteDialog.#skipconfirmdeletedialog
+
+* How to preselect a certain option in RecurrenceChoiceDialog.#preselectrecurrencechoicedialog
 
 
 
@@ -65,9 +71,7 @@ End Sub
 
 ```
 
-
-    ![note](note.jpg)
-    	
+	>
 
 To learn more about __RadScheduleView__ events, check [Overview]({{slug:overview}}).
 

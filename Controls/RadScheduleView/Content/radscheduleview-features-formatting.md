@@ -8,51 +8,44 @@ publish:True
 ---
 
 
-
-        The __RadScheduleView__ control provides a built-in date
+The __RadScheduleView__ control provides a built-in date
         formatting support. Each ScheduleView ViewDefinition can be easily customized
         to display dates and times on the time ruler and in the GroupHeaders in custom
         formats.
       
 
-This article covers the following topics:[Formatting properties](#formatting_properties)
+This article covers the following topics:
+
+* Formatting properties#formatting_properties
+
+* 
           How to apply the formatting properties to the ViewDefinitions:
-          [DayViewDefinition](#DayViewDefinition)[WeekViewDefinition](#WeekViewDefinition)[MonthViewDefinition](#MonthViewDefinition)[TimelineViewDefinition](#TimelineViewDefinition)
+          
 
 
 
 # formatting_propertiesFormatting properties
 
-
-          - TimerulerMajorTickStringFormat /TimerulerMinorTickStringFormat -
+- TimerulerMajorTickStringFormat /TimerulerMinorTickStringFormat -
           used to set the format that will be applied on TimeRuler
           MajorTick/MinorTick;
         
 
-
-          - TimerulerGroupStringFormat - sets the format applied on
+- TimerulerGroupStringFormat - sets the format applied on
           TimeRulerGroupItem;
         
 
-
-          - GroupHeaderDateStringFormat - sets the format applied on the Date
+- GroupHeaderDateStringFormat - sets the format applied on the Date
           GroupHeaders.
-        
-    ![note](note.jpg)
-    	
+        	>
 
-
-            In this article
+In this article
             custom dates and time format strings will be used for setting the various
             RadScheduleView's properties. For more information about the custom date
             and time format specifiers and the result string produced by each format
             specifier, check out the [Custom Date and Time Format Strings](http://msdn.microsoft.com/en-us/library/8kb3ddd4.aspx)
             topic.
-          
-    ![note](note.jpg)
-    	
-
-
+          	>
 
 
               You will notice that some of the format strings start with {} and
@@ -63,15 +56,9 @@ This article covers the following topics:[Formatting properties](#formatting_pro
               needed.
             
 
-
-
 # How to apply the formatting properties to the ViewDefinitions
 
-# DayViewDefinitionDayViewDefinition
-
-
-
-Let’s for example set the formatting properties of DayViewDefinition:
+# DayViewDefinitionDayViewDefinitionLet’s for example set the formatting properties of DayViewDefinition:
 
 
  __XAML__
@@ -93,20 +80,10 @@ Let’s for example set the formatting properties of DayViewDefinition:
 ```
 
 
-
-
-
-
                
             ![DayViewDefinition Formatting Properties](images/radscheduleview_features_formatstringsdayview.png)
 
-
-
 # WeekViewDefinitionWeekViewDefinition
-
-
-
-
           Setting these properties to WeekViewDefinition will lead to similar
           result:
         
@@ -132,18 +109,10 @@ Let’s for example set the formatting properties of DayViewDefinition:
 ```
 
 
-
-
                
             ![WeekViewDefinition Formatting Properties](images/radscheduleview_features_formatstringsweekview.png)
 
-
-
-# MonthViewDefinitionMonthViewDefinition
-
-
-
-In MonthViewDefinition you can set the following formatting properties:
+# MonthViewDefinitionMonthViewDefinitionIn MonthViewDefinition you can set the following formatting properties:
 
 
  __XAML__
@@ -165,21 +134,11 @@ In MonthViewDefinition you can set the following formatting properties:
 
 ```
 
-
-
 And the result is:
-
-
                
             ![MonthViewDefinition Formatting Properties](images/radscheduleview_features_formatstringsmonthview.png)
 
-
-
-# TimelineViewDefinitionTimelineViewDefinition
-
-
-
-Setting the formatting properties in TimelineViewDefinition like this:
+# TimelineViewDefinitionTimelineViewDefinitionSetting the formatting properties in TimelineViewDefinition like this:
 
 
  __XAML__
@@ -205,17 +164,9 @@ Setting the formatting properties in TimelineViewDefinition like this:
 
 ```
 
-
-
 results in the following look:
-
-
                
             ![TimelineView Formatting Properties](images/radscheduleview_features_formatstringstimelineview.png)
-
-
-
-
           Check out the 
           [online demo](http://demos.telerik.com/silverlight/?ScheduleView/CustomDateFormats)[RadScheduleView Custom Date Formats example](http://demos.telerik.com/wpf/) to see the formatting properties in
           action.

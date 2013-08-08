@@ -10,7 +10,15 @@ publish:True
 
 # 
 
-The ScheduleView control exposes several Sources that enable data binding:__AppointmentsSource__ - gets or sets the data source (__IEnumerable__) used to generate  the Appointments__ResourceTypesSource__ - gets or sets the data source (__IEnumerable__) used to generate the ResourceTypes__CategoriesSource__ - gets or sets the data source (__IEnumerable__) used to generate the Categories__TimeMarkersSource__ - gets or sets the data source (__IEnumerable__) used to generate the TimeMarkers
+The ScheduleView control exposes several Sources that enable data binding:
+
+* AppointmentsSource
+
+* ResourceTypesSource
+
+* CategoriesSource
+
+* TimeMarkersSource
 
 
 

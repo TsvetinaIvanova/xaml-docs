@@ -8,13 +8,10 @@ publish:True
 ---
 
 
-
-				The built-in __RadScheduleView__ ViewDefinitions have specific ways to determine what the visible range will be when the CurrentDate property is set:
+The built-in __RadScheduleView__ ViewDefinitions have specific ways to determine what the visible range will be when the CurrentDate property is set:
 			TypeVisibleRangeStartVisibleDaysDayViewDefinitionCurrentDate1WeekViewDefinitionThe first day of the week, containing CurrentDate7MonthViewDefinitionThe first day of the first week of the month, containing CurrentDate42TimelineViewDefinitionCurrentDate7
 
-
-    ![note](note.jpg)
-    	
+	>
 
 The VisibleRangeEnd is VisibleRangeStart+VisibleDays for all view definitions.
 
@@ -26,8 +23,7 @@ The easiest way to create a WeekViewDefinition that behaves like the DayViewDefi
 
 # 
 
-
-					For advanced customization of the VisibleRange the ViewDefinitionBase class provides two virtual methods:
+For advanced customization of the VisibleRange the ViewDefinitionBase class provides two virtual methods:
 				
 
 

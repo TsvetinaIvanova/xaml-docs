@@ -10,24 +10,22 @@ publish:True
 
 This help article explains in details how to use GroupHeaderContentTemplateSelector in order to set different DataTemplates to the GroupHeaders of __RadScheduleView__.
 
-The article covers the following topics:[How to generate and use GroupHeaderContentTemplateSelector](#How_to_Generate_GroupHeaderContentTemplateSelector)[How to create a custom GroupHeaderContentTemplateSelector](#How_to_Create_GroupHeaderContentTemplateSelector)
+The article covers the following topics:
 
-# How_to_Generate_GroupHeaderContentTemplateSelectorHow to generate and use GroupHeaderContentTemplateSelector
-    ![note](note.jpg)
-    	
+* How to generate and use GroupHeaderContentTemplateSelector
+
+* How to create a custom GroupHeaderContentTemplateSelector
+
+# How_to_Generate_GroupHeaderContentTemplateSelectorHow to generate and use GroupHeaderContentTemplateSelector	>
 
 Since Q2 2011 release the GroupHeaderContentTemplateSelector contains only two templates – HorizontalTemplate and VerticalTemplate. 
       		
 
-Choose one of the following approaches to obtain the source code of GroupHeaderContentTemplateSelector:__Generate GroupHeaderContentTemplateSelector from installation folder__
+Choose one of the following approaches to obtain the source code of GroupHeaderContentTemplateSelector:
 
+* Generate GroupHeaderContentTemplateSelector from installation folder
 
-        	In the RadControls installation folder on your computer, go to Themes folder and select the theme that you use in your application. Drill down to find the ScheduleView.xaml file in that directory. From this resource dictionary you can extract the GroupHeaderContentTemplateSelector and any needed resources that it uses.
-        	__Generate GroupHeaderContentTemplateSelector from RadScheduleView template__
-
-
-        	Generate first the RadScheduleView template from Expression Blend ( Edit Template > Edit a Copy). Search for the GroupHeaderContentTemplateSelector and copy the style together with all needed resources that it uses.
-        	
+* Generate GroupHeaderContentTemplateSelector from RadScheduleView template
 
 The end result should include the following XAML code:
 
@@ -257,9 +255,7 @@ Add the DataTemplates to the XAML:
 
 ```
 
-
-    ![note](note.jpg)
-    	
+	>
 
 Note how the properties of the custom resource are binded using Name property:
 

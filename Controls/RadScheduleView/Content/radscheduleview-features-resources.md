@@ -8,35 +8,28 @@ publish:True
 ---
 
 
-
-        The __RadScheduleView__ allows you to define custom resources that can be assigned to the appointments. Custom resources let you associate additional information with your appointments, where the information for each field can be selected from a limited number of possibilities. For example, you can load the appointments of different users on a single scheduler by simply choosing the name of the user from a drop down. The same applies for various resources such as meeting rooms, team events, etc.
+The __RadScheduleView__ allows you to define custom resources that can be assigned to the appointments. Custom resources let you associate additional information with your appointments, where the information for each field can be selected from a limited number of possibilities. For example, you can load the appointments of different users on a single scheduler by simply choosing the name of the user from a drop down. The same applies for various resources such as meeting rooms, team events, etc.
       
 
-
-        Because custom resources have a limited number of values, __RadScheduleView__ can group appointments based on the resources associated with them. For example, you can book different facilities for a variety of events. Also, the appointments can be grouped by multiple groups.
+Because custom resources have a limited number of values, __RadScheduleView__ can group appointments based on the resources associated with them. For example, you can book different facilities for a variety of events. Also, the appointments can be grouped by multiple groups.
       
 
 The purpose of this tutorial is to show you how to work with resources. The following topics will be covered:
 
+* Creating ResourceTypesCollection
 
-            Creating __ResourceTypesCollection__
+* Assigning ResourceType to a ResourceTypeCollection
 
-
-            Assigning __ResourceType__ to a __ResourceTypeCollection__
-
-
-            Assigning a __Resource__ to a __ResourceType__ (group)
+* Assigning a Resource to a ResourceType (group)
           
 
-
-            Grouping appointments by __Resources__
+* Grouping appointments by Resources
 
 # 
         Creating ResourceTypesCollection
       
 
-
-          First of all, let's set a __ResourceTypesCollection__:
+First of all, let's set a __ResourceTypesCollection__:
         
 
 
@@ -57,8 +50,7 @@ The purpose of this tutorial is to show you how to work with resources. The foll
 
 
 
-
-          After this, we need to create a __ResourceTypeCollection__, where we can assign the __ResourceType__:
+After this, we need to create a __ResourceTypeCollection__, where we can assign the __ResourceType__:
         
 
 
@@ -85,8 +77,7 @@ The purpose of this tutorial is to show you how to work with resources. The foll
         Assigning ResourceType to a ResourceTypeCollection
       
 
-
-          After we have created a __ResourceTypeCollection__, we can add our __ResourceType__. Here is an example of creating __ResourceType__ with name "Location":
+After we have created a __ResourceTypeCollection__, we can add our __ResourceType__. Here is an example of creating __ResourceType__ with name "Location":
         
 
 
@@ -117,8 +108,7 @@ The purpose of this tutorial is to show you how to work with resources. The foll
 
 Assigning a Resource to a ResourceType (group)
 
-
-          Once we've created the __ResourceType__, we should create and assign __Resources__ to this group (__ResourceType__):
+Once we've created the __ResourceType__, we should create and assign __Resources__ to this group (__ResourceType__):
         
 
 
@@ -149,8 +139,7 @@ Assigning a Resource to a ResourceType (group)
 
 # Grouping appointments by Resources
 
-
-          Now if you want to group the appointments by Location, you can use __GroupDescriptionsSource__ property:
+Now if you want to group the appointments by Location, you can use __GroupDescriptionsSource__ property:
         
 
 

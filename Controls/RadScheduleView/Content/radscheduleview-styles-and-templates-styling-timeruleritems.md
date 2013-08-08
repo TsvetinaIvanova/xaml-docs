@@ -8,70 +8,95 @@ publish:True
 ---
 
 
-
-        The __RadScheduleView__ control offers a wide range of customizable TimeRulerItems. The term TimeRulerItem in RadScheduleView encompasses the following elements: ticks and lines, date group item headers, day and expand buttons in month view.
+The __RadScheduleView__ control offers a wide range of customizable TimeRulerItems. The term TimeRulerItem in RadScheduleView encompasses the following elements: ticks and lines, date group item headers, day and expand buttons in month view.
       
 
-This article discusses how to use the TimeRulerItemStyleSelector to customize the appearance of TimeRulerItems. We will dig further into the customization process and create a custom TimeRulerItemStyleSelector, as well. This article covers the following topics:[How to generate and use the TimeRulerItemStyleSelector](#generate-and-use-timeruleritemstyleselector)[How to create a custom TimeRulerItemStyleSelector](#create-custom-timeruleritemstyleselector)
+This article discusses how to use the TimeRulerItemStyleSelector to customize the appearance of TimeRulerItems. We will dig further into the customization process and create a custom TimeRulerItemStyleSelector, as well. This article covers the following topics:
+
+* How to generate and use the TimeRulerItemStyleSelector#generate-and-use-timeruleritemstyleselector
+
+* How to create a custom TimeRulerItemStyleSelector#create-custom-timeruleritemstyleselector
 
 # generate-and-use-timeruleritemstyleselectorGenerate and use the TimeRulerItemStyleSelector
 
+Any change on the appearance of a TimeRulerItem depends on the TimeRulerItemStyleSelector and the containing styles. The selector is oriented, meaning it contains orientation dependant styles – horizontal and vertical. The TimeRulerItemStyleSelector contains the following styles:
+        
 
-          Any change on the appearance of a TimeRulerItem depends on the TimeRulerItemStyleSelector and the containing styles. The selector is oriented, meaning it contains orientation dependant styles – horizontal and vertical. The TimeRulerItemStyleSelector contains the following styles:
-        ExpandMonthViewButtonStyle: 
+* ExpandMonthViewButtonStyle: 
 
-![radscheduleview timeruler 01](images/radscheduleview_timeruler_01.PNG)GoToDayButtonStyle: 
+![radscheduleview timeruler 01](images/radscheduleview_timeruler_01.PNG)
 
-![radscheduleview timeruler 02](images/radscheduleview_timeruler_02.PNG)GoToDayTodayButtonStyle: 
+* GoToDayButtonStyle: 
 
-![radscheduleview timeruler 03](images/radscheduleview_timeruler_03.PNG)GoToDayVerticalButtonStyle: 
+![radscheduleview timeruler 02](images/radscheduleview_timeruler_02.PNG)
 
-![radscheduleview timeruler 04](images/radscheduleview_timeruler_04.PNG)MajorHorizontalTimeRulerItemStyle: 
+* GoToDayTodayButtonStyle: 
 
-![radscheduleview timeruler 05](images/radscheduleview_timeruler_05.PNG)MajorVerticalTimeRulerItemStyle: 
+![radscheduleview timeruler 03](images/radscheduleview_timeruler_03.PNG)
 
-![radscheduleview timeruler 06](images/radscheduleview_timeruler_06.PNG)MinorHorizontalTimeRulerItemStyle: 
+* GoToDayVerticalButtonStyle: 
 
-![radscheduleview timeruler 07](images/radscheduleview_timeruler_07.PNG)MinorVerticalTimeRulerItemStyle: 
+![radscheduleview timeruler 04](images/radscheduleview_timeruler_04.PNG)
 
-![radscheduleview timeruler 08](images/radscheduleview_timeruler_08.PNG)TimeRulerGroupItemStyle: 
+* MajorHorizontalTimeRulerItemStyle: 
 
-![radscheduleview timeruler 09](images/radscheduleview_timeruler_09.PNG)TimeRulerLineStyle: 
+![radscheduleview timeruler 05](images/radscheduleview_timeruler_05.PNG)
+
+* MajorVerticalTimeRulerItemStyle: 
+
+![radscheduleview timeruler 06](images/radscheduleview_timeruler_06.PNG)
+
+* MinorHorizontalTimeRulerItemStyle: 
+
+![radscheduleview timeruler 07](images/radscheduleview_timeruler_07.PNG)
+
+* MinorVerticalTimeRulerItemStyle: 
+
+![radscheduleview timeruler 08](images/radscheduleview_timeruler_08.PNG)
+
+* TimeRulerGroupItemStyle: 
+
+![radscheduleview timeruler 09](images/radscheduleview_timeruler_09.PNG)
+
+* TimeRulerLineStyle: 
 
 ![radscheduleview timeruler 10](images/radscheduleview_timeruler_10.PNG)
 
-TimeRulerMonthViewGroupItemStyle: 
+
+
+* TimeRulerMonthViewGroupItemStyle: 
 
 ![radscheduleview timeruler 11](images/radscheduleview_timeruler_11.PNG)
 
-TimeRulerMonthViewItemStyle: 
+
+
+* TimeRulerMonthViewItemStyle: 
 
 
 
 ![radscheduleview timeruler 12](images/radscheduleview_timeruler_12.PNG)
 
-TimeRulerMonthViewTodayItemStyle: 
+
+
+* TimeRulerMonthViewTodayItemStyle: 
 
 ![radscheduleview timeruler 13](images/radscheduleview_timeruler_13.PNG)
 
 
 
-
-          There are two ways to obtain the source code of RadScheduleView TimeRulerItemStyleSelector: from RadControls installation folder and from the generated template for RadScheduleView in Expression Blend.
+There are two ways to obtain the source code of RadScheduleView TimeRulerItemStyleSelector: from RadControls installation folder and from the generated template for RadScheduleView in Expression Blend.
         
 
 __Get TimeRulerItemStyleSelector source code from RadControls installation folder__
 
-
-          Navigate to the installation folder of RadControls on your computer. Go into the Themes folder and select the theme that you have chosen to use as a customization base for RadScheduleView. Drill down to find the __ScheduleView.xaml__ file in the directory that corresponds to your theme. From this resource dictionary extract the __TimeRulerItemStyleSelector__ and the resources it uses, such as brushes and styles, into your own project. 
+Navigate to the installation folder of RadControls on your computer. Go into the Themes folder and select the theme that you have chosen to use as a customization base for RadScheduleView. Drill down to find the __ScheduleView.xaml__ file in the directory that corresponds to your theme. From this resource dictionary extract the __TimeRulerItemStyleSelector__ and the resources it uses, such as brushes and styles, into your own project. 
         
 
 
 
 __Get TimeRulerItemStyleSelector from RadScheduleView control template__
 
-
-          Generate the RadScheduleView template from Expression Blend by right clicking the control and selecting __Edit Template > Edit a Copy__. Search for the TimeRulerItemStyleSelector and copy the selector together with all needed resources, into your own project.
+Generate the RadScheduleView template from Expression Blend by right clicking the control and selecting __Edit Template > Edit a Copy__. Search for the TimeRulerItemStyleSelector and copy the selector together with all needed resources, into your own project.
         
 
 
@@ -80,8 +105,7 @@ __Get TimeRulerItemStyleSelector from RadScheduleView control template__
 
 
 
-
-          After choosing one of the two approaches the end result should include the following:
+After choosing one of the two approaches the end result should include the following:
         
 
 
