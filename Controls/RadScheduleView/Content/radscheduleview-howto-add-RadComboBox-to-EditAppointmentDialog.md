@@ -26,20 +26,14 @@ Let’s have the following __RadScheduleView__ with EditAppointmentDialogStyle s
  __XAML__
     
 
-```XAML
-
-
-<telerik:RadScheduleView x:Name="ScheduleView"
-    AppointmentsSource="{Binding Appointments}"
-    EditAppointmentDialogStyle="{StaticResource EditAppointmentDialogStyle}">
-   <telerik:RadScheduleView.ViewDefinitions>
-       <telerik:DayViewDefinition />
- …
-   </telerik:RadScheduleView.ViewDefinitions>
-</telerik:RadScheduleView>
-
-```
-
+      <telerik:RadScheduleView x:Name="ScheduleView"
+      AppointmentsSource="{Binding Appointments}"
+      EditAppointmentDialogStyle="{StaticResource EditAppointmentDialogStyle}">
+       <telerik:RadScheduleView.ViewDefinitions>
+            <telerik:DayViewDefinition />
+      …
+      </telerik:RadScheduleView.ViewDefinitions>
+      </telerik:RadScheduleView>
 
 
 RadComboBox is added to the ControlTemplate of the EditAppointmentDialog:
@@ -48,16 +42,13 @@ RadComboBox is added to the ControlTemplate of the EditAppointmentDialog:
  __XAML__
     
 
-```XAML
 
+      <ControlTemplate x:Key="EditAppointmentTemplate" TargetType="local:SchedulerDialog">
+       ... 
+      <telerik:RadComboBox  />
+       ...    
+      </ControlTemplate>
 
-<ControlTemplate x:Key="EditAppointmentTemplate" TargetType="local:SchedulerDialog">
-  ... 
-    <telerik:RadComboBox  />
-  ...    
-</ControlTemplate>
-
-```
 
 
 
