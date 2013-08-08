@@ -57,9 +57,6 @@ The ViewModel of the __ScheduleView__ has an additional property called “Combo
 
 
  __C#__
-    
-
-```C#
 
 
 public class MyViewModel:ViewModelBase
@@ -89,15 +86,10 @@ public class MyViewModel:ViewModelBase
     }
 }
 
-```
-
-
 
 
  __VB.NET__
     
-
-```VB.NET
 
 
 Public Class MyViewModel
@@ -136,9 +128,6 @@ Public Class MyViewModel
     End Sub
 End Class
 
-```
-
-
 
 # bindingtodatacontext
 
@@ -146,18 +135,11 @@ If the DataContext is set in XAML:
 
 
  __XAML__
-    
-
-```XAML
-
 
 <UserControl.Resources>
     <my:MyViewModel x:Key="MyViewModel" />
     ...
 </UserControl.Resources>
-
-```
-
 
 
 The ItemsSource can be bound like this:
@@ -166,13 +148,8 @@ The ItemsSource can be bound like this:
  __XAML__
     
 
-```XAML
-
 
 <telerik:RadComboBox ItemsSource="{Binding Source={StaticResource MyViewModel}, Path=ComboBoxItems, Mode=TwoWay}" />
-
-```
-
 
 
 Here is the result:
@@ -194,12 +171,10 @@ In order to preselect a certain item in the RadComboBox,  bind __SelectedItem__ 
  __XAML__
     
 
-```XAML
-
 
 <telerik:RadComboBox SelectedItem="{Binding Occurrence.Appointment.ComboBoxItem, Mode=TwoWay}"
             ItemsSource="{Binding Source={StaticResource MyViewModel}, Path=ComboBoxItems, Mode=TwoWay}" />
 
-```
+
 
 
