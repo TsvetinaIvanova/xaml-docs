@@ -34,9 +34,7 @@ First of all, let's set a __ResourceTypesCollection__:
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView>
@@ -46,8 +44,6 @@ First of all, let's set a __ResourceTypesCollection__:
    </telerik:RadScheduleView.ResourceTypesSource>
 </telerik:RadScheduleView>
 
-```
-
 
 
 After this, we need to create a __ResourceTypeCollection__, where we can assign the __ResourceType__:
@@ -55,9 +51,7 @@ After this, we need to create a __ResourceTypeCollection__, where we can assign 
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView>
@@ -68,8 +62,6 @@ After this, we need to create a __ResourceTypeCollection__, where we can assign 
         <telerik:ResourceTypeCollection>
     </telerik:RadScheduleView.ResourceTypesSource>
 </telerik:RadScheduleView>
-
-```
 
 
 
@@ -84,9 +76,7 @@ After we have created a __ResourceTypeCollection__, we can add our __ResourceTyp
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView>
@@ -99,8 +89,6 @@ After we have created a __ResourceTypeCollection__, we can add our __ResourceTyp
         </telerik:ResourceTypeCollection>
     </telerik:RadScheduleView.ResourceTypesSource>
 </telerik:RadScheduleView>
-
-```
 
 
 
@@ -115,9 +103,7 @@ Once we've created the __ResourceType__, we should create and assign __Resources
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView>
@@ -133,8 +119,6 @@ Once we've created the __ResourceType__, we should create and assign __Resources
     </telerik:RadScheduleView.ResourceTypesSource>
 </telerik:RadScheduleView>
 
-```
-
 
 
 # Grouping appointments by Resources
@@ -144,9 +128,7 @@ Now if you want to group the appointments by Location, you can use __GroupDescri
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView>
@@ -157,8 +139,6 @@ Now if you want to group the appointments by Location, you can use __GroupDescri
         </telerik:GroupDescriptionCollection>
     </telerik:RadScheduleView.GroupDescriptionsSource>
 </telerik:RadScheduleView>
-
-```
 
 
 
@@ -172,9 +152,7 @@ If you want to change the group order you could use the following syntax:
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView>
@@ -186,8 +164,6 @@ If you want to change the group order you could use the following syntax:
         </telerik:GroupDescriptionCollection>
     </telerik:RadScheduleView.GroupDescriptionsSource>
 </telerik:RadScheduleView>
-
-```
 
 
 

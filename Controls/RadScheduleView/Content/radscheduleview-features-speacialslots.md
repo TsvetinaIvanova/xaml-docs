@@ -66,9 +66,7 @@ In some cases when using a big number of special slots there could be some __per
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 var NonWorkingHours = new ObservableCollection<Slot>();
@@ -87,8 +85,6 @@ NonWorkingHours.Add(
                     null, RecurrenceDays.Friday, RecurrenceFrequency.Weekly, 1, null, null)
     });
 
-```
-
 
 
 * Then create the ScheduleViewStyleSelector class:
@@ -96,9 +92,7 @@ NonWorkingHours.Add(
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 public class SpecialSlotStyleSelector : ScheduleViewStyleSelector
@@ -121,17 +115,13 @@ public class SpecialSlotStyleSelector : ScheduleViewStyleSelector
     }
 }
 
-```
-
 
 
 and define the Style:
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <local:SpecialSlotStyleSelector x:Key="SpecialSlotStyleSelector">
@@ -148,8 +138,6 @@ and define the Style:
         </local:SpecialSlotStyleSelector.NonworkingHourStyle>
     </local:SpecialSlotStyleSelector>
 
-```
-
 
 
 * Finally, bind them to SpecialSlotsSource and SpecialSlotsStyleSelector properties:
@@ -157,9 +145,7 @@ and define the Style:
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView x:Name="scheduleView"
@@ -167,8 +153,6 @@ and define the Style:
            SpecialSlotStyleSelector="{StaticResource SpecialSlotStyleSelector}">
 ...
 </telerik:RadScheduleView>
-
-```
 
 
 
@@ -180,9 +164,7 @@ Let's for example have the following Resource Type defined:
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView x:Name="scheduleView">
@@ -197,8 +179,6 @@ Let's for example have the following Resource Type defined:
   ...
 </telerik:RadScheduleView>
 
-```
-
 
 
 * You can create the collection of read-only slots for "Team" Resource like this:
@@ -206,9 +186,7 @@ Let's for example have the following Resource Type defined:
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 var ReadOnlySlots = new ObservableCollection<Slot>();
@@ -220,8 +198,6 @@ Slot readOnlyslot = new Slot() {
 readOnlyslot.Resources.Add(new Resource("Team", "Calendar"));
 ReadOnlySlots.Add(readOnlyslot);
 
-```
-
 
 
 * And assign it to the ScheduleView's SpecialSlotsSource property:
@@ -229,16 +205,12 @@ ReadOnlySlots.Add(readOnlyslot);
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView  x:Name="scheduleView" SpecialSlotsSource="{Binding ReadOnlySlots}">
 ...
 </telerik:RadScheduleView>
-
-```
 
 
 
@@ -249,14 +221,10 @@ Note that EditAppointmentDialog is shown even for appointments which are visuali
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView x:Name="scheduleView" ShowDialog="scheduleView_ShowDialog">
-
-```
 
 
 
@@ -265,9 +233,7 @@ and cancel it in the event handler:
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 private void scheduleView_ShowDialog(object sender, ShowDialogEventArgs e)
@@ -278,8 +244,6 @@ private void scheduleView_ShowDialog(object sender, ShowDialogEventArgs e)
         e.Cancel = true;
     }
 }
-
-```
 
 
 

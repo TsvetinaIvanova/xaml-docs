@@ -59,9 +59,7 @@ Gets or sets the date time interval with which the current will be increased
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
         <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
@@ -71,23 +69,17 @@ Gets or sets the date time interval with which the current will be increased
             </telerik:RadScheduleView.ViewDefinitions>
         </telerik:RadScheduleView>
 
-```
-
 
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 	dayDefintion.LargeChangeInterval = new Telerik.Windows.Controls.ScheduleView.
 	DateTimeInterval(2, 0);
 	monthDefinition.LargeChangeInterval = new Telerik.Windows.Controls.ScheduleView.
 	DateTimeInterval(4, 2);
-
-```
 
 
 
@@ -105,9 +97,7 @@ Gets or sets the date time interval with which the current will be increased
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
         <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
@@ -117,23 +107,17 @@ Gets or sets the date time interval with which the current will be increased
             </telerik:RadScheduleView.ViewDefinitions>
         </telerik:RadScheduleView>
 
-```
-
 
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 	monthDefintion.SmallChangeInterval = new Telerik.Windows.Controls.ScheduleView.
 	DateTimeInterval(11, 0);
 	timelineDefinition.SmallChangeInterval = new Telerik.Windows.Controls.ScheduleView.
 	DateTimeInterval(3, 0);
-
-```
 
 
 
@@ -144,9 +128,7 @@ Gets or sets the date time interval with which the current will be increased
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
         <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
@@ -157,22 +139,16 @@ Gets or sets the date time interval with which the current will be increased
             </telerik:RadScheduleView.ViewDefinitions>
         </telerik:RadScheduleView>
 
-```
-
 
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 	dayDefintion.DayStartTime = new TimeSpan(7, 30, 00);
 	weekDefinition.DayStartTime = new TimeSpan(8, 0, 0);
 	timelineDefinition.DayStartTime = new TimeSpan(11, 30, 0);
-
-```
 
 
 
@@ -189,9 +165,7 @@ Gets or sets the date time interval with which the current will be increased
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
         <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
@@ -202,22 +176,16 @@ Gets or sets the date time interval with which the current will be increased
             </telerik:RadScheduleView.ViewDefinitions>
         </telerik:RadScheduleView>
 
-```
-
 
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 	dayDefintion.DayStartTime = new TimeSpan(17, 30, 00);
 	weekDefinition.DayStartTime = new TimeSpan(18, 0, 0);
 	timelineDefinition.DayStartTime = new TimeSpan(21, 30, 0);
-
-```
 
 
 
@@ -235,9 +203,7 @@ Gets or sets the date time interval with which the current will be increased
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
         <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
@@ -249,23 +215,17 @@ Gets or sets the date time interval with which the current will be increased
             </telerik:RadScheduleView.ViewDefinitions>
         </telerik:RadScheduleView>
 
-```
-
 
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 	dayDefintion.VisibleDays = 4;
 	weekDefinition.VisibleDays = 11;
 	monthDefintion.VisibleDays = 21;
 	timelineDefinition.VisibleDays = 9;
-
-```
 
 And the result is shown on the next figure for DayView and TimelineView:
                
@@ -290,9 +250,7 @@ And the result is shown on the next figure for DayView and TimelineView:
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
         <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
@@ -303,22 +261,16 @@ And the result is shown on the next figure for DayView and TimelineView:
             </telerik:RadScheduleView.ViewDefinitions>
         </telerik:RadScheduleView>
 
-```
-
 
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 	dayDefintion.Orientation = Orientation.Horizontal;
 	weekDefinition.Orientation = Orientation.Horizontal;
 	timelineDefinition.Orientation = Orientation.Vertical;
-
-```
 
 This is how the views look like after setting the Orientation property:
                

@@ -20,9 +20,7 @@ There are two key properties that control the Height of the TimeRuler:
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView AppointmentsSource="{Binding Appointments}"  
@@ -34,8 +32,6 @@ There are two key properties that control the Height of the TimeRuler:
                 <telerik:TimelineViewDefinition />
             </telerik:RadScheduleView.ViewDefinitions>
 </telerik:RadScheduleView>
-
-```
 
 
 

@@ -61,9 +61,7 @@ The __RecurrenceFrequency__ enumeration exposes also the following values:
 
 __However, these values are invalid recurrence frequency and should not be used.__
 
-
-    ![tip](tip.jpg)
-    	
+	>
 
 The default value of the __RecurrencePattern__'s __Frequency__ property is __RecurrenceFrequency.None__. Which means that the __Frequency__ property is a mandatory property and you should always set it.
 						>
@@ -103,21 +101,11 @@ When you want to set the days of the week of the recurrence, you need to set the
 
 * WeekendDays
 
-* None
-    ![tip](tip.jpg)
-    	
+* None	>
           The default value of the __RecurrencePattern__'s __DaysOfWeekMask__ property is __RecurrenceDays.None__. However, the __DaysOfWeekMask__ is not a mandatory property.
-        
-    ![tip](tip.jpg)
-    	__RecurrenceDays.WeekDays__ is equivalent to __RecurrenceDays.Monday | RecurrenceDays.Tuesday | RecurrenceDays.Wednesday | RecurrenceDays.Thursday | RecurrenceDays.Friday__.
-        
-    ![tip](tip.jpg)
-    	__RecurrenceDays.WeekendDays__ is equivalent to __RecurrenceDays.Saturday | RecurrenceDays.Sunday.__
-    ![tip](tip.jpg)
-    	__RecurrenceDays.EveryDay__ is equivalent to __RecurrenceDays.Monday | RecurrenceDays.Tuesday | RecurrenceDays.Wednesday | RecurrenceDays.Thursday | RecurrenceDays.Friday | RecurrenceDays.Saturday | RecurrenceDays.Sunday__.
-        
-    ![tip](tip.jpg)
-    	__Enum__ members are often used in logical operation to create a combination of values. Often you should set more than one value of the __DaysOfWeekMask__ property, like in the 
+        	>__RecurrenceDays.WeekDays__ is equivalent to __RecurrenceDays.Monday | RecurrenceDays.Tuesday | RecurrenceDays.Wednesday | RecurrenceDays.Thursday | RecurrenceDays.Friday__.
+        	>__RecurrenceDays.WeekendDays__ is equivalent to __RecurrenceDays.Saturday | RecurrenceDays.Sunday.__	>__RecurrenceDays.EveryDay__ is equivalent to __RecurrenceDays.Monday | RecurrenceDays.Tuesday | RecurrenceDays.Wednesday | RecurrenceDays.Thursday | RecurrenceDays.Friday | RecurrenceDays.Saturday | RecurrenceDays.Sunday__.
+        	>__Enum__ members are often used in logical operation to create a combination of values. Often you should set more than one value of the __DaysOfWeekMask__ property, like in the 
             [Example](#Examples)
             section at the end of the topic.
         
@@ -125,13 +113,9 @@ When you want to set the days of the week of the recurrence, you need to set the
 # IntervalInterval
 
 If you want to set the number of days between each recurrence, you need to specify the __RecurrencePattern__'s __Interval__ property.
-        
-    ![tip](tip.jpg)
-    	
+        	>
           The default value of the __RecurrencePattern__'s __Interval__ property is 1.
-        
-    ![tip](tip.jpg)
-    	
+        	>
           Combining the __Interval__ property with the __DaysOfWeekMask__ and __Frequency__ pattern gives you even more flexibility when creating recurring appointments. For more information take a look at the 
             [Example](#Examples) section at the end of the topic.
         
@@ -173,9 +157,7 @@ When you want to create a new instance of __RecurrencePattern__ with the same va
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 var pattern = new RecurrencePattern() {
@@ -184,15 +166,11 @@ var pattern = new RecurrencePattern() {
 };
 var copyPattern = pattern.Copy();
 
-```
-
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 Dim pattern = New RecurrencePattern() With {
@@ -200,8 +178,6 @@ Dim pattern = New RecurrencePattern() With {
     .MaxOccurrences = 10
 }
 Dim copyPattern = pattern.Copy()
-
-```
 
 
 
@@ -215,9 +191,7 @@ Use the __CopyFrom()__ method to duplicate the pattern properties of the specifi
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 var pattern = new RecurrencePattern() {
@@ -227,15 +201,11 @@ var pattern = new RecurrencePattern() {
 var newPattern = new RecurrencePattern();
 newPattern.CopyFrom(pattern);
 
-```
-
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 Dim pattern = New RecurrencePattern() With {
@@ -244,8 +214,6 @@ Dim pattern = New RecurrencePattern() With {
 }
 Dim newPattern As New RecurrencePattern()
 newPattern.CopyFrom(pattern)
-
-```
 
 
 
@@ -258,9 +226,7 @@ For the next examples the following appointment declaration will be used.
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 var startDate = new DateTime(2011, 05, 11, 10, 0, 0);
@@ -270,15 +236,11 @@ var appointment = new Appointment() {
     Subject = "Example"
 };
 
-```
-
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 Dim startDate = New DateTime(2011, 5, 11, 10, 0, 0)
@@ -287,8 +249,6 @@ Dim appointment = New Appointment() With {
     .End = startDate.AddHours(2),
     .Subject = "Example"
 }
-
-```
 
 
 
@@ -301,9 +261,7 @@ If you want to create an appointment that occurs every day, the only thing you s
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 var pattern = new RecurrencePattern() {
@@ -311,23 +269,17 @@ var pattern = new RecurrencePattern() {
 };
 appointment.RecurrenceRule = new RecurrenceRule(pattern);
 
-```
-
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 Dim pattern = New RecurrencePattern() With {
     Frequency = RecurrenceFrequency.Daily
 }
 appointment.RecurrenceRule = New RecurrenceRule(pattern)
-
-```
 
 
 
@@ -344,9 +296,7 @@ Creating an every day recurring event is extremely simple - you just need to set
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 var pattern = new RecurrencePattern() {
@@ -355,15 +305,11 @@ var pattern = new RecurrencePattern() {
 };
 appointment.RecurrenceRule = new RecurrenceRule(pattern);
 
-```
-
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 Dim pattern = New RecurrencePattern() With {
@@ -372,18 +318,12 @@ Dim pattern = New RecurrencePattern() With {
 }
 appointment.RecurrenceRule = New RecurrenceRule(pattern)
 
-```
-
 
 
 The result of the above example will be a __RecurrencePattern__ which will create an appointment every week day, like on the image below.
-        ![RadScheduleView RecurrencePattern](images/radscheduleview_recurrencypattern_2.png)
-    ![tip](tip.jpg)
-    	
+        ![RadScheduleView RecurrencePattern](images/radscheduleview_recurrencypattern_2.png)	>
           Sometimes you may want to create an appointment that occurs during the __weekend__ days, instead of every __week__ day. The only thing you should change is to set the __DaysOfWeekMask__ property to __RecurrenceDays.WeekendDays__.
-        
-    ![tip](tip.jpg)
-    	
+        	>
           If you want to create an appointment that occurs every specific week day (Monday, Tuesday, etc.), you need only to set the correct value for the __DaysOfWeekMask__ property. For example, in order to create an appointment that occurs every Friday, set the __DaysOfWeekMask__ property to __RecurrenceDays.Friday__.
         
 
@@ -403,9 +343,7 @@ When you want to create an appointment that occurs on every "n" days, you should
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 var pattern = new RecurrencePattern() {
@@ -415,15 +353,11 @@ var pattern = new RecurrencePattern() {
 };
 appointment.RecurrenceRule = new RecurrenceRule(pattern);
 
-```
-
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 Dim pattern = New RecurrencePattern() With {
@@ -433,13 +367,9 @@ Dim pattern = New RecurrencePattern() With {
 }
 appointment.RecurrenceRule = New RecurrenceRule(pattern)
 
-```
 
 
-
-Executing the previous pattern will result in creating an appointment that occurs on every third day. See the next image for the result.![RadScheduleView RecurrencePattern](images/radscheduleview_recurrencypattern_3.png)
-    ![tip](tip.jpg)
-    	
+Executing the previous pattern will result in creating an appointment that occurs on every third day. See the next image for the result.![RadScheduleView RecurrencePattern](images/radscheduleview_recurrencypattern_3.png)	>
           In this example, the key moment is setting the __Interval__ property. For example, if you want the number of days between each recurrence to be 4, 5, 6 or n days, then you just need to set the correct value to the __Interval__ property.
         
 
@@ -459,9 +389,7 @@ For example, if you want to create an appointment that occurs on every __fifth__
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 var pattern = new RecurrencePattern() {
@@ -471,15 +399,11 @@ var pattern = new RecurrencePattern() {
 };
 appointment.RecurrenceRule = new RecurrenceRule(pattern);
 
-```
-
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 Dim pattern = New RecurrencePattern() With {
@@ -488,8 +412,6 @@ Dim pattern = New RecurrencePattern() With {
      .Interval = 2
 }
 appointment.RecurrenceRule = New RecurrenceRule(pattern)
-
-```
 
 
 
@@ -511,9 +433,7 @@ For example, if you want to create an appointment that occurs on every second Mo
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 var pattern = new RecurrencePattern() {
@@ -524,15 +444,11 @@ var pattern = new RecurrencePattern() {
 };
 appointment.RecurrenceRule = new RecurrenceRule(pattern);
 
-```
-
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 Dim pattern = New RecurrencePattern() With {
@@ -542,8 +458,6 @@ Dim pattern = New RecurrencePattern() With {
      .Interval = 2
 }
 appointment.RecurrenceRule = New RecurrenceRule(pattern)
-
-```
 
 
 
@@ -562,9 +476,7 @@ For example, if you want to create an appointment that occurs on 13th of Novembe
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 var pattern = new RecurrencePattern() {
@@ -574,15 +486,11 @@ var pattern = new RecurrencePattern() {
 };
 appointment.RecurrenceRule = new RecurrenceRule(pattern);
 
-```
-
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 Dim pattern = New RecurrencePattern() With {
@@ -591,8 +499,6 @@ Dim pattern = New RecurrencePattern() With {
     .DayOfMonth = 13
 }
 appointment.RecurrenceRule = New RecurrenceRule(pattern)
-
-```
 
 
 
@@ -603,9 +509,7 @@ When you want to specify a limit of the occurrences for the appointment, then yo
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 var pattern = new RecurrencePattern() {
@@ -614,15 +518,11 @@ var pattern = new RecurrencePattern() {
 };
 appointment.RecurrenceRule = new RecurrenceRule(pattern);
 
-```
-
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 Dim pattern = New RecurrencePattern() With {
@@ -630,8 +530,6 @@ Dim pattern = New RecurrencePattern() With {
     .MaxOccurrences = 3
 }
 appointment.RecurrenceRule = New RecurrenceRule(pattern)
-
-```
 
 
 
@@ -642,9 +540,7 @@ When you want to specify the end date of the appointment's occurrences, then you
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 var pattern = new RecurrencePattern() {
@@ -653,15 +549,11 @@ var pattern = new RecurrencePattern() {
 };
 appointment.RecurrenceRule = new RecurrenceRule(pattern);
 
-```
-
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 Dim pattern = New RecurrencePattern() With {
@@ -669,8 +561,6 @@ Dim pattern = New RecurrencePattern() With {
      .RecursUntil = New DateTime(2011, 5, 24, 10, 0, 0)
 }
 appointment.RecurrenceRule = New RecurrenceRule(pattern)
-
-```
 
 
 

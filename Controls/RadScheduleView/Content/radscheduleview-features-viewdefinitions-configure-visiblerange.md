@@ -15,9 +15,7 @@ The built-in __RadScheduleView__ ViewDefinitions have specific ways to determine
 
 The VisibleRangeEnd is VisibleRangeStart+VisibleDays for all view definitions.
 
-
-    ![tip](tip.jpg)
-    	
+	>
 
 The easiest way to create a WeekViewDefinition that behaves like the DayViewDefinition is to use a DayViewDefinition and set its VisibleDays=7.
 
@@ -28,17 +26,13 @@ For advanced customization of the VisibleRange the ViewDefinitionBase class prov
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 protected virtual DateTime GetVisibleRangeStart (DateTime currentDate, CultureInfo culture, DayOfWeek? firstDayOfWeek);
 
 protected virtual DateTime GetVisibleRangeEnd(DateTime currentDate, CultureInfo culture, DayOfWeek? firstDayOfWeek);
 
-
-```
 
 
 
@@ -49,9 +43,7 @@ For example, the following class represents a MonthViewDefinition that starts fr
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 public class CustomMonthViewDefinition : MonthViewDefinition
@@ -61,8 +53,6 @@ public class CustomMonthViewDefinition : MonthViewDefinition
 		return CalendarHelper.GetFirstDayOfWeek(currentDate, firstDayOfWeek.Value);
 	}
 }
-
-```
 
 
 
@@ -74,9 +64,7 @@ Here is how to use the CustomMonthViewDefinition:
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView>
@@ -84,7 +72,5 @@ Here is how to use the CustomMonthViewDefinition:
 		<local:CustomMonthViewDefinition />
 	</telerik:RadScheduleView.ViewDefinitions>
 </telerik:RadScheduleView>
-
-```
 
 

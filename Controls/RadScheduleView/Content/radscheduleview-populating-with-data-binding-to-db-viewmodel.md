@@ -16,9 +16,7 @@ When the models are defined, we need to create the __ViewModel__ (refer to __Sch
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <Grid x:Name="LayoutRoot" Background="White">
@@ -49,8 +47,6 @@ When the models are defined, we need to create the __ViewModel__ (refer to __Sch
 	<Button Grid.Row="1" Content="Save data" HorizontalAlignment="Center" Command="{Binding SaveCommand}" VerticalAlignment="Center"/>
 </Grid>
 
-```
-
 	>
 
 The appointments are loaded from the database when the VisibleRangeChanged command is executed.
@@ -61,9 +57,7 @@ When "Save data" button is clicked, we save the data to the server.
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 private void OnSaveExecuted(object param)
@@ -88,8 +82,6 @@ public static void SaveData()
 	}
 }
 
-```
-
 
 
 # ViewModel
@@ -107,9 +99,7 @@ Here is the code:
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 private void LoadData()
@@ -135,8 +125,6 @@ private void LoadData()
 	};
 }
 
-```
-
 
 
 Also, we need to handle the Appointments.CollectionChanged event and in the handler we add or remove the items from the EntitySets:
@@ -146,9 +134,7 @@ Also, we need to handle the Appointments.CollectionChanged event and in the hand
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 private void OnAppointmentsCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
@@ -182,8 +168,6 @@ private void OnAppointmentsCollectionChanged(object sender, NotifyCollectionChan
 		}
 	}
 }
-
-```
 
 
 

@@ -28,9 +28,7 @@ This tutorial will go through the steps needed to create a custom SlotSelectionB
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView>
@@ -42,8 +40,6 @@ This tutorial will go through the steps needed to create a custom SlotSelectionB
 		<local:CustomSlotSelectionBehavior/>
 	</telerik:RadScheduleView.SlotSelectionBehavior>
 </telerik:RadScheduleView>
-
-```
 
 The end result is:
 

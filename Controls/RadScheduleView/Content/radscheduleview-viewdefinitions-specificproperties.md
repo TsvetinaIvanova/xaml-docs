@@ -27,9 +27,7 @@ The following code snippet shows how to set the __ShowWeekGroupHeaders__ and __W
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
         <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
@@ -38,21 +36,15 @@ The following code snippet shows how to set the __ShowWeekGroupHeaders__ and __W
             </telerik:RadScheduleView.ViewDefinitions>
         </telerik:RadScheduleView>
 
-```
-
 
 
 
  __C#__
-    
-
-```C#
+    	
 
 
      weekDefinition.ShowWeekGroupHeaders = true;
 	 weekDefinition.WeekGroupHeaderStringFormat = "Week number {0}, {1:D}";
-
-```
 
 
 

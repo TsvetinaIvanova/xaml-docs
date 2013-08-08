@@ -21,27 +21,19 @@ To apply custom localization to your controls just instantiate your custom __Loc
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 LocalizationManager.Manager = new CustomLocalizationManager();
-
-```
 
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 LocalizationManager.Manager = New CustomLocalizationManager()
-
-```
 
 
 
@@ -84,9 +76,7 @@ The last step is to instantiate the __LocalizationManager__ class and set its __
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 LocalizationManager.Manager = new LocalizationManager()
@@ -94,21 +84,15 @@ LocalizationManager.Manager = new LocalizationManager()
    ResourceManager = ScheduleViewResources.ResourceManager
 };
 
-```
-
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 LocalizationManager.Manager = New LocalizationManager()
 LocalizationManager.Manager.ResourceManager = ScheduleViewResources.ResourceManager
-
-```
 
 	>
 
@@ -128,9 +112,7 @@ The other way to localize your __RadScheduleView__ control is to create a class 
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 public class CustomLocalizationManager : LocalizationManager
@@ -158,15 +140,11 @@ public class CustomLocalizationManager : LocalizationManager
    }
 }
 
-```
-
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 Public Class CustomLocalizationManager
@@ -192,8 +170,6 @@ Public Class CustomLocalizationManager
     End Function
 End Class
 
-```
-
 
 
 
@@ -204,9 +180,7 @@ Of course, if you don't want to hard-code your translation inside your source co
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 public override string GetStringOverride( string key )
@@ -221,15 +195,11 @@ public override string GetStringOverride( string key )
    return base.GetStringOverride( key );
 }
 
-```
-
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 Public Overloads Overrides Function GetStringOverride(ByVal key As String) As String
@@ -241,8 +211,6 @@ Public Overloads Overrides Function GetStringOverride(ByVal key As String) As St
     End Select
     Return MyBase.GetStringOverride(key)
 End Function
-
-```
 
 
 
@@ -447,9 +415,7 @@ To change the default culture, you should set the __CurrentCulture__ and the __C
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 public partial class App : Application
@@ -464,7 +430,5 @@ public partial class App : Application
        InitializeComponent();
    }
 }
-
-```
 
 

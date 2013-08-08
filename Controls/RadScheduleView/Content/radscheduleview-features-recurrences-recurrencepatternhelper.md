@@ -28,9 +28,7 @@ For example, consider the following __RecurrencePattern__ declaration:
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 var pattern = new RecurrencePattern()
@@ -41,15 +39,11 @@ var pattern = new RecurrencePattern()
     MaxOccurrences = 10
 };
 
-```
-
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 Dim pattern = New RecurrencePattern() With {
@@ -58,8 +52,6 @@ Dim pattern = New RecurrencePattern() With {
     .Interval = 3,
     .MaxOccurrences = 10
 }
-
-```
 
 
 
@@ -70,27 +62,19 @@ The next code snippet demonstrates you how to use the __RecurrencePatternToStrin
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 var serializedPattern = RecurrencePatternHelper.RecurrencePatternToString(pattern);
-
-```
 
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 Dim serializedPattern = RecurrencePatternHelper.RecurrencePatternToString(pattern)
-
-```
 
 
 
@@ -114,31 +98,23 @@ Consider the serialized string from the previous example: __FREQ=DAILY;COUNT=10;
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 var serializedPattern = "FREQ=DAILY;COUNT=10;INTERVAL=3;BYDAY=MO,TU,WE,TH,FR";
 RecurrencePattern pattern;
 RecurrencePatternHelper.TryParseRecurrencePattern(serializedPattern, out pattern);
 
-```
-
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 Dim serializedPattern As String = "FREQ=DAILY;COUNT=10;INTERVAL=3;BYDAY=MO,TU,WE,TH,FR"
 Dim pattern As RecurrencePattern
 RecurrencePatternHelper.TryParseRecurrencePattern(serializedPattern, pattern)
-
-```
 
 
 

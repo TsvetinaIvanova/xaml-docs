@@ -58,9 +58,7 @@ You can edit an appointment using the code. Here are the steps to accomplish thi
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 if (this.radScheduleView.BeginEdit(appointment))
@@ -69,22 +67,16 @@ if (this.radScheduleView.BeginEdit(appointment))
     this.radScheduleView.Commit();
 }
 
-```
-
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 If Me.radScheduleView.BeginEdit(appointment) Then
  appointment.Subject = "New Subject"
  Me.radScheduleView.Commit()
 End If
-
-```
 
 [Understanding Appointments]({{slug:understanding-appointments}})[Create Appointment]({{slug:create-appointment}})[Delete Appointment]({{slug:delete-appointment}})

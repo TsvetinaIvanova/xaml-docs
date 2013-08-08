@@ -45,26 +45,18 @@ You can delete an appointment using the code. Just Call __Remove()__ method of t
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 this.radScheduleView.Remove(appointment);
-
-```
 
 
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 Me.radScheduleView.Remove(appointment)
-
-```
 
 [Understanding Appointments]({{slug:understanding-appointments}})[Create Appointment]({{slug:create-appointment}})[Edit Appointment]({{slug:edit-appointment}})

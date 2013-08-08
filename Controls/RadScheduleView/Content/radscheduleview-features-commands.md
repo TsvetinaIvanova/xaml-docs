@@ -53,15 +53,11 @@ The difference between both commands is when neither the parameter nor the __Sel
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 RadScheduleViewCommands.CreateAppointment.Execute(null, ScheduleView);
 RadScheduleViewCommands.CreateAppointmentWithDialog.Execute(null, ScheduleView);
-
-```
 
 
 
@@ -73,14 +69,10 @@ Use it when you want to create a new appointment via the inline editing. If no p
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 RadScheduleViewCommands.CreateInlineAppointment.Execute(null, ScheduleView);
-
-```
 
 	>
 
@@ -95,14 +87,10 @@ Use it when you want to show the edit dialog for an appointment. If no parameter
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 RadScheduleViewCommands.EditAppointment.Execute(null, ScheduleView);
-
-```
 
 
 
@@ -114,14 +102,10 @@ When you want to remove an appointment from __AppointmentsSource__ collection, t
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 RadScheduleViewCommands.DeleteAppointment.Execute(null, ScheduleView);
-
-```
 
 
 
@@ -148,14 +132,10 @@ Executing this command will result in setting the RadScheduleView’s __ActiveVi
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 RadScheduleViewCommands.SetDayViewMode.Execute(null, ScheduleView);
-
-```
 
 
 
@@ -167,14 +147,10 @@ Executing this command will result in setting the RadScheduleView's __ActiveView
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 RadScheduleViewCommands.SetWeekViewMode.Execute(null, ScheduleView);
-
-```
 
 
 
@@ -186,14 +162,10 @@ Executing this command will result in setting the RadScheduleView's __ActiveView
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 RadScheduleViewCommands.SetMonthViewMode.Execute(null, ScheduleView);
-
-```
 
 
 
@@ -205,14 +177,10 @@ Executing this command will result in setting the RadScheduleView's __ActiveView
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 RadScheduleViewCommands.SetTimelineViewMode.Execute(null, ScheduleView);
-
-```
 
 
 
@@ -224,15 +192,11 @@ Increases/decreases the first visible date with n months or days, where n is the
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 RadScheduleViewCommands.IncreaseVisibleDateLarge.Execute(null, ScheduleView);
 RadScheduleViewCommands.DecreaseVisibleDateLarge.Execute(null, ScheduleView);
-
-```
 
 
 
@@ -249,14 +213,10 @@ Use these commands when you want to navigate to the previous/next appointment ou
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 RadScheduleViewCommands.GoToPreviousAppointment.Execute(null, ScheduleView);
 RadScheduleViewCommands.GoToNextAppointment.Execute(null, ScheduleView);
-
-```
 
 

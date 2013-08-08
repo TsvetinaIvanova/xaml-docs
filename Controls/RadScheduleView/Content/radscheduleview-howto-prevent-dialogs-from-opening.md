@@ -26,24 +26,18 @@ For example the view model for the __EditAppointmentDialog__ is __AppointmentDia
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" ShowDialog="RadScheduleView_ShowDialog">
 …
 </telerik:RadScheduleView>
 
-```
-
 
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 private void RadScheduleView_ShowDialog(object sender, ShowDialogEventArgs e)
@@ -52,15 +46,11 @@ private void RadScheduleView_ShowDialog(object sender, ShowDialogEventArgs e)
         e.Cancel = true;
 }
 
-```
-
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 Private Sub RadScheduleView_ShowDialog(sender As System.Object, e As ShowDialogEventArgs)
@@ -68,8 +58,6 @@ Private Sub RadScheduleView_ShowDialog(sender As System.Object, e As ShowDialogE
        e.Cancel = True
     End If
 End Sub
-
-```
 
 	>
 
@@ -81,9 +69,7 @@ In this case __DefaultDialogResult __ property of the event args should be set i
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 private void RadScheduleView_ShowDialog(object sender, ShowDialogEventArgs e)
@@ -95,15 +81,11 @@ private void RadScheduleView_ShowDialog(object sender, ShowDialogEventArgs e)
     }
 }
 
-```
-
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 Private Sub RadScheduleView_ShowDialog(sender As System.Object, e As ShowDialogEventArgs)
@@ -112,8 +94,6 @@ Private Sub RadScheduleView_ShowDialog(sender As System.Object, e As ShowDialogE
         e.Cancel = True
     End If
 End Sub
-
-```
 
 
 
@@ -125,9 +105,7 @@ By default  “Open/Delete the occurrence” option is selected in RecurrenceCho
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 private void RadScheduleView_ShowDialog(object sender, ShowDialogEventArgs e)
@@ -139,15 +117,11 @@ private void RadScheduleView_ShowDialog(object sender, ShowDialogEventArgs e)
     }
 }
 
-```
-
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 Private Sub RadScheduleView_ShowDialog(sender As System.Object, e As ShowDialogEventArgs)
@@ -157,8 +131,4 @@ Private Sub RadScheduleView_ShowDialog(sender As System.Object, e As ShowDialogE
    End If
 End Sub
 
-```
-
-
-    ![tip](tip.jpg)
-    	Check [Custom Dialogs]({{slug:custom-dialogs}}) for more information about RadScheduleView dialogs.
+	>Check [Custom Dialogs]({{slug:custom-dialogs}}) for more information about RadScheduleView dialogs.

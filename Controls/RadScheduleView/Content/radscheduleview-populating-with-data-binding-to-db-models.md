@@ -39,9 +39,7 @@ We need to generate a brush value from the string stored in the database. What w
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 	internal static class SolidColorBrushHelper
@@ -70,8 +68,6 @@ We need to generate a brush value from the string stored in the database. What w
 			return new SolidColorBrush(Color.FromArgb(a, r, g, b));
 		}
 	}
-
-```
 
 
 

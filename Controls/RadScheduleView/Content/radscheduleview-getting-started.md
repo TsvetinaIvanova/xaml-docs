@@ -40,9 +40,7 @@ In order to add RadScheduleView control in your projects you have to add referen
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <Window x:Class="GettingStarted.MainWindow"         
@@ -54,8 +52,6 @@ In order to add RadScheduleView control in your projects you have to add referen
   <telerik:RadScheduleView />     
  </Grid>
 </Window>
-
-```
 
 Two lines of code are important here:
 
@@ -93,9 +89,7 @@ Two lines of code are important here:
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView AppointmentsSource="{Binding Appointments}">             
@@ -104,8 +98,6 @@ Two lines of code are important here:
   <telerik:MonthViewDefinition />             
  </telerik:RadScheduleView.ViewDefinitions>
 </telerik:RadScheduleView>
-
-```
 
 
           To learn more about the Appointments of the RadScheduleView take a look at the [Understanding Appointments]({{slug:understanding-appointments}}) topic.

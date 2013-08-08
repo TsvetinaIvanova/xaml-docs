@@ -44,9 +44,7 @@ Once the domain service class is added, rebuild the project as well. Let’s add
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 private int[] GetSqlAppointmentsIdsByRange(DateTime start, DateTime end)
@@ -84,7 +82,5 @@ public IQueryable<SqlAppointment> GetSqlAppointmentsByRange(DateTime start, Date
 
 	return result.AsQueryable<SqlAppointment>();
 }
-
-```
 
 [Silverlight Part]({{slug:silverlight-part}})

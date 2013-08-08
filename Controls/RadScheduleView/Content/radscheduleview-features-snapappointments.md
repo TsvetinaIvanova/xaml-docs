@@ -12,16 +12,12 @@ RadScheduleView provides the option to automatically snap the appointments while
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView SnapAppointments="True">
 ...
 </telerik:RadScheduleView>
-
-```
 
 
 
@@ -32,9 +28,7 @@ You could set MinorTickLength property of the ViewDefinition in order to snap th
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView SnapAppointments="True">		
@@ -43,13 +37,9 @@ You could set MinorTickLength property of the ViewDefinition in order to snap th
 	</telerik:RadScheduleView.ViewDefinitions>	
 </telerik:RadScheduleView>
 
-```
 
 
-
-And the result is:![radscheduleview snapappointments 2](images/radscheduleview_snapappointments_2.png)
-    ![tip](tip.jpg)
-    	
+And the result is:![radscheduleview snapappointments 2](images/radscheduleview_snapappointments_2.png)	>
 
 You can check [Configuring the TimeRuler ticks]({{slug:configuring-the-timeruler-ticks}}) article for more details about MinorTickLength property.
 

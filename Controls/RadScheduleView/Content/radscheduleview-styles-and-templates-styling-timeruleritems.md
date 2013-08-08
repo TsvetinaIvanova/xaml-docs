@@ -112,9 +112,7 @@ After choosing one of the two approaches the end result should include the follo
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <!-- Brushes -->
@@ -183,22 +181,16 @@ After choosing one of the two approaches the end result should include the follo
 		</local:OrientedTimeRulerItemStyleSelector>
 		
 
-```
-
 
 
 Note the use of the __local__ namespace from the raw source:
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 xmlns:local="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.ScheduleView"
-
-```
 
 
 
@@ -206,14 +198,10 @@ The selector is applied to our instance of RadScheduleView:
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView TimeRulerItemStyleSelector="{StaticResource TimeRulerItemStyleSelector}" AppointmentsSource="{Binding Appointments}" />
-
-```
 
 
 
@@ -221,9 +209,7 @@ Now that all TimeRulerItem styles are in place, we can apply any desired customi
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <Style x:Key="TimeRulerGroupItemStyle" TargetType="telerik:TimeRulerGroupItem">
@@ -253,8 +239,6 @@ Now that all TimeRulerItem styles are in place, we can apply any desired customi
 		</Style>
 
 
-```
-
 
 
 The TimeRulerGroupItemStyle has been modified:
@@ -275,9 +259,7 @@ To create a custom TimeRulerItemStyleSelector, inherit the __OrientedTimeRulerIt
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 public class CustomTimeRulerItemStyleSelector : OrientedTimeRulerItemStyleSelector
@@ -299,17 +281,13 @@ public class CustomTimeRulerItemStyleSelector : OrientedTimeRulerItemStyleSelect
             return base.SelectStyle(item, container, activeViewDeifinition);
         }    }
 
-```
-
 
 
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 Public Class CustomTimeRulerItemStyleSelector
@@ -344,11 +322,7 @@ Public Class CustomTimeRulerItemStyleSelector
  End Function
 End Class
 
-```
-
-
-    ![tip](tip.jpg)
-    	If you need to take advantage of the __activeViewDefinition__ in the body of the SelectStyle method, it is important to inherit the __OrientedTimeRulerItemStyleSelector__, which is located in __Telerik.Windows.Controls__ namespace, rather than the regular StyleSelector class.
+	>If you need to take advantage of the __activeViewDefinition__ in the body of the SelectStyle method, it is important to inherit the __OrientedTimeRulerItemStyleSelector__, which is located in __Telerik.Windows.Controls__ namespace, rather than the regular StyleSelector class.
 
 We use the __Type__ property of the __TickData__ class to determine whether the item is a major or a minor tick. Other properties of the TickData class include: __DateData__, __DateTime__, __Duration__ and __Offset__.
 
@@ -362,9 +336,7 @@ The next step is to prepare the actual styles for both types of TimeRulerLines. 
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <local:CustomTimeRulerItemStyleSelector.MajorTickLineStyle>
@@ -404,15 +376,11 @@ The next step is to prepare the actual styles for both types of TimeRulerLines. 
                 </Style>
 </local:CustomTimeRulerItemStyleSelector.MinorTickLineStyle>
 
-```
-
 
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 
@@ -453,8 +421,6 @@ The next step is to prepare the actual styles for both types of TimeRulerLines. 
 				</Setter>
 			</Style>
 		</local:CustomTimeRulerItemStyleSelector.MinorTickLineStyle>
-
-```
 
 
 

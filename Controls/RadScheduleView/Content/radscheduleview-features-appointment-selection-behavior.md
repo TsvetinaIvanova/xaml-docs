@@ -26,9 +26,7 @@ This tutorial will go through on how to create a custom AppointmentSelectionBeha
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView ...>
@@ -52,8 +50,6 @@ This tutorial will go through on how to create a custom AppointmentSelectionBeha
 	</telerik:RadScheduleView.AppointmentSelectionBehavior>
 	...
 </telerik:RadScheduleView>
-
-```
 
 The end result is:
 

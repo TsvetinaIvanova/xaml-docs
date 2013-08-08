@@ -21,9 +21,7 @@ Create a new class, deriving from ScheduleViewDialogHostFactory and override the
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 public class CustomScheduleViewDialogHostFactory : ScheduleViewDialogHostFactory
@@ -37,17 +35,13 @@ public class CustomScheduleViewDialogHostFactory : ScheduleViewDialogHostFactory
     }
 }
 
-```
-
 
 
 Configure RadScheduleView to use the new class:
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView . . .>
@@ -55,8 +49,6 @@ Configure RadScheduleView to use the new class:
 		<local:CustomScheduleViewDialogHostFactory />
 	</telerik:RadScheduleView.SchedulerDialogHostFactory>
 </telerik:RadScheduleView>
-
-```
 
 
 
@@ -67,9 +59,7 @@ Create a new class, deriving from WindowChildWindow and implement the __ISchedul
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 public class WindowDialogHost : Window, IScheduleViewDialogHost
@@ -105,15 +95,11 @@ public class WindowDialogHost : Window, IScheduleViewDialogHost
 	}
 }
 
-```
-
 
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 public class WindowDialogHost : ChildWindow, IScheduleViewDialogHost
@@ -153,8 +139,6 @@ public class WindowDialogHost : ChildWindow, IScheduleViewDialogHost
 	}
 }
 
-```
-
 
 
 Create a new class and implement the __IScheduleViewDialogHostFactory__:
@@ -162,9 +146,7 @@ Create a new class and implement the __IScheduleViewDialogHostFactory__:
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 public class CustomScheduleViewDialogHostFactory : ScheduleViewDialogHostFactory
@@ -185,15 +167,11 @@ public class CustomScheduleViewDialogHostFactory : ScheduleViewDialogHostFactory
 }
 
 
-```
-
 
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 public class CustomScheduleViewDialogHostFactory : IScheduleViewDialogHostFactory
@@ -210,8 +188,6 @@ public class CustomScheduleViewDialogHostFactory : IScheduleViewDialogHostFactor
      }    
 }
 
-```
-
 
 
 Configure RadScheduleView to use the new factory:
@@ -219,9 +195,7 @@ Configure RadScheduleView to use the new factory:
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView . . .>
@@ -229,8 +203,6 @@ Configure RadScheduleView to use the new factory:
 		<local:CustomScheduleViewDialogHostFactory />
 	</telerik:RadScheduleView.SchedulerDialogHostFactory>
 </telerik:RadScheduleView>
-
-```
 
          
       		![radscheduleview customizingdialogs wpf](images/radscheduleview_customizingdialogs_wpf.png)         

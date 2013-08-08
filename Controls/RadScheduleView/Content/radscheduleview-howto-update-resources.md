@@ -31,9 +31,7 @@ Let’s have the following ScheduleView grouped by “Location” resource type:
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView ResourceTypesSource="{Binding ResourceTypes}"  ...>		
@@ -47,8 +45,6 @@ Let’s have the following ScheduleView grouped by “Location” resource type:
 	</telerik:RadScheduleView.GroupDescriptionsSource>
 </telerik:RadScheduleView>
 
-```
-
 
 
 We will add checkboxes for each resource in order to allow the user to change their Visibility:
@@ -58,9 +54,7 @@ We will add checkboxes for each resource in order to allow the user to change th
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <StackPanel>
@@ -68,8 +62,6 @@ We will add checkboxes for each resource in order to allow the user to change th
 	<CheckBox Content="Show Room2" IsChecked="{Binding ShowRoom2, Mode=TwoWay}" />
 	<CheckBox Content="Show Room3" IsChecked="{Binding ShowRoom3, Mode=TwoWay}" />
 </StackPanel>
-
-```
 
 
 
@@ -79,9 +71,7 @@ Next step is to add the ShowRoom1, ShowRoom2, etc . Boolean properties and the G
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 public class ViewModel : ViewModelBase
@@ -154,8 +144,6 @@ public class ViewModel : ViewModelBase
 	}
 }
 
-```
-
 
 
 Add the UpdateGroupFilter() method:
@@ -164,9 +152,7 @@ Add the UpdateGroupFilter() method:
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 private bool GroupFilterFunc(object groupName)
@@ -191,17 +177,13 @@ private void UpdateGroupFilter()
 	this.GroupFilter = new Func<object, bool>(this.GroupFilterFunc);
 }
 
-```
-
 
 
 So checking/unchecking the checkboxes will update the visible Resources in the ViewDefintion:
 
 ![radscheduleview updateresources 4](images/radscheduleview_updateresources_4.png)
 
-![radscheduleview updateresources 3](images/radscheduleview_updateresources_3.png)
-    ![tip](tip.jpg)
-    	
+![radscheduleview updateresources 3](images/radscheduleview_updateresources_3.png)	>
 
 You can check this approach in RadScheduleView Grouping and Filtering demo 
 		[here](http://demos.telerik.com/silverlight/#ScheduleView/Grouping/GroupingAndFiltering)[here](http://demos.telerik.com/wpf/)
@@ -225,16 +207,12 @@ Calling the following code will add an additional “Room4” resource:
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 locationResType.Resources.Add(new Resource("Room4"));
 ResourceTypes.Remove(locationResType);
 ResourceTypes.Add(locationResType);
-
-```
 
 
 
@@ -244,14 +222,10 @@ where __ResourceTypes__ is the collection to which ResourceTypesSource property 
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView ResourceTypesSource="{Binding ResourceTypes}" … />
-
-```
 
 
 

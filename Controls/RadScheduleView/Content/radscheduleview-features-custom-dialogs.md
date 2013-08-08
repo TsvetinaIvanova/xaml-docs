@@ -33,17 +33,13 @@ In order to create a custom EditAppointmentDialog, use __EditAppointmentDialogSt
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <TextBox Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Margin="3"
    IsReadOnly="{Binding IsReadOnly}"
    Text="{Binding Occurrence.Appointment.Subject, Mode=TwoWay}"
    telerik:StyleManager.Theme="{StaticResource Theme}" />
-
-```
 
 
 
@@ -53,9 +49,7 @@ Other important properties of the AppointmentDialogViewModel class include:
 
 -  ResourceTypes - a list of ResourceTypeViewModel objects.  Each object holds a list of the available resources for the given ResourceType. This collection is used as a DataSource of an ItemsControl with an ItemTemplate where a RadComboBox for each resource type is placed.
 
--  IsReadOnly – a boolean property bound to the IsEnabled property of all the controls in the dialog. This allows to make the dialog read-only by cancelling the AppointmentEditing event of the ScheduleView – in this case the EditAppointmetDialog will be shown but all the fields will be disabled.
-    ![tip](tip.jpg)
-    	
+-  IsReadOnly – a boolean property bound to the IsEnabled property of all the controls in the dialog. This allows to make the dialog read-only by cancelling the AppointmentEditing event of the ScheduleView – in this case the EditAppointmetDialog will be shown but all the fields will be disabled.	>
           Check [Custom Appointment]({{slug:custom-appointment}}) for more details about customizing EditAppointmentDialog.
         
 
@@ -65,9 +59,7 @@ Other important properties of the AppointmentDialogViewModel class include:
             ![RadScheduleView EditRecurrenceDialog](images/radscheduleview_recurrenceeditdialog.png)
 
 __EditRecurrenceDialogStyle__ property is used to customize this dialog.  The DataContext of the dialog is a RecurrenceDialogViewModel object. It provides information about the RecurrencePattern which is set to the RecurrenceRule of the appointment.
-        
-    ![tip](tip.jpg)
-    	
+        	>
           More information about the recurring patterns can be found [Overview]({{slug:overview}}).
         
 

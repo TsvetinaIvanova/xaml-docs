@@ -35,9 +35,7 @@ Consider the following example:
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 var startDate = new DateTime(2011, 05, 11, 10, 0, 0);
@@ -47,15 +45,11 @@ var appointment = new Appointment() {
     Subject = "Daily appointment"
 };
 
-```
-
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 Dim startDate = New DateTime(2011, 5, 11, 10, 0, 0)
@@ -65,17 +59,13 @@ Dim appointment = New Appointment() With {
     .Subject = "Daily appointment"
 }
 
-```
-
 
 
 * Create a daily recurrence pattern, that specifies a limit of 4 occurrences for the appointment: 
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 var pattern = new RecurrencePattern() {
@@ -84,15 +74,11 @@ var pattern = new RecurrencePattern() {
     MaxOccurrences = 4
 };
 
-```
-
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 Dim pattern = New RecurrencePattern() With {
@@ -101,35 +87,25 @@ Dim pattern = New RecurrencePattern() With {
     .MaxOccurrences = 4
 }
 
-```
-
 
 
 * Set the recurrence rule to appointment: 
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 appointment.RecurrenceRule = new RecurrenceRule(pattern);
-
-```
 
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 appointment.RecurrenceRule = New RecurrenceRule(pattern)
-
-```
 
 
 
@@ -137,27 +113,19 @@ appointment.RecurrenceRule = New RecurrenceRule(pattern)
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 appointment.RecurrenceRule.AddException(new DateTime(2011, 05, 14, 10, 0, 0));
-
-```
 
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 appointment.RecurrenceRule.AddException(New DateTime(2011, 5, 14, 10, 0, 0))
-
-```
 
 
 
@@ -165,9 +133,7 @@ appointment.RecurrenceRule.AddException(New DateTime(2011, 5, 14, 10, 0, 0))
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 var exceptionAppointment = (Appointment)appointment.Copy();
@@ -175,23 +141,17 @@ exceptionAppointment.Start = new DateTime(2011, 05, 18, 11, 0, 0);
 exceptionAppointment.End = exceptionAppointment.Start.AddMinutes(45);
 appointment.RecurrenceRule.AddException(new DateTime(2011, 05, 15, 10, 0, 0), exceptionAppointment);
 
-```
-
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 Dim exceptionAppointment As Appointment = DirectCast(appointment.Copy(), Appointment)
 exceptionAppointment.Start = New DateTime(2011, 5, 15, 11, 0, 0)
 exceptionAppointment.End = exceptionAppointment.Start.AddMinutes(45)
 appointment.RecurrenceRule.AddException(New DateTime(2011, 5, 15, 10, 0, 0), exceptionAppointment)
-
-```
 
 
 

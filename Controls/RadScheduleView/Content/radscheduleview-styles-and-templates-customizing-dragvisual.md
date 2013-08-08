@@ -24,9 +24,7 @@ Here is the default DragVisualTemplate:
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <DataTemplate x:Key="DragVisualContentTemplate">
@@ -37,8 +35,6 @@ Here is the default DragVisualTemplate:
 		TextTrimming="WordEllipsis" />
 </DataTemplate>  
 
-```
-
 
 
 Note the use of DraggedAppointmentsToLocalizedStringConverter – it is needed to cover  the cases when multiple appointments are dragged:![radscheduleview dragvisual 2](images/radscheduleview_dragvisual_2.png)
@@ -47,9 +43,7 @@ Let’s for example, change the DataTemplate  as following:
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <DataTemplate x:Key="DragVisualContentTemplate">
@@ -62,8 +56,6 @@ Let’s for example, change the DataTemplate  as following:
 				TextTrimming="WordEllipsis" />
 	</StackPanel>
 </DataTemplate>
-
-```
 
 	>
 
@@ -78,17 +70,13 @@ Then set the newly created template to the DragVisualTemplate property of the Sc
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView AppointmentsSource="{Binding Appointments}"
 						DragVisualTemplate="{StaticResource DragVisualContentTemplate}">
 	...
 </telerik:RadScheduleView>
-
-```
 
 
 
@@ -108,17 +96,13 @@ Either approach you’ve selected, the final step is to set the custom DragVisua
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView AppointmentsSource="{Binding Appointments}"
 						 DragVisualStyle="{StaticResource CustomDragVisualStyle}">
 	...
 </telerik:RadScheduleView>
-
-```
 
 
 

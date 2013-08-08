@@ -16,9 +16,7 @@ Let's have the following RadScheduleView grouped by  Date, "Calendar" and “Roo
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}" >         
@@ -48,8 +46,6 @@ Let's have the following RadScheduleView grouped by  Date, "Calendar" and “Roo
         <telerik:TimelineViewDefinition />
     </telerik:RadScheduleView.ViewDefinitions>
 </telerik:RadScheduleView>
-
-```
 
 
 
@@ -112,9 +108,7 @@ The end result should include the following:
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <!-- Brushes -->
@@ -184,22 +178,16 @@ The end result should include the following:
 			MonthViewBottomLevelWeekGroupStyle="{StaticResource MonthViewBottomLevelWeekGroupStyle}">
 		</local:OrientedGroupHeaderStyleSelector>
 
-```
-
 
 
 Note the use of the local namespace from the raw source:
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 xmlns:local="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.ScheduleView"
-
-```
 
 
 
@@ -207,14 +195,10 @@ The selector is applied to our instance of RadScheduleView:
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}" GroupHeaderStyleSelector="{StaticResource GroupHeaderStyleSelector}">
-
-```
 
 
 
@@ -222,9 +206,7 @@ Now we can apply any customization to the GroupHeaders and watch the change. Let
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <Style x:Key="HorizontalBottomLevelGroupHeaderStyle" TargetType="telerik:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
@@ -234,8 +216,6 @@ Now we can apply any customization to the GroupHeaders and watch the change. Let
 	<Setter Property="Foreground" Value="Red"/>
 	<Setter Property="FontStyle" Value="Italic"/>
 </Style>
-
-```
 
 
 
@@ -251,9 +231,7 @@ In order to set different styles to the different Resource GroupHeaders , we sho
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 public class CustomGroupHeaderStyleSelector : OrientedGroupHeaderStyleSelector 
@@ -279,17 +257,13 @@ public class CustomGroupHeaderStyleSelector : OrientedGroupHeaderStyleSelector
     }
 }
 
-```
-
 
 
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 Public Class CustomGroupHeaderStyleSelector
@@ -326,17 +300,13 @@ Public Class CustomGroupHeaderStyleSelector
     End Function
 End Class
 
-```
-
 
 
 Add the Styles to the XAML:
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <local:CustomGroupHeaderStyleSelector x:Key="CustomGroupHeaderStyleSelector">
@@ -353,22 +323,16 @@ Add the Styles to the XAML:
       </local:CustomGroupHeaderStyleSelector.DateStyle>
 </local:CustomGroupHeaderStyleSelector>
 
-```
-
 
 
 And finally set the GroupHeaderStyleSelector property of the RadScheduleView:
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}"   GroupHeaderStyleSelector="{StaticResource CustomGroupHeaderStyleSelector}">
-
-```
 
 
 

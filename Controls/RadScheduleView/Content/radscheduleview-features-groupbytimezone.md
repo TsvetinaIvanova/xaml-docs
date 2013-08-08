@@ -15,9 +15,7 @@ RadScheduleView supports grouping by time zone. This can be achieved by adding a
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" TimeZonesSource="{Binding TimeZones}">
@@ -33,8 +31,6 @@ RadScheduleView supports grouping by time zone. This can be achieved by adding a
       </telerik:GroupDescriptionCollection>
    </telerik:RadScheduleView.GroupDescriptionsSource>
 </telerik:RadScheduleView>
-
-```
 
 
 

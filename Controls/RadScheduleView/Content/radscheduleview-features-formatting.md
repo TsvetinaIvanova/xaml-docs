@@ -62,9 +62,7 @@ In this article
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView  AppointmentsSource="{Binding Appointments}">
@@ -77,8 +75,6 @@ In this article
     </telerik:RadScheduleView.ViewDefinitions>
  </telerik:RadScheduleView>
 
-```
-
 
                
             ![DayViewDefinition Formatting Properties](images/radscheduleview_features_formatstringsdayview.png)
@@ -90,9 +86,7 @@ In this article
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView  AppointmentsSource="{Binding Appointments}">
@@ -106,8 +100,6 @@ In this article
     </telerik:RadScheduleView.ViewDefinitions>
  </telerik:RadScheduleView>
 
-```
-
 
                
             ![WeekViewDefinition Formatting Properties](images/radscheduleview_features_formatstringsweekview.png)
@@ -116,9 +108,7 @@ In this article
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView  AppointmentsSource="{Binding Appointments}">
@@ -132,8 +122,6 @@ In this article
     </telerik:RadScheduleView.ViewDefinitions>
 </telerik:RadScheduleView>
 
-```
-
 And the result is:
                
             ![MonthViewDefinition Formatting Properties](images/radscheduleview_features_formatstringsmonthview.png)
@@ -142,9 +130,7 @@ And the result is:
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView  AppointmentsSource="{Binding Appointments}">
@@ -161,8 +147,6 @@ And the result is:
          ...
         </telerik:RadScheduleView.ViewDefinitions>
 </telerik:RadScheduleView>
-
-```
 
 results in the following look:
                

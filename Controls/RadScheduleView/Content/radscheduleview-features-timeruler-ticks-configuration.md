@@ -19,9 +19,7 @@ Let’s have the RadScheduleView defined like this:
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" >
@@ -31,8 +29,6 @@ Let’s have the RadScheduleView defined like this:
 		<telerik:TimelineViewDefinition MinorTickLength="6h" MajorTickLength="1d" GroupTickLength="2d" />
 	</telerik:RadScheduleView.ViewDefinitions>
 </telerik:RadScheduleView>
-
-```
 
 
 

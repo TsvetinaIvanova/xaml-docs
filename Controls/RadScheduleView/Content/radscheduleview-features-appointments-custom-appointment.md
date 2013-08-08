@@ -34,9 +34,7 @@ When inheriting the AppointmentBase class it is required to create a parameter-l
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 public class Task:Appointment
@@ -75,15 +73,11 @@ public class Task:Appointment
     }
 }
 
-```
-
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 Public Class Task
@@ -115,8 +109,6 @@ Public Class Task
  End Sub
 End Class
 
-```
-
 
 
 For the next step, it is important to set the __AppointmentsSource__ of RadScheduleView to be of type __IList<Task>__, because this way the ScheduleView knows that our custom appointments should be of type __Task__. Let's create an __ObservableCollection<Task>__ using the following approach:
@@ -124,9 +116,7 @@ For the next step, it is important to set the __AppointmentsSource__ of RadSched
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 public class TasksCollection : ObservableCollection<Task>
@@ -148,15 +138,11 @@ public class TasksCollection : ObservableCollection<Task>
     }
 }
 
-```
-
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 Dim today = DateTime.Today
@@ -167,8 +153,6 @@ Dim data = New ObservableCollection(Of Task)(Enumerable.Range(9, 14).[Select](Fu
  .IsDone = today.AddMinutes((i + 1) * 60) < DateTime.Now _
 }))
 Me.DataContext = data
-
-```
 
 
 
@@ -182,21 +166,15 @@ In order to create a custom appointment dialog we are going to modify the __Edit
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <CheckBox Grid.Row="4" Grid.Column="1" Margin="3" Content="Is done?" IsChecked="{Binding Occurrence.Appointment.IsDone, Mode=TwoWay}"/>
 
-```
-
 
 
 Here is our customized EditAppointment dialog:
-        ![](images/custom_appointment2.PNG)
-    ![tip](tip.jpg)
-    	
+        ![](images/custom_appointment2.PNG)	>
 
 The important thing to note here is that we can bind to our new properties using __Occurrence.Appointment__.
           
@@ -218,14 +196,10 @@ The __DataContext__ in the AppointmentItem ContentTemplate represents an __Appoi
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <Ellipse Fill="Green" Width="12" Height="12" VerticalAlignment="Top" Margin="10 5 5 5" HorizontalAlignment="Left" Visibility="{Binding Appointment.IsDone, Converter={StaticResource BooleanToVisibilityConverter}}" />
-
-```
 
 
 
@@ -240,9 +214,7 @@ Now we will add in the Appointment ToolTip the text (Done) only for the tasks wh
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <DataTemplate x:Key="ToolTipTemplate">
@@ -251,8 +223,6 @@ Now we will add in the Appointment ToolTip the text (Done) only for the tasks wh
       <TextBlock Text="(Done)" Grid.Row="1" Margin="5 0 5 0" Foreground="#FF191D1A" Visibility="{Binding Appointment.IsDone, Converter={StaticResource BooleanToVisibilityConverter}}" FontStyle="Italic" />
    </StackPanel> 
 </DataTemplate>
-
-```
 
 
 

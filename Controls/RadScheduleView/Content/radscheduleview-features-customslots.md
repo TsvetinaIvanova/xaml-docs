@@ -18,9 +18,7 @@ Let's for example have the following RadScheduleView grouped by "Calendar" Resou
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView AppointmentsSource="{Binding Appointments}">
@@ -42,8 +40,6 @@ Let's for example have the following RadScheduleView grouped by "Calendar" Resou
 		</telerik:GroupDescriptionCollection>
 	</telerik:RadScheduleView.GroupDescriptionsSource>
 </telerik:RadScheduleView>
-
-```
 
 
 

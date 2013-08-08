@@ -32,9 +32,7 @@ You could use the __ResourceGroupDescription.ShowNullGroup__ property. For examp
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView.GroupDescriptionsSource>
@@ -43,8 +41,6 @@ You could use the __ResourceGroupDescription.ShowNullGroup__ property. For examp
      <telerik:ResourceGroupDescription ResourceType="User"  />
     </telerik:GroupDescriptionCollection>
 </telerik:RadScheduleView.GroupDescriptionsSource>
-
-```
 
 __TimeRulerStyle____TimeRulerItemStyleSelector__, __TimeRulerItemTemplateSelector__ (to make it work the __TimeRulerItemTemplateSelector__ and __TimeRulerItemTemplate__ must be set to __{x:Null}__)
               
@@ -56,9 +52,7 @@ Add __GroupDescription__ and to the __GroupDescriptionSource__. For example:
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView.GroupDescriptionsSource>
@@ -67,8 +61,6 @@ Add __GroupDescription__ and to the __GroupDescriptionSource__. For example:
 </telerik:GroupDescriptionCollection>
 </telerik:RadScheduleView.GroupDescriptionsSource>
 
-```
-
 
 
 [http://demos.telerik.com/wpf/?ScheduleView/Grouping/Basics](http://demos.telerik.com/wpf/?ScheduleView/Grouping/Basics)__View definitions__ and properties
@@ -76,9 +68,7 @@ Add __GroupDescription__ and to the __GroupDescriptionSource__. For example:
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView.ViewDefinitions>
@@ -87,8 +77,6 @@ Add __GroupDescription__ and to the __GroupDescriptionSource__. For example:
  <telerik:MonthViewDefinition/>
  <telerik:TimelineViewDefinition/>
 </telerik:RadScheduleView.ViewDefinitions>
-
-```
 
 __TimeSlotTemplateSelector____SpecialSlotStyleSelector__, __SpecialSlotsSource__
 
@@ -104,9 +92,7 @@ Depends on which __ViewDefinitions__ are defined:
 
 
  __XAML__
-    
-
-```XAML
+    	
 
 
 <telerik:RadScheduleView.ViewDefinitions>
@@ -115,8 +101,6 @@ Depends on which __ViewDefinitions__ are defined:
  …
  <telerik:TimelineViewDefinition />
 </telerik:RadScheduleView.ViewDefinitions>
-
-```
 
 __Culture__There is no such property. Use LocalizationManager.DefaultCulture instead.__TimeFormatString__, __DayHeaderFormat__, __MonthViewDayHeaderDayFormat__, __MonthViewDayHeaderMonthFormat__, __TimelineHeaderFormat____TimerulerMajorTickStringFormat__, __GroupHeaderDateStringFormat__, __TimerulerMinorTickStringFormat__ properties on the view definitions
             __ResourceStyleMapping____GroupHeaderStyleSelector__ and __GroupHeaderContentTemplateSelector____Edit____Appointment__ using code
@@ -129,9 +113,7 @@ Using the __BeginEdit()__ method of the __RadScheduleView__, which returns wheth
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 if (this.radScheduleView.BeginEdit(appointment))
@@ -140,23 +122,17 @@ if (this.radScheduleView.BeginEdit(appointment))
     this.radScheduleView.Commit();
 }
 
-```
-
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 If Me.radScheduleView.BeginEdit(appointment) Then
  appointment.Subject = "New Subject"
  Me.radScheduleView.Commit()
 End If
-
-```
 
 __Delete Appointment__ using code:
             
@@ -165,27 +141,19 @@ Using the Remove() method of the RadScheduleView(), which returns whether or not
 
 
  __C#__
-    
-
-```C#
+    	
 
 
 this.radScheduleView.Remove(appointment);
-
-```
 
 
 
 
  __VB.NET__
-    
-
-```VB.NET
+    	
 
 
 Me.radScheduleView.Remove(appointment)
-
-```
 
 
 
