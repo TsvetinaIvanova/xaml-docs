@@ -26,7 +26,7 @@ Every Slot has the following properties:
           
 
 * IsReadOnly - when set to true the slot is disabled.
-          	>
+          >
 
 When a slot is disabled you cannot create, edit, delete or drag and drop appointments in it. The existing appointments in disabled slots are in read-only mode - edit appointment dialog is still shown when the appointment is clicked but its properties cannot be edited.
         

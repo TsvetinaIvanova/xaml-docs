@@ -8,7 +8,7 @@ publish:True
 ---
 
 
-	>Before reading this tutorial you should get familiar with the Visual Structure of the standard __RadScheduleView __control and its Views and Dialogs.To learn how to manipulate run time the appointments displayed by the __RadScheduleView__, read the following topics:
+>Before reading this tutorial you should get familiar with the Visual Structure of the standard __RadScheduleView __control and its Views and Dialogs.To learn how to manipulate run time the appointments displayed by the __RadScheduleView__, read the following topics:
 
 * [Create Appointment]({{slug:create-appointment}})
 

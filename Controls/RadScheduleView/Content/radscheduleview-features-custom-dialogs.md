@@ -49,7 +49,7 @@ Other important properties of the AppointmentDialogViewModel class include:
 
 -  ResourceTypes - a list of ResourceTypeViewModel objects.  Each object holds a list of the available resources for the given ResourceType. This collection is used as a DataSource of an ItemsControl with an ItemTemplate where a RadComboBox for each resource type is placed.
 
--  IsReadOnly – a boolean property bound to the IsEnabled property of all the controls in the dialog. This allows to make the dialog read-only by cancelling the AppointmentEditing event of the ScheduleView – in this case the EditAppointmetDialog will be shown but all the fields will be disabled.	>
+-  IsReadOnly – a boolean property bound to the IsEnabled property of all the controls in the dialog. This allows to make the dialog read-only by cancelling the AppointmentEditing event of the ScheduleView – in this case the EditAppointmetDialog will be shown but all the fields will be disabled.>
           Check [Custom Appointment]({{slug:custom-appointment}}) for more details about customizing EditAppointmentDialog.
         
 
@@ -59,7 +59,7 @@ Other important properties of the AppointmentDialogViewModel class include:
             ![RadScheduleView EditRecurrenceDialog](images/radscheduleview_recurrenceeditdialog.png)
 
 __EditRecurrenceDialogStyle__ property is used to customize this dialog.  The DataContext of the dialog is a RecurrenceDialogViewModel object. It provides information about the RecurrencePattern which is set to the RecurrenceRule of the appointment.
-        	>
+        >
           More information about the recurring patterns can be found [Overview]({{slug:overview}}).
         
 
@@ -92,7 +92,7 @@ __RecurrenceChoiceDragDropDialogStyle / RecurrenceChoiceResizeDialogStyle __prop
         
 
 The ViewModel of all the RecurrenceChoice dialogs is a __RecurrenceChoiceDialogViewModel__  object.  Its boolean properties IsOccurrenceModeSelected/ IsSeriesModeSelected show which option is selected in the dialog. Also the class contains a reference to the appointment through its Occurrence property.
-        	>
+        >
 
 The ViewModels of all the __ScheduleView__ dialogs inherit from __SchedulerDialogViewModel__ class. It provides the commands for confirming and cancelling the dialog.
           

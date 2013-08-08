@@ -174,7 +174,7 @@ In order to create a custom appointment dialog we are going to modify the __Edit
 
 
 Here is our customized EditAppointment dialog:
-        ![](images/custom_appointment2.PNG)	>
+        ![](images/custom_appointment2.PNG)>
 
 The important thing to note here is that we can bind to our new properties using __Occurrence.Appointment__.
           

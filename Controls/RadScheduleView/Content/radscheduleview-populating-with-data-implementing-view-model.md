@@ -11,7 +11,7 @@ publish:True
 # 
 
 The purpose of this tutorial is to show you how to bind a __RadScheduleView__ with a ViewModel.
-        	>
+        >
 
 Before reading this tutorial you should get familiar with the [Data Binding Support Overview]({{slug:data-binding-support-overview}}) support of the __RadScheduleView__ control.
           

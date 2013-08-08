@@ -57,7 +57,7 @@ Let’s for example, change the DataTemplate  as following:
 		</StackPanel>
 	</DataTemplate>
 
-	>
+>
 
 If you’re using [Implicit Styles](f7b879d9-62ca-42c3-a919-983c7cbc79a2), you will be able to reference DraggedAppointmentsToLocalizedStringConverter directly.  In other case you should manually add it as a resource before the DragVisualContentTemplate declaration:
 					

@@ -46,7 +46,7 @@ The __RecurrenceRule__ class exposes an __Exceptions__ property, which allows yo
 # How_to_Create_a_Recurrence_Rule_and_Associate_it_With_an_AppointmentHow to Create a Recurrence Rule and Associate it With an Appointment
 
 The __RecurrenceRule__ class has only one public constructor, which accepts a __RecurrencePattern__ as a parameter.
-        	>
+        >
           The __RecurrencePattern__ is a mandatory part of the __RecurrenceRule__. Which means that when creating a new __RecurrenceRule__ you must associate the rule with a recurrence pattern.
         
 

@@ -34,7 +34,7 @@ Prior knowledge of the following concepts is also helpful, but not required to c
 # Creating Silverlight Application
 
 Start this walkthrough by creating a Silverlight application in the Visual Studio 2010.
-		>
+	>
 
 In the New Silverlight Application dialog box, check the Enable .NET RIA Services option.
 
@@ -48,7 +48,7 @@ Add the following references to the Silverlight project:
 
 * Telerik.Windows.Controls.ScheduleView.dll
 
-* Telerik.Windows.Data.dll	>
+* Telerik.Windows.Data.dll>
 
 Check [Getting Started]({{slug:getting-started}}) for more details about adding the RadScheduleView to the page.
 
@@ -71,7 +71,7 @@ Add the following references to the project:
 
 * Telerik.Windows.Controls.ScheduleView.dll
 
-* Telerik.Windows.Data.dll	>
+* Telerik.Windows.Data.dll>
 
 Check [Getting Started]({{slug:getting-started}}) for more details about adding the RadScheduleView to the project.
 

@@ -37,7 +37,7 @@ To apply custom localization to your controls just instantiate your custom __Loc
 
 
 
-	>
+>
 
 __Note that you have to set the localization manager before the creation of the UI, otherwise some parts might remain not-localized.__
 
@@ -63,7 +63,7 @@ Imagine that you want to translate your schedule control into English, German an
 
 * ScheduleViewResources.nl.resx![RadScheduleView Localization04](images/radscheduleview_localization04.png)
 
-Now, having the needed files, it's time to illustrate the idea and localize for example the text for the Day, Week, Month and Timeline navigation strings. For that purpose you need to create four resource strings in each one of the three resource files and translate them to the appropriate language.	>
+Now, having the needed files, it's time to illustrate the idea and localize for example the text for the Day, Week, Month and Timeline navigation strings. For that purpose you need to create four resource strings in each one of the three resource files and translate them to the appropriate language.>
 
 Note that the name of the resource string should be the same as the resource key for the string you are localizing i.e. the resource key for the Day is __Day__, for the Week is __Week__, for Month is __Month__ and for the Timeline is __Timeline__.
           
@@ -94,7 +94,7 @@ The last step is to instantiate the __LocalizationManager__ class and set its __
 	LocalizationManager.Manager = New LocalizationManager()
 	LocalizationManager.Manager.ResourceManager = ScheduleViewResources.ResourceManager
 
-	>
+>
 
 If you rely on culture settings to load the right resources automatically, you have to write some code inside your application's project file. For example, if you have to support English and Dutch languages, you can store the localized strings in __Resources.resx__ and __Resources.nl.resx __files. For the __Resources.resx__ file you can set __ResXFileCodeGenerator__ to __Internal __or __Public __and for others - to __No code generation__. Then, open the project file in a text-mode and insert the code below into the __<PropertyGroup>__ section. In this way you notify the framework about the supported cultures.
               

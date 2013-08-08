@@ -77,7 +77,7 @@ If you are using [Implicit Styles](f7b879d9-62ca-42c3-a919-983c7cbc79a2) and mer
 
 Note that you have both __HorizontalStyle__ and __VerticalStyle__. 
 					RadScheduleView supports __Orientation__ for all its view definitions. Therefore a HorizontalStyle is applied when the appointment is horizontally oriented, while the VerticalStyle is applied when the appointment is vertically oriented.
-					>
+				>
 
 When making changes to the generated AppointmentStyleSelector, you should apply those changes to both the HorizontalStyle and the VerticalStyle in order for your appointments to look consistent in all views.
 					
@@ -194,7 +194,7 @@ Next ,we are going to use these resources and create the selector. Create a new 
 			}
 		}
 
-	>
+>
 
 Note that you need to ensure that both horizontal and vertical cases have their corresponding styles - __horizontal styles__ are applied when the appointments have horizontal orientation (either by default or when the view they are placed in has been explicitly set a horizontal orientation), __vertical styles__ are applied when the appointments have vertical orientation(either by default or when the view they are placed in has been explicitly set a vertical orientation).
 					

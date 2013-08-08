@@ -39,7 +39,7 @@ You could set MinorTickLength property of the ViewDefinition in order to snap th
 
 
 
-And the result is:![radscheduleview snapappointments 2](images/radscheduleview_snapappointments_2.png)	>
+And the result is:![radscheduleview snapappointments 2](images/radscheduleview_snapappointments_2.png)>
 
 You can check [Configuring the TimeRuler ticks]({{slug:configuring-the-timeruler-ticks}}) article for more details about MinorTickLength property.
 

@@ -40,7 +40,7 @@ This will lead to the following results:
 * In WeekViewDefinition:
     	
 
-* In TimelineViewDefinition:	>
+* In TimelineViewDefinition:>
 
 You can check [Formatting]({{slug:formatting}}) where it is explained how the dates and times on the time ruler can be formatted.
     	

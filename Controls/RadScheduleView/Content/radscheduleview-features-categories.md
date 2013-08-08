@@ -34,7 +34,7 @@ By default the RadScheduleView has predefined list of categories i.e. "Red Categ
       	
 
 However, there are cases when new categories are needed and you have to create them on your own, as it is shown below.
-      		>
+      	>
 
 The categories used by the RadScheduleView control are represented by the class __Telerik.Windows.Controls.Category__ located in the assembly __Telerik.Windows.Controls.ScheduleView.dll__.
 

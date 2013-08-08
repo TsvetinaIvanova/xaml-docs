@@ -16,7 +16,7 @@ The article covers the following topics:
 
 * How to create a custom GroupHeaderContentTemplateSelector
 
-# How_to_Generate_GroupHeaderContentTemplateSelectorHow to generate and use GroupHeaderContentTemplateSelector	>
+# How_to_Generate_GroupHeaderContentTemplateSelectorHow to generate and use GroupHeaderContentTemplateSelector>
 
 Since Q2 2011 release the GroupHeaderContentTemplateSelector contains only two templates – HorizontalTemplate and VerticalTemplate. 
       		
@@ -227,7 +227,7 @@ Add the DataTemplates to the XAML:
 		</local:CustomGroupHeaderContentTemplateSelector.VerticalResourceTemplate>
 	</local:CustomGroupHeaderContentTemplateSelector>
 
-	>
+>
 
 Note how the properties of the custom resource are binded using Name property:
 

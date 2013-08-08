@@ -183,7 +183,7 @@ So checking/unchecking the checkboxes will update the visible Resources in the V
 
 ![radscheduleview updateresources 4](images/radscheduleview_updateresources_4.png)
 
-![radscheduleview updateresources 3](images/radscheduleview_updateresources_3.png)	>
+![radscheduleview updateresources 3](images/radscheduleview_updateresources_3.png)>
 
 You can check this approach in RadScheduleView Grouping and Filtering demo 
 		[here](http://demos.telerik.com/silverlight/#ScheduleView/Grouping/GroupingAndFiltering)[here](http://demos.telerik.com/wpf/)
@@ -192,7 +192,7 @@ You can check this approach in RadScheduleView Grouping and Filtering demo
 # Adding_ResourcesAdding/removing resources at run time
 
 When adding/removing resources from the Resources collection of  a certain resource type, the changes will not be reflected in the View immediately - you should also reset the whole ResourceType.  Just remove and add it again to the ResourceTypesSource collection of the ScheduleView.
-    		>
+    	>
 
 We intentionally do not listen for changes in the Resources collection of a ResourceType (actually all of its properties) because of performance considerations. That’s why resetting the ResourceType is needed in these cases.
     		

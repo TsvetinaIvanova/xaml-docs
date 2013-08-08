@@ -8,7 +8,7 @@ publish:True
 ---
 
 
-This article describes how you can create a custom SpecialSlot, add custom properties to it and bind the properties in the Slot template.	>
+This article describes how you can create a custom SpecialSlot, add custom properties to it and bind the properties in the Slot template.>
 
 Please check [Special and ReadOnly slots]({{slug:special-and-readonly-slots}}) for more details about SpecialSlots.
 

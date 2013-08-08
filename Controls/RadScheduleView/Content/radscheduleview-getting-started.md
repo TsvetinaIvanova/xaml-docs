@@ -21,7 +21,7 @@ This tutorial will walk you through the creation of a sample application that co
 
 # Adding_RadScheduleView_to_the_projectAdding RadScheduleView to the project
 
-For the purpose of this example, you will need to create an empty WPFSilverlight Application project and open it in Visual Studio.	>
+For the purpose of this example, you will need to create an empty WPFSilverlight Application project and open it in Visual Studio.>
 
 In order to add RadScheduleView control in your projects you have to add references to the following assemblies:
 
@@ -71,7 +71,7 @@ Two lines of code are important here:
 
 # Adding_a_ViewDefinition_to_the_RadScheduleView_controlAdding a ViewDefinition to the RadScheduleView control
           The following lines will add a DayViewDefinition to the __RadScheduleView__ control:
-        	>You can add more than only one ViewDefinition. There are four view definitions available:
+        >You can add more than only one ViewDefinition. There are four view definitions available:
 
 * DayViewDefinition
 

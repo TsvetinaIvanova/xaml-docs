@@ -6,7 +6,7 @@ slug: customizing-dialog-windows
 tags:customizing,dialog,windows
 publish:True
 ---
-	>
+>
 
 To customize the ScheduleView dialogs, e.g. the window content, please read the following article:
   		[Custom Dialogs]({{slug:custom-dialogs}})

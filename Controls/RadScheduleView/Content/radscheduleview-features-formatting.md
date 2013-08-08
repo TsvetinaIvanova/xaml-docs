@@ -37,7 +37,7 @@ This article covers the following topics:
 
 - GroupHeaderDateStringFormat - sets the format applied on the Date
           GroupHeaders.
-        	>
+        >
 
 In this article
             custom dates and time format strings will be used for setting the various
@@ -45,7 +45,7 @@ In this article
             and time format specifiers and the result string produced by each format
             specifier, check out the [Custom Date and Time Format Strings](http://msdn.microsoft.com/en-us/library/8kb3ddd4.aspx)
             topic.
-          	>
+          >
 
 
               You will notice that some of the format strings start with {} and

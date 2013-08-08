@@ -50,7 +50,7 @@ If you want to set the __frequency__ of the recurrence, you need to set the __Re
 
 * Weekly
 
-* Yearly	>
+* Yearly>
 
 The __RecurrenceFrequency__ enumeration exposes also the following values:
             
@@ -61,10 +61,10 @@ The __RecurrenceFrequency__ enumeration exposes also the following values:
 
 __However, these values are invalid recurrence frequency and should not be used.__
 
-	>
+>
 
 The default value of the __RecurrencePattern__'s __Frequency__ property is __RecurrenceFrequency.None__. Which means that the __Frequency__ property is a mandatory property and you should always set it.
-						>
+					>
 
 Minutely and Hourly Frequency can be set only with code ( not from the EditAppointmentDialog).  In order to display these options, you should [Custom Dialogs]({{slug:custom-dialogs}}) and add them in the template manually. 
 
@@ -101,11 +101,11 @@ When you want to set the days of the week of the recurrence, you need to set the
 
 * WeekendDays
 
-* None	>
+* None>
           The default value of the __RecurrencePattern__'s __DaysOfWeekMask__ property is __RecurrenceDays.None__. However, the __DaysOfWeekMask__ is not a mandatory property.
-        	>__RecurrenceDays.WeekDays__ is equivalent to __RecurrenceDays.Monday | RecurrenceDays.Tuesday | RecurrenceDays.Wednesday | RecurrenceDays.Thursday | RecurrenceDays.Friday__.
-        	>__RecurrenceDays.WeekendDays__ is equivalent to __RecurrenceDays.Saturday | RecurrenceDays.Sunday.__	>__RecurrenceDays.EveryDay__ is equivalent to __RecurrenceDays.Monday | RecurrenceDays.Tuesday | RecurrenceDays.Wednesday | RecurrenceDays.Thursday | RecurrenceDays.Friday | RecurrenceDays.Saturday | RecurrenceDays.Sunday__.
-        	>__Enum__ members are often used in logical operation to create a combination of values. Often you should set more than one value of the __DaysOfWeekMask__ property, like in the 
+        >__RecurrenceDays.WeekDays__ is equivalent to __RecurrenceDays.Monday | RecurrenceDays.Tuesday | RecurrenceDays.Wednesday | RecurrenceDays.Thursday | RecurrenceDays.Friday__.
+        >__RecurrenceDays.WeekendDays__ is equivalent to __RecurrenceDays.Saturday | RecurrenceDays.Sunday.__>__RecurrenceDays.EveryDay__ is equivalent to __RecurrenceDays.Monday | RecurrenceDays.Tuesday | RecurrenceDays.Wednesday | RecurrenceDays.Thursday | RecurrenceDays.Friday | RecurrenceDays.Saturday | RecurrenceDays.Sunday__.
+        >__Enum__ members are often used in logical operation to create a combination of values. Often you should set more than one value of the __DaysOfWeekMask__ property, like in the 
             [Example](#Examples)
             section at the end of the topic.
         
@@ -113,9 +113,9 @@ When you want to set the days of the week of the recurrence, you need to set the
 # IntervalInterval
 
 If you want to set the number of days between each recurrence, you need to specify the __RecurrencePattern__'s __Interval__ property.
-        	>
+        >
           The default value of the __RecurrencePattern__'s __Interval__ property is 1.
-        	>
+        >
           Combining the __Interval__ property with the __DaysOfWeekMask__ and __Frequency__ pattern gives you even more flexibility when creating recurring appointments. For more information take a look at the 
             [Example](#Examples) section at the end of the topic.
         
@@ -321,9 +321,9 @@ Creating an every day recurring event is extremely simple - you just need to set
 
 
 The result of the above example will be a __RecurrencePattern__ which will create an appointment every week day, like on the image below.
-        ![RadScheduleView RecurrencePattern](images/radscheduleview_recurrencypattern_2.png)	>
+        ![RadScheduleView RecurrencePattern](images/radscheduleview_recurrencypattern_2.png)>
           Sometimes you may want to create an appointment that occurs during the __weekend__ days, instead of every __week__ day. The only thing you should change is to set the __DaysOfWeekMask__ property to __RecurrenceDays.WeekendDays__.
-        	>
+        >
           If you want to create an appointment that occurs every specific week day (Monday, Tuesday, etc.), you need only to set the correct value for the __DaysOfWeekMask__ property. For example, in order to create an appointment that occurs every Friday, set the __DaysOfWeekMask__ property to __RecurrenceDays.Friday__.
         
 
@@ -369,7 +369,7 @@ When you want to create an appointment that occurs on every "n" days, you should
 
 
 
-Executing the previous pattern will result in creating an appointment that occurs on every third day. See the next image for the result.![RadScheduleView RecurrencePattern](images/radscheduleview_recurrencypattern_3.png)	>
+Executing the previous pattern will result in creating an appointment that occurs on every third day. See the next image for the result.![RadScheduleView RecurrencePattern](images/radscheduleview_recurrencypattern_3.png)>
           In this example, the key moment is setting the __Interval__ property. For example, if you want the number of days between each recurrence to be 4, 5, 6 or n days, then you just need to set the correct value to the __Interval__ property.
         
 

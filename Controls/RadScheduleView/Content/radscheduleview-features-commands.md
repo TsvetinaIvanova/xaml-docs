@@ -74,7 +74,7 @@ Use it when you want to create a new appointment via the inline editing. If no p
 
 	RadScheduleViewCommands.CreateInlineAppointment.Execute(null, ScheduleView);
 
-	>
+>
 
 IsInlineEditingEnabled property of the RadScheduleView should be set in order to use the command.
       		

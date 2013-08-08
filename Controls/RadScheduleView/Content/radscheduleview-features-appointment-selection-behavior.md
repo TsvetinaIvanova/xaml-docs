@@ -14,7 +14,7 @@ AppointmentSelectionBehavior is responsible for executing the selection logic of
 
 # Disable_Multiple_appointments_selectionDisable multiple appointments selection based on ResourceName
 
-This tutorial will go through on how to create a custom AppointmentSelectionBehavior in the scenario when there are different resources in the ScheduleView control and it is required to disable simultaneous selection of appointments in different resource groups.	>Before proceeding with this tutorial first read about [Resources]({{slug:resources}}).
+This tutorial will go through on how to create a custom AppointmentSelectionBehavior in the scenario when there are different resources in the ScheduleView control and it is required to disable simultaneous selection of appointments in different resource groups.>Before proceeding with this tutorial first read about [Resources]({{slug:resources}}).
 
 
 

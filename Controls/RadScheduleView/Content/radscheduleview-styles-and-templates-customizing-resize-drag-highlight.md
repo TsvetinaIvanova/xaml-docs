@@ -10,7 +10,7 @@ publish:True
 
 In __RadScheduleView__ it is possible to customize the resize and drag and drop highlight of appointments in the control.
 
-The next examples will demonstrate how to customize the background of the __ResizeHighlight__ and __DragDropHighlight__ by setting the ResizeHighlightStyle and DragDropHighlightStyle of RadScheduleView control.	>
+The next examples will demonstrate how to customize the background of the __ResizeHighlight__ and __DragDropHighlight__ by setting the ResizeHighlightStyle and DragDropHighlightStyle of RadScheduleView control.>
 
 The following examples use Implicit Styles in order to customize the Background property of the ResizeHighlightStyle/DragDropHighlightStyle. Before proceeding with the following examples you should read about [Implicit Styles](f7b879d9-62ca-42c3-a919-983c7cbc79a2).
 

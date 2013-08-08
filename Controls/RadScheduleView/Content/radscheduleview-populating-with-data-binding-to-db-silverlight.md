@@ -10,7 +10,7 @@ publish:True
 
 # 
 
-We are ready with the implementation on the service side and we can focus on the Silverlight project.	>
+We are ready with the implementation on the service side and we can focus on the Silverlight project.>
 
 With the current version (v1.0 SP2) WCF RIA Services doesn’t support Many-To-Many relationships between the Entities,
 					but we have such ones in the database. To work around this limitation, we use an additional property which forces EF to create a

@@ -59,7 +59,7 @@ For example the view model for the __EditAppointmentDialog__ is __AppointmentDia
 	    End If
 	End Sub
 
-	>
+>
 
 To learn more about __RadScheduleView__ events, check [Overview]({{slug:overview}}).
 
@@ -131,4 +131,4 @@ By default  “Open/Delete the occurrence” option is selected in RecurrenceCho
 	   End If
 	End Sub
 
-	>Check [Custom Dialogs]({{slug:custom-dialogs}}) for more information about RadScheduleView dialogs.
+>Check [Custom Dialogs]({{slug:custom-dialogs}}) for more information about RadScheduleView dialogs.

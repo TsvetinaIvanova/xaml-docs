@@ -40,7 +40,7 @@ This type of grouping groups the appointments by their TimeZone property. One ap
              
           ![Group By TimeZone](images/radscheduleview_timezonegrouping1.png)
 
-	>
+>
 
 Grouping by TimeZone is not supported for MonthViewDefinition. 
 

@@ -35,7 +35,7 @@ __RadScheduleView__ uses __DragDropManager__ to implement drag and drop of appoi
 
 * CoerceDraggedItems
 
-	>
+>
 
 The __state__ parameter of each method identifies the current drag operation.
           

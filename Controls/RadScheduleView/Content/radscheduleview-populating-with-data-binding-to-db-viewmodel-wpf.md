@@ -49,7 +49,7 @@ When the models are defined, we need to create the __ViewModel__ (refer to __Sch
 		<Button Grid.Row="1" Content="Save data" HorizontalAlignment="Center" Command="{Binding SaveCommand}" VerticalAlignment="Center"/>
 	</Grid>
 
-	>
+>
 
 The appointments are loaded from the database when the VisibleRangeChanged command is executed.
 

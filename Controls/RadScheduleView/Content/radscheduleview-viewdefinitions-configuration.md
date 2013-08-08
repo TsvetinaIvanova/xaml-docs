@@ -11,7 +11,7 @@ Common properties for all views
 RadScheduleView's four predefined ViewDefinitions have various properties, which can be set in order the views to be configured 
       best. Some of them are common for all views, others are specific for each view. In the following section we will
       go through all common properties.
-      	>
+      >
 
 For more information about the view specific properties, check [View specific properties]({{slug:view-specific-properties}}).
 

@@ -35,7 +35,7 @@ The ScheduleView provides the functionality of displaying the data in different 
   			or vertically. The first day in this view is the value of the CurrentDate property of the ScheduleView control.
       
 
-Also, through defining different properties you can create your own custom view.	>
+Also, through defining different properties you can create your own custom view.>
 
 More information about the common for all views properties can be found 
       	[Configuration]({{slug:configuration}}) and for view specific properties - 
