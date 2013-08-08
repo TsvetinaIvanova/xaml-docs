@@ -44,43 +44,43 @@ Once the domain service class is added, rebuild the project as well. Let’s add
 
 
  __C#__
-    	
+    
 
 
-private int[] GetSqlAppointmentsIdsByRange(DateTime start, DateTime end)
-{
-	var result = this.ObjectContext.SqlAppointments.Where(a => (a.Start >= start && a.End <= end)).ToList<SqlAppointment>();
-
-	return result.OfType<SqlAppointment>().Select(e => e.SqlAppointmentId).ToArray();
-}
-
-public IQueryable<SqlAppointment> GetSqlAppointmentsByRange(DateTime start, DateTime end)
-{
-	var ids = GetSqlAppointmentsIdsByRange(start, end);
-
-	var result = this.ObjectContext.SqlAppointments.Where(a => ids.Contains(a.SqlAppointmentId)).ToList<SqlAppointment>();
-
-	// Load the recurrent appointments
-	foreach (var item in this.ObjectContext.SqlAppointments.Where(a => !string.IsNullOrEmpty(a.RecurrencePattern)))
+	private int[] GetSqlAppointmentsIdsByRange(DateTime start, DateTime end)
 	{
-		if (Helper.IsOccurrenceInRange(item.RecurrencePattern, start, end) && !result.Contains(item))
-		{
-			result.Add(item);
-		}
+		var result = this.ObjectContext.SqlAppointments.Where(a => (a.Start >= start && a.End <= end)).ToList<SqlAppointment>();
+	
+		return result.OfType<SqlAppointment>().Select(e => e.SqlAppointmentId).ToArray();
 	}
-
-	// Load the exceptions
-	foreach (var item in this.ObjectContext.SqlAppointments.Where(a => a.Start < end && a.SqlExceptionOccurrences.Count != 0))
+	
+	public IQueryable<SqlAppointment> GetSqlAppointmentsByRange(DateTime start, DateTime end)
 	{
-		if (item.SqlExceptionOccurrences.Any(e => e.SqlExceptionAppointment != null && 
-													e.SqlExceptionAppointment.Start >= start && 
-													e.SqlExceptionAppointment.End <= end))
+		var ids = GetSqlAppointmentsIdsByRange(start, end);
+	
+		var result = this.ObjectContext.SqlAppointments.Where(a => ids.Contains(a.SqlAppointmentId)).ToList<SqlAppointment>();
+	
+		// Load the recurrent appointments
+		foreach (var item in this.ObjectContext.SqlAppointments.Where(a => !string.IsNullOrEmpty(a.RecurrencePattern)))
 		{
-			result.Add(item);
+			if (Helper.IsOccurrenceInRange(item.RecurrencePattern, start, end) && !result.Contains(item))
+			{
+				result.Add(item);
+			}
 		}
+	
+		// Load the exceptions
+		foreach (var item in this.ObjectContext.SqlAppointments.Where(a => a.Start < end && a.SqlExceptionOccurrences.Count != 0))
+		{
+			if (item.SqlExceptionOccurrences.Any(e => e.SqlExceptionAppointment != null && 
+														e.SqlExceptionAppointment.Start >= start && 
+														e.SqlExceptionAppointment.End <= end))
+			{
+				result.Add(item);
+			}
+		}
+	
+		return result.AsQueryable<SqlAppointment>();
 	}
-
-	return result.AsQueryable<SqlAppointment>();
-}
 
 [Silverlight Part]({{slug:silverlight-part}})

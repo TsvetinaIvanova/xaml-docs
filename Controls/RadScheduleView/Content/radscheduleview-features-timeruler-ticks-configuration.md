@@ -19,16 +19,16 @@ Let’s have the RadScheduleView defined like this:
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" >
-	<telerik:RadScheduleView.ViewDefinitions>
-		<telerik:DayViewDefinition MinorTickLength="30min" MajorTickLength="2h"  />
-		<telerik:WeekViewDefinition MinorTickLength="1h" MajorTickLength="2h" />
-		<telerik:TimelineViewDefinition MinorTickLength="6h" MajorTickLength="1d" GroupTickLength="2d" />
-	</telerik:RadScheduleView.ViewDefinitions>
-</telerik:RadScheduleView>
+	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" >
+		<telerik:RadScheduleView.ViewDefinitions>
+			<telerik:DayViewDefinition MinorTickLength="30min" MajorTickLength="2h"  />
+			<telerik:WeekViewDefinition MinorTickLength="1h" MajorTickLength="2h" />
+			<telerik:TimelineViewDefinition MinorTickLength="6h" MajorTickLength="1d" GroupTickLength="2d" />
+		</telerik:RadScheduleView.ViewDefinitions>
+	</telerik:RadScheduleView>
 
 
 

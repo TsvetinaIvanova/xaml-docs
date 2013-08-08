@@ -40,18 +40,18 @@ In order to add RadScheduleView control in your projects you have to add referen
 
 
  __XAML__
-    	
+    
 
 
-<Window x:Class="GettingStarted.MainWindow"         
- xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"         
- xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"         
- xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"         
- Title="MainWindow" Height="350" Width="790">     
- <Grid>           
-  <telerik:RadScheduleView />     
- </Grid>
-</Window>
+	<Window x:Class="GettingStarted.MainWindow"         
+	 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"         
+	 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"         
+	 xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"         
+	 Title="MainWindow" Height="350" Width="790">     
+	 <Grid>           
+	  <telerik:RadScheduleView />     
+	 </Grid>
+	</Window>
 
 Two lines of code are important here:
 
@@ -89,15 +89,15 @@ Two lines of code are important here:
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}">             
- <telerik:RadScheduleView.ViewDefinitions>                  
-  <telerik:DayViewDefinition />                  
-  <telerik:MonthViewDefinition />             
- </telerik:RadScheduleView.ViewDefinitions>
-</telerik:RadScheduleView>
+	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}">             
+	 <telerik:RadScheduleView.ViewDefinitions>                  
+	  <telerik:DayViewDefinition />                  
+	  <telerik:MonthViewDefinition />             
+	 </telerik:RadScheduleView.ViewDefinitions>
+	</telerik:RadScheduleView>
 
 
           To learn more about the Appointments of the RadScheduleView take a look at the [Understanding Appointments]({{slug:understanding-appointments}}) topic.

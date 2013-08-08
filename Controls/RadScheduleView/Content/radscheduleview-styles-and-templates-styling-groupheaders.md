@@ -16,36 +16,36 @@ Let's have the following RadScheduleView grouped by  Date, "Calendar" and “Roo
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}" >         
-    <telerik:RadScheduleView.ResourceTypesSource>
-        <telerik:ResourceTypeCollection>
-            <telerik:ResourceType Name="Calendar">
-                <telerik:Resource ResourceName="MyCalendar" DisplayName="My Calendar"  />
-                <telerik:Resource ResourceName="TeamCalendar" DisplayName="Team Calendar"  />
-            </telerik:ResourceType>
-            <telerik:ResourceType Name="Room">
-                <telerik:Resource ResourceName="Room1" DisplayName="Room 1" />
-                <telerik:Resource ResourceName="Room2" DisplayName="Room 2" />
-            </telerik:ResourceType>
-        </telerik:ResourceTypeCollection>
-    </telerik:RadScheduleView.ResourceTypesSource>
-    <telerik:RadScheduleView.GroupDescriptionsSource>
-        <telerik:GroupDescriptionCollection>
-            <telerik:DateGroupDescription />
-            <telerik:ResourceGroupDescription ResourceType="Calendar" />
-            <telerik:ResourceGroupDescription ResourceType="Room" />
-        </telerik:GroupDescriptionCollection>
-    </telerik:RadScheduleView.GroupDescriptionsSource>
-    <telerik:RadScheduleView.ViewDefinitions>                
-        <telerik:DayViewDefinition />
-        <telerik:WeekViewDefinition />
-        <telerik:MonthViewDefinition />
-        <telerik:TimelineViewDefinition />
-    </telerik:RadScheduleView.ViewDefinitions>
-</telerik:RadScheduleView>
+	<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}" >         
+	    <telerik:RadScheduleView.ResourceTypesSource>
+	        <telerik:ResourceTypeCollection>
+	            <telerik:ResourceType Name="Calendar">
+	                <telerik:Resource ResourceName="MyCalendar" DisplayName="My Calendar"  />
+	                <telerik:Resource ResourceName="TeamCalendar" DisplayName="Team Calendar"  />
+	            </telerik:ResourceType>
+	            <telerik:ResourceType Name="Room">
+	                <telerik:Resource ResourceName="Room1" DisplayName="Room 1" />
+	                <telerik:Resource ResourceName="Room2" DisplayName="Room 2" />
+	            </telerik:ResourceType>
+	        </telerik:ResourceTypeCollection>
+	    </telerik:RadScheduleView.ResourceTypesSource>
+	    <telerik:RadScheduleView.GroupDescriptionsSource>
+	        <telerik:GroupDescriptionCollection>
+	            <telerik:DateGroupDescription />
+	            <telerik:ResourceGroupDescription ResourceType="Calendar" />
+	            <telerik:ResourceGroupDescription ResourceType="Room" />
+	        </telerik:GroupDescriptionCollection>
+	    </telerik:RadScheduleView.GroupDescriptionsSource>
+	    <telerik:RadScheduleView.ViewDefinitions>                
+	        <telerik:DayViewDefinition />
+	        <telerik:WeekViewDefinition />
+	        <telerik:MonthViewDefinition />
+	        <telerik:TimelineViewDefinition />
+	    </telerik:RadScheduleView.ViewDefinitions>
+	</telerik:RadScheduleView>
 
 
 
@@ -108,75 +108,75 @@ The end result should include the following:
 
 
  __XAML__
-    	
+    
 
 
-<!-- Brushes -->
-...
-<!-- Styles-->
-		<ControlTemplate x:Key="GroupHeaderButtonControlTemplate" TargetType="local:GroupHeaderButton">
-			...
-		</ControlTemplate>
-
-		<Style x:Key="GroupHeaderButtonStyle" TargetType="local:GroupHeaderButton">
-			...
-		</Style>
-
-		<local:NullToBooleanConverter x:Key="NullToBooleanConverter" />
-		<ControlTemplate x:Key="GroupHeaderTemplate"  TargetType="local:GroupHeader">
-			...
-		</ControlTemplate>
-
-		<Style x:Key="GroupHeaderBaseStyle" TargetType="local:GroupHeader">
-			...
-		</Style>
-		<Style TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}" />
-
-		<Style x:Key="HorizontalGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
-			...
-		</Style>
-		<Style x:Key="HorizontalTodayGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
-			...
-		</Style>
-		<Style x:Key="HorizontalBottomLevelGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
-			...
-		</Style>
-		<Style x:Key="HorizontalBottomLevelTodayGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
-			...
-		</Style>
-		<Style x:Key="VerticalGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
-			...
-		</Style>
-		<Style x:Key="VerticalTodayGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
-			...
-		</Style>
-		<Style x:Key="VerticalBottomLevelGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
-			...
-		</Style>
-		<Style x:Key="VerticalBottomLevelTodayGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
-			...
-		</Style>
-		<Style x:Key="MonthViewWeekGroupStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
-			...
-		</Style>
-		<Style x:Key="MonthViewBottomLevelWeekGroupStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
-			...
-		</Style>
-		<!-- GroupHeaderStyleSelector -->
-		<local:OrientedGroupHeaderStyleSelector x:Key="GroupHeaderStyleSelector"
-			HorizontalStyle="{StaticResource HorizontalGroupHeaderStyle}"
-			HorizontalTodayStyle="{StaticResource HorizontalTodayGroupHeaderStyle}"
-			HorizontalBottomLevelStyle="{StaticResource HorizontalBottomLevelGroupHeaderStyle}"
-			HorizontalTodayBottomLevelStyle="{StaticResource HorizontalBottomLevelTodayGroupHeaderStyle}"
-			
-			VerticalStyle="{StaticResource VerticalGroupHeaderStyle}"
-			VerticalTodayStyle="{StaticResource VerticalTodayGroupHeaderStyle}"
-			VerticalBottomLevelStyle="{StaticResource VerticalBottomLevelGroupHeaderStyle}"
-			VerticalTodayBottomLevelStyle="{StaticResource VerticalBottomLevelTodayGroupHeaderStyle}"
-			
-			MonthViewWeekGroupStyle="{StaticResource MonthViewWeekGroupStyle}"
-			MonthViewBottomLevelWeekGroupStyle="{StaticResource MonthViewBottomLevelWeekGroupStyle}">
-		</local:OrientedGroupHeaderStyleSelector>
+	<!-- Brushes -->
+	...
+	<!-- Styles-->
+			<ControlTemplate x:Key="GroupHeaderButtonControlTemplate" TargetType="local:GroupHeaderButton">
+				...
+			</ControlTemplate>
+	
+			<Style x:Key="GroupHeaderButtonStyle" TargetType="local:GroupHeaderButton">
+				...
+			</Style>
+	
+			<local:NullToBooleanConverter x:Key="NullToBooleanConverter" />
+			<ControlTemplate x:Key="GroupHeaderTemplate"  TargetType="local:GroupHeader">
+				...
+			</ControlTemplate>
+	
+			<Style x:Key="GroupHeaderBaseStyle" TargetType="local:GroupHeader">
+				...
+			</Style>
+			<Style TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}" />
+	
+			<Style x:Key="HorizontalGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
+				...
+			</Style>
+			<Style x:Key="HorizontalTodayGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
+				...
+			</Style>
+			<Style x:Key="HorizontalBottomLevelGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
+				...
+			</Style>
+			<Style x:Key="HorizontalBottomLevelTodayGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
+				...
+			</Style>
+			<Style x:Key="VerticalGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
+				...
+			</Style>
+			<Style x:Key="VerticalTodayGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
+				...
+			</Style>
+			<Style x:Key="VerticalBottomLevelGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
+				...
+			</Style>
+			<Style x:Key="VerticalBottomLevelTodayGroupHeaderStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
+				...
+			</Style>
+			<Style x:Key="MonthViewWeekGroupStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
+				...
+			</Style>
+			<Style x:Key="MonthViewBottomLevelWeekGroupStyle" TargetType="local:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
+				...
+			</Style>
+			<!-- GroupHeaderStyleSelector -->
+			<local:OrientedGroupHeaderStyleSelector x:Key="GroupHeaderStyleSelector"
+				HorizontalStyle="{StaticResource HorizontalGroupHeaderStyle}"
+				HorizontalTodayStyle="{StaticResource HorizontalTodayGroupHeaderStyle}"
+				HorizontalBottomLevelStyle="{StaticResource HorizontalBottomLevelGroupHeaderStyle}"
+				HorizontalTodayBottomLevelStyle="{StaticResource HorizontalBottomLevelTodayGroupHeaderStyle}"
+				
+				VerticalStyle="{StaticResource VerticalGroupHeaderStyle}"
+				VerticalTodayStyle="{StaticResource VerticalTodayGroupHeaderStyle}"
+				VerticalBottomLevelStyle="{StaticResource VerticalBottomLevelGroupHeaderStyle}"
+				VerticalTodayBottomLevelStyle="{StaticResource VerticalBottomLevelTodayGroupHeaderStyle}"
+				
+				MonthViewWeekGroupStyle="{StaticResource MonthViewWeekGroupStyle}"
+				MonthViewBottomLevelWeekGroupStyle="{StaticResource MonthViewBottomLevelWeekGroupStyle}">
+			</local:OrientedGroupHeaderStyleSelector>
 
 
 
@@ -184,10 +184,10 @@ Note the use of the local namespace from the raw source:
 
 
  __XAML__
-    	
+    
 
 
-xmlns:local="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.ScheduleView"
+	xmlns:local="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.ScheduleView"
 
 
 
@@ -195,10 +195,10 @@ The selector is applied to our instance of RadScheduleView:
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}" GroupHeaderStyleSelector="{StaticResource GroupHeaderStyleSelector}">
+	<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}" GroupHeaderStyleSelector="{StaticResource GroupHeaderStyleSelector}">
 
 
 
@@ -206,16 +206,16 @@ Now we can apply any customization to the GroupHeaders and watch the change. Let
 
 
  __XAML__
-    	
+    
 
 
-<Style x:Key="HorizontalBottomLevelGroupHeaderStyle" TargetType="telerik:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
-	<Setter Property="Margin" Value="0 0 -1 0" />
-	<Setter Property="Padding" Value="0 0 5 0" />
-	<Setter Property="Canvas.ZIndex" Value="-2" />
-	<Setter Property="Foreground" Value="Red"/>
-	<Setter Property="FontStyle" Value="Italic"/>
-</Style>
+	<Style x:Key="HorizontalBottomLevelGroupHeaderStyle" TargetType="telerik:GroupHeader" BasedOn="{StaticResource GroupHeaderBaseStyle}">
+		<Setter Property="Margin" Value="0 0 -1 0" />
+		<Setter Property="Padding" Value="0 0 5 0" />
+		<Setter Property="Canvas.ZIndex" Value="-2" />
+		<Setter Property="Foreground" Value="Red"/>
+		<Setter Property="FontStyle" Value="Italic"/>
+	</Style>
 
 
 
@@ -231,31 +231,31 @@ In order to set different styles to the different Resource GroupHeaders , we sho
 
 
  __C#__
-    	
+    
 
 
-public class CustomGroupHeaderStyleSelector : OrientedGroupHeaderStyleSelector 
-{
-    public Style CalendarStyle { get; set; }
-    public Style DateStyle { get; set; }
-    public override Style SelectStyle(object item, DependencyObject container, ViewDefinitionBase activeViewDeifinition)
-    {
-        var groupHeader = container as GroupHeader;
-        if (groupHeader != null)
-        {
-            var groupKey = groupHeader.GroupKey as Resource;
-            if (groupKey != null && groupKey.ResourceType == "Calendar")
-            {
-                return this.CalendarStyle;
-            }
-            else if (groupHeader.GroupKey is DateTime)
-            {
-                return this.DateStyle;
-            }
-        }
-        return base.SelectStyle(item, container, activeViewDeifinition);
-    }
-}
+	public class CustomGroupHeaderStyleSelector : OrientedGroupHeaderStyleSelector 
+	{
+	    public Style CalendarStyle { get; set; }
+	    public Style DateStyle { get; set; }
+	    public override Style SelectStyle(object item, DependencyObject container, ViewDefinitionBase activeViewDeifinition)
+	    {
+	        var groupHeader = container as GroupHeader;
+	        if (groupHeader != null)
+	        {
+	            var groupKey = groupHeader.GroupKey as Resource;
+	            if (groupKey != null && groupKey.ResourceType == "Calendar")
+	            {
+	                return this.CalendarStyle;
+	            }
+	            else if (groupHeader.GroupKey is DateTime)
+	            {
+	                return this.DateStyle;
+	            }
+	        }
+	        return base.SelectStyle(item, container, activeViewDeifinition);
+	    }
+	}
 
 
 
@@ -263,42 +263,42 @@ public class CustomGroupHeaderStyleSelector : OrientedGroupHeaderStyleSelector
 
 
  __VB.NET__
-    	
+    
 
 
-Public Class CustomGroupHeaderStyleSelector
-    Inherits OrientedGroupHeaderStyleSelector
-    Public Property CalendarStyle() As Style
-        Get
-            Return m_CalendarStyle
-        End Get
-        Set(value As Style)
-            m_CalendarStyle = value
-        End Set
-    End Property
-    Private m_CalendarStyle As Style
-    Public Property DateStyle() As Style
-        Get
-            Return m_DateStyle
-        End Get
-        Set(value As Style)
-            m_DateStyle = value
-        End Set
-    End Property
-    Private m_DateStyle As Style
-    Public Overrides Function SelectStyle(item As Object, container As DependencyObject, activeViewDeifinition As ViewDefinitionBase) As Style
-        Dim groupHeader = TryCast(container, GroupHeader)
-        If groupHeader IsNot Nothing Then
-            Dim groupKey = TryCast(groupHeader.GroupKey, Resource)
-            If groupKey IsNot Nothing AndAlso groupKey.ResourceType = "Calendar" Then
-                Return Me.CalendarStyle
-            ElseIf TypeOf groupHeader.GroupKey Is DateTime Then
-                Return Me.DateStyle
-            End If
-        End If
-        Return MyBase.SelectStyle(item, container, activeViewDeifinition)
-    End Function
-End Class
+	Public Class CustomGroupHeaderStyleSelector
+	    Inherits OrientedGroupHeaderStyleSelector
+	    Public Property CalendarStyle() As Style
+	        Get
+	            Return m_CalendarStyle
+	        End Get
+	        Set(value As Style)
+	            m_CalendarStyle = value
+	        End Set
+	    End Property
+	    Private m_CalendarStyle As Style
+	    Public Property DateStyle() As Style
+	        Get
+	            Return m_DateStyle
+	        End Get
+	        Set(value As Style)
+	            m_DateStyle = value
+	        End Set
+	    End Property
+	    Private m_DateStyle As Style
+	    Public Overrides Function SelectStyle(item As Object, container As DependencyObject, activeViewDeifinition As ViewDefinitionBase) As Style
+	        Dim groupHeader = TryCast(container, GroupHeader)
+	        If groupHeader IsNot Nothing Then
+	            Dim groupKey = TryCast(groupHeader.GroupKey, Resource)
+	            If groupKey IsNot Nothing AndAlso groupKey.ResourceType = "Calendar" Then
+	                Return Me.CalendarStyle
+	            ElseIf TypeOf groupHeader.GroupKey Is DateTime Then
+	                Return Me.DateStyle
+	            End If
+	        End If
+	        Return MyBase.SelectStyle(item, container, activeViewDeifinition)
+	    End Function
+	End Class
 
 
 
@@ -306,22 +306,22 @@ Add the Styles to the XAML:
 
 
  __XAML__
-    	
+    
 
 
-<local:CustomGroupHeaderStyleSelector x:Key="CustomGroupHeaderStyleSelector">
-     <local:CustomGroupHeaderStyleSelector.CalendarStyle>
-          <Style TargetType="telerik:GroupHeader">
-              <Setter Property="BorderThickness" Value="0, 0, 0, 2" />
-              <Setter Property="BorderBrush" Value="Red" />
-          </Style>
-      </local:CustomGroupHeaderStyleSelector.CalendarStyle>
-      <local:CustomGroupHeaderStyleSelector.DateStyle>
-          <Style TargetType="telerik:GroupHeader">
-               <Setter Property="FontWeight" Value="Bold" />
-          </Style>
-      </local:CustomGroupHeaderStyleSelector.DateStyle>
-</local:CustomGroupHeaderStyleSelector>
+	<local:CustomGroupHeaderStyleSelector x:Key="CustomGroupHeaderStyleSelector">
+	     <local:CustomGroupHeaderStyleSelector.CalendarStyle>
+	          <Style TargetType="telerik:GroupHeader">
+	              <Setter Property="BorderThickness" Value="0, 0, 0, 2" />
+	              <Setter Property="BorderBrush" Value="Red" />
+	          </Style>
+	      </local:CustomGroupHeaderStyleSelector.CalendarStyle>
+	      <local:CustomGroupHeaderStyleSelector.DateStyle>
+	          <Style TargetType="telerik:GroupHeader">
+	               <Setter Property="FontWeight" Value="Bold" />
+	          </Style>
+	      </local:CustomGroupHeaderStyleSelector.DateStyle>
+	</local:CustomGroupHeaderStyleSelector>
 
 
 
@@ -329,10 +329,10 @@ And finally set the GroupHeaderStyleSelector property of the RadScheduleView:
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}"   GroupHeaderStyleSelector="{StaticResource CustomGroupHeaderStyleSelector}">
+	<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}"   GroupHeaderStyleSelector="{StaticResource CustomGroupHeaderStyleSelector}">
 
 
 

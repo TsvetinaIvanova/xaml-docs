@@ -59,27 +59,27 @@ Gets or sets the date time interval with which the current will be increased
 
 
  __XAML__
-    	
+    
 
 
-        <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
-            <telerik:RadScheduleView.ViewDefinitions>
-                <telerik:DayViewDefinition LargeChangeInterval="2d"/>
-                <telerik:MonthViewDefinition LargeChangeInterval="2m 4d"/>
-            </telerik:RadScheduleView.ViewDefinitions>
-        </telerik:RadScheduleView>
+	        <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
+	            <telerik:RadScheduleView.ViewDefinitions>
+	                <telerik:DayViewDefinition LargeChangeInterval="2d"/>
+	                <telerik:MonthViewDefinition LargeChangeInterval="2m 4d"/>
+	            </telerik:RadScheduleView.ViewDefinitions>
+	        </telerik:RadScheduleView>
 
 
 
 
  __C#__
-    	
+    
 
 
-	dayDefintion.LargeChangeInterval = new Telerik.Windows.Controls.ScheduleView.
-	DateTimeInterval(2, 0);
-	monthDefinition.LargeChangeInterval = new Telerik.Windows.Controls.ScheduleView.
-	DateTimeInterval(4, 2);
+		dayDefintion.LargeChangeInterval = new Telerik.Windows.Controls.ScheduleView.
+		DateTimeInterval(2, 0);
+		monthDefinition.LargeChangeInterval = new Telerik.Windows.Controls.ScheduleView.
+		DateTimeInterval(4, 2);
 
 
 
@@ -97,27 +97,27 @@ Gets or sets the date time interval with which the current will be increased
 
 
  __XAML__
-    	
+    
 
 
-        <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
-            <telerik:RadScheduleView.ViewDefinitions>
-                <telerik:MonthViewDefinition SmallChangeInterval="11d"/>
-                <telerik:TimelineViewDefinition SmallChangeInterval="3d"/>
-            </telerik:RadScheduleView.ViewDefinitions>
-        </telerik:RadScheduleView>
+	        <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
+	            <telerik:RadScheduleView.ViewDefinitions>
+	                <telerik:MonthViewDefinition SmallChangeInterval="11d"/>
+	                <telerik:TimelineViewDefinition SmallChangeInterval="3d"/>
+	            </telerik:RadScheduleView.ViewDefinitions>
+	        </telerik:RadScheduleView>
 
 
 
 
  __C#__
-    	
+    
 
 
-	monthDefintion.SmallChangeInterval = new Telerik.Windows.Controls.ScheduleView.
-	DateTimeInterval(11, 0);
-	timelineDefinition.SmallChangeInterval = new Telerik.Windows.Controls.ScheduleView.
-	DateTimeInterval(3, 0);
+		monthDefintion.SmallChangeInterval = new Telerik.Windows.Controls.ScheduleView.
+		DateTimeInterval(11, 0);
+		timelineDefinition.SmallChangeInterval = new Telerik.Windows.Controls.ScheduleView.
+		DateTimeInterval(3, 0);
 
 
 
@@ -128,27 +128,27 @@ Gets or sets the date time interval with which the current will be increased
 
 
  __XAML__
-    	
+    
 
 
-        <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
-            <telerik:RadScheduleView.ViewDefinitions>
-                <telerik:DayViewDefinition DayStartTime="07:30:00"/>
-                <telerik:WeekViewDefinition DayStartTime="08:00:00"/>
-                <telerik:TimelineViewDefinition DayStartTime="11:30:00"/>
-            </telerik:RadScheduleView.ViewDefinitions>
-        </telerik:RadScheduleView>
+	        <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
+	            <telerik:RadScheduleView.ViewDefinitions>
+	                <telerik:DayViewDefinition DayStartTime="07:30:00"/>
+	                <telerik:WeekViewDefinition DayStartTime="08:00:00"/>
+	                <telerik:TimelineViewDefinition DayStartTime="11:30:00"/>
+	            </telerik:RadScheduleView.ViewDefinitions>
+	        </telerik:RadScheduleView>
 
 
 
 
  __C#__
-    	
+    
 
 
-	dayDefintion.DayStartTime = new TimeSpan(7, 30, 00);
-	weekDefinition.DayStartTime = new TimeSpan(8, 0, 0);
-	timelineDefinition.DayStartTime = new TimeSpan(11, 30, 0);
+		dayDefintion.DayStartTime = new TimeSpan(7, 30, 00);
+		weekDefinition.DayStartTime = new TimeSpan(8, 0, 0);
+		timelineDefinition.DayStartTime = new TimeSpan(11, 30, 0);
 
 
 
@@ -165,27 +165,27 @@ Gets or sets the date time interval with which the current will be increased
 
 
  __XAML__
-    	
+    
 
 
-        <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
-            <telerik:RadScheduleView.ViewDefinitions>
-                <telerik:DayViewDefinition DayEndTime="17:30:00"/>
-                <telerik:WeekViewDefinition DayEndTime="18:00:00"/>
-                <telerik:TimelineViewDefinition DayEndTime="21:30:00"/>
-            </telerik:RadScheduleView.ViewDefinitions>
-        </telerik:RadScheduleView>
+	        <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
+	            <telerik:RadScheduleView.ViewDefinitions>
+	                <telerik:DayViewDefinition DayEndTime="17:30:00"/>
+	                <telerik:WeekViewDefinition DayEndTime="18:00:00"/>
+	                <telerik:TimelineViewDefinition DayEndTime="21:30:00"/>
+	            </telerik:RadScheduleView.ViewDefinitions>
+	        </telerik:RadScheduleView>
 
 
 
 
  __C#__
-    	
+    
 
 
-	dayDefintion.DayStartTime = new TimeSpan(17, 30, 00);
-	weekDefinition.DayStartTime = new TimeSpan(18, 0, 0);
-	timelineDefinition.DayStartTime = new TimeSpan(21, 30, 0);
+		dayDefintion.DayStartTime = new TimeSpan(17, 30, 00);
+		weekDefinition.DayStartTime = new TimeSpan(18, 0, 0);
+		timelineDefinition.DayStartTime = new TimeSpan(21, 30, 0);
 
 
 
@@ -203,29 +203,29 @@ Gets or sets the date time interval with which the current will be increased
 
 
  __XAML__
-    	
+    
 
 
-        <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
-            <telerik:RadScheduleView.ViewDefinitions>
-                <telerik:DayViewDefinition VisibleDays="4"/>
-                <telerik:WeekViewDefinition VisibleDays="11"/>
-                <telerik:MonthViewDefinition VisibleDays="21" />
-                <telerik:TimelineViewDefinition VisibleDays="9"/>
-            </telerik:RadScheduleView.ViewDefinitions>
-        </telerik:RadScheduleView>
+	        <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
+	            <telerik:RadScheduleView.ViewDefinitions>
+	                <telerik:DayViewDefinition VisibleDays="4"/>
+	                <telerik:WeekViewDefinition VisibleDays="11"/>
+	                <telerik:MonthViewDefinition VisibleDays="21" />
+	                <telerik:TimelineViewDefinition VisibleDays="9"/>
+	            </telerik:RadScheduleView.ViewDefinitions>
+	        </telerik:RadScheduleView>
 
 
 
 
  __C#__
-    	
+    
 
 
-	dayDefintion.VisibleDays = 4;
-	weekDefinition.VisibleDays = 11;
-	monthDefintion.VisibleDays = 21;
-	timelineDefinition.VisibleDays = 9;
+		dayDefintion.VisibleDays = 4;
+		weekDefinition.VisibleDays = 11;
+		monthDefintion.VisibleDays = 21;
+		timelineDefinition.VisibleDays = 9;
 
 And the result is shown on the next figure for DayView and TimelineView:
                
@@ -250,27 +250,27 @@ And the result is shown on the next figure for DayView and TimelineView:
 
 
  __XAML__
-    	
+    
 
 
-        <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
-            <telerik:RadScheduleView.ViewDefinitions>
-                <telerik:DayViewDefinition Orientation="Horizontal" />
-                <telerik:WeekViewDefinition Orientation="Horizontal"/>
-                <telerik:TimelineViewDefinition Orientation="Vertical"/>
-            </telerik:RadScheduleView.ViewDefinitions>
-        </telerik:RadScheduleView>
+	        <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
+	            <telerik:RadScheduleView.ViewDefinitions>
+	                <telerik:DayViewDefinition Orientation="Horizontal" />
+	                <telerik:WeekViewDefinition Orientation="Horizontal"/>
+	                <telerik:TimelineViewDefinition Orientation="Vertical"/>
+	            </telerik:RadScheduleView.ViewDefinitions>
+	        </telerik:RadScheduleView>
 
 
 
 
  __C#__
-    	
+    
 
 
-	dayDefintion.Orientation = Orientation.Horizontal;
-	weekDefinition.Orientation = Orientation.Horizontal;
-	timelineDefinition.Orientation = Orientation.Vertical;
+		dayDefintion.Orientation = Orientation.Horizontal;
+		weekDefinition.Orientation = Orientation.Horizontal;
+		timelineDefinition.Orientation = Orientation.Vertical;
 
 This is how the views look like after setting the Orientation property:
                

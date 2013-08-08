@@ -34,15 +34,15 @@ First of all, let's set a __ResourceTypesCollection__:
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView>
-   ...
-   <telerik:RadScheduleView.ResourceTypesSource>
-      ...
-   </telerik:RadScheduleView.ResourceTypesSource>
-</telerik:RadScheduleView>
+	<telerik:RadScheduleView>
+	   ...
+	   <telerik:RadScheduleView.ResourceTypesSource>
+	      ...
+	   </telerik:RadScheduleView.ResourceTypesSource>
+	</telerik:RadScheduleView>
 
 
 
@@ -51,17 +51,17 @@ After this, we need to create a __ResourceTypeCollection__, where we can assign 
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView>
-    ...
-    <telerik:RadScheduleView.ResourceTypesSource>
-        <telerik:ResourceTypeCollection>
-          ...
-        <telerik:ResourceTypeCollection>
-    </telerik:RadScheduleView.ResourceTypesSource>
-</telerik:RadScheduleView>
+	<telerik:RadScheduleView>
+	    ...
+	    <telerik:RadScheduleView.ResourceTypesSource>
+	        <telerik:ResourceTypeCollection>
+	          ...
+	        <telerik:ResourceTypeCollection>
+	    </telerik:RadScheduleView.ResourceTypesSource>
+	</telerik:RadScheduleView>
 
 
 
@@ -76,19 +76,19 @@ After we have created a __ResourceTypeCollection__, we can add our __ResourceTyp
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView>
-    ...
-    <telerik:RadScheduleView.ResourceTypesSource>
-        <telerik:ResourceTypeCollection>
-            <telerik:ResourceType Name="Location">
-             ...
-            </telerik:ResourceType>
-        </telerik:ResourceTypeCollection>
-    </telerik:RadScheduleView.ResourceTypesSource>
-</telerik:RadScheduleView>
+	<telerik:RadScheduleView>
+	    ...
+	    <telerik:RadScheduleView.ResourceTypesSource>
+	        <telerik:ResourceTypeCollection>
+	            <telerik:ResourceType Name="Location">
+	             ...
+	            </telerik:ResourceType>
+	        </telerik:ResourceTypeCollection>
+	    </telerik:RadScheduleView.ResourceTypesSource>
+	</telerik:RadScheduleView>
 
 
 
@@ -103,21 +103,21 @@ Once we've created the __ResourceType__, we should create and assign __Resources
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView>
-    ...
-    <telerik:RadScheduleView.ResourceTypesSource>
-        <telerik:ResourceTypeCollection>
-            <telerik:ResourceType Name="Location">
-                <telerik:Resource ResourceName="Room 1" />
-                <telerik:Resource ResourceName="Room 2" />
-                <telerik:Resource ResourceName="Room 3" />
-            </telerik:ResourceType>
-        </telerik:ResourceTypeCollection>
-    </telerik:RadScheduleView.ResourceTypesSource>
-</telerik:RadScheduleView>
+	<telerik:RadScheduleView>
+	    ...
+	    <telerik:RadScheduleView.ResourceTypesSource>
+	        <telerik:ResourceTypeCollection>
+	            <telerik:ResourceType Name="Location">
+	                <telerik:Resource ResourceName="Room 1" />
+	                <telerik:Resource ResourceName="Room 2" />
+	                <telerik:Resource ResourceName="Room 3" />
+	            </telerik:ResourceType>
+	        </telerik:ResourceTypeCollection>
+	    </telerik:RadScheduleView.ResourceTypesSource>
+	</telerik:RadScheduleView>
 
 
 
@@ -128,17 +128,17 @@ Now if you want to group the appointments by Location, you can use __GroupDescri
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView>
-    ...
-    <telerik:RadScheduleView.GroupDescriptionsSource>
-        <telerik:GroupDescriptionCollection>
-            <telerik:ResourceGroupDescription ResourceType="Location" />
-        </telerik:GroupDescriptionCollection>
-    </telerik:RadScheduleView.GroupDescriptionsSource>
-</telerik:RadScheduleView>
+	<telerik:RadScheduleView>
+	    ...
+	    <telerik:RadScheduleView.GroupDescriptionsSource>
+	        <telerik:GroupDescriptionCollection>
+	            <telerik:ResourceGroupDescription ResourceType="Location" />
+	        </telerik:GroupDescriptionCollection>
+	    </telerik:RadScheduleView.GroupDescriptionsSource>
+	</telerik:RadScheduleView>
 
 
 
@@ -152,18 +152,18 @@ If you want to change the group order you could use the following syntax:
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView>
-    ...
-    <telerik:RadScheduleView.GroupDescriptionsSource>
-        <telerik:GroupDescriptionCollection>
-            <telerik:DateGroupDescription />
-            <telerik:ResourceGroupDescription ResourceType="Location" />
-        </telerik:GroupDescriptionCollection>
-    </telerik:RadScheduleView.GroupDescriptionsSource>
-</telerik:RadScheduleView>
+	<telerik:RadScheduleView>
+	    ...
+	    <telerik:RadScheduleView.GroupDescriptionsSource>
+	        <telerik:GroupDescriptionCollection>
+	            <telerik:DateGroupDescription />
+	            <telerik:ResourceGroupDescription ResourceType="Location" />
+	        </telerik:GroupDescriptionCollection>
+	    </telerik:RadScheduleView.GroupDescriptionsSource>
+	</telerik:RadScheduleView>
 
 
 

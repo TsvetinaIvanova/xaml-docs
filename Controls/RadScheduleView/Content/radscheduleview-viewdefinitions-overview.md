@@ -60,33 +60,33 @@ In order to include each one of the views in the RadScheduleView, they have to b
 
 
  __XAML__
-    	
+    
 
 
-        <telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" x:Name="scheduleView">
-            <telerik:RadScheduleView.ViewDefinitions>
-                <telerik:DayViewDefinition/>
-                <telerik:MonthViewDefinition/>
-                <telerik:WeekViewDefinition/>
-                <telerik:TimelineViewDefinition/>
-            </telerik:RadScheduleView.ViewDefinitions>
-        </telerik:RadScheduleView>
+	        <telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" x:Name="scheduleView">
+	            <telerik:RadScheduleView.ViewDefinitions>
+	                <telerik:DayViewDefinition/>
+	                <telerik:MonthViewDefinition/>
+	                <telerik:WeekViewDefinition/>
+	                <telerik:TimelineViewDefinition/>
+	            </telerik:RadScheduleView.ViewDefinitions>
+	        </telerik:RadScheduleView>
 
 
 
 
  __C#__
-    	
+    
 
 
-            MonthViewDefinition monthDefintion = new MonthViewDefinition();
-            DayViewDefinition dayDefintion = new DayViewDefinition();
-            WeekViewDefinition weekDefinition = new WeekViewDefinition();
-            TimelineViewDefinition timelineDefinition = new TimelineViewDefinition();
-            this.scheduleView.ViewDefinitions.Add(monthDefintion);
-            this.scheduleView.ViewDefinitions.Add(dayDefintion);
-            this.scheduleView.ViewDefinitions.Add(timelineDefinition);
-            this.scheduleView.ViewDefinitions.Add(weekDefinition);
-
+	            MonthViewDefinition monthDefintion = new MonthViewDefinition();
+	            DayViewDefinition dayDefintion = new DayViewDefinition();
+	            WeekViewDefinition weekDefinition = new WeekViewDefinition();
+	            TimelineViewDefinition timelineDefinition = new TimelineViewDefinition();
+	            this.scheduleView.ViewDefinitions.Add(monthDefintion);
+	            this.scheduleView.ViewDefinitions.Add(dayDefintion);
+	            this.scheduleView.ViewDefinitions.Add(timelineDefinition);
+	            this.scheduleView.ViewDefinitions.Add(weekDefinition);
+	
 
 [Configuration]({{slug:configuration}})[View specific properties]({{slug:view-specific-properties}})[How to configure the VisibleRange]({{slug:how-to-configure-the-visiblerange}})

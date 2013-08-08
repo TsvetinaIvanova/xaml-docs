@@ -157,27 +157,27 @@ When you want to create a new instance of __RecurrencePattern__ with the same va
 
 
  __C#__
-    	
+    
 
 
-var pattern = new RecurrencePattern() {
-    Frequency = RecurrenceFrequency.Monthly,
-    MaxOccurrences = 10
-};
-var copyPattern = pattern.Copy();
+	var pattern = new RecurrencePattern() {
+	    Frequency = RecurrenceFrequency.Monthly,
+	    MaxOccurrences = 10
+	};
+	var copyPattern = pattern.Copy();
 
 
 
 
  __VB.NET__
-    	
+    
 
 
-Dim pattern = New RecurrencePattern() With {
-    .Frequency = RecurrenceFrequency.Monthly,
-    .MaxOccurrences = 10
-}
-Dim copyPattern = pattern.Copy()
+	Dim pattern = New RecurrencePattern() With {
+	    .Frequency = RecurrenceFrequency.Monthly,
+	    .MaxOccurrences = 10
+	}
+	Dim copyPattern = pattern.Copy()
 
 
 
@@ -191,29 +191,29 @@ Use the __CopyFrom()__ method to duplicate the pattern properties of the specifi
 
 
  __C#__
-    	
+    
 
 
-var pattern = new RecurrencePattern() {
-    Frequency = RecurrenceFrequency.Monthly,
-    MaxOccurrences = 10
-};
-var newPattern = new RecurrencePattern();
-newPattern.CopyFrom(pattern);
+	var pattern = new RecurrencePattern() {
+	    Frequency = RecurrenceFrequency.Monthly,
+	    MaxOccurrences = 10
+	};
+	var newPattern = new RecurrencePattern();
+	newPattern.CopyFrom(pattern);
 
 
 
 
  __VB.NET__
-    	
+    
 
 
-Dim pattern = New RecurrencePattern() With {
-    .Frequency = RecurrenceFrequency.Monthly,
-    .MaxOccurrences = 10
-}
-Dim newPattern As New RecurrencePattern()
-newPattern.CopyFrom(pattern)
+	Dim pattern = New RecurrencePattern() With {
+	    .Frequency = RecurrenceFrequency.Monthly,
+	    .MaxOccurrences = 10
+	}
+	Dim newPattern As New RecurrencePattern()
+	newPattern.CopyFrom(pattern)
 
 
 
@@ -226,29 +226,29 @@ For the next examples the following appointment declaration will be used.
 
 
  __C#__
-    	
+    
 
 
-var startDate = new DateTime(2011, 05, 11, 10, 0, 0);
-var appointment = new Appointment() {
-    Start = startDate,
-    End = startDate.AddHours(2),
-    Subject = "Example"
-};
+	var startDate = new DateTime(2011, 05, 11, 10, 0, 0);
+	var appointment = new Appointment() {
+	    Start = startDate,
+	    End = startDate.AddHours(2),
+	    Subject = "Example"
+	};
 
 
 
 
  __VB.NET__
-    	
+    
 
 
-Dim startDate = New DateTime(2011, 5, 11, 10, 0, 0)
-Dim appointment = New Appointment() With {
-    .Start = startDate,
-    .End = startDate.AddHours(2),
-    .Subject = "Example"
-}
+	Dim startDate = New DateTime(2011, 5, 11, 10, 0, 0)
+	Dim appointment = New Appointment() With {
+	    .Start = startDate,
+	    .End = startDate.AddHours(2),
+	    .Subject = "Example"
+	}
 
 
 
@@ -261,25 +261,25 @@ If you want to create an appointment that occurs every day, the only thing you s
 
 
  __C#__
-    	
+    
 
 
-var pattern = new RecurrencePattern() {
-    Frequency = RecurrenceFrequency.Daily
-};
-appointment.RecurrenceRule = new RecurrenceRule(pattern);
+	var pattern = new RecurrencePattern() {
+	    Frequency = RecurrenceFrequency.Daily
+	};
+	appointment.RecurrenceRule = new RecurrenceRule(pattern);
 
 
 
 
  __VB.NET__
-    	
+    
 
 
-Dim pattern = New RecurrencePattern() With {
-    Frequency = RecurrenceFrequency.Daily
-}
-appointment.RecurrenceRule = New RecurrenceRule(pattern)
+	Dim pattern = New RecurrencePattern() With {
+	    Frequency = RecurrenceFrequency.Daily
+	}
+	appointment.RecurrenceRule = New RecurrenceRule(pattern)
 
 
 
@@ -296,27 +296,27 @@ Creating an every day recurring event is extremely simple - you just need to set
 
 
  __C#__
-    	
+    
 
 
-var pattern = new RecurrencePattern() {
-      Frequency = RecurrenceFrequency.Weekly,
-      DaysOfWeekMask = RecurrenceDays.WeekDays
-};
-appointment.RecurrenceRule = new RecurrenceRule(pattern);
+	var pattern = new RecurrencePattern() {
+	      Frequency = RecurrenceFrequency.Weekly,
+	      DaysOfWeekMask = RecurrenceDays.WeekDays
+	};
+	appointment.RecurrenceRule = new RecurrenceRule(pattern);
 
 
 
 
  __VB.NET__
-    	
+    
 
 
-Dim pattern = New RecurrencePattern() With {
-     .Frequency = RecurrenceFrequency.Weekly,
-     .DaysOfWeekMask = RecurrenceDays.WeekDays
-}
-appointment.RecurrenceRule = New RecurrenceRule(pattern)
+	Dim pattern = New RecurrencePattern() With {
+	     .Frequency = RecurrenceFrequency.Weekly,
+	     .DaysOfWeekMask = RecurrenceDays.WeekDays
+	}
+	appointment.RecurrenceRule = New RecurrenceRule(pattern)
 
 
 
@@ -343,29 +343,29 @@ When you want to create an appointment that occurs on every "n" days, you should
 
 
  __C#__
-    	
+    
 
 
-var pattern = new RecurrencePattern() {
-    Frequency = RecurrenceFrequency.Daily,
-    DaysOfWeekMask = RecurrenceDays.EveryDay,
-    Interval = 3
-};
-appointment.RecurrenceRule = new RecurrenceRule(pattern);
+	var pattern = new RecurrencePattern() {
+	    Frequency = RecurrenceFrequency.Daily,
+	    DaysOfWeekMask = RecurrenceDays.EveryDay,
+	    Interval = 3
+	};
+	appointment.RecurrenceRule = new RecurrenceRule(pattern);
 
 
 
 
  __VB.NET__
-    	
+    
 
 
-Dim pattern = New RecurrencePattern() With {
-     .Frequency = RecurrenceFrequency.Daily,
-     .DaysOfWeekMask = RecurrenceDays.EveryDay,
-     .Interval = 3
-}
-appointment.RecurrenceRule = New RecurrenceRule(pattern)
+	Dim pattern = New RecurrencePattern() With {
+	     .Frequency = RecurrenceFrequency.Daily,
+	     .DaysOfWeekMask = RecurrenceDays.EveryDay,
+	     .Interval = 3
+	}
+	appointment.RecurrenceRule = New RecurrenceRule(pattern)
 
 
 
@@ -389,29 +389,29 @@ For example, if you want to create an appointment that occurs on every __fifth__
 
 
  __C#__
-    	
+    
 
 
-var pattern = new RecurrencePattern() {
-    DayOfMonth = 5,
-    Frequency = RecurrenceFrequency.Monthly,
-    Interval = 2
-};
-appointment.RecurrenceRule = new RecurrenceRule(pattern);
+	var pattern = new RecurrencePattern() {
+	    DayOfMonth = 5,
+	    Frequency = RecurrenceFrequency.Monthly,
+	    Interval = 2
+	};
+	appointment.RecurrenceRule = new RecurrenceRule(pattern);
 
 
 
 
  __VB.NET__
-    	
+    
 
 
-Dim pattern = New RecurrencePattern() With {
-     .DayOfMonth = 5,
-     .Frequency = RecurrenceFrequency.Monthly,  
-     .Interval = 2
-}
-appointment.RecurrenceRule = New RecurrenceRule(pattern)
+	Dim pattern = New RecurrencePattern() With {
+	     .DayOfMonth = 5,
+	     .Frequency = RecurrenceFrequency.Monthly,  
+	     .Interval = 2
+	}
+	appointment.RecurrenceRule = New RecurrenceRule(pattern)
 
 
 
@@ -433,31 +433,31 @@ For example, if you want to create an appointment that occurs on every second Mo
 
 
  __C#__
-    	
+    
 
 
-var pattern = new RecurrencePattern() {
-    DayOrdinal = 2,
-    DaysOfWeekMask = RecurrenceDays.Monday,
-    Frequency = RecurrenceFrequency.Monthly,
-    Interval = 2
-};
-appointment.RecurrenceRule = new RecurrenceRule(pattern);
+	var pattern = new RecurrencePattern() {
+	    DayOrdinal = 2,
+	    DaysOfWeekMask = RecurrenceDays.Monday,
+	    Frequency = RecurrenceFrequency.Monthly,
+	    Interval = 2
+	};
+	appointment.RecurrenceRule = new RecurrenceRule(pattern);
 
 
 
 
  __VB.NET__
-    	
+    
 
 
-Dim pattern = New RecurrencePattern() With {
-     .DayOrdinal = 2,
-     .DaysOfWeekMask = RecurrenceDays.Monday,
-     .Frequency = RecurrenceFrequency.Monthly,  
-     .Interval = 2
-}
-appointment.RecurrenceRule = New RecurrenceRule(pattern)
+	Dim pattern = New RecurrencePattern() With {
+	     .DayOrdinal = 2,
+	     .DaysOfWeekMask = RecurrenceDays.Monday,
+	     .Frequency = RecurrenceFrequency.Monthly,  
+	     .Interval = 2
+	}
+	appointment.RecurrenceRule = New RecurrenceRule(pattern)
 
 
 
@@ -476,29 +476,29 @@ For example, if you want to create an appointment that occurs on 13th of Novembe
 
 
  __C#__
-    	
+    
 
 
-var pattern = new RecurrencePattern() {
-    Frequency = RecurrenceFrequency.Yearly,
-    MonthOfYear = 11,
-    DayOfMonth = 13
-};
-appointment.RecurrenceRule = new RecurrenceRule(pattern);
+	var pattern = new RecurrencePattern() {
+	    Frequency = RecurrenceFrequency.Yearly,
+	    MonthOfYear = 11,
+	    DayOfMonth = 13
+	};
+	appointment.RecurrenceRule = new RecurrenceRule(pattern);
 
 
 
 
  __VB.NET__
-    	
+    
 
 
-Dim pattern = New RecurrencePattern() With {
-    .Frequency = RecurrenceFrequency.Yearly,
-    .MonthOfYear = 11,
-    .DayOfMonth = 13
-}
-appointment.RecurrenceRule = New RecurrenceRule(pattern)
+	Dim pattern = New RecurrencePattern() With {
+	    .Frequency = RecurrenceFrequency.Yearly,
+	    .MonthOfYear = 11,
+	    .DayOfMonth = 13
+	}
+	appointment.RecurrenceRule = New RecurrenceRule(pattern)
 
 
 
@@ -509,27 +509,27 @@ When you want to specify a limit of the occurrences for the appointment, then yo
 
 
  __C#__
-    	
+    
 
 
-var pattern = new RecurrencePattern() {
-    Frequency = RecurrenceFrequency.Daily,
-    MaxOccurrences = 3
-};
-appointment.RecurrenceRule = new RecurrenceRule(pattern);
+	var pattern = new RecurrencePattern() {
+	    Frequency = RecurrenceFrequency.Daily,
+	    MaxOccurrences = 3
+	};
+	appointment.RecurrenceRule = new RecurrenceRule(pattern);
 
 
 
 
  __VB.NET__
-    	
+    
 
 
-Dim pattern = New RecurrencePattern() With {
-    .Frequency = RecurrenceFrequency.Daily,
-    .MaxOccurrences = 3
-}
-appointment.RecurrenceRule = New RecurrenceRule(pattern)
+	Dim pattern = New RecurrencePattern() With {
+	    .Frequency = RecurrenceFrequency.Daily,
+	    .MaxOccurrences = 3
+	}
+	appointment.RecurrenceRule = New RecurrenceRule(pattern)
 
 
 
@@ -540,27 +540,27 @@ When you want to specify the end date of the appointment's occurrences, then you
 
 
  __C#__
-    	
+    
 
 
-var pattern = new RecurrencePattern() {
-    Frequency = RecurrenceFrequency.Daily,
-    RecursUntil = new DateTime( 2011, 05, 24, 10, 0, 0 )
-};
-appointment.RecurrenceRule = new RecurrenceRule(pattern);
+	var pattern = new RecurrencePattern() {
+	    Frequency = RecurrenceFrequency.Daily,
+	    RecursUntil = new DateTime( 2011, 05, 24, 10, 0, 0 )
+	};
+	appointment.RecurrenceRule = new RecurrenceRule(pattern);
 
 
 
 
  __VB.NET__
-    	
+    
 
 
-Dim pattern = New RecurrencePattern() With {
-     .Frequency = RecurrenceFrequency.Daily,
-     .RecursUntil = New DateTime(2011, 5, 24, 10, 0, 0)
-}
-appointment.RecurrenceRule = New RecurrenceRule(pattern)
+	Dim pattern = New RecurrencePattern() With {
+	     .Frequency = RecurrenceFrequency.Daily,
+	     .RecursUntil = New DateTime(2011, 5, 24, 10, 0, 0)
+	}
+	appointment.RecurrenceRule = New RecurrenceRule(pattern)
 
 
 

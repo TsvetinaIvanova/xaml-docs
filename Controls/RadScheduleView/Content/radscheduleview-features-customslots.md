@@ -18,28 +18,28 @@ Let's for example have the following RadScheduleView grouped by "Calendar" Resou
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}">
-	<telerik:RadScheduleView.ViewDefinitions>				
-		<telerik:WeekViewDefinition  />
-	</telerik:RadScheduleView.ViewDefinitions>
-	<telerik:RadScheduleView.ResourceTypesSource>
-		<telerik:ResourceTypeCollection>
-			<telerik:ResourceType Name="Calendar">
-				<telerik:Resource ResourceName="My Calendar" />
-				<telerik:Resource ResourceName="Team Calendar" />
-			</telerik:ResourceType>
-		</telerik:ResourceTypeCollection>
-	</telerik:RadScheduleView.ResourceTypesSource>
-	<telerik:RadScheduleView.GroupDescriptionsSource>
-		<telerik:GroupDescriptionCollection>
-			<telerik:ResourceGroupDescription ResourceType="Calendar" />
-			<telerik:DateGroupDescription />
-		</telerik:GroupDescriptionCollection>
-	</telerik:RadScheduleView.GroupDescriptionsSource>
-</telerik:RadScheduleView>
+	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}">
+		<telerik:RadScheduleView.ViewDefinitions>				
+			<telerik:WeekViewDefinition  />
+		</telerik:RadScheduleView.ViewDefinitions>
+		<telerik:RadScheduleView.ResourceTypesSource>
+			<telerik:ResourceTypeCollection>
+				<telerik:ResourceType Name="Calendar">
+					<telerik:Resource ResourceName="My Calendar" />
+					<telerik:Resource ResourceName="Team Calendar" />
+				</telerik:ResourceType>
+			</telerik:ResourceTypeCollection>
+		</telerik:RadScheduleView.ResourceTypesSource>
+		<telerik:RadScheduleView.GroupDescriptionsSource>
+			<telerik:GroupDescriptionCollection>
+				<telerik:ResourceGroupDescription ResourceType="Calendar" />
+				<telerik:DateGroupDescription />
+			</telerik:GroupDescriptionCollection>
+		</telerik:RadScheduleView.GroupDescriptionsSource>
+	</telerik:RadScheduleView>
 
 
 

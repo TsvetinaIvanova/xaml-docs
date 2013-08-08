@@ -28,30 +28,30 @@ For example, consider the following __RecurrencePattern__ declaration:
 
 
  __C#__
-    	
+    
 
 
-var pattern = new RecurrencePattern()
-{
-    Frequency = RecurrenceFrequency.Daily,
-    DaysOfWeekMask = RecurrenceDays.WeekDays,
-    Interval = 3,
-    MaxOccurrences = 10
-};
+	var pattern = new RecurrencePattern()
+	{
+	    Frequency = RecurrenceFrequency.Daily,
+	    DaysOfWeekMask = RecurrenceDays.WeekDays,
+	    Interval = 3,
+	    MaxOccurrences = 10
+	};
 
 
 
 
  __VB.NET__
-    	
+    
 
 
-Dim pattern = New RecurrencePattern() With {
-    .Frequency = RecurrenceFrequency.Daily,
-    .DaysOfWeekMask = RecurrenceDays.WeekDays,
-    .Interval = 3,
-    .MaxOccurrences = 10
-}
+	Dim pattern = New RecurrencePattern() With {
+	    .Frequency = RecurrenceFrequency.Daily,
+	    .DaysOfWeekMask = RecurrenceDays.WeekDays,
+	    .Interval = 3,
+	    .MaxOccurrences = 10
+	}
 
 
 
@@ -62,19 +62,19 @@ The next code snippet demonstrates you how to use the __RecurrencePatternToStrin
 
 
  __C#__
-    	
+    
 
 
-var serializedPattern = RecurrencePatternHelper.RecurrencePatternToString(pattern);
+	var serializedPattern = RecurrencePatternHelper.RecurrencePatternToString(pattern);
 
 
 
 
  __VB.NET__
-    	
+    
 
 
-Dim serializedPattern = RecurrencePatternHelper.RecurrencePatternToString(pattern)
+	Dim serializedPattern = RecurrencePatternHelper.RecurrencePatternToString(pattern)
 
 
 
@@ -98,23 +98,23 @@ Consider the serialized string from the previous example: __FREQ=DAILY;COUNT=10;
 
 
  __C#__
-    	
+    
 
 
-var serializedPattern = "FREQ=DAILY;COUNT=10;INTERVAL=3;BYDAY=MO,TU,WE,TH,FR";
-RecurrencePattern pattern;
-RecurrencePatternHelper.TryParseRecurrencePattern(serializedPattern, out pattern);
+	var serializedPattern = "FREQ=DAILY;COUNT=10;INTERVAL=3;BYDAY=MO,TU,WE,TH,FR";
+	RecurrencePattern pattern;
+	RecurrencePatternHelper.TryParseRecurrencePattern(serializedPattern, out pattern);
 
 
 
 
  __VB.NET__
-    	
+    
 
 
-Dim serializedPattern As String = "FREQ=DAILY;COUNT=10;INTERVAL=3;BYDAY=MO,TU,WE,TH,FR"
-Dim pattern As RecurrencePattern
-RecurrencePatternHelper.TryParseRecurrencePattern(serializedPattern, pattern)
+	Dim serializedPattern As String = "FREQ=DAILY;COUNT=10;INTERVAL=3;BYDAY=MO,TU,WE,TH,FR"
+	Dim pattern As RecurrencePattern
+	RecurrencePatternHelper.TryParseRecurrencePattern(serializedPattern, pattern)
 
 
 

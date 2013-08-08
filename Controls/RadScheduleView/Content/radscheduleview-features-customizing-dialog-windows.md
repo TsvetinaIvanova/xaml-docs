@@ -21,19 +21,19 @@ Create a new class, deriving from ScheduleViewDialogHostFactory and override the
 
 
  __C#__
-    	
+    
 
 
-public class CustomScheduleViewDialogHostFactory : ScheduleViewDialogHostFactory
-{
-    protected override IScheduleViewDialogHost CreateNew(ScheduleViewBase scheduleView, DialogType dialogType)
-    {
-        var host = base.CreateNew(scheduleView, dialogType);
-        var window = host as RadWindow;
-        // Set properties on RadWindow here.
-        return host;
-    }
-}
+	public class CustomScheduleViewDialogHostFactory : ScheduleViewDialogHostFactory
+	{
+	    protected override IScheduleViewDialogHost CreateNew(ScheduleViewBase scheduleView, DialogType dialogType)
+	    {
+	        var host = base.CreateNew(scheduleView, dialogType);
+	        var window = host as RadWindow;
+	        // Set properties on RadWindow here.
+	        return host;
+	    }
+	}
 
 
 
@@ -41,14 +41,14 @@ Configure RadScheduleView to use the new class:
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView . . .>
-	<telerik:RadScheduleView.SchedulerDialogHostFactory>
-		<local:CustomScheduleViewDialogHostFactory />
-	</telerik:RadScheduleView.SchedulerDialogHostFactory>
-</telerik:RadScheduleView>
+	<telerik:RadScheduleView . . .>
+		<telerik:RadScheduleView.SchedulerDialogHostFactory>
+			<local:CustomScheduleViewDialogHostFactory />
+		</telerik:RadScheduleView.SchedulerDialogHostFactory>
+	</telerik:RadScheduleView>
 
 
 
@@ -59,85 +59,85 @@ Create a new class, deriving from WindowChildWindow and implement the __ISchedul
 
 
  __C#__
-    	
+    
 
 
-public class WindowDialogHost : Window, IScheduleViewDialogHost
-{
-	public new event EventHandler<WindowClosedEventArgs> Closed;
-	public ScheduleViewBase ScheduleView
+	public class WindowDialogHost : Window, IScheduleViewDialogHost
 	{
-		get;
-		set;
-	}
-	protected override void OnClosed(System.EventArgs e)
-	{
-		base.OnClosed(e);
-		if (this.Closed != null)
+		public new event EventHandler<WindowClosedEventArgs> Closed;
+		public ScheduleViewBase ScheduleView
 		{
-			this.Closed(this, new WindowClosedEventArgs());
+			get;
+			set;
+		}
+		protected override void OnClosed(System.EventArgs e)
+		{
+			base.OnClosed(e);
+			if (this.Closed != null)
+			{
+				this.Closed(this, new WindowClosedEventArgs());
+			}
+		}
+		public void Show(bool isModal)
+		{
+			if (this.Owner == null && this.ScheduleView != null)
+			{
+				this.Owner = this.ScheduleView.ParentOfType<Window>();
+			}
+			if (isModal)
+			{
+				this.ShowDialog();
+			}
+			else
+			{
+				this.Show();
+			}
 		}
 	}
-	public void Show(bool isModal)
-	{
-		if (this.Owner == null && this.ScheduleView != null)
-		{
-			this.Owner = this.ScheduleView.ParentOfType<Window>();
-		}
-		if (isModal)
-		{
-			this.ShowDialog();
-		}
-		else
-		{
-			this.Show();
-		}
-	}
-}
 
 
 
 
  __C#__
-    	
+    
 
 
-public class WindowDialogHost : ChildWindow, IScheduleViewDialogHost
-{
-	private bool opened;
-		
-	protected override void OnOpened()
+	public class WindowDialogHost : ChildWindow, IScheduleViewDialogHost
 	{
-		base.OnOpened();
-		this.opened = true;
-	}
-	protected override void OnClosed(System.EventArgs e)
-	{
-		base.OnClosed(e);
-		if (this.Closed != null && this.opened)
+		private bool opened;
+			
+		protected override void OnOpened()
 		{
-			this.opened = false;
-			this.Closed(this, new WindowClosedEventArgs());
+			base.OnOpened();
+			this.opened = true;
+		}
+		protected override void OnClosed(System.EventArgs e)
+		{
+			base.OnClosed(e);
+			if (this.Closed != null && this.opened)
+			{
+				this.opened = false;
+				this.Closed(this, new WindowClosedEventArgs());
+			}
+		}
+	
+		public new event EventHandler<WindowClosedEventArgs> Closed;
+	
+		public ScheduleViewBase ScheduleView { get; set; }
+	
+		void IScheduleViewDialogHost.Close()
+		{
+			if (this.opened)
+			{
+				this.Close();
+			}
+		}
+	
+		public void Show(bool isModal)
+		{
+			this.Show();
 		}
 	}
-
-	public new event EventHandler<WindowClosedEventArgs> Closed;
-
-	public ScheduleViewBase ScheduleView { get; set; }
-
-	void IScheduleViewDialogHost.Close()
-	{
-		if (this.opened)
-		{
-			this.Close();
-		}
-	}
-
-	public void Show(bool isModal)
-	{
-		this.Show();
-	}
-}
 
 
 
@@ -146,47 +146,47 @@ Create a new class and implement the __IScheduleViewDialogHostFactory__:
 
 
  __C#__
-    	
+    
 
 
-public class CustomScheduleViewDialogHostFactory : ScheduleViewDialogHostFactory
-{
-    protected override IScheduleViewDialogHost CreateNew(ScheduleViewBase scheduleView, DialogType dialogType)
-    {
-        var window = new WindowDialogHost
-        {
-            Content = new SchedulerDialog(),
-            ScheduleView = scheduleView, 
-            Width = 580,
-            Height = 350,
-            Background = new SolidColorBrush(Colors.LightSkyBlue)
-            // Set additional properties here
-        };
-        return window;
-    }
-}
-
+	public class CustomScheduleViewDialogHostFactory : ScheduleViewDialogHostFactory
+	{
+	    protected override IScheduleViewDialogHost CreateNew(ScheduleViewBase scheduleView, DialogType dialogType)
+	    {
+	        var window = new WindowDialogHost
+	        {
+	            Content = new SchedulerDialog(),
+	            ScheduleView = scheduleView, 
+	            Width = 580,
+	            Height = 350,
+	            Background = new SolidColorBrush(Colors.LightSkyBlue)
+	            // Set additional properties here
+	        };
+	        return window;
+	    }
+	}
+	
 
 
 
 
  __C#__
-    	
+    
 
 
-public class CustomScheduleViewDialogHostFactory : IScheduleViewDialogHostFactory
-{
-    public virtual IScheduleViewDialogHost CreateNew(ScheduleViewBase scheduleView, DialogType dialogType)
-    {
-        var window = new WindowDialogHost
-        {
-            Content = new SchedulerDialog(),
-            ScheduleView = scheduleView
-            // Set additional properties here
-        };
-        return window;
-     }    
-}
+	public class CustomScheduleViewDialogHostFactory : IScheduleViewDialogHostFactory
+	{
+	    public virtual IScheduleViewDialogHost CreateNew(ScheduleViewBase scheduleView, DialogType dialogType)
+	    {
+	        var window = new WindowDialogHost
+	        {
+	            Content = new SchedulerDialog(),
+	            ScheduleView = scheduleView
+	            // Set additional properties here
+	        };
+	        return window;
+	     }    
+	}
 
 
 
@@ -195,14 +195,14 @@ Configure RadScheduleView to use the new factory:
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView . . .>
-	<telerik:RadScheduleView.SchedulerDialogHostFactory>
-		<local:CustomScheduleViewDialogHostFactory />
-	</telerik:RadScheduleView.SchedulerDialogHostFactory>
-</telerik:RadScheduleView>
+	<telerik:RadScheduleView . . .>
+		<telerik:RadScheduleView.SchedulerDialogHostFactory>
+			<local:CustomScheduleViewDialogHostFactory />
+		</telerik:RadScheduleView.SchedulerDialogHostFactory>
+	</telerik:RadScheduleView>
 
          
       		![radscheduleview customizingdialogs wpf](images/radscheduleview_customizingdialogs_wpf.png)         

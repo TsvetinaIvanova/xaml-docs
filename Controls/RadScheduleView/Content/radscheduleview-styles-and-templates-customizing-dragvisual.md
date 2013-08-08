@@ -24,16 +24,16 @@ Here is the default DragVisualTemplate:
 
 
  __XAML__
-    	
+    
 
 
-<DataTemplate x:Key="DragVisualContentTemplate">
-	<TextBlock Text="{Binding Converter={StaticResource DraggedAppointmentsToLocalizedStringConverter}}" 
-		TextWrapping="Wrap" 
-		MaxWidth="200" 
-		MaxHeight="66" 
-		TextTrimming="WordEllipsis" />
-</DataTemplate>  
+	<DataTemplate x:Key="DragVisualContentTemplate">
+		<TextBlock Text="{Binding Converter={StaticResource DraggedAppointmentsToLocalizedStringConverter}}" 
+			TextWrapping="Wrap" 
+			MaxWidth="200" 
+			MaxHeight="66" 
+			TextTrimming="WordEllipsis" />
+	</DataTemplate>  
 
 
 
@@ -43,19 +43,19 @@ Let’s for example, change the DataTemplate  as following:
 
 
  __XAML__
-    	
+    
 
 
-<DataTemplate x:Key="DragVisualContentTemplate">
-	<StackPanel Orientation="Horizontal">
-		<TextBlock Text="Dragging..." />
-		<TextBlock Text="{Binding Converter={StaticResource DraggedAppointmentsToLocalizedStringConverter}}" 
-				TextWrapping="Wrap" 
-				MaxWidth="200" 
-				MaxHeight="66" 
-				TextTrimming="WordEllipsis" />
-	</StackPanel>
-</DataTemplate>
+	<DataTemplate x:Key="DragVisualContentTemplate">
+		<StackPanel Orientation="Horizontal">
+			<TextBlock Text="Dragging..." />
+			<TextBlock Text="{Binding Converter={StaticResource DraggedAppointmentsToLocalizedStringConverter}}" 
+					TextWrapping="Wrap" 
+					MaxWidth="200" 
+					MaxHeight="66" 
+					TextTrimming="WordEllipsis" />
+		</StackPanel>
+	</DataTemplate>
 
 	>
 
@@ -70,13 +70,13 @@ Then set the newly created template to the DragVisualTemplate property of the Sc
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}"
-						DragVisualTemplate="{StaticResource DragVisualContentTemplate}">
-	...
-</telerik:RadScheduleView>
+	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}"
+							DragVisualTemplate="{StaticResource DragVisualContentTemplate}">
+		...
+	</telerik:RadScheduleView>
 
 
 
@@ -96,13 +96,13 @@ Either approach you’ve selected, the final step is to set the custom DragVisua
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}"
-						 DragVisualStyle="{StaticResource CustomDragVisualStyle}">
-	...
-</telerik:RadScheduleView>
+	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}"
+							 DragVisualStyle="{StaticResource CustomDragVisualStyle}">
+		...
+	</telerik:RadScheduleView>
 
 
 

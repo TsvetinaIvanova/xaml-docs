@@ -47,27 +47,27 @@ You can add new appointment using the code. Here are the steps to accomplish thi
 
 
  __C#__
-    	
+    
 
 
-IAppointment appointment = this.radScheduleView.CreateNew();
-appointment.Start = DateTime.Now;
-appointment.End = DateTime.Now.AddHours(1);
-appointment.Subject = "New appointment";
-this.radScheduleView.Commit();
+	IAppointment appointment = this.radScheduleView.CreateNew();
+	appointment.Start = DateTime.Now;
+	appointment.End = DateTime.Now.AddHours(1);
+	appointment.Subject = "New appointment";
+	this.radScheduleView.Commit();
 
 
 
 
  __VB.NET__
-    	
+    
 
 
-Dim appointment As IAppointment = Me.radScheduleView.CreateNew()
-appointment.Start = DateTime.Now
-appointment.End = DateTime.Now.AddHours(1)
-appointment.Subject = "New appointment"
-Me.radScheduleView.Commit()
+	Dim appointment As IAppointment = Me.radScheduleView.CreateNew()
+	appointment.Start = DateTime.Now
+	appointment.End = DateTime.Now.AddHours(1)
+	appointment.Subject = "New appointment"
+	Me.radScheduleView.Commit()
 
 
 

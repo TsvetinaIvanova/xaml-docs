@@ -21,19 +21,19 @@ To apply custom localization to your controls just instantiate your custom __Loc
 
 
  __C#__
-    	
+    
 
 
-LocalizationManager.Manager = new CustomLocalizationManager();
+	LocalizationManager.Manager = new CustomLocalizationManager();
 
 
 
 
  __VB.NET__
-    	
+    
 
 
-LocalizationManager.Manager = New CustomLocalizationManager()
+	LocalizationManager.Manager = New CustomLocalizationManager()
 
 
 
@@ -76,23 +76,23 @@ The last step is to instantiate the __LocalizationManager__ class and set its __
 
 
  __C#__
-    	
+    
 
 
-LocalizationManager.Manager = new LocalizationManager()
-{
-   ResourceManager = ScheduleViewResources.ResourceManager
-};
+	LocalizationManager.Manager = new LocalizationManager()
+	{
+	   ResourceManager = ScheduleViewResources.ResourceManager
+	};
 
 
 
 
  __VB.NET__
-    	
+    
 
 
-LocalizationManager.Manager = New LocalizationManager()
-LocalizationManager.Manager.ResourceManager = ScheduleViewResources.ResourceManager
+	LocalizationManager.Manager = New LocalizationManager()
+	LocalizationManager.Manager.ResourceManager = ScheduleViewResources.ResourceManager
 
 	>
 
@@ -112,63 +112,63 @@ The other way to localize your __RadScheduleView__ control is to create a class 
 
 
  __C#__
-    	
+    
 
 
-public class CustomLocalizationManager : LocalizationManager
-{
-   public override string GetStringOverride( string key )
-   {
-       switch( key )
-       {
-           case "Timeline":
-               return "Zeitline";
-           case "Day":
-               return "Tag";
-           case "Week":
-               return "Woche";
-           case "Month":
-               return "Monat";
-           case "SaveAndCloseCommandText":
-               return "Speichern & Sliessen";
-           case "EditRecurrence":
-               return "Serie bearbeithen";
-           case "Categories":
-               return "Kategrisieren";
-       }
-       return base.GetStringOverride( key );
-   }
-}
+	public class CustomLocalizationManager : LocalizationManager
+	{
+	   public override string GetStringOverride( string key )
+	   {
+	       switch( key )
+	       {
+	           case "Timeline":
+	               return "Zeitline";
+	           case "Day":
+	               return "Tag";
+	           case "Week":
+	               return "Woche";
+	           case "Month":
+	               return "Monat";
+	           case "SaveAndCloseCommandText":
+	               return "Speichern & Sliessen";
+	           case "EditRecurrence":
+	               return "Serie bearbeithen";
+	           case "Categories":
+	               return "Kategrisieren";
+	       }
+	       return base.GetStringOverride( key );
+	   }
+	}
 
 
 
 
  __VB.NET__
-    	
+    
 
 
-Public Class CustomLocalizationManager
-    Inherits LocalizationManager
-    Public Overloads Overrides Function GetStringOverride(ByVal key As String) As String
-        Select Case key
-            Case "Timeline"
-                Return "Zeitline"
-            Case "Day"
-                Return "Tag"
-            Case "Week"
-                Return "Woche"
-            Case "Month"
-                Return "Monat"
-            Case "SaveAndCloseCommandText"
-                Return "Speichern & Sliessen"
-            Case "EditRecurrence"
-                Return "Serie bearbeithen"
-            Case "Categories"
-                Return "Kategrisieren"
-        End Select
-        Return MyBase.GetStringOverride(key)
-    End Function
-End Class
+	Public Class CustomLocalizationManager
+	    Inherits LocalizationManager
+	    Public Overloads Overrides Function GetStringOverride(ByVal key As String) As String
+	        Select Case key
+	            Case "Timeline"
+	                Return "Zeitline"
+	            Case "Day"
+	                Return "Tag"
+	            Case "Week"
+	                Return "Woche"
+	            Case "Month"
+	                Return "Monat"
+	            Case "SaveAndCloseCommandText"
+	                Return "Speichern & Sliessen"
+	            Case "EditRecurrence"
+	                Return "Serie bearbeithen"
+	            Case "Categories"
+	                Return "Kategrisieren"
+	        End Select
+	        Return MyBase.GetStringOverride(key)
+	    End Function
+	End Class
 
 
 
@@ -180,37 +180,37 @@ Of course, if you don't want to hard-code your translation inside your source co
 
 
  __C#__
-    	
+    
 
 
-public override string GetStringOverride( string key )
-{
-   switch( key )
-   {
-       //----------------------
-       case "Timeline":
-           return ScheduleViewResources.Timeline;
-       //----------------------
-   }
-   return base.GetStringOverride( key );
-}
+	public override string GetStringOverride( string key )
+	{
+	   switch( key )
+	   {
+	       //----------------------
+	       case "Timeline":
+	           return ScheduleViewResources.Timeline;
+	       //----------------------
+	   }
+	   return base.GetStringOverride( key );
+	}
 
 
 
 
  __VB.NET__
-    	
+    
 
 
-Public Overloads Overrides Function GetStringOverride(ByVal key As String) As String
-    Select Case key
-        '----------------------
-        Case "Timeline"
-            Return ScheduleViewResources.Timeline
-        '----------------------
-    End Select
-    Return MyBase.GetStringOverride(key)
-End Function
+	Public Overloads Overrides Function GetStringOverride(ByVal key As String) As String
+	    Select Case key
+	        '----------------------
+	        Case "Timeline"
+	            Return ScheduleViewResources.Timeline
+	        '----------------------
+	    End Select
+	    Return MyBase.GetStringOverride(key)
+	End Function
 
 
 
@@ -415,20 +415,20 @@ To change the default culture, you should set the __CurrentCulture__ and the __C
 
 
  __C#__
-    	
+    
 
 
-public partial class App : Application
-{
-   public App()
-   {
-       System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo( "nl" );
-       System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo( "nl" );
-       this.Startup += this.Application_Startup;
-       this.Exit += this.Application_Exit;
-       this.UnhandledException += this.Application_UnhandledException;
-       InitializeComponent();
-   }
-}
+	public partial class App : Application
+	{
+	   public App()
+	   {
+	       System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo( "nl" );
+	       System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo( "nl" );
+	       this.Startup += this.Application_Startup;
+	       this.Exit += this.Application_Exit;
+	       this.UnhandledException += this.Application_UnhandledException;
+	       InitializeComponent();
+	   }
+	}
 
 

@@ -31,19 +31,19 @@ Let’s have the following ScheduleView grouped by “Location” resource type:
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView ResourceTypesSource="{Binding ResourceTypes}"  ...>		
-	<telerik:RadScheduleView.ViewDefinitions>
-		<telerik:DayViewDefinition GroupFilter="{Binding GroupFilter}" />
-	</telerik:RadScheduleView.ViewDefinitions>			
-	<telerik:RadScheduleView.GroupDescriptionsSource>
-		<telerik:GroupDescriptionCollection>
-			<telerik:ResourceGroupDescription ResourceType="Location" />
-		</telerik:GroupDescriptionCollection>
-	</telerik:RadScheduleView.GroupDescriptionsSource>
-</telerik:RadScheduleView>
+	<telerik:RadScheduleView ResourceTypesSource="{Binding ResourceTypes}"  ...>		
+		<telerik:RadScheduleView.ViewDefinitions>
+			<telerik:DayViewDefinition GroupFilter="{Binding GroupFilter}" />
+		</telerik:RadScheduleView.ViewDefinitions>			
+		<telerik:RadScheduleView.GroupDescriptionsSource>
+			<telerik:GroupDescriptionCollection>
+				<telerik:ResourceGroupDescription ResourceType="Location" />
+			</telerik:GroupDescriptionCollection>
+		</telerik:RadScheduleView.GroupDescriptionsSource>
+	</telerik:RadScheduleView>
 
 
 
@@ -54,14 +54,14 @@ We will add checkboxes for each resource in order to allow the user to change th
 
 
  __XAML__
-    	
+    
 
 
-<StackPanel>
-	<CheckBox Content="Show Room1" IsChecked="{Binding ShowRoom1, Mode=TwoWay}" />
-	<CheckBox Content="Show Room2" IsChecked="{Binding ShowRoom2, Mode=TwoWay}" />
-	<CheckBox Content="Show Room3" IsChecked="{Binding ShowRoom3, Mode=TwoWay}" />
-</StackPanel>
+	<StackPanel>
+		<CheckBox Content="Show Room1" IsChecked="{Binding ShowRoom1, Mode=TwoWay}" />
+		<CheckBox Content="Show Room2" IsChecked="{Binding ShowRoom2, Mode=TwoWay}" />
+		<CheckBox Content="Show Room3" IsChecked="{Binding ShowRoom3, Mode=TwoWay}" />
+	</StackPanel>
 
 
 
@@ -71,78 +71,78 @@ Next step is to add the ShowRoom1, ShowRoom2, etc . Boolean properties and the G
 
 
  __C#__
-    	
+    
 
 
-public class ViewModel : ViewModelBase
-{
-	private bool _showRoom1 = true;
-	private bool _showRoom2 = false;
-	private bool _showRoom3 = true;
-	private Func<object, bool> groupFilter;
-
-	public bool ShowRoom1
+	public class ViewModel : ViewModelBase
 	{
-		get
+		private bool _showRoom1 = true;
+		private bool _showRoom2 = false;
+		private bool _showRoom3 = true;
+		private Func<object, bool> groupFilter;
+	
+		public bool ShowRoom1
 		{
-			return this._showRoom1;
-		}
-		set
-		{
-			if (this._showRoom1 != value)
+			get
 			{
-				this._showRoom1 = value;
-				this.OnPropertyChanged(() => this.ShowRoom1);
-				this.UpdateGroupFilter();
+				return this._showRoom1;
+			}
+			set
+			{
+				if (this._showRoom1 != value)
+				{
+					this._showRoom1 = value;
+					this.OnPropertyChanged(() => this.ShowRoom1);
+					this.UpdateGroupFilter();
+				}
+			}
+		}
+		public bool ShowRoom2
+		{
+			get
+			{
+				return this._showRoom2;
+			}
+			set
+			{
+				if (this._showRoom2 != value)
+				{
+					this._showRoom2 = value;
+					this.OnPropertyChanged(() => this.ShowRoom2);
+					this.UpdateGroupFilter();
+				}
+			}
+		}
+		public bool ShowRoom3
+		{
+			get
+			{
+				return this._showRoom3;
+			}
+			set
+			{
+				if (this._showRoom3 != value)
+				{
+					this._showRoom3 = value;
+					this.OnPropertyChanged(() => this.ShowRoom3);
+					this.UpdateGroupFilter();
+				}
+			}
+		}
+	
+		public Func<object, bool> GroupFilter
+		{
+			get
+			{
+				return this.groupFilter;
+			}
+			private set
+			{
+				this.groupFilter = value;
+				this.OnPropertyChanged(() => this.GroupFilter);
 			}
 		}
 	}
-	public bool ShowRoom2
-	{
-		get
-		{
-			return this._showRoom2;
-		}
-		set
-		{
-			if (this._showRoom2 != value)
-			{
-				this._showRoom2 = value;
-				this.OnPropertyChanged(() => this.ShowRoom2);
-				this.UpdateGroupFilter();
-			}
-		}
-	}
-	public bool ShowRoom3
-	{
-		get
-		{
-			return this._showRoom3;
-		}
-		set
-		{
-			if (this._showRoom3 != value)
-			{
-				this._showRoom3 = value;
-				this.OnPropertyChanged(() => this.ShowRoom3);
-				this.UpdateGroupFilter();
-			}
-		}
-	}
-
-	public Func<object, bool> GroupFilter
-	{
-		get
-		{
-			return this.groupFilter;
-		}
-		private set
-		{
-			this.groupFilter = value;
-			this.OnPropertyChanged(() => this.GroupFilter);
-		}
-	}
-}
 
 
 
@@ -152,30 +152,30 @@ Add the UpdateGroupFilter() method:
 
 
  __C#__
-    	
+    
 
 
-private bool GroupFilterFunc(object groupName)
-{
-	IResource resource = groupName as IResource;
-	return resource == null ? true : this.GetEnabledGroups().Contains(resource.ResourceName, StringComparer.OrdinalIgnoreCase);
-}
-
-private IEnumerable<string> GetEnabledGroups()
-{
-	List<string> enabledGroups = new List<string>();
-
-	if (this.ShowRoom1) enabledGroups.Add("Room1");
-	if (this.ShowRoom2) enabledGroups.Add("Room2");
-	if (this.ShowRoom3) enabledGroups.Add("Room3");
-		
-	return enabledGroups;
-}
-
-private void UpdateGroupFilter()
-{
-	this.GroupFilter = new Func<object, bool>(this.GroupFilterFunc);
-}
+	private bool GroupFilterFunc(object groupName)
+	{
+		IResource resource = groupName as IResource;
+		return resource == null ? true : this.GetEnabledGroups().Contains(resource.ResourceName, StringComparer.OrdinalIgnoreCase);
+	}
+	
+	private IEnumerable<string> GetEnabledGroups()
+	{
+		List<string> enabledGroups = new List<string>();
+	
+		if (this.ShowRoom1) enabledGroups.Add("Room1");
+		if (this.ShowRoom2) enabledGroups.Add("Room2");
+		if (this.ShowRoom3) enabledGroups.Add("Room3");
+			
+		return enabledGroups;
+	}
+	
+	private void UpdateGroupFilter()
+	{
+		this.GroupFilter = new Func<object, bool>(this.GroupFilterFunc);
+	}
 
 
 
@@ -207,12 +207,12 @@ Calling the following code will add an additional “Room4” resource:
 
 
  __C#__
-    	
+    
 
 
-locationResType.Resources.Add(new Resource("Room4"));
-ResourceTypes.Remove(locationResType);
-ResourceTypes.Add(locationResType);
+	locationResType.Resources.Add(new Resource("Room4"));
+	ResourceTypes.Remove(locationResType);
+	ResourceTypes.Add(locationResType);
 
 
 
@@ -222,10 +222,10 @@ where __ResourceTypes__ is the collection to which ResourceTypesSource property 
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView ResourceTypesSource="{Binding ResourceTypes}" … />
+	<telerik:RadScheduleView ResourceTypesSource="{Binding ResourceTypes}" … />
 
 
 

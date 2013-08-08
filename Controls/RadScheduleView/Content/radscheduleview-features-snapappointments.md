@@ -12,12 +12,12 @@ RadScheduleView provides the option to automatically snap the appointments while
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView SnapAppointments="True">
-...
-</telerik:RadScheduleView>
+	<telerik:RadScheduleView SnapAppointments="True">
+	...
+	</telerik:RadScheduleView>
 
 
 
@@ -28,14 +28,14 @@ You could set MinorTickLength property of the ViewDefinition in order to snap th
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView SnapAppointments="True">		
-	<telerik:RadScheduleView.ViewDefinitions>
-		<telerik:DayViewDefinition MinorTickLength = "15min" />		
-	</telerik:RadScheduleView.ViewDefinitions>	
-</telerik:RadScheduleView>
+	<telerik:RadScheduleView SnapAppointments="True">		
+		<telerik:RadScheduleView.ViewDefinitions>
+			<telerik:DayViewDefinition MinorTickLength = "15min" />		
+		</telerik:RadScheduleView.ViewDefinitions>	
+	</telerik:RadScheduleView>
 
 
 

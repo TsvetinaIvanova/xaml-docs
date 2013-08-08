@@ -52,33 +52,33 @@ The categories available in the RadScheduleView are defined in the CategoriesSou
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">								
-	<telerik:RadScheduleView.CategoriesSource>
-		<telerik:CategoryCollection>
-			<telerik:Category CategoryName="Red Category">
-				<telerik:Category.CategoryBrush>
-					<SolidColorBrush Color="Red"></SolidColorBrush>
-				</telerik:Category.CategoryBrush>
-			</telerik:Category>
-			<telerik:Category CategoryName="Orange Category">
-				<telerik:Category.CategoryBrush>
-					<SolidColorBrush Color="Orange"></SolidColorBrush>
-				</telerik:Category.CategoryBrush>
-			</telerik:Category>
-			<telerik:Category CategoryName="Green Category">
-				<telerik:Category.CategoryBrush>
-					<SolidColorBrush Color="Green"></SolidColorBrush>
-				</telerik:Category.CategoryBrush>
-			</telerik:Category>
-		</telerik:CategoryCollection>
-	</telerik:RadScheduleView.CategoriesSource>
-	<telerik:RadScheduleView.ViewDefinitions>
-		<telerik:DayViewDefinition />
-	</telerik:RadScheduleView.ViewDefinitions>		
-</telerik:RadScheduleView>
+	<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">								
+		<telerik:RadScheduleView.CategoriesSource>
+			<telerik:CategoryCollection>
+				<telerik:Category CategoryName="Red Category">
+					<telerik:Category.CategoryBrush>
+						<SolidColorBrush Color="Red"></SolidColorBrush>
+					</telerik:Category.CategoryBrush>
+				</telerik:Category>
+				<telerik:Category CategoryName="Orange Category">
+					<telerik:Category.CategoryBrush>
+						<SolidColorBrush Color="Orange"></SolidColorBrush>
+					</telerik:Category.CategoryBrush>
+				</telerik:Category>
+				<telerik:Category CategoryName="Green Category">
+					<telerik:Category.CategoryBrush>
+						<SolidColorBrush Color="Green"></SolidColorBrush>
+					</telerik:Category.CategoryBrush>
+				</telerik:Category>
+			</telerik:CategoryCollection>
+		</telerik:RadScheduleView.CategoriesSource>
+		<telerik:RadScheduleView.ViewDefinitions>
+			<telerik:DayViewDefinition />
+		</telerik:RadScheduleView.ViewDefinitions>		
+	</telerik:RadScheduleView>
 
 
 
@@ -86,39 +86,39 @@ or
 
 
  __C#__
-    	
+    
 
 
-public class MyViewModel : ViewModelBase
-{
-	public ObservableCollection<Appointment> Appointments { get; set; }
-	public ObservableCollection<Category> Categories { get; set; }
-
-	public MyViewModel()
+	public class MyViewModel : ViewModelBase
 	{
-		this.Appointments = new ObservableCollection<Appointment>();
-		this.Categories = new ObservableCollection<Category>() {
-			new Category( "Red Category", new SolidColorBrush( Colors.Red ) ),
-			new Category( "Orange Category", new SolidColorBrush( Colors.Orange ) ),
-			new Category( "Green Category", new SolidColorBrush( Colors.Green ) )
-		};
+		public ObservableCollection<Appointment> Appointments { get; set; }
+		public ObservableCollection<Category> Categories { get; set; }
+	
+		public MyViewModel()
+		{
+			this.Appointments = new ObservableCollection<Appointment>();
+			this.Categories = new ObservableCollection<Category>() {
+				new Category( "Red Category", new SolidColorBrush( Colors.Red ) ),
+				new Category( "Orange Category", new SolidColorBrush( Colors.Orange ) ),
+				new Category( "Green Category", new SolidColorBrush( Colors.Green ) )
+			};
+		}
 	}
-}
 
 
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView x:Name="scheduleView" 
-					AppointmentsSource="{Binding Appointments}"
-					CategoriesSource="{Binding Categories}">		
-			<telerik:RadScheduleView.ViewDefinitions>
-		<telerik:DayViewDefinition />
-	</telerik:RadScheduleView.ViewDefinitions>		
-</telerik:RadScheduleView>
+	<telerik:RadScheduleView x:Name="scheduleView" 
+						AppointmentsSource="{Binding Appointments}"
+						CategoriesSource="{Binding Categories}">		
+				<telerik:RadScheduleView.ViewDefinitions>
+			<telerik:DayViewDefinition />
+		</telerik:RadScheduleView.ViewDefinitions>		
+	</telerik:RadScheduleView>
 
 
 
@@ -126,10 +126,10 @@ Finally, set the DataContext:
 
 
  __C#__
-    	
+    
 
 
-this.DataContext = new MyViewModel();
+	this.DataContext = new MyViewModel();
 
 
 

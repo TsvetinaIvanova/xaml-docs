@@ -32,15 +32,15 @@ You could use the __ResourceGroupDescription.ShowNullGroup__ property. For examp
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView.GroupDescriptionsSource>
-    <telerik:GroupDescriptionCollection>
-     <telerik:ResourceGroupDescription ResourceType="Room" ShowNullGroup="True" />
-     <telerik:ResourceGroupDescription ResourceType="User"  />
-    </telerik:GroupDescriptionCollection>
-</telerik:RadScheduleView.GroupDescriptionsSource>
+	<telerik:RadScheduleView.GroupDescriptionsSource>
+	    <telerik:GroupDescriptionCollection>
+	     <telerik:ResourceGroupDescription ResourceType="Room" ShowNullGroup="True" />
+	     <telerik:ResourceGroupDescription ResourceType="User"  />
+	    </telerik:GroupDescriptionCollection>
+	</telerik:RadScheduleView.GroupDescriptionsSource>
 
 __TimeRulerStyle____TimeRulerItemStyleSelector__, __TimeRulerItemTemplateSelector__ (to make it work the __TimeRulerItemTemplateSelector__ and __TimeRulerItemTemplate__ must be set to __{x:Null}__)
               
@@ -52,14 +52,14 @@ Add __GroupDescription__ and to the __GroupDescriptionSource__. For example:
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView.GroupDescriptionsSource>
-<telerik:GroupDescriptionCollection>     <telerik:ResourceGroupDescription ResourceType="Category" />
-<telerik:ResourceGroupDescription ResourceType="Level" />
-</telerik:GroupDescriptionCollection>
-</telerik:RadScheduleView.GroupDescriptionsSource>
+	<telerik:RadScheduleView.GroupDescriptionsSource>
+	<telerik:GroupDescriptionCollection>     <telerik:ResourceGroupDescription ResourceType="Category" />
+	<telerik:ResourceGroupDescription ResourceType="Level" />
+	</telerik:GroupDescriptionCollection>
+	</telerik:RadScheduleView.GroupDescriptionsSource>
 
 
 
@@ -68,15 +68,15 @@ Add __GroupDescription__ and to the __GroupDescriptionSource__. For example:
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView.ViewDefinitions>
- <telerik:DayViewDefinition VisibleDays="" FirstDayOfWeek=" " LargeChangeInterval="" MinorTickLength="" MinTimeRulerExtent="" Orientation=" " />
- <telerik:WeekViewDefinition/>
- <telerik:MonthViewDefinition/>
- <telerik:TimelineViewDefinition/>
-</telerik:RadScheduleView.ViewDefinitions>
+	<telerik:RadScheduleView.ViewDefinitions>
+	 <telerik:DayViewDefinition VisibleDays="" FirstDayOfWeek=" " LargeChangeInterval="" MinorTickLength="" MinTimeRulerExtent="" Orientation=" " />
+	 <telerik:WeekViewDefinition/>
+	 <telerik:MonthViewDefinition/>
+	 <telerik:TimelineViewDefinition/>
+	</telerik:RadScheduleView.ViewDefinitions>
 
 __TimeSlotTemplateSelector____SpecialSlotStyleSelector__, __SpecialSlotsSource__
 
@@ -92,15 +92,15 @@ Depends on which __ViewDefinitions__ are defined:
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView.ViewDefinitions>
- <telerik:DayViewDefinition  />
- <telerik:WeekViewDefinition />
- …
- <telerik:TimelineViewDefinition />
-</telerik:RadScheduleView.ViewDefinitions>
+	<telerik:RadScheduleView.ViewDefinitions>
+	 <telerik:DayViewDefinition  />
+	 <telerik:WeekViewDefinition />
+	 …
+	 <telerik:TimelineViewDefinition />
+	</telerik:RadScheduleView.ViewDefinitions>
 
 __Culture__There is no such property. Use LocalizationManager.DefaultCulture instead.__TimeFormatString__, __DayHeaderFormat__, __MonthViewDayHeaderDayFormat__, __MonthViewDayHeaderMonthFormat__, __TimelineHeaderFormat____TimerulerMajorTickStringFormat__, __GroupHeaderDateStringFormat__, __TimerulerMinorTickStringFormat__ properties on the view definitions
             __ResourceStyleMapping____GroupHeaderStyleSelector__ and __GroupHeaderContentTemplateSelector____Edit____Appointment__ using code
@@ -113,26 +113,26 @@ Using the __BeginEdit()__ method of the __RadScheduleView__, which returns wheth
 
 
  __C#__
-    	
+    
 
 
-if (this.radScheduleView.BeginEdit(appointment))
-{   
-    appointment.Subject = "New Subject";
-    this.radScheduleView.Commit();
-}
+	if (this.radScheduleView.BeginEdit(appointment))
+	{   
+	    appointment.Subject = "New Subject";
+	    this.radScheduleView.Commit();
+	}
 
 
 
 
  __VB.NET__
-    	
+    
 
 
-If Me.radScheduleView.BeginEdit(appointment) Then
- appointment.Subject = "New Subject"
- Me.radScheduleView.Commit()
-End If
+	If Me.radScheduleView.BeginEdit(appointment) Then
+	 appointment.Subject = "New Subject"
+	 Me.radScheduleView.Commit()
+	End If
 
 __Delete Appointment__ using code:
             
@@ -141,19 +141,19 @@ Using the Remove() method of the RadScheduleView(), which returns whether or not
 
 
  __C#__
-    	
+    
 
 
-this.radScheduleView.Remove(appointment);
+	this.radScheduleView.Remove(appointment);
 
 
 
 
  __VB.NET__
-    	
+    
 
 
-Me.radScheduleView.Remove(appointment)
+	Me.radScheduleView.Remove(appointment)
 
 
 

@@ -27,24 +27,24 @@ The following code snippet shows how to set the __ShowWeekGroupHeaders__ and __W
 
 
  __XAML__
-    	
+    
 
 
-        <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
-            <telerik:RadScheduleView.ViewDefinitions>
-                <telerik:WeekViewDefinition ShowWeekGroupHeaders="True" WeekGroupHeaderStringFormat="Week number {0}, {1:D}" />
-            </telerik:RadScheduleView.ViewDefinitions>
-        </telerik:RadScheduleView>
+	        <telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
+	            <telerik:RadScheduleView.ViewDefinitions>
+	                <telerik:WeekViewDefinition ShowWeekGroupHeaders="True" WeekGroupHeaderStringFormat="Week number {0}, {1:D}" />
+	            </telerik:RadScheduleView.ViewDefinitions>
+	        </telerik:RadScheduleView>
 
 
 
 
  __C#__
-    	
+    
 
 
-     weekDefinition.ShowWeekGroupHeaders = true;
-	 weekDefinition.WeekGroupHeaderStringFormat = "Week number {0}, {1:D}";
+	     weekDefinition.ShowWeekGroupHeaders = true;
+		 weekDefinition.WeekGroupHeaderStringFormat = "Week number {0}, {1:D}";
 
 
 

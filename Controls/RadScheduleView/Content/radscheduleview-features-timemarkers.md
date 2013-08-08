@@ -46,20 +46,20 @@ The time markers available in the RadScheduleView are defined in the TimeMarkers
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
-		<telerik:RadScheduleView.TimeMarkersSource>
-			<telerik:TimeMarkerCollection>
-				<telerik:TimeMarker TimeMarkerName="Busy" TimeMarkerBrush="Red"  />
-				<telerik:TimeMarker TimeMarkerName="Free" TimeMarkerBrush="Green" />
-			</telerik:TimeMarkerCollection>
-		</telerik:RadScheduleView.TimeMarkersSource>
-			<telerik:RadScheduleView.ViewDefinitions>
-		<telerik:DayViewDefinition />
-	</telerik:RadScheduleView.ViewDefinitions>		
-</telerik:RadScheduleView>
+	<telerik:RadScheduleView x:Name="scheduleView" AppointmentsSource="{Binding Appointments}">
+			<telerik:RadScheduleView.TimeMarkersSource>
+				<telerik:TimeMarkerCollection>
+					<telerik:TimeMarker TimeMarkerName="Busy" TimeMarkerBrush="Red"  />
+					<telerik:TimeMarker TimeMarkerName="Free" TimeMarkerBrush="Green" />
+				</telerik:TimeMarkerCollection>
+			</telerik:RadScheduleView.TimeMarkersSource>
+				<telerik:RadScheduleView.ViewDefinitions>
+			<telerik:DayViewDefinition />
+		</telerik:RadScheduleView.ViewDefinitions>		
+	</telerik:RadScheduleView>
 
 
 
@@ -67,38 +67,38 @@ or
 
 
  __C#__
-    	
+    
 
 
-public class MyViewModel : ViewModelBase
-{
-	public ObservableCollection<Appointment> Appointments { get; set; }
-	public ObservableCollection<TimeMarker> TimeMarkers { get; set; }
-
-	public MyViewModel()
+	public class MyViewModel : ViewModelBase
 	{
-		this.Appointments = new ObservableCollection<Appointment>();
-		this.TimeMarkers = new ObservableCollection<TimeMarker>() {
-			new TimeMarker("Busy", new SolidColorBrush( Colors.Red ) ),
-			new TimeMarker("Free", new SolidColorBrush( Colors.Green ) )
-		};
+		public ObservableCollection<Appointment> Appointments { get; set; }
+		public ObservableCollection<TimeMarker> TimeMarkers { get; set; }
+	
+		public MyViewModel()
+		{
+			this.Appointments = new ObservableCollection<Appointment>();
+			this.TimeMarkers = new ObservableCollection<TimeMarker>() {
+				new TimeMarker("Busy", new SolidColorBrush( Colors.Red ) ),
+				new TimeMarker("Free", new SolidColorBrush( Colors.Green ) )
+			};
+		}
 	}
-}
 
 
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView x:Name="scheduleView" 
-			AppointmentsSource="{Binding Appointments}"
-			TimeMarkersSource="{Binding TimeMarkers}">		
-			<telerik:RadScheduleView.ViewDefinitions>
-		<telerik:DayViewDefinition />
-	</telerik:RadScheduleView.ViewDefinitions>		
-</telerik:RadScheduleView>
+	<telerik:RadScheduleView x:Name="scheduleView" 
+				AppointmentsSource="{Binding Appointments}"
+				TimeMarkersSource="{Binding TimeMarkers}">		
+				<telerik:RadScheduleView.ViewDefinitions>
+			<telerik:DayViewDefinition />
+		</telerik:RadScheduleView.ViewDefinitions>		
+	</telerik:RadScheduleView>
 
 
 
@@ -106,10 +106,10 @@ Finally, set the DataContext:
 
 
  __C#__
-    	
+    
 
 
-this.DataContext = new MyViewModel();
+	this.DataContext = new MyViewModel();
 
 
 

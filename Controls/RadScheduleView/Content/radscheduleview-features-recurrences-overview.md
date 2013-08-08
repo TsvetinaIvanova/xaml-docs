@@ -35,29 +35,29 @@ Consider the following example:
 
 
  __C#__
-    	
+    
 
 
-var startDate = new DateTime(2011, 05, 11, 10, 0, 0);
-var appointment = new Appointment() {
-    Start = startDate,
-    End = startDate.AddMinutes(30),
-    Subject = "Daily appointment"
-};
+	var startDate = new DateTime(2011, 05, 11, 10, 0, 0);
+	var appointment = new Appointment() {
+	    Start = startDate,
+	    End = startDate.AddMinutes(30),
+	    Subject = "Daily appointment"
+	};
 
 
 
 
  __VB.NET__
-    	
+    
 
 
-Dim startDate = New DateTime(2011, 5, 11, 10, 0, 0)
-Dim appointment = New Appointment() With {
-    .Start = startDate,
-    .End = startDate.AddMinutes(30),
-    .Subject = "Daily appointment"
-}
+	Dim startDate = New DateTime(2011, 5, 11, 10, 0, 0)
+	Dim appointment = New Appointment() With {
+	    .Start = startDate,
+	    .End = startDate.AddMinutes(30),
+	    .Subject = "Daily appointment"
+	}
 
 
 
@@ -65,27 +65,27 @@ Dim appointment = New Appointment() With {
 
 
  __C#__
-    	
+    
 
 
-var pattern = new RecurrencePattern() {
-    Frequency = RecurrenceFrequency.Daily,
-    DaysOfWeekMask = RecurrenceDays.EveryDay,
-    MaxOccurrences = 4
-};
+	var pattern = new RecurrencePattern() {
+	    Frequency = RecurrenceFrequency.Daily,
+	    DaysOfWeekMask = RecurrenceDays.EveryDay,
+	    MaxOccurrences = 4
+	};
 
 
 
 
  __VB.NET__
-    	
+    
 
 
-Dim pattern = New RecurrencePattern() With {
-    .Frequency = RecurrenceFrequency.Daily,
-    .DaysOfWeekMask = RecurrenceDays.EveryDay,
-    .MaxOccurrences = 4
-}
+	Dim pattern = New RecurrencePattern() With {
+	    .Frequency = RecurrenceFrequency.Daily,
+	    .DaysOfWeekMask = RecurrenceDays.EveryDay,
+	    .MaxOccurrences = 4
+	}
 
 
 
@@ -93,19 +93,19 @@ Dim pattern = New RecurrencePattern() With {
 
 
  __C#__
-    	
+    
 
 
-appointment.RecurrenceRule = new RecurrenceRule(pattern);
+	appointment.RecurrenceRule = new RecurrenceRule(pattern);
 
 
 
 
  __VB.NET__
-    	
+    
 
 
-appointment.RecurrenceRule = New RecurrenceRule(pattern)
+	appointment.RecurrenceRule = New RecurrenceRule(pattern)
 
 
 
@@ -113,19 +113,19 @@ appointment.RecurrenceRule = New RecurrenceRule(pattern)
 
 
  __C#__
-    	
+    
 
 
-appointment.RecurrenceRule.AddException(new DateTime(2011, 05, 14, 10, 0, 0));
+	appointment.RecurrenceRule.AddException(new DateTime(2011, 05, 14, 10, 0, 0));
 
 
 
 
  __VB.NET__
-    	
+    
 
 
-appointment.RecurrenceRule.AddException(New DateTime(2011, 5, 14, 10, 0, 0))
+	appointment.RecurrenceRule.AddException(New DateTime(2011, 5, 14, 10, 0, 0))
 
 
 
@@ -133,25 +133,25 @@ appointment.RecurrenceRule.AddException(New DateTime(2011, 5, 14, 10, 0, 0))
 
 
  __C#__
-    	
+    
 
 
-var exceptionAppointment = (Appointment)appointment.Copy();
-exceptionAppointment.Start = new DateTime(2011, 05, 18, 11, 0, 0);
-exceptionAppointment.End = exceptionAppointment.Start.AddMinutes(45);
-appointment.RecurrenceRule.AddException(new DateTime(2011, 05, 15, 10, 0, 0), exceptionAppointment);
+	var exceptionAppointment = (Appointment)appointment.Copy();
+	exceptionAppointment.Start = new DateTime(2011, 05, 18, 11, 0, 0);
+	exceptionAppointment.End = exceptionAppointment.Start.AddMinutes(45);
+	appointment.RecurrenceRule.AddException(new DateTime(2011, 05, 15, 10, 0, 0), exceptionAppointment);
 
 
 
 
  __VB.NET__
-    	
+    
 
 
-Dim exceptionAppointment As Appointment = DirectCast(appointment.Copy(), Appointment)
-exceptionAppointment.Start = New DateTime(2011, 5, 15, 11, 0, 0)
-exceptionAppointment.End = exceptionAppointment.Start.AddMinutes(45)
-appointment.RecurrenceRule.AddException(New DateTime(2011, 5, 15, 10, 0, 0), exceptionAppointment)
+	Dim exceptionAppointment As Appointment = DirectCast(appointment.Copy(), Appointment)
+	exceptionAppointment.Start = New DateTime(2011, 5, 15, 11, 0, 0)
+	exceptionAppointment.End = exceptionAppointment.Start.AddMinutes(45)
+	appointment.RecurrenceRule.AddException(New DateTime(2011, 5, 15, 10, 0, 0), exceptionAppointment)
 
 
 

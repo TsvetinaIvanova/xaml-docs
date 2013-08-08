@@ -89,19 +89,19 @@ When an existing __occurrence__ is __deleted__ the lifecycle of the raised event
 
 
  __C#__
-    	
+    
 
 
-private void ScheduleView_DialogClosing(object sender, CancelRoutedEventArgs e)
-{
-    // cast to CloseDialogEventArgs
-    var eventArgs = e as CloseDialogEventArgs;
-
-    // you can get the DialogViewModel
-    var currentDialogViewModel = eventArgs.DialogViewModel;
-
-    // you can also cancel the event
-    eventArgs.Cancel = true;
-}
+	private void ScheduleView_DialogClosing(object sender, CancelRoutedEventArgs e)
+	{
+	    // cast to CloseDialogEventArgs
+	    var eventArgs = e as CloseDialogEventArgs;
+	
+	    // you can get the DialogViewModel
+	    var currentDialogViewModel = eventArgs.DialogViewModel;
+	
+	    // you can also cancel the event
+	    eventArgs.Cancel = true;
+	}
 
 [Understanding Appointments]({{slug:understanding-appointments}})

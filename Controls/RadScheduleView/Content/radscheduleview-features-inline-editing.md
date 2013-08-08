@@ -42,18 +42,18 @@ The default value of the __IsInlineEditingEnabled__ property is True. Which mean
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView x:Name="scheduleView" IsInlineEditingEnabled="False"/>
+	<telerik:RadScheduleView x:Name="scheduleView" IsInlineEditingEnabled="False"/>
 
 
 
 
  __C#__
-    	
+    
 
 
-scheduleView.IsInlineEditingEnabled = false;
+	scheduleView.IsInlineEditingEnabled = false;
 
 

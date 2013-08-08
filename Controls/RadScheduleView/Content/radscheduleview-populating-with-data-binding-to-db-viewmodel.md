@@ -16,36 +16,36 @@ When the models are defined, we need to create the __ViewModel__ (refer to __Sch
 
 
  __XAML__
-    	
+    
 
 
-<Grid x:Name="LayoutRoot" Background="White">
-	<Grid.RowDefinitions>
-		<RowDefinition Height="*"/>
-		<RowDefinition Height="Auto"/>
-	</Grid.RowDefinitions>
-	<telerik:RadScheduleView Grid.Row="0"
-		AppointmentsSource="{Binding Appointments}"
-		ResourceTypesSource="{Binding ResourceTypes}"
-		TimeMarkersSource="{Binding TimeMarkers}"
-		CategoriesSource="{Binding Categories}"
-		VisibleRangeChangedCommand="{Binding VisibleRangeChanged}"
-		VisibleRangeChangedCommandParameter="{Binding VisibleRange, RelativeSource={RelativeSource Self}}">
-		<telerik:RadScheduleView.ViewDefinitions>
-			<telerik:WeekViewDefinition />
-			<telerik:MonthViewDefinition  />
-			<telerik:TimelineViewDefinition />
-		</telerik:RadScheduleView.ViewDefinitions>
-		<telerik:RadScheduleView.GroupDescriptionsSource>
-			<telerik:GroupDescriptionCollection>
-				<telerik:DateGroupDescription />
-				<telerik:ResourceGroupDescription ResourceType="Level" ShowNullGroup="True" />
-				<telerik:ResourceGroupDescription ResourceType="Speaker" ShowNullGroup="True" />
-			</telerik:GroupDescriptionCollection>
-		</telerik:RadScheduleView.GroupDescriptionsSource>
-	</telerik:RadScheduleView>
-	<Button Grid.Row="1" Content="Save data" HorizontalAlignment="Center" Command="{Binding SaveCommand}" VerticalAlignment="Center"/>
-</Grid>
+	<Grid x:Name="LayoutRoot" Background="White">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+		<telerik:RadScheduleView Grid.Row="0"
+			AppointmentsSource="{Binding Appointments}"
+			ResourceTypesSource="{Binding ResourceTypes}"
+			TimeMarkersSource="{Binding TimeMarkers}"
+			CategoriesSource="{Binding Categories}"
+			VisibleRangeChangedCommand="{Binding VisibleRangeChanged}"
+			VisibleRangeChangedCommandParameter="{Binding VisibleRange, RelativeSource={RelativeSource Self}}">
+			<telerik:RadScheduleView.ViewDefinitions>
+				<telerik:WeekViewDefinition />
+				<telerik:MonthViewDefinition  />
+				<telerik:TimelineViewDefinition />
+			</telerik:RadScheduleView.ViewDefinitions>
+			<telerik:RadScheduleView.GroupDescriptionsSource>
+				<telerik:GroupDescriptionCollection>
+					<telerik:DateGroupDescription />
+					<telerik:ResourceGroupDescription ResourceType="Level" ShowNullGroup="True" />
+					<telerik:ResourceGroupDescription ResourceType="Speaker" ShowNullGroup="True" />
+				</telerik:GroupDescriptionCollection>
+			</telerik:RadScheduleView.GroupDescriptionsSource>
+		</telerik:RadScheduleView>
+		<Button Grid.Row="1" Content="Save data" HorizontalAlignment="Center" Command="{Binding SaveCommand}" VerticalAlignment="Center"/>
+	</Grid>
 
 	>
 
@@ -57,30 +57,30 @@ When "Save data" button is clicked, we save the data to the server.
 
 
  __C#__
-    	
+    
 
 
-private void OnSaveExecuted(object param)
-{
-	ScheduleViewRepository.SaveData();
-}
-
-...
-
-public static void SaveData()
-{
-	if (ScheduleViewRepository.Context.HasChanges && !ScheduleViewRepository.Context.IsSubmitting)
+	private void OnSaveExecuted(object param)
 	{
-		try
+		ScheduleViewRepository.SaveData();
+	}
+	
+	...
+	
+	public static void SaveData()
+	{
+		if (ScheduleViewRepository.Context.HasChanges && !ScheduleViewRepository.Context.IsSubmitting)
 		{
-			ScheduleViewRepository.Context.SubmitChanges(OnSubmitChangesCompleted, null);
-		}
-		catch (System.Exception)
-		{
-			throw;
+			try
+			{
+				ScheduleViewRepository.Context.SubmitChanges(OnSubmitChangesCompleted, null);
+			}
+			catch (System.Exception)
+			{
+				throw;
+			}
 		}
 	}
-}
 
 
 
@@ -99,31 +99,31 @@ Here is the code:
 
 
  __C#__
-    	
+    
 
 
-private void LoadData()
-{
-	ScheduleViewRepository.Context.Load(ScheduleViewRepository.Context.GetSqlResourcesQuery()).Completed += (o, e) =>
+	private void LoadData()
 	{
-		ScheduleViewRepository.Context.Load(ScheduleViewRepository.Context.GetSqlResourceTypesQuery()).Completed += (s, a) =>
+		ScheduleViewRepository.Context.Load(ScheduleViewRepository.Context.GetSqlResourcesQuery()).Completed += (o, e) =>
 		{
-			this.ResourceTypes.AddRange((s as LoadOperation).Entities);
+			ScheduleViewRepository.Context.Load(ScheduleViewRepository.Context.GetSqlResourceTypesQuery()).Completed += (s, a) =>
+			{
+				this.ResourceTypes.AddRange((s as LoadOperation).Entities);
+			};
+	
+			this.OnPropertyChanged(() => this.ResourceTypes);
 		};
-
-		this.OnPropertyChanged(() => this.ResourceTypes);
-	};
-
-	ScheduleViewRepository.Context.Load(ScheduleViewRepository.Context.GetTimeMarkersQuery()).Completed += (o, e) =>
-	{
-		this.TimeMarkers.AddRange((o as LoadOperation).Entities);
-	};
-
-	ScheduleViewRepository.Context.Load(ScheduleViewRepository.Context.GetCategoriesQuery()).Completed += (o, e) =>
-	{
-		this.Categories.AddRange((o as LoadOperation).Entities);
-	};
-}
+	
+		ScheduleViewRepository.Context.Load(ScheduleViewRepository.Context.GetTimeMarkersQuery()).Completed += (o, e) =>
+		{
+			this.TimeMarkers.AddRange((o as LoadOperation).Entities);
+		};
+	
+		ScheduleViewRepository.Context.Load(ScheduleViewRepository.Context.GetCategoriesQuery()).Completed += (o, e) =>
+		{
+			this.Categories.AddRange((o as LoadOperation).Entities);
+		};
+	}
 
 
 
@@ -134,40 +134,40 @@ Also, we need to handle the Appointments.CollectionChanged event and in the hand
 
 
  __C#__
-    	
+    
 
 
-private void OnAppointmentsCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
-{
-	if (e.Action == NotifyCollectionChangedAction.Add)
+	private void OnAppointmentsCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
 	{
-		var app = e.NewItems == null ? null : e.NewItems[0] as SqlAppointment;
-		if (app != null && app.EntityState != EntityState.Unmodified)
+		if (e.Action == NotifyCollectionChangedAction.Add)
 		{
-			ScheduleViewRepository.Context.SqlAppointments.Add(app);
-		}
-	}
-	else if (e.Action == NotifyCollectionChangedAction.Remove)
-	{
-		var app = e.OldItems == null ? null : e.OldItems[0] as SqlAppointment;
-		if (app != null && ScheduleViewRepository.Context.SqlAppointments.Contains(app))
-		{
-			if (app.RecurrenceRule != null)
+			var app = e.NewItems == null ? null : e.NewItems[0] as SqlAppointment;
+			if (app != null && app.EntityState != EntityState.Unmodified)
 			{
-				foreach (SqlExceptionOccurrence item in app.RecurrenceRule.Exceptions)
+				ScheduleViewRepository.Context.SqlAppointments.Add(app);
+			}
+		}
+		else if (e.Action == NotifyCollectionChangedAction.Remove)
+		{
+			var app = e.OldItems == null ? null : e.OldItems[0] as SqlAppointment;
+			if (app != null && ScheduleViewRepository.Context.SqlAppointments.Contains(app))
+			{
+				if (app.RecurrenceRule != null)
 				{
-					ScheduleViewRepository.Context.SqlExceptionOccurrences.Remove(item);
+					foreach (SqlExceptionOccurrence item in app.RecurrenceRule.Exceptions)
+					{
+						ScheduleViewRepository.Context.SqlExceptionOccurrences.Remove(item);
+					}
 				}
+	
+				foreach (var resource in app.SqlAppointmentResources)
+				{
+					ScheduleViewRepository.Context.SqlAppointmentResources.Remove(resource);
+				}
+				ScheduleViewRepository.Context.SqlAppointments.Remove(app);
 			}
-
-			foreach (var resource in app.SqlAppointmentResources)
-			{
-				ScheduleViewRepository.Context.SqlAppointmentResources.Remove(resource);
-			}
-			ScheduleViewRepository.Context.SqlAppointments.Remove(app);
 		}
 	}
-}
 
 
 

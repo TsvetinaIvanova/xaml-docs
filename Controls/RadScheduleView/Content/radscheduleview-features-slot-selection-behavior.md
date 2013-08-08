@@ -28,18 +28,18 @@ This tutorial will go through the steps needed to create a custom SlotSelectionB
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView>
-	...
-	<telerik:RadScheduleView.ViewDefinitions>
-		<telerik:DayViewDefinition MinorTickLength="30min" MajorTickLength="2h"/>
-	</telerik:RadScheduleView.ViewDefinitions>
-	<telerik:RadScheduleView.SlotSelectionBehavior>
-		<local:CustomSlotSelectionBehavior/>
-	</telerik:RadScheduleView.SlotSelectionBehavior>
-</telerik:RadScheduleView>
+	<telerik:RadScheduleView>
+		...
+		<telerik:RadScheduleView.ViewDefinitions>
+			<telerik:DayViewDefinition MinorTickLength="30min" MajorTickLength="2h"/>
+		</telerik:RadScheduleView.ViewDefinitions>
+		<telerik:RadScheduleView.SlotSelectionBehavior>
+			<local:CustomSlotSelectionBehavior/>
+		</telerik:RadScheduleView.SlotSelectionBehavior>
+	</telerik:RadScheduleView>
 
 The end result is:
 

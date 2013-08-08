@@ -26,13 +26,13 @@ For advanced customization of the VisibleRange the ViewDefinitionBase class prov
 
 
  __C#__
-    	
+    
 
 
-protected virtual DateTime GetVisibleRangeStart (DateTime currentDate, CultureInfo culture, DayOfWeek? firstDayOfWeek);
-
-protected virtual DateTime GetVisibleRangeEnd(DateTime currentDate, CultureInfo culture, DayOfWeek? firstDayOfWeek);
-
+	protected virtual DateTime GetVisibleRangeStart (DateTime currentDate, CultureInfo culture, DayOfWeek? firstDayOfWeek);
+	
+	protected virtual DateTime GetVisibleRangeEnd(DateTime currentDate, CultureInfo culture, DayOfWeek? firstDayOfWeek);
+	
 
 
 
@@ -43,16 +43,16 @@ For example, the following class represents a MonthViewDefinition that starts fr
 
 
  __C#__
-    	
+    
 
 
-public class CustomMonthViewDefinition : MonthViewDefinition
-{
-	protected override DateTime GetVisibleRangeStart(DateTime currentDate, CultureInfo culture, DayOfWeek? firstDayOfWeek)
+	public class CustomMonthViewDefinition : MonthViewDefinition
 	{
-		return CalendarHelper.GetFirstDayOfWeek(currentDate, firstDayOfWeek.Value);
+		protected override DateTime GetVisibleRangeStart(DateTime currentDate, CultureInfo culture, DayOfWeek? firstDayOfWeek)
+		{
+			return CalendarHelper.GetFirstDayOfWeek(currentDate, firstDayOfWeek.Value);
+		}
 	}
-}
 
 
 
@@ -64,13 +64,13 @@ Here is how to use the CustomMonthViewDefinition:
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView>
-	<telerik:RadScheduleView.ViewDefinitions>
-		<local:CustomMonthViewDefinition />
-	</telerik:RadScheduleView.ViewDefinitions>
-</telerik:RadScheduleView>
+	<telerik:RadScheduleView>
+		<telerik:RadScheduleView.ViewDefinitions>
+			<local:CustomMonthViewDefinition />
+		</telerik:RadScheduleView.ViewDefinitions>
+	</telerik:RadScheduleView>
 
 

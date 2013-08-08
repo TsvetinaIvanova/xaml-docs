@@ -34,80 +34,80 @@ When inheriting the AppointmentBase class it is required to create a parameter-l
 
 
  __C#__
-    	
+    
 
 
-public class Task:Appointment
-{
-    private bool isDone;
-    public bool IsDone
-    {
-        get
-        {
-             return this.Storage<Task>().isDone;
-        }
-        set
-        {
-             var storage = this.Storage<Task>();
-             if (storage.isDone != value)
-             {
-                  storage.isDone = value;
-                  this.OnPropertyChanged(() => this.IsDone);
-             }
-        }
-    }
-    public override IAppointment Copy()
-    {
-        var newAppointment = new Task();
-        newAppointment.CopyFrom(this);
-        return newAppointment;
-    }
-    public override void CopyFrom(IAppointment other)
-    {
-        var task = other as Task;
-        if (task != null)
-        {
-                this.IsDone = task.IsDone;
-        }
-        base.CopyFrom(other);
-    }
-}
+	public class Task:Appointment
+	{
+	    private bool isDone;
+	    public bool IsDone
+	    {
+	        get
+	        {
+	             return this.Storage<Task>().isDone;
+	        }
+	        set
+	        {
+	             var storage = this.Storage<Task>();
+	             if (storage.isDone != value)
+	             {
+	                  storage.isDone = value;
+	                  this.OnPropertyChanged(() => this.IsDone);
+	             }
+	        }
+	    }
+	    public override IAppointment Copy()
+	    {
+	        var newAppointment = new Task();
+	        newAppointment.CopyFrom(this);
+	        return newAppointment;
+	    }
+	    public override void CopyFrom(IAppointment other)
+	    {
+	        var task = other as Task;
+	        if (task != null)
+	        {
+	                this.IsDone = task.IsDone;
+	        }
+	        base.CopyFrom(other);
+	    }
+	}
 
 
 
 
  __VB.NET__
-    	
+    
 
 
-Public Class Task
- Inherits Appointment
- Private m_isDone As Boolean
- Public Property IsDone() As Boolean
-  Get
-   Return Me.Storage(Of Task)().m_isDone
-  End Get
-  Set
-   Dim storage = Me.Storage(Of Task)()
-   If storage.m_isDone <> value Then
-    storage.m_isDone = value
-    Me.OnPropertyChanged("IsDone")
-   End If
-  End Set
- End Property
- Public Overrides Function Copy() As IAppointment
-  Dim newAppointment = New Task()
-  newAppointment.CopyFrom(Me)
-  Return newAppointment
- End Function
- Public Overrides Sub CopyFrom(other As IAppointment)
-  Dim task = TryCast(other, Task)
-  If task IsNot Nothing Then
-   Me.IsDone = task.IsDone
-  End If
-  MyBase.CopyFrom(other)
- End Sub
-End Class
+	Public Class Task
+	 Inherits Appointment
+	 Private m_isDone As Boolean
+	 Public Property IsDone() As Boolean
+	  Get
+	   Return Me.Storage(Of Task)().m_isDone
+	  End Get
+	  Set
+	   Dim storage = Me.Storage(Of Task)()
+	   If storage.m_isDone <> value Then
+	    storage.m_isDone = value
+	    Me.OnPropertyChanged("IsDone")
+	   End If
+	  End Set
+	 End Property
+	 Public Overrides Function Copy() As IAppointment
+	  Dim newAppointment = New Task()
+	  newAppointment.CopyFrom(Me)
+	  Return newAppointment
+	 End Function
+	 Public Overrides Sub CopyFrom(other As IAppointment)
+	  Dim task = TryCast(other, Task)
+	  If task IsNot Nothing Then
+	   Me.IsDone = task.IsDone
+	  End If
+	  MyBase.CopyFrom(other)
+	 End Sub
+	End Class
 
 
 
@@ -116,43 +116,43 @@ For the next step, it is important to set the __AppointmentsSource__ of RadSched
 
 
  __C#__
-    	
+    
 
 
-public class TasksCollection : ObservableCollection<Task>
-{
-    public TasksCollection()
-    {
-         DateTime today = DateTime.Today;
-         foreach (Task t in Enumerable.Range(9, 14).Select(i =>
-            new Task
-            {
-                 Start = today.AddMinutes(i * 60 + 15),
-                 End = today.AddMinutes((i + 1) * 60),
-                 Subject = string.Format("Task num. {0}",i),
-                 IsDone = today.AddMinutes((i + 1) * 60) < DateTime.Now
-             }))
-         {
-          this.Add(t);
-         }
-    }
-}
+	public class TasksCollection : ObservableCollection<Task>
+	{
+	    public TasksCollection()
+	    {
+	         DateTime today = DateTime.Today;
+	         foreach (Task t in Enumerable.Range(9, 14).Select(i =>
+	            new Task
+	            {
+	                 Start = today.AddMinutes(i * 60 + 15),
+	                 End = today.AddMinutes((i + 1) * 60),
+	                 Subject = string.Format("Task num. {0}",i),
+	                 IsDone = today.AddMinutes((i + 1) * 60) < DateTime.Now
+	             }))
+	         {
+	          this.Add(t);
+	         }
+	    }
+	}
 
 
 
 
  __VB.NET__
-    	
+    
 
 
-Dim today = DateTime.Today
-Dim data = New ObservableCollection(Of Task)(Enumerable.Range(9, 14).[Select](Function(i) New Task() With { _
- .Start = today.AddMinutes(i * 60 + 15), _
- .[End] = today.AddMinutes((i + 1) * 60), _
- .Subject = String.Format("Task num. {0}", i), _
- .IsDone = today.AddMinutes((i + 1) * 60) < DateTime.Now _
-}))
-Me.DataContext = data
+	Dim today = DateTime.Today
+	Dim data = New ObservableCollection(Of Task)(Enumerable.Range(9, 14).[Select](Function(i) New Task() With { _
+	 .Start = today.AddMinutes(i * 60 + 15), _
+	 .[End] = today.AddMinutes((i + 1) * 60), _
+	 .Subject = String.Format("Task num. {0}", i), _
+	 .IsDone = today.AddMinutes((i + 1) * 60) < DateTime.Now _
+	}))
+	Me.DataContext = data
 
 
 
@@ -166,10 +166,10 @@ In order to create a custom appointment dialog we are going to modify the __Edit
 
 
  __XAML__
-    	
+    
 
 
-<CheckBox Grid.Row="4" Grid.Column="1" Margin="3" Content="Is done?" IsChecked="{Binding Occurrence.Appointment.IsDone, Mode=TwoWay}"/>
+	<CheckBox Grid.Row="4" Grid.Column="1" Margin="3" Content="Is done?" IsChecked="{Binding Occurrence.Appointment.IsDone, Mode=TwoWay}"/>
 
 
 
@@ -196,10 +196,10 @@ The __DataContext__ in the AppointmentItem ContentTemplate represents an __Appoi
 
 
  __XAML__
-    	
+    
 
 
-<Ellipse Fill="Green" Width="12" Height="12" VerticalAlignment="Top" Margin="10 5 5 5" HorizontalAlignment="Left" Visibility="{Binding Appointment.IsDone, Converter={StaticResource BooleanToVisibilityConverter}}" />
+	<Ellipse Fill="Green" Width="12" Height="12" VerticalAlignment="Top" Margin="10 5 5 5" HorizontalAlignment="Left" Visibility="{Binding Appointment.IsDone, Converter={StaticResource BooleanToVisibilityConverter}}" />
 
 
 
@@ -214,15 +214,15 @@ Now we will add in the Appointment ToolTip the text (Done) only for the tasks wh
 
 
  __XAML__
-    	
+    
 
 
-<DataTemplate x:Key="ToolTipTemplate">
-   <StackPanel Orientation="Horizontal" MinWidth="140" Margin="0 5">
-      <TextBlock MaxWidth="200" TextWrapping="Wrap" Text="{Binding Subject}"/>
-      <TextBlock Text="(Done)" Grid.Row="1" Margin="5 0 5 0" Foreground="#FF191D1A" Visibility="{Binding Appointment.IsDone, Converter={StaticResource BooleanToVisibilityConverter}}" FontStyle="Italic" />
-   </StackPanel> 
-</DataTemplate>
+	<DataTemplate x:Key="ToolTipTemplate">
+	   <StackPanel Orientation="Horizontal" MinWidth="140" Margin="0 5">
+	      <TextBlock MaxWidth="200" TextWrapping="Wrap" Text="{Binding Subject}"/>
+	      <TextBlock Text="(Done)" Grid.Row="1" Margin="5 0 5 0" Foreground="#FF191D1A" Visibility="{Binding Appointment.IsDone, Converter={StaticResource BooleanToVisibilityConverter}}" FontStyle="Italic" />
+	   </StackPanel> 
+	</DataTemplate>
 
 
 

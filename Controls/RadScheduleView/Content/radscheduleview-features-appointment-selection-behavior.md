@@ -26,30 +26,30 @@ This tutorial will go through on how to create a custom AppointmentSelectionBeha
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView ...>
-	...
-	<telerik:RadScheduleView.ResourceTypesSource>
-		<telerik:ResourceTypeCollection>
-			<telerik:ResourceType Name="Location">
-				<telerik:Resource ResourceName="Room 1" />
-				<telerik:Resource ResourceName="Room 2" />
-				<telerik:Resource ResourceName="Room 3" />
-			</telerik:ResourceType>
-		</telerik:ResourceTypeCollection>
-	</telerik:RadScheduleView.ResourceTypesSource>
-	<telerik:RadScheduleView.GroupDescriptionsSource>
-		<telerik:GroupDescriptionCollection>
-			<telerik:ResourceGroupDescription ResourceType="Location" />
-		</telerik:GroupDescriptionCollection>
-	</telerik:RadScheduleView.GroupDescriptionsSource>
-	<telerik:RadScheduleView.AppointmentSelectionBehavior>
-		<local:CustomAppointmentSelectionBehavior />
-	</telerik:RadScheduleView.AppointmentSelectionBehavior>
-	...
-</telerik:RadScheduleView>
+	<telerik:RadScheduleView ...>
+		...
+		<telerik:RadScheduleView.ResourceTypesSource>
+			<telerik:ResourceTypeCollection>
+				<telerik:ResourceType Name="Location">
+					<telerik:Resource ResourceName="Room 1" />
+					<telerik:Resource ResourceName="Room 2" />
+					<telerik:Resource ResourceName="Room 3" />
+				</telerik:ResourceType>
+			</telerik:ResourceTypeCollection>
+		</telerik:RadScheduleView.ResourceTypesSource>
+		<telerik:RadScheduleView.GroupDescriptionsSource>
+			<telerik:GroupDescriptionCollection>
+				<telerik:ResourceGroupDescription ResourceType="Location" />
+			</telerik:GroupDescriptionCollection>
+		</telerik:RadScheduleView.GroupDescriptionsSource>
+		<telerik:RadScheduleView.AppointmentSelectionBehavior>
+			<local:CustomAppointmentSelectionBehavior />
+		</telerik:RadScheduleView.AppointmentSelectionBehavior>
+		...
+	</telerik:RadScheduleView>
 
 The end result is:
 

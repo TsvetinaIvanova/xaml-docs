@@ -66,24 +66,24 @@ In some cases when using a big number of special slots there could be some __per
 
 
  __C#__
-    	
+    
 
 
-var NonWorkingHours = new ObservableCollection<Slot>();
-DateTime start = new DateTime(2010, 1, 1, 8, 0, 0);
-DateTime end = new DateTime(2010, 1, 1, 18, 0, 0);
-NonWorkingHours.Add(new Slot(end, start.AddDays(1))
-{
-    RecurrencePattern = new RecurrencePattern(
-                null, RecurrenceDays.Monday | RecurrenceDays.Tuesday | RecurrenceDays.Wednesday | RecurrenceDays.Thursday, RecurrenceFrequency.Weekly, 1, null, null)
-});
-
-NonWorkingHours.Add(
-    new Slot(end, start.AddDays(3))
-    {
-        RecurrencePattern = new RecurrencePattern(
-                    null, RecurrenceDays.Friday, RecurrenceFrequency.Weekly, 1, null, null)
-    });
+	var NonWorkingHours = new ObservableCollection<Slot>();
+	DateTime start = new DateTime(2010, 1, 1, 8, 0, 0);
+	DateTime end = new DateTime(2010, 1, 1, 18, 0, 0);
+	NonWorkingHours.Add(new Slot(end, start.AddDays(1))
+	{
+	    RecurrencePattern = new RecurrencePattern(
+	                null, RecurrenceDays.Monday | RecurrenceDays.Tuesday | RecurrenceDays.Wednesday | RecurrenceDays.Thursday, RecurrenceFrequency.Weekly, 1, null, null)
+	});
+	
+	NonWorkingHours.Add(
+	    new Slot(end, start.AddDays(3))
+	    {
+	        RecurrencePattern = new RecurrencePattern(
+	                    null, RecurrenceDays.Friday, RecurrenceFrequency.Weekly, 1, null, null)
+	    });
 
 
 
@@ -92,28 +92,28 @@ NonWorkingHours.Add(
 
 
  __C#__
-    	
+    
 
 
-public class SpecialSlotStyleSelector : ScheduleViewStyleSelector
-{
-    private Style nonworkingHourStyle;
-    public Style NonworkingHourStyle
-    {
-        get
-        {
-            return this.nonworkingHourStyle;
-        }
-        set
-        {
-            this.nonworkingHourStyle = value;
-        }
-    }
-    public override Style SelectStyle(object item, DependencyObject container, ViewDefinitionBase activeViewDefinition)
-    {
-        return this.NonworkingHourStyle;
-    }
-}
+	public class SpecialSlotStyleSelector : ScheduleViewStyleSelector
+	{
+	    private Style nonworkingHourStyle;
+	    public Style NonworkingHourStyle
+	    {
+	        get
+	        {
+	            return this.nonworkingHourStyle;
+	        }
+	        set
+	        {
+	            this.nonworkingHourStyle = value;
+	        }
+	    }
+	    public override Style SelectStyle(object item, DependencyObject container, ViewDefinitionBase activeViewDefinition)
+	    {
+	        return this.NonworkingHourStyle;
+	    }
+	}
 
 
 
@@ -121,22 +121,22 @@ and define the Style:
 
 
  __XAML__
-    	
+    
 
 
-<local:SpecialSlotStyleSelector x:Key="SpecialSlotStyleSelector">
-        <local:SpecialSlotStyleSelector.NonworkingHourStyle>
-            <Style TargetType="scheduleView:HighlightItem">
-                <Setter Property="Template">
-                    <Setter.Value>
-                        <ControlTemplate>
-                            <Border Background="CornflowerBlue"/>
-                        </ControlTemplate>
-                    </Setter.Value>
-                </Setter>
-            </Style>
-        </local:SpecialSlotStyleSelector.NonworkingHourStyle>
-    </local:SpecialSlotStyleSelector>
+	<local:SpecialSlotStyleSelector x:Key="SpecialSlotStyleSelector">
+	        <local:SpecialSlotStyleSelector.NonworkingHourStyle>
+	            <Style TargetType="scheduleView:HighlightItem">
+	                <Setter Property="Template">
+	                    <Setter.Value>
+	                        <ControlTemplate>
+	                            <Border Background="CornflowerBlue"/>
+	                        </ControlTemplate>
+	                    </Setter.Value>
+	                </Setter>
+	            </Style>
+	        </local:SpecialSlotStyleSelector.NonworkingHourStyle>
+	    </local:SpecialSlotStyleSelector>
 
 
 
@@ -145,14 +145,14 @@ and define the Style:
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView x:Name="scheduleView"
-           SpecialSlotsSource="{Binding NonWorkingHours}"
-           SpecialSlotStyleSelector="{StaticResource SpecialSlotStyleSelector}">
-...
-</telerik:RadScheduleView>
+	<telerik:RadScheduleView x:Name="scheduleView"
+	           SpecialSlotsSource="{Binding NonWorkingHours}"
+	           SpecialSlotStyleSelector="{StaticResource SpecialSlotStyleSelector}">
+	...
+	</telerik:RadScheduleView>
 
 
 
@@ -164,20 +164,20 @@ Let's for example have the following Resource Type defined:
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView x:Name="scheduleView">
- <telerik:RadScheduleView.ResourceTypesSource>
-    <telerik:ResourceTypeCollection>
-        <telerik:ResourceType Name="Calendar">
-            <telerik:Resource ResourceName="John" DisplayName="My Calendar" />
-            <telerik:Resource ResourceName="Team" DisplayName="Team Calendar" />
-        </telerik:ResourceType>
-    </telerik:ResourceTypeCollection>
-  </telerik:RadScheduleView.ResourceTypesSource>
-  ...
-</telerik:RadScheduleView>
+	<telerik:RadScheduleView x:Name="scheduleView">
+	 <telerik:RadScheduleView.ResourceTypesSource>
+	    <telerik:ResourceTypeCollection>
+	        <telerik:ResourceType Name="Calendar">
+	            <telerik:Resource ResourceName="John" DisplayName="My Calendar" />
+	            <telerik:Resource ResourceName="Team" DisplayName="Team Calendar" />
+	        </telerik:ResourceType>
+	    </telerik:ResourceTypeCollection>
+	  </telerik:RadScheduleView.ResourceTypesSource>
+	  ...
+	</telerik:RadScheduleView>
 
 
 
@@ -186,17 +186,17 @@ Let's for example have the following Resource Type defined:
 
 
  __C#__
-    	
+    
 
 
-var ReadOnlySlots = new ObservableCollection<Slot>();
-Slot readOnlyslot = new Slot() { 
-		Start = DateTime.MinValue, 
-		End = DateTime.MaxValue, 
-		IsReadOnly = true 
-		};
-readOnlyslot.Resources.Add(new Resource("Team", "Calendar"));
-ReadOnlySlots.Add(readOnlyslot);
+	var ReadOnlySlots = new ObservableCollection<Slot>();
+	Slot readOnlyslot = new Slot() { 
+			Start = DateTime.MinValue, 
+			End = DateTime.MaxValue, 
+			IsReadOnly = true 
+			};
+	readOnlyslot.Resources.Add(new Resource("Team", "Calendar"));
+	ReadOnlySlots.Add(readOnlyslot);
 
 
 
@@ -205,12 +205,12 @@ ReadOnlySlots.Add(readOnlyslot);
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView  x:Name="scheduleView" SpecialSlotsSource="{Binding ReadOnlySlots}">
-...
-</telerik:RadScheduleView>
+	<telerik:RadScheduleView  x:Name="scheduleView" SpecialSlotsSource="{Binding ReadOnlySlots}">
+	...
+	</telerik:RadScheduleView>
 
 
 
@@ -221,10 +221,10 @@ Note that EditAppointmentDialog is shown even for appointments which are visuali
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView x:Name="scheduleView" ShowDialog="scheduleView_ShowDialog">
+	<telerik:RadScheduleView x:Name="scheduleView" ShowDialog="scheduleView_ShowDialog">
 
 
 
@@ -233,17 +233,17 @@ and cancel it in the event handler:
 
 
  __C#__
-    	
+    
 
 
-private void scheduleView_ShowDialog(object sender, ShowDialogEventArgs e)
-{
-    var appointmentDialog = e.DialogViewModel as AppointmentDialogViewModel;
-    if (appointmentDialog != null && appointmentDialog.IsReadOnly)
-    {
-        e.Cancel = true;
-    }
-}
+	private void scheduleView_ShowDialog(object sender, ShowDialogEventArgs e)
+	{
+	    var appointmentDialog = e.DialogViewModel as AppointmentDialogViewModel;
+	    if (appointmentDialog != null && appointmentDialog.IsReadOnly)
+	    {
+	        e.Cancel = true;
+	    }
+	}
 
 
 

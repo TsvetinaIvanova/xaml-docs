@@ -26,38 +26,38 @@ For example the view model for the __EditAppointmentDialog__ is __AppointmentDia
 
 
  __XAML__
-    	
+    
 
 
-<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" ShowDialog="RadScheduleView_ShowDialog">
-…
-</telerik:RadScheduleView>
+	<telerik:RadScheduleView AppointmentsSource="{Binding Appointments}" ShowDialog="RadScheduleView_ShowDialog">
+	…
+	</telerik:RadScheduleView>
 
 
 
 
  __C#__
-    	
+    
 
 
-private void RadScheduleView_ShowDialog(object sender, ShowDialogEventArgs e)
-{
-    if (e.DialogViewModel is AppointmentDialogViewModel)
-        e.Cancel = true;
-}
+	private void RadScheduleView_ShowDialog(object sender, ShowDialogEventArgs e)
+	{
+	    if (e.DialogViewModel is AppointmentDialogViewModel)
+	        e.Cancel = true;
+	}
 
 
 
 
  __VB.NET__
-    	
+    
 
 
-Private Sub RadScheduleView_ShowDialog(sender As System.Object, e As ShowDialogEventArgs)
-    If TypeOf e.DialogViewModel Is AppointmentDialogViewModel Then
-       e.Cancel = True
-    End If
-End Sub
+	Private Sub RadScheduleView_ShowDialog(sender As System.Object, e As ShowDialogEventArgs)
+	    If TypeOf e.DialogViewModel Is AppointmentDialogViewModel Then
+	       e.Cancel = True
+	    End If
+	End Sub
 
 	>
 
@@ -69,31 +69,31 @@ In this case __DefaultDialogResult __ property of the event args should be set i
 
 
  __C#__
-    	
+    
 
 
-private void RadScheduleView_ShowDialog(object sender, ShowDialogEventArgs e)
-{
-    if (e.DialogViewModel is ConfirmDialogViewModel)
-    {
-        e.DefaultDialogResult = true;
-        e.Cancel = true;
-    }
-}
+	private void RadScheduleView_ShowDialog(object sender, ShowDialogEventArgs e)
+	{
+	    if (e.DialogViewModel is ConfirmDialogViewModel)
+	    {
+	        e.DefaultDialogResult = true;
+	        e.Cancel = true;
+	    }
+	}
 
 
 
 
  __VB.NET__
-    	
+    
 
 
-Private Sub RadScheduleView_ShowDialog(sender As System.Object, e As ShowDialogEventArgs)
-    If TypeOf e.DialogViewModel Is ConfirmDialogViewModel Then
-        e.DefaultDialogResult = True
-        e.Cancel = True
-    End If
-End Sub
+	Private Sub RadScheduleView_ShowDialog(sender As System.Object, e As ShowDialogEventArgs)
+	    If TypeOf e.DialogViewModel Is ConfirmDialogViewModel Then
+	        e.DefaultDialogResult = True
+	        e.Cancel = True
+	    End If
+	End Sub
 
 
 
@@ -105,30 +105,30 @@ By default  “Open/Delete the occurrence” option is selected in RecurrenceCho
 
 
  __C#__
-    	
+    
 
 
-private void RadScheduleView_ShowDialog(object sender, ShowDialogEventArgs e)
-{
-    var dialogViewModel = e.DialogViewModel as RecurrenceChoiceDialogViewModel;
-    if (dialogViewModel != null)
-    {
-        dialogViewModel.IsSeriesModeSelected = true;
-    }
-}
+	private void RadScheduleView_ShowDialog(object sender, ShowDialogEventArgs e)
+	{
+	    var dialogViewModel = e.DialogViewModel as RecurrenceChoiceDialogViewModel;
+	    if (dialogViewModel != null)
+	    {
+	        dialogViewModel.IsSeriesModeSelected = true;
+	    }
+	}
 
 
 
 
  __VB.NET__
-    	
+    
 
 
-Private Sub RadScheduleView_ShowDialog(sender As System.Object, e As ShowDialogEventArgs)
-   Dim dialogViewModel = TryCast(e.DialogViewModel, RecurrenceChoiceDialogViewModel)
-   If dialogViewModel IsNot Nothing Then
-       dialogViewModel.IsSeriesModeSelected = True
-   End If
-End Sub
+	Private Sub RadScheduleView_ShowDialog(sender As System.Object, e As ShowDialogEventArgs)
+	   Dim dialogViewModel = TryCast(e.DialogViewModel, RecurrenceChoiceDialogViewModel)
+	   If dialogViewModel IsNot Nothing Then
+	       dialogViewModel.IsSeriesModeSelected = True
+	   End If
+	End Sub
 
 	>Check [Custom Dialogs]({{slug:custom-dialogs}}) for more information about RadScheduleView dialogs.
