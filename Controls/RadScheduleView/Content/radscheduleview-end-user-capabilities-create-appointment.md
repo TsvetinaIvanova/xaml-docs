@@ -27,23 +27,28 @@ __RadScheduleView__ uses one and the same dialog to create and edit appointments
 * You can also assign a category, time marker or importance by using the tool bar controls.
 
 * 
-            If you have completed the appointment edit, click the 'OK' button or press the 
+            If you have completed the appointment edit, click the 'OK' button or press the __Enter__ key. If you want to cancel the appointment creation, click the X button, the Close button or press the __Esc__ key.
+          
 
 # Using code
 
 You can add new appointment using the code. Here are the steps to accomplish this:
 
 * 
-            Call
+            Call__ CreateNew()__ method of the __RadScheduleView__ control. It creates an instance of the __IAppointment__ class and returns it. This method has 2 overloads:
+          
 
-* CreateNew()
+* __CreateNew()__ - initialize a new __IAppointment__ instance.
+            
 
-* CreateNew
+* __CreateNew__(__IAppointment__ appointment) - the given appointment is used to initialize new __IAppointment__ instance.
+            
 
 * Set the properties for the new appointment.
 
 * 
-            Call 
+            Call __Commit()__ method to commit the changes to this object and to update the __UI__.
+          
 
 
  __C#__

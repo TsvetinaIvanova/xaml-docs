@@ -14,9 +14,13 @@ __RadScheduleView__ control makes it easy to customize the look & feel of an __A
 
 This article will cover the following topics:
 
-* How to generate and use AppointmentStyleSelector
+* 
 
-* How to create a custom AppointmentStyleSelector.
+[How to generate and use AppointmentStyleSelector](#Styling_Appointments)
+
+* 
+
+[How to create a custom AppointmentStyleSelector.](#Using_the_AppointmentStyleSelector_to_style_Appointments)
 
 # Styling_AppointmentsGenerate and use AppointmentStyleSelector
 
@@ -67,19 +71,16 @@ where "*local*" is:
 
 	xmlns:local="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.ScheduleView"
 
-
-
-If you are using the default OfficeBlack theme or you've set a different theme with StyleManager, you should copy all the referenced resources from the RadScheduleView XAML file into your project.
-					
-
-If you are using [Implicit Styles](f7b879d9-62ca-42c3-a919-983c7cbc79a2) and merge the ResourceDictionaries, you will be able to reference the needed resources directly.
+>
+						If you are using the default OfficeBlack theme or you've set a different theme with StyleManager, you should copy all the referenced resources from the RadScheduleView XAML file into your project.
+					>
+						If you are using <link xlink:href="f7b879d9-62ca-42c3-a919-983c7cbc79a2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">Implicit Styles</link> and merge the ResourceDictionaries, you will be able to reference the needed resources directly.
 					
 
 Note that you have both __HorizontalStyle__ and __VerticalStyle__. 
 					RadScheduleView supports __Orientation__ for all its view definitions. Therefore a HorizontalStyle is applied when the appointment is horizontally oriented, while the VerticalStyle is applied when the appointment is vertically oriented.
 				>
-
-When making changes to the generated AppointmentStyleSelector, you should apply those changes to both the HorizontalStyle and the VerticalStyle in order for your appointments to look consistent in all views.
+						When making changes to the generated AppointmentStyleSelector, you should apply those changes to both the HorizontalStyle and the VerticalStyle in order for your appointments to look consistent in all views.
 					
 
 So, let's for example modify the background color and style of the appointments:
@@ -195,8 +196,7 @@ Next ,we are going to use these resources and create the selector. Create a new 
 		}
 
 >
-
-Note that you need to ensure that both horizontal and vertical cases have their corresponding styles - __horizontal styles__ are applied when the appointments have horizontal orientation (either by default or when the view they are placed in has been explicitly set a horizontal orientation), __vertical styles__ are applied when the appointments have vertical orientation(either by default or when the view they are placed in has been explicitly set a vertical orientation).
+						Note that you need to ensure that both horizontal and vertical cases have their corresponding styles - <legacyBold xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">horizontal styles</legacyBold> are applied when the appointments have horizontal orientation (either by default or when the view they are placed in has been explicitly set a horizontal orientation), <legacyBold xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">vertical styles</legacyBold> are applied when the appointments have vertical orientation(either by default or when the view they are placed in has been explicitly set a vertical orientation).
 					
 
 We add all needed Resources and group our ScheduleView  by the "Room" ResourceType:

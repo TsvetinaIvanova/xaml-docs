@@ -16,14 +16,22 @@ Because custom resources have a limited number of values, __RadScheduleView__ ca
 
 The purpose of this tutorial is to show you how to work with resources. The following topics will be covered:
 
-* Creating ResourceTypesCollection
+* 
 
-* Assigning ResourceType to a ResourceTypeCollection
+Creating __ResourceTypesCollection__
 
-* Assigning a Resource to a ResourceType (group)
+* 
+
+Assigning __ResourceType__ to a __ResourceTypeCollection__
+
+* 
+
+Assigning a __Resource__ to a __ResourceType__ (group)
           
 
-* Grouping appointments by Resources
+* 
+
+Grouping appointments by __Resources__
 
 # 
         Creating ResourceTypesCollection

@@ -17,11 +17,16 @@ The __RecurrenceRule__ class is the engine for creating and evaluating recurrenc
 The purpose of this tutorial is to show you:
 
 * 
-          The main properties exposed by the 
+          The main properties exposed by the __RecurrenceRule__ class:
+          
 
-* How to create a recurrence rule and associate it with an appointment#How_to_Create_a_Recurrence_Rule_and_Associate_it_With_an_Appointment
+* [RecurrencePattern](#RecurrencePattern)
 
-* How to add exception occurrences to the recurrence rule#How_Add_Exception_Occurrences_to_the_Recurrence_Rule
+* [Exceptions](#Exceptions)
+
+* [How to create a recurrence rule and associate it with an appointment](#How_to_Create_a_Recurrence_Rule_and_Associate_it_With_an_Appointment)
+
+* [How to add exception occurrences to the recurrence rule](#How_Add_Exception_Occurrences_to_the_Recurrence_Rule)
 
 # RecurrenceRule Class
 
@@ -46,7 +51,7 @@ The __RecurrenceRule__ class exposes an __Exceptions__ property, which allows yo
 # How_to_Create_a_Recurrence_Rule_and_Associate_it_With_an_AppointmentHow to Create a Recurrence Rule and Associate it With an Appointment
 
 The __RecurrenceRule__ class has only one public constructor, which accepts a __RecurrencePattern__ as a parameter.
-        >
+        
           The __RecurrencePattern__ is a mandatory part of the __RecurrenceRule__. Which means that when creating a new __RecurrenceRule__ you must associate the rule with a recurrence pattern.
         
 
@@ -102,10 +107,12 @@ __RadScheduleView's__ API permits you to add exception occurrences to the recurr
 The first one takes two parameters:
 
 * 
-            The first parameter is a 
+            The first parameter is a __DateTime__ which indicates when the exception occurs.
+          
 
 * 
-            The second parameter is an 
+            The second parameter is an __IAppointment__ instance. This is the exception appointment.
+          
 
 
 
@@ -148,7 +155,8 @@ One possible scenario of adding an exception to a recurrence rule is shown in th
 
 
 * 
-            Create a 
+            Create a [RecurrencePattern]({{slug:recurrencepattern}}).
+          
 
 
  __C#__
@@ -177,7 +185,8 @@ One possible scenario of adding an exception to a recurrence rule is shown in th
 
 
 
-* Create#How_to_Create_a_Recurrence_Rule_and_Associate_it_With_an_Appointment
+* [Create](#How_to_Create_a_Recurrence_Rule_and_Associate_it_With_an_Appointment) a __RecurrenceRule__ and associate the create recurrence pattern with it.
+          
 
 
  __C#__

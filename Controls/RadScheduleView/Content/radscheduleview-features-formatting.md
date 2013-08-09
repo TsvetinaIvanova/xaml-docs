@@ -16,11 +16,19 @@ The __RadScheduleView__ control provides a built-in date
 
 This article covers the following topics:
 
-* Formatting properties#formatting_properties
+* [Formatting properties](#formatting_properties)
 
 * 
           How to apply the formatting properties to the ViewDefinitions:
           
+
+* [DayViewDefinition](#DayViewDefinition)
+
+* [WeekViewDefinition](#WeekViewDefinition)
+
+* [MonthViewDefinition](#MonthViewDefinition)
+
+* [TimelineViewDefinition](#TimelineViewDefinition)
 
 
 
@@ -38,27 +46,30 @@ This article covers the following topics:
 - GroupHeaderDateStringFormat - sets the format applied on the Date
           GroupHeaders.
         >
-
-In this article
+            In this article
             custom dates and time format strings will be used for setting the various
             RadScheduleView's properties. For more information about the custom date
             and time format specifiers and the result string produced by each format
-            specifier, check out the [Custom Date and Time Format Strings](http://msdn.microsoft.com/en-us/library/8kb3ddd4.aspx)
+            specifier, check out the <externalLink xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><linkText>Custom Date and Time Format Strings</linkText><linkUri>http://msdn.microsoft.com/en-us/library/8kb3ddd4.aspx</linkUri></externalLink>
             topic.
-          >
-
-
+          ><para xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
               You will notice that some of the format strings start with {} and
               some don't. The two curly brackets are required when declaring a format
               string in XAML that starts with a opening curly bracket, in order to
               prevent the XAML parser from recognizing it as a markup extension. If
               the format string starts with a different character, the {} are not
               needed.
-            
+            </para>
+
+
 
 # How to apply the formatting properties to the ViewDefinitions
 
-# DayViewDefinitionDayViewDefinitionLet’s for example set the formatting properties of DayViewDefinition:
+# DayViewDefinitionDayViewDefinition
+
+
+
+Let’s for example set the formatting properties of DayViewDefinition:
 
 
  __XAML__
@@ -76,11 +87,20 @@ In this article
 	 </telerik:RadScheduleView>
 
 
+
+
+
+
                
             ![DayViewDefinition Formatting Properties](images/radscheduleview_features_formatstringsdayview.png)
 
+
+
 # WeekViewDefinitionWeekViewDefinition
-          Setting these properties to WeekViewDefinition will lead to similar
+
+
+
+Setting these properties to WeekViewDefinition will lead to similar
           result:
         
 
@@ -101,10 +121,18 @@ In this article
 	 </telerik:RadScheduleView>
 
 
+
+
                
             ![WeekViewDefinition Formatting Properties](images/radscheduleview_features_formatstringsweekview.png)
 
-# MonthViewDefinitionMonthViewDefinitionIn MonthViewDefinition you can set the following formatting properties:
+
+
+# MonthViewDefinitionMonthViewDefinition
+
+
+
+In MonthViewDefinition you can set the following formatting properties:
 
 
  __XAML__
@@ -122,11 +150,21 @@ In this article
 	    </telerik:RadScheduleView.ViewDefinitions>
 	</telerik:RadScheduleView>
 
+
+
 And the result is:
+
+
                
             ![MonthViewDefinition Formatting Properties](images/radscheduleview_features_formatstringsmonthview.png)
 
-# TimelineViewDefinitionTimelineViewDefinitionSetting the formatting properties in TimelineViewDefinition like this:
+
+
+# TimelineViewDefinitionTimelineViewDefinition
+
+
+
+Setting the formatting properties in TimelineViewDefinition like this:
 
 
  __XAML__
@@ -148,10 +186,17 @@ And the result is:
 	        </telerik:RadScheduleView.ViewDefinitions>
 	</telerik:RadScheduleView>
 
+
+
 results in the following look:
+
+
                
             ![TimelineView Formatting Properties](images/radscheduleview_features_formatstringstimelineview.png)
-          Check out the 
+
+
+
+Check out the 
           [online demo](http://demos.telerik.com/silverlight/?ScheduleView/CustomDateFormats)[RadScheduleView Custom Date Formats example](http://demos.telerik.com/wpf/) to see the formatting properties in
           action.
         

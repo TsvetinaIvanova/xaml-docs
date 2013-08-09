@@ -14,7 +14,8 @@ This topic describes the work flow for deleting an appointment in __RadScheduleV
 # Using UI
 
 * 
-            In order to delete an appointment in the 
+            In order to delete an appointment in the __RadScheduleView__ you can either select it and press __Del__ key or hover your mouse over it and click the delete key that appears in the upper right corner of the appointment.
+          
 
 * If the appointment you are trying to delete is single one and is not part of any recurrence, a simple confirmation dialog appears asking you to confirm the deletion. Click 'OK' to confirm the deletion or 'Cancel' to stop it.
 
@@ -26,9 +27,11 @@ This topic describes the work flow for deleting an appointment in __RadScheduleV
 
 * You can choose between two options:
 
-* 'Delete this occurrence'
+* __'Delete this occurrence'__ - delete only this specific occurrence of the whole series.
+          
 
-* 'Delete the series'
+* __'Delete the series'__ - delete all appointments that belong to this series.
+          
 
 Select the option you wish and click 'OK' to confirm the deletion or 'Cancel' to stop it.
 
@@ -39,9 +42,11 @@ Select the option you wish and click 'OK' to confirm the deletion or 'Cancel' to
 You can delete an appointment using the code. Just Call __Remove()__ method of the __RadScheduleView__ control. It returns whether or not  the appointment or the occurrence can be removed. This method has 2 overloads:
           
 
-* Remove(IAppointment appointment)
+* __Remove(IAppointment appointment)__ - the passed appointment is deleting.
+              
 
-* Remove(Occurrence occurrence)
+* __Remove(Occurrence occurrence)__ - the passed occurrence is deleting.
+              
 
 
  __C#__

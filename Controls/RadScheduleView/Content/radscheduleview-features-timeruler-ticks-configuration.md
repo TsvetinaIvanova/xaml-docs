@@ -37,23 +37,88 @@ This will lead to the following results:
 * In DayViewDefinition:
     	
 
+![radscheduleview features timeruler day View](images/radscheduleview_features_timeruler_dayView.png)
+
 * In WeekViewDefinition:
     	
 
-* In TimelineViewDefinition:>
+![radscheduleview features timeruler week View](images/radscheduleview_features_timeruler_weekView.png)
 
-You can check [Formatting]({{slug:formatting}}) where it is explained how the dates and times on the time ruler can be formatted.
+* In TimelineViewDefinition:
+
+![radscheduleview features timeruler timeline View](images/radscheduleview_features_timeruler_timelineView.png)>
+    	You can check <link xlink:href="20DD7341-C49F-4A33-AA28-7C7968DE4E40" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">this article</link> where it is explained how the dates and times on the time ruler can be formatted.
     	
 
 # Setting the properties
 
 The ticklength properties can be set in the XAML and in code-behind:
 
-* In XAML:
+* 
+
+In XAML:
        
 
-* In Code-Behind:
+You can use the following formats:
        
+
+* min,  minute, minutes; 
+
+* h, hour, hours;
+
+* d, day, days;
+
+* w, week, weeks;
+
+* m, month, months;
+
+* y, year, years.
+
+Here are some examples:
+
+
+
+
+ __XAML__
+    
+
+
+	<telerik:DayViewDefinition MinorTickLength="5min" MajorTickLength="1h" />				
+	<telerik:TimelineViewDefinition MinorTickLength="1day" MajorTickLength="2days" GroupTickLength="1week" />
+
+
+
+* 
+
+In Code-Behind:
+       
+
+The same can be set in code-behind like this:
+
+
+
+
+ __C#__
+    
+
+
+	var dayView = new DayViewDefinition()
+	{
+		MinorTickLength = new FixedTickProvider(new DateTimeInterval(5, 0, 0, 0, 0)),
+		MajorTickLength = new FixedTickProvider(new DateTimeInterval(0, 1, 0, 0, 0))
+	};
+	this.ScheduleView.ViewDefinitions.Add(dayView);
+	
+	
+	var timelineView = new TimelineViewDefinition()
+	{
+		MinorTickLength = new FixedTickProvider(new DateTimeInterval(1, 0)),
+		MajorTickLength = new FixedTickProvider(new DateTimeInterval(2, 0)),
+		GroupTickLength = new FixedTickProvider(new DateTimeInterval(0, 0, 1))
+	};
+	this.ScheduleView.ViewDefinitions.Add(timelineView);
+
+
 
 You can check the ScheduleView Configurator example at 
       	[RadControls for Silverlight demos](http://demos.telerik.com/silverlight/#ScheduleView/ScheduleViewConfigurator)[RadControls for WPF demos](http://demos.telerik.com/wpf/) to see the tick length properties in action.

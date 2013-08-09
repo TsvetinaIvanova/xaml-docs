@@ -11,33 +11,33 @@ publish:True
 __RadScheduleView__ exposes its functionality through various commands that can be executed on its behalf. All commands are placed in the static class __RadScheduleViewCommands__. 
       The purpose of this tutorial is to show you all of the commands exposed by the __RadScheduleViewCommands__ class and how to execute them.
 
-* CreateAppointment / CreateAppointmentWithDialog Commands
+* [CreateAppointment / CreateAppointmentWithDialog Commands](#Create_Appointment)
 
-* CreateInlineAppointment Command
+* [CreateInlineAppointment Command](#Create_Inline_Appointment)
 
-* EditAppointment Command
+* [EditAppointment Command](#Edit_Appointment)
 
-* DeleteAppointment Command
+* [DeleteAppointment Command](#Delete_Appointment)
 
-* EditRecurrenceRule Command
+* [EditRecurrenceRule Command](#Edit_RecurrenceRule)
 
-* DeleteRecurrenceRule Command
+* [DeleteRecurrenceRule Command](#Delete_RecurrenceRule)
 
-* EditParentAppointment Command
+* [EditParentAppointment Command](#Edit_ParentAppointment)
 
-* SetDayViewMode Command
+* [SetDayViewMode Command](#SetDayViewMode)
 
-* SetWeekViewMode Command
+* [SetWeekViewMode Command](#SetWeekViewMode)
 
-* SetMonthViewMode Command
+* [SetMonthViewMode Command](#SetMonthViewMode)
 
-* SetTimelineViewMode Command
+* [SetTimelineViewMode Command](#SetTimelineViewMode)
 
-* IncreaseVisibleDateLarge /  DecreaseVisibleDateLarge Commands
+* [IncreaseVisibleDateLarge /  DecreaseVisibleDateLarge Commands](#IncreaseVisibleDateLarge)
 
-* SetAppointmentImportance Command
+* [SetAppointmentImportance Command](#SetAppointmentImportance)
 
-* GoToPreviousAppointment / GoToNextAppointment Commands
+* [GoToPreviousAppointment / GoToNextAppointment Commands](#GoToPreviousAppointment)
 
 # Create_AppointmentCreateAppointment / CreateAppointmentWithDialog Commands
 
@@ -74,9 +74,7 @@ Use it when you want to create a new appointment via the inline editing. If no p
 
 	RadScheduleViewCommands.CreateInlineAppointment.Execute(null, ScheduleView);
 
->
-
-IsInlineEditingEnabled property of the RadScheduleView should be set in order to use the command.
+>IsInlineEditingEnabled property of the RadScheduleView should be set in order to use the command.
       		
 
 # Edit_AppointmentEditAppointment Command

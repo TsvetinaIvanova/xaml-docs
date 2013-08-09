@@ -15,9 +15,9 @@ There are two approaches you can use:
 
 
 
-* Using Filtering feature of the ScheduleView;
+* [Using Filtering feature of the ScheduleView;](#Using_Filtering)
 
-* Adding/removing resources at run time.
+* [Adding/removing resources at run time.](#Adding_Resources)
 
 # Using_FilteringUsing Filtering feature of the ScheduleView
 
@@ -183,18 +183,15 @@ So checking/unchecking the checkboxes will update the visible Resources in the V
 
 ![radscheduleview updateresources 4](images/radscheduleview_updateresources_4.png)
 
-![radscheduleview updateresources 3](images/radscheduleview_updateresources_3.png)>
-
-You can check this approach in RadScheduleView Grouping and Filtering demo 
-		[here](http://demos.telerik.com/silverlight/#ScheduleView/Grouping/GroupingAndFiltering)[here](http://demos.telerik.com/wpf/)
+![radscheduleview updateresources 3](images/radscheduleview_updateresources_3.png)>You can check this approach in RadScheduleView Grouping and Filtering demo 
+		<buildflag name="silverlight" xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><externalLink><linkText>here</linkText><linkUri>http://demos.telerik.com/silverlight/#ScheduleView/Grouping/GroupingAndFiltering</linkUri></externalLink></buildflag><buildflag name="wpf" xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><externalLink><linkText>here</linkText><linkUri>http://demos.telerik.com/wpf/</linkUri></externalLink></buildflag>
 		.
 
 # Adding_ResourcesAdding/removing resources at run time
 
 When adding/removing resources from the Resources collection of  a certain resource type, the changes will not be reflected in the View immediately - you should also reset the whole ResourceType.  Just remove and add it again to the ResourceTypesSource collection of the ScheduleView.
     	>
-
-We intentionally do not listen for changes in the Resources collection of a ResourceType (actually all of its properties) because of performance considerations. That’s why resetting the ResourceType is needed in these cases.
+    		We intentionally do not listen for changes in the Resources collection of a ResourceType (actually all of its properties) because of performance considerations. That’s why resetting the ResourceType is needed in these cases.
     		
 
 For example, if we have the RadScheduleView grouped again by “Location” ResourceType:

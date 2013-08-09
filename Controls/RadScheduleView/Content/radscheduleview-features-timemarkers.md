@@ -13,9 +13,9 @@ __RadScheduleView__ provides you with a built-in time markers support. You can a
 
 This chapter will cover the following topics:
 
-* Assign Time Marker to an Appointment run-time
+* [Assign Time Marker to an Appointment run-time](#Assign_TimeMarker_Runtime)
 
-* Adding TimeMarkers to the RadScheduleView
+* [Adding TimeMarkers to the RadScheduleView](#Adding_TimeMarkers)
 
 # Assign_TimeMarker_RuntimeAssign Time Marker to an Appointment run-time
 
@@ -37,9 +37,9 @@ However, there are cases when new time markers are needed and you have to create
 
 Each time marker has three important characteristics:
 
-* TimeMarkerName
+* __TimeMarkerName__ - each time marker has a name assigned. It is used to distinguish that time marker amongst the others in your application.
 
-* TimeMarkerBrush
+* __TimeMarkerBrush__ - each category has a color brush assigned.
 
 The time markers available in the RadScheduleView are defined in the TimeMarkersSource property (IEnumarable). Just add or remove time markers to that collection in order to add or remove time markers to the RadScheduleView itself.
 		

@@ -6,10 +6,8 @@ slug: customizing-dialog-windows
 tags:customizing,dialog,windows
 publish:True
 ---
->
-
-To customize the ScheduleView dialogs, e.g. the window content, please read the following article:
-  		[Custom Dialogs]({{slug:custom-dialogs}})
+>To customize the ScheduleView dialogs, e.g. the window content, please read the following article:
+  		<link xlink:href="85B3264C-F847-4860-95E8-45BD51423977" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" />
 
 The dialogs in RadScheduleView are displayed by default in RadWindow instances. The RadWindow properties can be customized or it can be entirely replaced with any other ContentControl.
 RadScheduleView uses the __IScheduleViewDialogHostFactory__ and __IScheduleViewDialogHost__ interfaces to abstract the dialog hosts and their generation. The default implementation of the IScheduleViewDialogHostFactory interface that creates RadWindow instances is named ScheduleViewDialogHostFactory.

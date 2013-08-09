@@ -6,9 +6,7 @@ slug: view-specific-properties
 tags:view,specific,properties
 publish:True
 ---
->
-
-You can check [Configuration]({{slug:configuration}}) article for more information about the common for all views properties.
+>You can check <link xlink:href="0973c9f2-dad2-400b-be85-93bdef8c4de0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" /> article for more information about the common for all views properties.
 
 # DayView and WeekView specific properties
 

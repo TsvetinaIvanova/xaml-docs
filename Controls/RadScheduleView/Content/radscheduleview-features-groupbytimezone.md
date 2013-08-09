@@ -40,14 +40,21 @@ This type of grouping groups the appointments by their TimeZone property. One ap
              
           ![Group By TimeZone](images/radscheduleview_timezonegrouping1.png)
 
->
-
-Grouping by TimeZone is not supported for MonthViewDefinition. 
+><para xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">Grouping by TimeZone is not supported for MonthViewDefinition. </para>
 
 # 
         TimeZonesSource property
       
+
 The displayed groups can be configured by the __TimeZonesSource __property of the control. This property can be bound to any collection of __TimeZoneInfo objects__.
-If this property is not set, all system time zones will be displayed. the Time Zones that will be displayed are TimeZoneInfo.Local and TimeZoneInfo.Utc.When the view is grouped by a TimeZone, the EditApointmentDialog will display the Start and End time converted to the corresponding TimeZone: 
+If this property is not set, all system time zones will be displayed. the Time Zones that will be displayed are TimeZoneInfo.Local and TimeZoneInfo.Utc.
+
+
+
+When the view is grouped by a TimeZone, the EditApointmentDialog will display the Start and End time converted to the corresponding TimeZone: 
+
+
+
+
          
       ![Group By TimeZone](images/radscheduleview_timezonegrouping2.png)

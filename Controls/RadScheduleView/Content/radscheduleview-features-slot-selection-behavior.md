@@ -22,9 +22,51 @@ This tutorial will go through the steps needed to create a custom SlotSelectionB
 
 * Create a custom SlotSelectionBehavior class that inherits SlotSelectionBehavior class:
 
+
+ __C#__
+    
+
+
+	public class CustomSlotSelectionBehavior : SlotSelectionBehavior
+	{
+	}
+
+
+
 * Override the GetSelectionOverride method:
 
-* All that is left is to attach the newly create custom behavior to the ScheduleView control:Finally the ScheduleView control in the XAML should look like this:
+
+ __C#__
+    
+
+
+	public class CustomSlotSelectionBehavior : SlotSelectionBehavior
+	{
+		protected override Slot GetSelectionOverride(SlotSelectionState state, Slot currentSlot)
+		{
+			Slot newSlotSelection = new Slot(currentSlot.Start, currentSlot.End.AddMinutes(30));
+			return base.GetSelectionOverride(state, newSlotSelection);
+		}
+	}
+
+
+
+* All that is left is to attach the newly create custom behavior to the ScheduleView control:
+
+
+ __XAML__
+    
+
+
+	<telerik:RadScheduleView>
+		...
+		<telerik:RadScheduleView.SlotSelectionBehavior>
+			<local:CustomSlotSelectionBehavior/>
+		</telerik:RadScheduleView.SlotSelectionBehavior>
+		...
+	</telerik:RadScheduleView>
+
+Finally the ScheduleView control in the XAML should look like this:
 
 
  __XAML__
@@ -43,10 +85,10 @@ This tutorial will go through the steps needed to create a custom SlotSelectionB
 
 The end result is:
 
-* With the default SlotSelectionBehavior:
+* With the default SlotSelectionBehavior:![radscheduleview features slot selection behavior 0](images/radscheduleview_features_slot_selection_behavior_0.png)
 
-* With the default SlotSelectionBehavior (creating new appointment with double click on a slot):
+* With the default SlotSelectionBehavior (creating new appointment with double click on a slot):![radscheduleview features slot selection behavior 1](images/radscheduleview_features_slot_selection_behavior_1.png)
 
-* With the custom SlotSelectionBehavior:
+* With the custom SlotSelectionBehavior:![radscheduleview features slot selection behavior 2](images/radscheduleview_features_slot_selection_behavior_2.png)
 
-* With the custom SlotSelectionBehavior (creating new appointment with double click on a slot):[AppointmentSelectionBehavior]({{slug:appointmentselectionbehavior}})[Custom Slots]({{slug:custom-slots}})[Special and ReadOnly slots]({{slug:special-and-readonly-slots}})
+* With the custom SlotSelectionBehavior (creating new appointment with double click on a slot):![radscheduleview features slot selection behavior 3](images/radscheduleview_features_slot_selection_behavior_3.png)[AppointmentSelectionBehavior]({{slug:appointmentselectionbehavior}})[Custom Slots]({{slug:custom-slots}})[Special and ReadOnly slots]({{slug:special-and-readonly-slots}})

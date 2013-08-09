@@ -10,11 +10,11 @@ publish:True
 
 This article covers the following topics:
 
-* How to hide a RadScheduleView dialog#hidedialog
+* [How to hide a RadScheduleView dialog](#hidedialog)
 
-* How to skip ConfirmDeleteDialog.#skipconfirmdeletedialog
+* [How to skip ConfirmDeleteDialog.](#skipconfirmdeletedialog)
 
-* How to preselect a certain option in RecurrenceChoiceDialog.#preselectrecurrencechoicedialog
+* [How to preselect a certain option in RecurrenceChoiceDialog.](#preselectrecurrencechoicedialog)
 
 
 
@@ -59,9 +59,7 @@ For example the view model for the __EditAppointmentDialog__ is __AppointmentDia
 	    End If
 	End Sub
 
->
-
-To learn more about __RadScheduleView__ events, check [Overview]({{slug:overview}}).
+>To learn more about <legacyBold xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">RadScheduleView</legacyBold> events, check <link xlink:href="DA2E2C18-FE43-486A-B8E2-055460967DE8" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">here</link>.
 
 # skipconfirmdeletedialogHow to skip ConfirmDeleteDialog
 
@@ -131,4 +129,4 @@ By default  “Open/Delete the occurrence” option is selected in RecurrenceCho
 	   End If
 	End Sub
 
->Check [Custom Dialogs]({{slug:custom-dialogs}}) for more information about RadScheduleView dialogs.
+Check [Custom Dialogs]({{slug:custom-dialogs}}) for more information about RadScheduleView dialogs.

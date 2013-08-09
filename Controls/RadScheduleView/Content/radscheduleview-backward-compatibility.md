@@ -12,5 +12,7 @@ This article lists the breaking changes of the control.
 
 # Section1Q2 2012
 
-* The InvertedBooleanConverter in Telerik.Windows.Controls.ScheduleView.dll is marked as obsolete. The one from Telerik.Windows.Controls assembly should be used instead.        	
+* 
+
+The __InvertedBooleanConverter__ in Telerik.Windows.Controls.ScheduleView.dll is marked as obsolete. The one from Telerik.Windows.Controls assembly should be used instead.        	
         	

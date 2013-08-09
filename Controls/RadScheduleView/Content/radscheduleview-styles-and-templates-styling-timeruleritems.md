@@ -13,9 +13,9 @@ The __RadScheduleView__ control offers a wide range of customizable TimeRulerIte
 
 This article discusses how to use the TimeRulerItemStyleSelector to customize the appearance of TimeRulerItems. We will dig further into the customization process and create a custom TimeRulerItemStyleSelector, as well. This article covers the following topics:
 
-* How to generate and use the TimeRulerItemStyleSelector#generate-and-use-timeruleritemstyleselector
+* [How to generate and use the TimeRulerItemStyleSelector](#generate-and-use-timeruleritemstyleselector)
 
-* How to create a custom TimeRulerItemStyleSelector#create-custom-timeruleritemstyleselector
+* [How to create a custom TimeRulerItemStyleSelector](#create-custom-timeruleritemstyleselector)
 
 # generate-and-use-timeruleritemstyleselectorGenerate and use the TimeRulerItemStyleSelector
 
@@ -322,7 +322,7 @@ To create a custom TimeRulerItemStyleSelector, inherit the __OrientedTimeRulerIt
 	 End Function
 	End Class
 
->If you need to take advantage of the __activeViewDefinition__ in the body of the SelectStyle method, it is important to inherit the __OrientedTimeRulerItemStyleSelector__, which is located in __Telerik.Windows.Controls__ namespace, rather than the regular StyleSelector class.
+If you need to take advantage of the __activeViewDefinition__ in the body of the SelectStyle method, it is important to inherit the __OrientedTimeRulerItemStyleSelector__, which is located in __Telerik.Windows.Controls__ namespace, rather than the regular StyleSelector class.
 
 We use the __Type__ property of the __TickData__ class to determine whether the item is a major or a minor tick. Other properties of the TickData class include: __DateData__, __DateTime__, __Duration__ and __Offset__.
 

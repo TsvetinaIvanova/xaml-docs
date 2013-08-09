@@ -17,12 +17,72 @@ The [RecurrenceRule]({{slug:recurrencerule}}) class is the engine for creating a
 The purpose of this tutorial is to show you:
 
 * 
-          The main properties exposed by the 
+          The main properties exposed by the __RecurrencePattern__ class:
+          
+
+* [Frequency](#Frequency)
+
+* [MinutesOfHour](#MinutesOfHour)
+
+* [HoursOfDay](#HoursOfDay)
+
+* [DaysOfWeekMask](#DaysOfWeekMask)
+
+* [Interval](#Interval)
+
+* [DayOfMonth](#DayOfMonth)
+
+* [DayOrdinal](#DayOrdinal)
+
+* [MonthOfYear](#MonthOfYear)
+
+* [MaxOccurrences](#MaxOccurrences)
+
+* [RepeatUntil](#RepeatUntil)
 
 * 
-          The main methods exposed by the 
+          The main methods exposed by the __RecurrencePattern__ class:
+          
 
-* Examples
+* [Copy()](#Copy())
+
+* [CopyFrom](#CopyFrom)
+
+* [Examples](#Examples)
+					 - show you how to combine the exposed by the __RecurrencePattern__ class properties to configure repeating appointments with ultimate flexibility. The following cases will be examined:
+          
+
+* [Create](#every_day_recurring_appointment)
+							 every day recurring appointment.
+            
+
+* [Create](#every_week_day_recurring_appointment)
+							 every __week__ day recurring appointment.
+            
+
+* [Create](#every_n_days_appointment)
+							 an appointment that occurs on every "n" days.
+            
+
+* [Create](#every_n-th_day_and_interval_is_m-months)
+							 an appointment that occurs on every "n-th" day of the month and the interval between each recurrence is "m" months.
+            
+
+* [Create](#n-th_week_day_and_interval_is_m-months)
+							 an appointment that occurs on every "n-th" __week__ day and the interval between each recurrence is "m" months.
+            
+
+* [Create](#yearly_appointment)
+							 a yearly appointment.
+            
+
+* [Set](#Set_the_maximum_occurrences_of_the_appointment)
+							 the maximum occurrences of the appointment.
+            
+
+* [Set](#Set_the_end_date_of_the_appointment)
+						 the end date of the appointment's occurrences.
+            
 
 # RecurrencePattern_ClassRecurrencePattern Class
 
@@ -40,33 +100,33 @@ The next several sections describe the main properties and methods exposed by th
 If you want to set the __frequency__ of the recurrence, you need to set the __RecurrencePattern__'s __Frequency__ property. Its values are predefined in the __RecurrenceFrequency__ enumeration, which exposes the following values:
         
 
-* Minutely
+* __Minutely__ (available since Q3 2012 SP1) - use __RecurrenceFrequency.Minutely__ whenever you want the appointment to occur every minute.
+					
 
-* Hourly
+* __Hourly__ (available since Q3 2012 SP1) - use __RecurrenceFrequency.Hourly__ whenever you want the appointment to occur every hour.
+					
 
-* Daily
+* __Daily__ - use __RecurrenceFrequency.Daily__ whenever you want the appointment to occur every day.
+          
 
-* Monthly
+* __Monthly__ - use __RecurrenceFrequency.Monthly__ whenever you want the appointment to occur every month.
+          
 
-* Weekly
+* __Weekly__ - use __RecurrenceFrequency.Weekly__ whenever you want the appointment to occur every week.
+          
 
-* Yearly>
-
-The __RecurrenceFrequency__ enumeration exposes also the following values:
+* __Yearly__ - use __RecurrenceFrequency.Yearly__ whenever you want the appointment to occur every year.
+          >
+              The <legacyBold xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">RecurrenceFrequency</legacyBold> enumeration exposes also the following values:
             
 
-* Secondly
+* __Secondly__
 
-* None
-
-__However, these values are invalid recurrence frequency and should not be used.__
+* __None__><legacyBold xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">However, these values are invalid recurrence frequency and should not be used.</legacyBold>
 
 >
-
-The default value of the __RecurrencePattern__'s __Frequency__ property is __RecurrenceFrequency.None__. Which means that the __Frequency__ property is a mandatory property and you should always set it.
-					>
-
-Minutely and Hourly Frequency can be set only with code ( not from the EditAppointmentDialog).  In order to display these options, you should [Custom Dialogs]({{slug:custom-dialogs}}) and add them in the template manually. 
+          The default value of the <legacyBold xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">RecurrencePattern</legacyBold>'s <legacyBold xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">Frequency</legacyBold> property is <legacyBold xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">RecurrenceFrequency.None</legacyBold>. Which means that the <legacyBold xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">Frequency</legacyBold> property is a mandatory property and you should always set it.
+					>Minutely and Hourly Frequency can be set only with code ( not from the EditAppointmentDialog).  In order to display these options, you should <link xlink:href="85B3264C-F847-4860-95E8-45BD51423977" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">customize the EditAppointmentDialogStyle</link> and add them in the template manually. 
 
 # MinutesOfHourMinutesOfHour
 
@@ -81,31 +141,31 @@ When you want to specify the hours of the day when the appointment occurs, you s
 When you want to set the days of the week of the recurrence, you need to set the __RecurrencePattern__'s __DaysOfWeekMask__ property. Its values are predefined in the __RecurrenceDays__ enumeration, which exposes the following values:
         
 
-* EveryDay
+* __EveryDay__
 
-* Friday
+* __Friday__
 
-* Monday
+* __Monday__
 
-* Saturday
+* __Saturday__
 
-* Sunday
+* __Sunday__
 
-* Thursday
+* __Thursday__
 
-* Tuesday
+* __Tuesday__
 
-* Wednesday
+* __Wednesday__
 
-* WeekDays
+* __WeekDays__
 
-* WeekendDays
+* __WeekendDays__
 
-* None>
+* __None__
           The default value of the __RecurrencePattern__'s __DaysOfWeekMask__ property is __RecurrenceDays.None__. However, the __DaysOfWeekMask__ is not a mandatory property.
-        >__RecurrenceDays.WeekDays__ is equivalent to __RecurrenceDays.Monday | RecurrenceDays.Tuesday | RecurrenceDays.Wednesday | RecurrenceDays.Thursday | RecurrenceDays.Friday__.
-        >__RecurrenceDays.WeekendDays__ is equivalent to __RecurrenceDays.Saturday | RecurrenceDays.Sunday.__>__RecurrenceDays.EveryDay__ is equivalent to __RecurrenceDays.Monday | RecurrenceDays.Tuesday | RecurrenceDays.Wednesday | RecurrenceDays.Thursday | RecurrenceDays.Friday | RecurrenceDays.Saturday | RecurrenceDays.Sunday__.
-        >__Enum__ members are often used in logical operation to create a combination of values. Often you should set more than one value of the __DaysOfWeekMask__ property, like in the 
+        __RecurrenceDays.WeekDays__ is equivalent to __RecurrenceDays.Monday | RecurrenceDays.Tuesday | RecurrenceDays.Wednesday | RecurrenceDays.Thursday | RecurrenceDays.Friday__.
+        __RecurrenceDays.WeekendDays__ is equivalent to __RecurrenceDays.Saturday | RecurrenceDays.Sunday.____RecurrenceDays.EveryDay__ is equivalent to __RecurrenceDays.Monday | RecurrenceDays.Tuesday | RecurrenceDays.Wednesday | RecurrenceDays.Thursday | RecurrenceDays.Friday | RecurrenceDays.Saturday | RecurrenceDays.Sunday__.
+        __Enum__ members are often used in logical operation to create a combination of values. Often you should set more than one value of the __DaysOfWeekMask__ property, like in the 
             [Example](#Examples)
             section at the end of the topic.
         
@@ -113,9 +173,9 @@ When you want to set the days of the week of the recurrence, you need to set the
 # IntervalInterval
 
 If you want to set the number of days between each recurrence, you need to specify the __RecurrencePattern__'s __Interval__ property.
-        >
+        
           The default value of the __RecurrencePattern__'s __Interval__ property is 1.
-        >
+        
           Combining the __Interval__ property with the __DaysOfWeekMask__ and __Frequency__ pattern gives you even more flexibility when creating recurring appointments. For more information take a look at the 
             [Example](#Examples) section at the end of the topic.
         
@@ -321,9 +381,9 @@ Creating an every day recurring event is extremely simple - you just need to set
 
 
 The result of the above example will be a __RecurrencePattern__ which will create an appointment every week day, like on the image below.
-        ![RadScheduleView RecurrencePattern](images/radscheduleview_recurrencypattern_2.png)>
+        ![RadScheduleView RecurrencePattern](images/radscheduleview_recurrencypattern_2.png)
           Sometimes you may want to create an appointment that occurs during the __weekend__ days, instead of every __week__ day. The only thing you should change is to set the __DaysOfWeekMask__ property to __RecurrenceDays.WeekendDays__.
-        >
+        
           If you want to create an appointment that occurs every specific week day (Monday, Tuesday, etc.), you need only to set the correct value for the __DaysOfWeekMask__ property. For example, in order to create an appointment that occurs every Friday, set the __DaysOfWeekMask__ property to __RecurrenceDays.Friday__.
         
 
@@ -333,13 +393,16 @@ When you want to create an appointment that occurs on every "n" days, you should
         
 
 * 
-            Set the 
+            Set the __Frequency__ property to __RecurrenceFrequency.Daily__.
+          
 
 * 
-            Set the 
+            Set the __DaysOfWeekMask__ property to __RecurrenceDays.EveryDay__.
+          
 
 * 
-            Set the 
+            Set the __Interval__ property to 3.
+          
 
 
  __C#__
@@ -369,7 +432,7 @@ When you want to create an appointment that occurs on every "n" days, you should
 
 
 
-Executing the previous pattern will result in creating an appointment that occurs on every third day. See the next image for the result.![RadScheduleView RecurrencePattern](images/radscheduleview_recurrencypattern_3.png)>
+Executing the previous pattern will result in creating an appointment that occurs on every third day. See the next image for the result.![RadScheduleView RecurrencePattern](images/radscheduleview_recurrencypattern_3.png)
           In this example, the key moment is setting the __Interval__ property. For example, if you want the number of days between each recurrence to be 4, 5, 6 or n days, then you just need to set the correct value to the __Interval__ property.
         
 
@@ -379,13 +442,16 @@ For example, if you want to create an appointment that occurs on every __fifth__
         
 
 * 
-            Set the 
+            Set the __DayOfMonth__ property to 5.
+          
 
 * 
-            Set the 
+            Set the __Frequency__ property to __RecurrenceFrequency.Monthly__.
+          
 
 * 
-            Set the 
+            Set the __Interval__ property to 2.
+          
 
 
  __C#__
@@ -420,16 +486,20 @@ For example, if you want to create an appointment that occurs on every __fifth__
 For example, if you want to create an appointment that occurs on every second Monday of the month and the interval between each recurrence is two months, then you should perform the following steps:
 
 * 
-            Set the 
+            Set the __DayOrdinal__ to 2.
+          
 
 * 
-            Set the 
+            Set the __Frequency__ property to __RecurrenceFrequency.Monthly__.
+          
 
 * 
-            Set the 
+            Set the __DaysOfWeekMask__ property to __RecurrenceDays.Monday__.
+          
 
 * 
-            Set the 
+            Set the __Interval__ property to 2.
+          
 
 
  __C#__
@@ -466,13 +536,16 @@ For example, if you want to create an appointment that occurs on every second Mo
 For example, if you want to create an appointment that occurs on 13th of November each year, then you should perform the following steps:
 
 * 
-            Set the 
+            Set the __Frequency__ property to __RecurrenceFrequency.Yearly__.
+          
 
 * 
-            Set the 
+            Set the __MonthOfYear__ to 11.
+          
 
 * 
-            Set the 
+            Set the __DayOfMonth__ to 13.
+          
 
 
  __C#__

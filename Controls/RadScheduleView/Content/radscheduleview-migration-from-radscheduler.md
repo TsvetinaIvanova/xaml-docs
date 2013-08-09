@@ -191,24 +191,20 @@ RadScheduleView events
 __AppointmentCreating__ – occurs when an appointment is going to be created. Via the __AppointmentCreatingEventArgs__ the following properties can be accessed:
               
 
-* NewAppointment
+* __NewAppointment__ - gets or sets the appointment that is going to be added. By default this property is null. When you create a custom appointment here is the moment to pass it.
+                
 
-* Cancel
+* __Cancel__ - set this boolean property to True, when you want to cancel the event.
+                
 
 __AppointmentCreating__ – occurs when an appointment is going to be created. Via the AppointmentCreatingEventArgs you can access the following properties:
               
 
-* Appointment
+* __Appointment__ - gets the newly created appointment. This property is read-only and you can use it to initialize the appointment.
+                
 
-* Cancel
-
-__AppointmentCreated__ - occurs when the new appointment is created and the edit appointment dialog window is about to be shown.
-              
-
-Via the __AppointmentCreatedEventArgs__ you can access the following properties:
-              
-
-* CreatedAppointment
+* __Cancel__ - set this boolean property to True, when you want to cancel the event
+                
 
 __AppointmentCreated__ - occurs when the new appointment is created and the edit appointment dialog window is about to be shown.
               
@@ -216,7 +212,17 @@ __AppointmentCreated__ - occurs when the new appointment is created and the edit
 Via the __AppointmentCreatedEventArgs__ you can access the following properties:
               
 
-* CreatedAppointment__AppointmentAdding__, __AppointmentAdded__Not supported.
+* __CreatedAppointment__ - this is the newly created appointment, initialized with its default values. The property is read-only.
+                
+
+__AppointmentCreated__ - occurs when the new appointment is created and the edit appointment dialog window is about to be shown.
+              
+
+Via the __AppointmentCreatedEventArgs__ you can access the following properties:
+              
+
+* __CreatedAppointment__ - this is the newly created appointment, initialized with its default values. The property is read-only.
+                __AppointmentAdding__, __AppointmentAdded__Not supported.
 
 __AppointmentEditing__ - occurs when the appointment edit command is initialized and the edit appointment dialog window is about to be shown.
               
@@ -224,15 +230,20 @@ __AppointmentEditing__ - occurs when the appointment edit command is initialized
 Via the __AppointmentEditingEventArgs__ you can access the following properties:
               
 
-* Appointment
+* __Appointment__ - the appointment that is going to be edited. The property is read-only.
+                
 
-* AppointmentEditAction
+* __AppointmentEditAction__ - gets the appointment edit action. The property is read-only. The values for this property are predefined in the AppointmentEditAction enumeration, which exposes the following fields: Drag, Edit, Resize
+                
 
-* ExceptionAction
+* __ExceptionAction__ - gets the exception action. The property is read-only. The values for this property are predefined in the ExceptionAction enumeration, which exposes the following fields: Add, Delete, Edit, None
+                
 
-* ExceptionOccurrence
+* __ExceptionOccurrence__ - gets the edited exception occurrence. The property is read-only. When you edit a regular appointment, this property is null.
+                
 
-* Cancel
+* __Cancel__ - set this boolean property to True, when you want to cancel the event.
+                
 
 __AppointmentEditing__ - occurs when the appointment edit command is initialized and the edit appointment dialog window is about to be shown.
               
@@ -240,11 +251,14 @@ __AppointmentEditing__ - occurs when the appointment edit command is initialized
 Via the __AppointmentEditingEventArgs__ you can access the following properties:
               
 
-* Appointment
+* __Appointment__ - gets the appointment that is going to be edited. This property is read-only.
+                
 
-* Occurrence
+* __Occurrence__ - gets the occurrence that is going to be edited. If the appointment is not recurrent, the value is null. This property is read-only.
+                
 
-* Cancel
+* __Cancel__ - set this boolean property to True, when you want to cancel the event.
+                
 
 __AppointmentDeleting__ - occurs when the appointment is going to be removed from the data source.
               
@@ -252,9 +266,11 @@ __AppointmentDeleting__ - occurs when the appointment is going to be removed fro
 Via the __AppointmentDeletingEventArgs__ you can access the following properties:
               
 
-* Appointment
+* __Appointment__ - the appointment that is going to be deleted from the data source. The property is read-only.
+                
 
-* Cancel
+* __Cancel__ - set this boolean property to True, when you want to cancel the event.
+                
 
 __AppointmentDeleting__ - occurs when the appointment is going to be removed from the data source.
               
@@ -286,17 +302,22 @@ Via the __AppointmentSavingEventArgs__ you can access the following property:
                   Cancel - set this boolean property to True, when you want to cancel the event.
                 
 
-* ActiveViewDefinitionChanged
+* __ActiveViewDefinitionChanged__ - fired whenever the __ViewMode__ of a RadScheduler is changed. Via the sender argument of the __ActiveViewDefinitionChanged__ event handler, you can get access to the RadScheduler. This argument is of type object, but can be cast to the RadScheduler type.
+                
 
-* SchedulerPerformedGrouping
+* __SchedulerPerformedGrouping__
 
-* SelectedViewStartDateChanged
+* __SelectedViewStartDateChanged__ - occurs when the __DayStartTime__ of a MultidayViewDefinition is changed. Via the sender argument of the SelectedViewStartDateChanged event handler, you can get access to the RadScheduler. This argument is of type object, but can be cast to the RadScheduler type.
+                
 
-* AppointmentSelectionChanged
+* __AppointmentSelectionChanged__ - occurs when an appointments is selected or deselected.
+                
 
-* VisibleRangeChanged
+* __VisibleRangeChanged__ – occurs when the view or the Start/End date is changed.
+                
 
-* ShowDialog
+* __ShowDialog__ -  occurs before scheduleView dialog is shown. You can use it to cancel the showing of the dialog. ( e.Cancel = true;)
+                
 
  
 

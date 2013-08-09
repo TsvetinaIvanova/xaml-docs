@@ -49,9 +49,7 @@ When the models are defined, we need to create the __ViewModel__ (refer to __Sch
 		<Button Grid.Row="1" Content="Save data" HorizontalAlignment="Center" Command="{Binding SaveCommand}" VerticalAlignment="Center"/>
 	</Grid>
 
->
-
-The appointments are loaded from the database when the VisibleRangeChanged command is executed.
+>The appointments are loaded from the database when the VisibleRangeChanged command is executed.
 
 When "Save data" button is clicked, we save the data to the server.
 
@@ -152,8 +150,7 @@ Also, we need to handle the Appointments.CollectionChanged event and in the hand
 		}
 	}
 
-
-
-You can download the complete project from 
-        [here](http://www.telerik.com/community/code-library/wpf/scheduleview/binding-to-database-example.aspx).
+>
+        You can download the complete project from 
+        <externalLink xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><linkText>here</linkText><linkUri>http://www.telerik.com/community/code-library/wpf/scheduleview/binding-to-database-example.aspx</linkUri></externalLink>.
         

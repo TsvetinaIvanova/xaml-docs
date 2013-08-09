@@ -23,31 +23,31 @@ __RadScheduleView __is a radically different scheduling component, going beyond 
 __RadScheduleView__ key features list:
         
 
-* Performance
+* __Performance__
 
-* Edit Forms
+* __Edit Forms__
 
-* Built-in and Custom Views
+* __Built-in and Custom Views__
 
-* Multi-level Grouping
+* __Multi-level Grouping__
 
-* Orientation
+* __Orientation__
 
-* Exact Rendering of Appointments
+* __Exact Rendering of Appointments__
 
-* Dragging multiple appointments
+* __Dragging multiple appointments__
 
-* Zooming
+* __Zooming__
 
-* Snap
+* __Snap____Appointments__
 
-* Creating Recurrent Appointment using TimeSlot selection
+* __Creating Recurrent Appointment using TimeSlot selection__
 
-* Truly Lookless, Stylable Control
+* __Truly Lookless, Stylable Control__
 
-* Rich User Experience
+* __Rich User Experience__
 
-* Flexible Recurring Appointments Support
+* __Flexible Recurring Appointments Support__
 
 ____
 

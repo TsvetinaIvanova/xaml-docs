@@ -11,29 +11,27 @@ Common properties for all views
 RadScheduleView's four predefined ViewDefinitions have various properties, which can be set in order the views to be configured 
       best. Some of them are common for all views, others are specific for each view. In the following section we will
       go through all common properties.
-      >
-
-For more information about the view specific properties, check [View specific properties]({{slug:view-specific-properties}}).
+      >For more information about the view specific properties, check <link xlink:href="ba38cb94-0cf5-43e4-95a9-39a3d3536d5b" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">here</link>.
 
 
 
-* Title
+* [Title](#Title)
 
-* LargeChangeInterval
+* [LargeChangeInterval](#LargeChangeInterval)
 
-* SmallChangeInterval
+* [SmallChangeInterval](#SmallChangeInterval)
 
-* DayStartTime
+* [DayStartTime](#DayStartTime)
 
-* DayEndTime
+* [DayEndTime](#DayEndTime)
 
-* VisibleDays
+* [VisibleDays](#VisibleDays)
 
-* FirstDayOfWeek
+* [FirstDayOfWeek](#FirstDayOfWeek)
 
-* StretchGroupHeaders
+* [StretchGroupHeaders](#StretchGroupHeaders)
 
-* Orientation
+* [Orientation](#Orientation)
 
 # TitleTitle
 

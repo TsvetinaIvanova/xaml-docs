@@ -16,12 +16,14 @@ Now, when we have the table definitions that match the types in the RadScheduleV
 
 * Enter a name and select Add
 
-* From the 
+* From the __Entity Data Model Wizard__ select __Generate from database__ model and click next
 
 * Set a connection string to the database and click next
 
 * Select the tables from the database that will be used.
       		
+
+![radscheduleview populating with data Entity Data Model Wizard](images/radscheduleview_populating_with_data_EntityDataModelWizard.png)
 
 * Click Finish. The generated model looks like the following diagram:
 

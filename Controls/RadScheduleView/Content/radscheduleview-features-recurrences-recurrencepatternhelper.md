@@ -14,9 +14,11 @@ When working with saving [RecurrencePattern]({{slug:recurrencepattern}}), the __
 
 The purpose of this tutorial is to show you how to:
 
-* Serialize#Serialize_a_RecurrencePattern_to_String
+* [Serialize](#Serialize_a_RecurrencePattern_to_String) a recurrence pattern to string.
+        
 
-* Deserialize#Deserialize_a_RecurrencePattern_from_String
+* [Deserialize](#Deserialize_a_RecurrencePattern_from_String) a recurrence pattern from string.
+        
 
 # Serialize_a_RecurrencePattern_to_StringSerialize a RecurrencePattern to String
 
@@ -91,7 +93,8 @@ When you want to produce (deserialize) a recurrence pattern from a string, then 
           
 
 * 
-            The second parameter is an 
+            The second parameter is an __out__ parameter. This is the parsed pattern.
+          
 
 Consider the serialized string from the previous example: __FREQ=DAILY;COUNT=10;INTERVAL=3;BYDAY=MO,TU,WE,TH,FR__. If you want to produce a recurrence pattern from that string, invoke the __TryParseRecurrencePattern__ method like in the example below.
         

@@ -14,13 +14,19 @@ Here we will explain the tricky moments when defining the models.
 
 The tricky part here is how we implement the BeginEdit, CancelEdit and EndEdit methods in SqlAppointment:
 
-* On BeginEdit we call the Entity.BeginEdit() method and refresh the ExceptionOccurence and ExceptionAppointment Collection.
+* 
 
-* On CancelEdit we call the Entity.CancelEdit() method so we revert all changes on the SqlAppointment entity, remove all newly
+On BeginEdit we call the Entity.BeginEdit() method and refresh the ExceptionOccurence and ExceptionAppointment Collection.
+
+* 
+
+On CancelEdit we call the Entity.CancelEdit() method so we revert all changes on the SqlAppointment entity, remove all newly
 							created but not saved Exception Occurences, Exception Appointments and Exception Resources.
 						
 
-* On EndEdit we call the Entity.EndEdit to commit the edits on this entity. On this point we have to manually refresh our SqlAppointmentResources
+* 
+
+On EndEdit we call the Entity.EndEdit to commit the edits on this entity. On this point we have to manually refresh our SqlAppointmentResources
 							and SqlExceptionResources Many-To-Many tables.
 						
 

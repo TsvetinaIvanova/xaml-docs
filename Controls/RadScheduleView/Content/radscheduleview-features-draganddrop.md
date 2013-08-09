@@ -17,27 +17,35 @@ publish:True
 __RadScheduleView__ uses __DragDropManager__ to implement drag and drop of appointments. In order to add some custom logic for drag and drop, you can inherit __Telerik.Windows.Controls.ScheduleViewDragDropBehavior__ class. There are several method you can override:
         
 
-* CanDrop
+* __CanDrop__(*DragDropState* state) - Gets the value specifying whether the drag and drop operation can be finished, or not.
+          
 
-* CanStartDrag
+* __CanStartDrag__(*DragDropState* state) - Gets the value specifying whether the drag operation can be performed, or not.
+          
 
-* Drop
+* __Drop__(*DragDropState* state) - Performs the drag and drop operation.
+          
 
-* CanResize
+* __CanResize__(*DragDropState* state) - Gets the value specifying whether the resize operation can be finished, or not.
+          
 
-* CanStartResize
+* __CanStartResize__(*DragDropState* state) - Gets the value specifying whether the resize operation can be performed, or not.
+          
 
-* Resize
+* __Resize__(*DragDropState* state) - Performs the resize operation.
+          
 
-* DragDropCompleted
+* __DragDropCompleted__( *DragDropState* state) -  This method is called when the drag-drop operation is finished.
+          
 
-* ConvertDraggedData
+* __ConvertDraggedData__(Object data) - This method is fired when you drag appointments from a different source ( other control or application) and is used to convert the data to appointment.
+          
 
-* CoerceDraggedItems
+* __CoerceDraggedItems__(*DragDropState* state) - Initializes the drag operation. This method could be used to filter the selected appointments.
+          
 
 >
-
-The __state__ parameter of each method identifies the current drag operation.
+            The <legacyBold xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><legacyItalic>state</legacyItalic></legacyBold> parameter of each method identifies the current drag operation.
           
 
 After the CustomDragDropBehavior is implemented, all you need is to set it as RadScheduleView.DragDropBehavior:

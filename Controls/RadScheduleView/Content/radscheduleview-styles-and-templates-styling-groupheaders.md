@@ -51,9 +51,9 @@ Let's have the following RadScheduleView grouped by  Date, "Calendar" and “Roo
 
 This article will cover the following topics:
 
-* How to generate and use the GroupHeaderStyleSelector;#generate-and-use-groupheaderstyleselector
+* [How to generate and use the GroupHeaderStyleSelector;](#generate-and-use-groupheaderstyleselector)
 
-* How to create a custom GroupHeaderStyleSelector.#create-custom-groupheaderstyleselector
+* [How to create a custom GroupHeaderStyleSelector.](#create-custom-groupheaderstyleselector)
 
 # generate-and-use-groupheaderstyleselectorGenerate and use the GroupHeaderStyleSelector
 
@@ -96,11 +96,11 @@ The GroupHeaderStyleSelector contains the following styles:
 
 Choose one of the following approaches to obtain the source code of GroupHeaderStyleSelector:
 
-* Generate GroupHeaderStyleSelector from installation folder
+* __Generate GroupHeaderStyleSelector from installation folder__
 
 In the RadControls installation folder on your computer, go to Themes folder and select the theme that you use in your application. Drill down to find the ScheduleView.xaml file in that directory. From this resource dictionary you can extract the GroupHeaderStyleSelector and any needed resources that it uses. 
 
-* Generate GroupHeaderStyleSelector from RadScheduleView template
+* __Generate GroupHeaderStyleSelector from RadScheduleView template__
 
 Generate first the RadScheduleView template from Expression Blend ( Edit Template > Edit a Copy). Search for the GroupHeaderStyleSelector and copy the style together with all needed resources that it uses.
 

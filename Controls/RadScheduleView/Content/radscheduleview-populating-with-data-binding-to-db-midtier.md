@@ -16,12 +16,14 @@ Now, when we have the table definitions that match the types in the RadScheduleV
 
 * Enter a name and select Add
 
-* From the 
+* From the __Entity Data Model Wizard__ select __Generate from database__ model and click next
 
 * Set a connection string to the database and click next
 
 * Select the tables from the database that will be used.
       		
+
+![radscheduleview populating with data Entity Data Model Wizard](images/radscheduleview_populating_with_data_EntityDataModelWizard.png)
 
 * Click Finish. The generated model looks like the following diagram:
 
@@ -36,6 +38,8 @@ Once the entity model is ready, rebuild the project. We will use the WCF RIA Ser
 
 * The “Add New Domain Service Class” dialog opens. Select the DataContext and check all the Entities for editing. Please, note that “Enable client access” and “Generate associated classes for metadata” must be checked.
         
+
+![radscheduleview populating with data Add New Domain Service Class](images/radscheduleview_populating_with_data_AddNewDomainServiceClass.png)
 
 Once the domain service class is added, rebuild the project as well. Let’s add the __GetSqlAppointmentsByRange(DateTime start, DateTime end)__ method to the DomainContext class because we want to load only the visible appointments:
         

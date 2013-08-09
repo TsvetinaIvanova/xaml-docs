@@ -11,9 +11,9 @@ publish:True
 __RadScheduleView__ makes it easy to customize its dialogs. Each RadWindow dialog contains an instance of the SchedulerDialog control as Content. The ViewModel in the DataContext of the SchedulerDialog control is automatically provided and contains all needed properties for the corresponding dialog. __RadScheduleView__ exposes a Style property for each dialog which allows you to apply a Style on the SchedulerDialog control and modify its Template.
       
 
-* General information about RadScheduleView dialogs#general_info
+* [General information about RadScheduleView dialogs](#general_info)
 
-* How to extract the default styles of the dialogs#extract_styles
+* [How to extract the default styles of the dialogs](#extract_styles)
 
 
 
@@ -49,7 +49,7 @@ Other important properties of the AppointmentDialogViewModel class include:
 
 -  ResourceTypes - a list of ResourceTypeViewModel objects.  Each object holds a list of the available resources for the given ResourceType. This collection is used as a DataSource of an ItemsControl with an ItemTemplate where a RadComboBox for each resource type is placed.
 
--  IsReadOnly – a boolean property bound to the IsEnabled property of all the controls in the dialog. This allows to make the dialog read-only by cancelling the AppointmentEditing event of the ScheduleView – in this case the EditAppointmetDialog will be shown but all the fields will be disabled.>
+-  IsReadOnly – a boolean property bound to the IsEnabled property of all the controls in the dialog. This allows to make the dialog read-only by cancelling the AppointmentEditing event of the ScheduleView – in this case the EditAppointmetDialog will be shown but all the fields will be disabled.
           Check [Custom Appointment]({{slug:custom-appointment}}) for more details about customizing EditAppointmentDialog.
         
 
@@ -59,7 +59,7 @@ Other important properties of the AppointmentDialogViewModel class include:
             ![RadScheduleView EditRecurrenceDialog](images/radscheduleview_recurrenceeditdialog.png)
 
 __EditRecurrenceDialogStyle__ property is used to customize this dialog.  The DataContext of the dialog is a RecurrenceDialogViewModel object. It provides information about the RecurrencePattern which is set to the RecurrenceRule of the appointment.
-        >
+        
           More information about the recurring patterns can be found [Overview]({{slug:overview}}).
         
 
@@ -93,18 +93,22 @@ __RecurrenceChoiceDragDropDialogStyle / RecurrenceChoiceResizeDialogStyle __prop
 
 The ViewModel of all the RecurrenceChoice dialogs is a __RecurrenceChoiceDialogViewModel__  object.  Its boolean properties IsOccurrenceModeSelected/ IsSeriesModeSelected show which option is selected in the dialog. Also the class contains a reference to the appointment through its Occurrence property.
         >
-
-The ViewModels of all the __ScheduleView__ dialogs inherit from __SchedulerDialogViewModel__ class. It provides the commands for confirming and cancelling the dialog.
+            The ViewModels of all the <legacyBold xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">ScheduleView</legacyBold> dialogs inherit from <legacyBold xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">SchedulerDialogViewModel</legacyBold> class. It provides the commands for confirming and cancelling the dialog.
           
 
 # extract_stylesHow to extract the default styles of the dialogs
 
 Choose one of the following approaches to obtain the source code of the needed dialogs:
 
-* Generate the style from installation folder
+* __Generate the style from installation folder__
+
+            In the RadControls installation folder on your computer, go to Themes folder and select the theme that you use in your application. Drill down to find the ScheduleView.xaml file in that directory. From this resource dictionary you can extract the needed Style and any resources that it uses.
+          
 
 
 
-* 
+* __
               Generate the style from RadScheduleView template
-            
+            __
+            Generate first the __RadScheduleView__ template from Expression Blend ( Edit Template > Edit a Copy). Search for the needed Style and copy it together with all needed resources that it uses.
+          

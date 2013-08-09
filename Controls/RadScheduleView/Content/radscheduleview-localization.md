@@ -37,9 +37,7 @@ To apply custom localization to your controls just instantiate your custom __Loc
 
 
 
->
-
-__Note that you have to set the localization manager before the creation of the UI, otherwise some parts might remain not-localized.__
+><legacyBold xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">Note that you have to set the localization manager before the creation of the UI, otherwise some parts might remain not-localized.</legacyBold>
 
 # Resource Keys
 
@@ -57,15 +55,17 @@ You can base your localization on the standard resource files provided by the .N
 
 Imagine that you want to translate your schedule control into English, German and Dutch. For that purpose you will have to add three new resource files to your project:
 
-* ScheduleViewResources.resx
+* __ScheduleViewResources.resx__ - this resource file will store the __English(default)__ resources for the ScheduleView control. Set the __AccessModifier__ property to __Public__.
+          
 
-* ScheduleViewResources.de.resx
+* __ScheduleViewResources.de.resx__ - this resource file will store the __German__ resources for the ScheduleView control. Set the __AccessModifier__ property to __No code generation__.
+          
 
-* ScheduleViewResources.nl.resx![RadScheduleView Localization04](images/radscheduleview_localization04.png)
+* __ScheduleViewResources.nl.resx__ - this resource file will store the __Dutch__ resources for the ScheduleView control. Set the __AccessModifier__ property to __No code generation__.
+          ![RadScheduleView Localization04](images/radscheduleview_localization04.png)
 
-Now, having the needed files, it's time to illustrate the idea and localize for example the text for the Day, Week, Month and Timeline navigation strings. For that purpose you need to create four resource strings in each one of the three resource files and translate them to the appropriate language.>
-
-Note that the name of the resource string should be the same as the resource key for the string you are localizing i.e. the resource key for the Day is __Day__, for the Week is __Week__, for Month is __Month__ and for the Timeline is __Timeline__.
+Now, having the needed files, it's time to illustrate the idea and localize for example the text for the Day, Week, Month and Timeline navigation strings. For that purpose you need to create four resource strings in each one of the three resource files and translate them to the appropriate language.>         
+              Note that the name of the resource string should be the same as the resource key for the string you are localizing i.e. the resource key for the Day is <legacyBold xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">Day</legacyBold>, for the Week is <legacyBold xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">Week</legacyBold>, for Month is <legacyBold xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">Month</legacyBold> and for the Timeline is <legacyBold xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">Timeline</legacyBold>.
           
 
 The snapshot below shows the content of the __ScheduleViewResources.de.resx__ file. The resource name of the other two files should be the same. The Value column will contain the translation for the appropriate language.
@@ -95,11 +95,9 @@ The last step is to instantiate the __LocalizationManager__ class and set its __
 	LocalizationManager.Manager.ResourceManager = ScheduleViewResources.ResourceManager
 
 >
-
-If you rely on culture settings to load the right resources automatically, you have to write some code inside your application's project file. For example, if you have to support English and Dutch languages, you can store the localized strings in __Resources.resx__ and __Resources.nl.resx __files. For the __Resources.resx__ file you can set __ResXFileCodeGenerator__ to __Internal __or __Public __and for others - to __No code generation__. Then, open the project file in a text-mode and insert the code below into the __<PropertyGroup>__ section. In this way you notify the framework about the supported cultures.
-              
-
-<SupportedCultures>en;nl</SupportedCultures>
+                If you rely on culture settings to load the right resources automatically, you have to write some code inside your application's project file. For example, if you have to support English and Dutch languages, you can store the localized strings in <legacyBold xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">Resources.resx</legacyBold> and <legacyBold xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">Resources.nl.resx </legacyBold>files. For the <legacyBold xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">Resources.resx</legacyBold> file you can set <legacyBold xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">ResXFileCodeGenerator</legacyBold> to <legacyBold xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">Internal </legacyBold>or <legacyBold xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">Public </legacyBold>and for others - to <legacyBold xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">No code generation</legacyBold>. Then, open the project file in a text-mode and insert the code below into the <legacyBold xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">&lt;PropertyGroup&gt;</legacyBold> section. In this way you notify the framework about the supported cultures.
+              >
+                &lt;SupportedCultures&gt;en;nl&lt;/SupportedCultures&gt;
               
 
 Here is how the localized __RadScheduleView__ looks like:
@@ -219,189 +217,189 @@ Of course, if you don't want to hard-code your translation inside your source co
 The following __Resource Keys__ are available:
         
 
-* AllDayEvent
+* __AllDayEvent__
 
-* Appointment
+* __Appointment__
 
-* AppointmentRecurrence
+* __AppointmentRecurrence__
 
-* AppointmentTime
+* __AppointmentTime__
 
-* Body
+* __Body__
 
-* Busy
+* __Busy__
 
-* Cancel
+* __Cancel__
 
-* Categorize
+* __Categorize__
 
-* CreateAppointment
+* __CreateAppointment__
 
-* Daily
+* __Daily__
 
-* Day
+* __Day__
 
-* Days
+* __Days__
 
-* DeleteAppointment
+* __DeleteAppointment__
 
-* DeleteItem
+* __DeleteItem__
 
-* DeleteItemQuestion
+* __DeleteItemQuestion__
 
-* DeleteOccurrence
+* __DeleteOccurrence__
 
-* DeleteRecurringItem
+* __DeleteRecurringItem__
 
-* DeleteRecurringItemQuestion
+* __DeleteRecurringItemQuestion__
 
-* DeleteSeries
+* __DeleteSeries__
 
-* DurationColon
+* __DurationColon__
 
-* DurationDay
+* __DurationDay__
 
-* DurationDays
+* __DurationDays__
 
-* DurationHour
+* __DurationHour__
 
-* DurationHours
+* __DurationHours__
 
-* DurationMinute
+* __DurationMinute__
 
-* DurationMinutes
+* __DurationMinutes__
 
-* DurationWeek
+* __DurationWeek__
 
-* DurationWeeks
+* __DurationWeeks__
 
-* EditAppointment
+* __EditAppointment__
 
-* EditParentAppointment
+* __EditParentAppointment__
 
-* EditRecurrence
+* __EditRecurrence__
 
-* EditRecurrenceCommandText
+* __EditRecurrenceCommandText__
 
-* EditRecurrenceRule
+* __EditRecurrenceRule__
 
-* EndAfter
+* __EndAfter__
 
-* EndBy
+* __EndBy__
 
-* EndColon
+* __EndColon__
 
-* EndDateBeforeStart
+* __EndDateBeforeStart__
 
-* EndTime
+* __EndTime__
 
-* Event
+* __Event__
 
-* Every
+* __Every__
 
-* EveryDay
+* __EveryDay__
 
-* EveryWeekday
+* __EveryWeekday__
 
-* First
+* __First__
 
-* Fourth
+* __Fourth__
 
-* Free
+* __Free__
 
-* HighImportance
+* __HighImportance__
 
-* InvalidRecurrenceRuleMessage
+* __InvalidRecurrenceRuleMessage__
 
-* InvalidRecurrenceRuleTitle
+* __InvalidRecurrenceRuleTitle__
 
-* Last
+* __Last__
 
-* LowImportance
+* __LowImportance__
 
-* Month
+* __Month__
 
-* Monthly
+* __Monthly__
 
-* Months
+* __Months__
 
-* NoEndDate
+* __NoEndDate__
 
-* Occurrences
+* __Occurrences__
 
-* Of
+* __Of__
 
-* OfEvery
+* __OfEvery__
 
-* Ok
+* __Ok__
 
-* OpenOccurrence
+* __OpenOccurrence__
 
-* OpenRecurringItem
+* __OpenRecurringItem__
 
-* OpenRecurringItemQuestion
+* __OpenRecurringItemQuestion__
 
-* OpenSeries
+* __OpenSeries__
 
-* OutOfOffice
+* __OutOfOffice__
 
-* RangeOfRecurrence
+* __RangeOfRecurrence__
 
-* RecurEvery
+* __RecurEvery__
 
-* RecurrencePattern
+* __RecurrencePattern__
 
-* RemoveRecurrence
+* __RemoveRecurrence__
 
-* SaveAndClose
+* __SaveAndClose__
 
-* SaveAndCloseCommandText
+* __SaveAndCloseCommandText__
 
-* SaveAppointment
+* __SaveAppointment__
 
-* SaveRecurrence
+* __SaveRecurrence__
 
-* Second
+* __Second__
 
-* SetDayViewMode
+* __SetDayViewMode__
 
-* SetMonthViewMode
+* __SetMonthViewMode__
 
-* SetTimelineViewMode
+* __SetTimelineViewMode__
 
-* SetWeekViewMode
+* __SetWeekViewMode__
 
-* ShowAs
+* __ShowAs__
 
-* Start
+* __Start__
 
-* StartColon
+* __StartColon__
 
-* StartTime
+* __StartTime__
 
-* Subject
+* __Subject__
 
-* Tentative
+* __Tentative__
 
-* The
+* __The__
 
-* Third
+* __Third__
 
-* Timeline
+* __Timeline__
 
-* Untitled
+* __Untitled__
 
-* Week
+* __Week__
 
-* WeekDays
+* __WeekDays__
 
-* WeekendDays
+* __WeekendDays__
 
-* Weekly
+* __Weekly__
 
-* WeeksOn
+* __WeeksOn__
 
-* Yearly
+* __Yearly__
 
 # Using Built-In Resources
 

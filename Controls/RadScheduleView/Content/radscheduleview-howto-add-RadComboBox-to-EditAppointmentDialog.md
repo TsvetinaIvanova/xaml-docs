@@ -167,18 +167,5 @@ Here is the result:
             ![RadComboBox in EditAppointmentDialog](images/radscheduleview_addcomboboxtoeditappointmentdialog.png)
 
 >
-
-In order to preselect a certain item in the RadComboBox,  bind __SelectedItem__  to a  property in your [Custom Appointment]({{slug:custom-appointment}}) class:
-          
-
-
-
-
- __XAML__
-    
-
-
-	<telerik:RadComboBox SelectedItem="{Binding Occurrence.Appointment.ComboBoxItem, Mode=TwoWay}"
-	            ItemsSource="{Binding Source={StaticResource MyViewModel}, Path=ComboBoxItems, Mode=TwoWay}" />
-
-
+            In order to preselect a certain item in the RadComboBox,  bind <legacyBold xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">SelectedItem</legacyBold>  to a  property in your <link xlink:href="401E5B97-3FC0-47ED-9C4A-2DDE80D769A3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">custom appointment</link> class:
+          ><code source="Examples\radscheduleview-howto-add-RadComboBox-to-EditAppointmentDialog\UserControl_Cs.xaml" lang="XAML" title="XAML" region="radscheduleview-howto-add-RadComboBox-to-EditAppointmentDialog_4" xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"></code>

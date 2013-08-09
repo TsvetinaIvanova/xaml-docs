@@ -13,11 +13,17 @@ A very common scenario when using RadScheduleView is the usage of custom appoint
 
 In this article we will explore the process of using custom appointments in RadScheduleView. We will go through the following steps:
 
-* Create a custom appointment class and populate the RadScheduleView control with custom appointments#Creating_a_Custom_Appointment_class
+* 
 
-* Modify the EditAppointment dialog to display the custom data of the newly created custom appointment class#Creating_a_custom_Appointment_Dialog
+[Create a custom appointment class and populate the RadScheduleView control with custom appointments](#Creating_a_Custom_Appointment_class)
 
-* Customize the AppointmentItem and its ToolTip to display the new data #Changing_the_Style_of_the_AppointmentItem
+* 
+
+[Modify the EditAppointment dialog to display the custom data of the newly created custom appointment class](#Creating_a_custom_Appointment_Dialog)
+
+* 
+
+[Customize the AppointmentItem and its ToolTip to display the new data ](#Changing_the_Style_of_the_AppointmentItem)
 
 # Creating_a_Custom_Appointment_classCreating a Custom Appointment class
 
@@ -25,9 +31,8 @@ To create a custom appointment class you can start off with either of the follow
         
 
 Let's create a simple task tracking system. For our Custom Appointment class we will inherit from __Appointment__. Out tracking system will need  to show an additional field for the task progress – an indication of whether the task has finished or not. In order to enable editing in transactions of the new property we need to use the __Storage__ method of the __AppointmentBase__ class to access the instance which owns the fields. We will name our custom appointment class __Task.__ Here is the creation of the Custom Appointment class:
-        
-
-When inheriting the AppointmentBase class it is required to create a parameter-less constructor for the the custom class.
+        >
+            When inheriting the AppointmentBase class it is required to create a parameter-less constructor for the the custom class.
           
 
 
@@ -175,8 +180,7 @@ In order to create a custom appointment dialog we are going to modify the __Edit
 
 Here is our customized EditAppointment dialog:
         ![](images/custom_appointment2.PNG)>
-
-The important thing to note here is that we can bind to our new properties using __Occurrence.Appointment__.
+            The important thing to note here is that we can bind to our new properties using <legacyBold xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">Occurrence.Appointment</legacyBold>.
           
 
 

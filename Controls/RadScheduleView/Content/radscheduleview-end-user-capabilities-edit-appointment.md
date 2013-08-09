@@ -21,7 +21,8 @@ __RadScheduleView__ uses one and the same dialog to create and edit appointments
             ![RadScheduleView Edit Appointment](images/radscheduleview_end_user_capabilities_edit_appointment_01.png)
 
 * 
-            In order to edit an appointment just double click it in the 
+            In order to edit an appointment just double click it in the __RadScheduleView__.
+          
 
 * If the appointment is not a recurrent one, the edit appointment dialog appears immediately. 
 
@@ -32,29 +33,37 @@ __RadScheduleView__ uses one and the same dialog to create and edit appointments
 * You can also change the appointment recurrent.
 
 * 
-            If you have completed the appointment edit, click the 'Save & Close' button or press the 
+            If you have completed the appointment edit, click the 'Save & Close' button or press the __Enter__ key.
+          
 
 * 
-            If you want to cancel the appointment creation, click the X button or press the 
+            If you want to cancel the appointment creation, click the X button or press the __Esc__ key.
+          
 
 # Using code
 
 You can edit an appointment using the code. Here are the steps to accomplish this:
 
 * 
-            Call 
+            Call __BeginEdit()__ method of the __RadScheduleView__ control. It returns whether or not  the appointment or the occurrence can be edited. This method has 3 overloads:
+          
 
-* BeginEdit()
+* __BeginEdit()__ - the current appointment is editing.
+            
 
-* BeginEdit( IAppointment
+* __BeginEdit( IAppointment__ appointment ) - the passed appointment is editing.
+            
 
-* BeginEdit( Occurrence
+* __BeginEdit( Occurrence__ occurrence ) - the passed occurrence is editing.
+            
 
 * 
-            If 
+            If __BeginEdit()__ returns __True__ - edit the appointment or the occurrence.
+          
 
 * 
-            Call 
+            Call __Commit()__ method to commit the changes and to update the __UI__.
+          
 
 
  __C#__

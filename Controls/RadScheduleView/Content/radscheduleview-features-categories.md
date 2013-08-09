@@ -13,9 +13,9 @@ __RadScheduleView__ provides you with a built-in categories support. You can ass
 
 This chapter will cover the following topics:
 
-* Assign Category to an Appointment run-time
+* [Assign Category to an Appointment run-time](#Assign_Category_Runtime)
 
-* Adding Categories to the RadScheduleView
+* [Adding Categories to the RadScheduleView](#Adding_Categories)
 
 # Assign_Category_RuntimeAssign Category to an Appointment run-time
 
@@ -34,19 +34,17 @@ By default the RadScheduleView has predefined list of categories i.e. "Red Categ
       	
 
 However, there are cases when new categories are needed and you have to create them on your own, as it is shown below.
-      	>
-
-The categories used by the RadScheduleView control are represented by the class __Telerik.Windows.Controls.Category__ located in the assembly __Telerik.Windows.Controls.ScheduleView.dll__.
+      	>The categories used by the RadScheduleView control are represented by the class <legacyBold xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">Telerik.Windows.Controls.Category</legacyBold> located in the assembly <legacyBold xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">Telerik.Windows.Controls.ScheduleView.dll</legacyBold>.
 
 
 
 Each category has three important characteristics:
 
-* CategoryName
+* __CategoryName__ - each category has a name assigned. It is used to distinguish that category amongst the others in your application. You can set or get it using the property __Category.CategoryName__ or __Category.DisplayName__.
 
-* CategoryBrush
+* __CategoryBrush__ - each category has a color brush assigned. It is used to mark all of the appointments of that category in your application. You can set it or get it using the property __Category.CategoryBrush__.
 
-* Ischecked
+* __Ischecked__ - Used to identify whether or not this category is selected.
 
 The categories available in the RadScheduleView are defined in the CategoriesSource property (IEnumarable). Just add or remove categories to that collection in order to add or remove categories to the RadScheduleView itself.
 
