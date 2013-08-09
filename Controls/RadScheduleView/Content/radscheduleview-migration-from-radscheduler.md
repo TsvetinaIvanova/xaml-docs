@@ -80,10 +80,10 @@ Add __GroupDescription__ and to the __GroupDescriptionSource__. For example:
 
 __TimeSlotTemplateSelector____SpecialSlotStyleSelector__, __SpecialSlotsSource__
 
-Please refer to [Special and ReadOnly slots]({{slug:special-and-readonly-slots}}).
+Please refer to [this article](3386B28A-7C00-4629-B290-4EDE1A0ABB9F).
               __AppointmentAdded__, __AppointmentAdding__ events
             
-              Not supported. There is new event mechanism for the RadScheduleView control. Please, refer to [Overview]({{slug:overview}}) article.
+              Not supported. There is new event mechanism for the RadScheduleView control. Please, refer to [this](DA2E2C18-FE43-486A-B8E2-055460967DE8) article.
             __ActiveViewDefinitionChanged__, __SelectedViewStartDateChanged__ events
             __VisibleRangeChanged__ event, __VisibleRangeChangedCommand__ and __VisibleRangeChangedCommandParameter____AvailableViewModes__
 

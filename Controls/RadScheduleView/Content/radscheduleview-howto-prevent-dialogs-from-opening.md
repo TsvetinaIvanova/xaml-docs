@@ -129,4 +129,4 @@ By default  “Open/Delete the occurrence” option is selected in RecurrenceCho
 	   End If
 	End Sub
 
-Check [Custom Dialogs]({{slug:custom-dialogs}}) for more information about RadScheduleView dialogs.
+Check [here](85B3264C-F847-4860-95E8-45BD51423977) for more information about RadScheduleView dialogs.

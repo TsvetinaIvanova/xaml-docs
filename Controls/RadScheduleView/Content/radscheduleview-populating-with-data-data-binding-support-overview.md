@@ -39,4 +39,6 @@ Binding to __RadScheduleView__ involves the following property:
 * __GroupDescriptionsSource__ - gets or sets the data source (__IEnumerable<GroupDescription>)__ used to generate the GroupDescriptions in the __RadScheduleView__ control. It can be bound to data from a variety of data sources in the form of common language runtime (CLR) objects and XML.
             ><para xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">
                   Note that the data source passed to the property <legacyBold>GroupDescriptionsSource</legacyBold> should contain only objects of type <legacyBold>GroupDescription</legacyBold>.
-                </para>[Implementing View-ViewModel ]({{slug:implementing-view-viewmodel-}})
+                </para>
+
+ * [Implementing View-ViewModel ]({{slug:implementing-view-viewmodel-}})

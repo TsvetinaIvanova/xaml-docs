@@ -181,4 +181,6 @@ The result will be the following (note the changed group order):
                
             ![](images/scheduleview_features_resources_image2.png)
 
-[Data Binding Support Overview]({{slug:data-binding-support-overview}})
+
+
+ * [Data Binding Support Overview]({{slug:data-binding-support-overview}})

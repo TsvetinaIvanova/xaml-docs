@@ -40,8 +40,8 @@ Here are some explanations about the keys and the relationships in the data tabl
 
 # See Also
 
-# Other Resources[Entity Model]({{slug:entity-model}})
+# Other Resources[](8a08ec3e-82bb-428f-b234-8b0cb6b79467)
 
 # See Also
 
-# Other Resources[Entity Model, DomainContext]({{slug:entity-model,-domaincontext}})
+# Other Resources[](166f61dd-1051-4a41-8546-a054773902c1)

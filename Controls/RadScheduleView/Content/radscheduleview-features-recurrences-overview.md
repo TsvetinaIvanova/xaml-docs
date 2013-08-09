@@ -15,9 +15,9 @@ __RadScheduleView__ provides the functionality to configure repeating appointmen
 
 The purpose of this overview is to give you a straight-forward way how to create and apply a recurrence pattern, rule and exception. If you want to dive deeper into the recurrence feature of the RadScheduler, check out the following topics:
 
-* [RecurrencePattern]({{slug:recurrencepattern}})
+* [Recurrence Pattern](3F113E6D-5519-40FD-A3B3-6A46B2489318)
 
-* [RecurrenceRule]({{slug:recurrencerule}})
+* [Recurrence Rule](048F4BD6-35B4-486C-A03D-44EED6F6D33D)
 
 * [Exception Occurrence](#Exceptions)
 

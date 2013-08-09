@@ -13,11 +13,11 @@ This tutorial explains how to bind additional controls in a custom EditAppointme
 
 Before we proceed, check these topics:
 
-* [Implementing View-ViewModel ]({{slug:implementing-view-viewmodel-}})
+* [Implementing View-ViewModel](16E2654A-2813-4277-999A-6B510F045C43)
 
-* [Custom Dialogs]({{slug:custom-dialogs}})
+* [Custom Dialogs](85B3264C-F847-4860-95E8-45BD51423977)
 
-* [Custom Appointment]({{slug:custom-appointment}})
+* [Custom Appointment](401E5B97-3FC0-47ED-9C4A-2DDE80D769A3)
 
 Let’s have the following __RadScheduleView__ with EditAppointmentDialogStyle set to the generated Style:
       

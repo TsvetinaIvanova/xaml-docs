@@ -264,4 +264,6 @@ __DialogClosing__ - occurs when a ScheduleView dialog is about to be closed. The
 	    eventArgs.Cancel = true;
 	}
 
-[Understanding Appointments]({{slug:understanding-appointments}})
+
+
+ * [Understanding Appointments]({{slug:understanding-appointments}})

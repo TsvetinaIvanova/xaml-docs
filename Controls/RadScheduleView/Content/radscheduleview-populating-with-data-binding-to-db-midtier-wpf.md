@@ -27,4 +27,6 @@ Now, when we have the table definitions that match the types in the RadScheduleV
 
 * Click Finish. The generated model looks like the following diagram:
 
-![radscheduleview populating with data EFModel](images/radscheduleview_populating_with_data_EFModel.png)[Models]({{slug:models}})
+![radscheduleview populating with data EFModel](images/radscheduleview_populating_with_data_EFModel.png)
+
+ * [Models]({{slug:models}})

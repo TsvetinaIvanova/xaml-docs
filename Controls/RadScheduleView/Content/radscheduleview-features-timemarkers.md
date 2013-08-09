@@ -115,4 +115,6 @@ Finally, set the DataContext:
 
 Here is the result:
 
-![radscheduleview timemarkers 03](images/radscheduleview_timemarkers_03.png)[Implementing View-ViewModel ]({{slug:implementing-view-viewmodel-}})
+![radscheduleview timemarkers 03](images/radscheduleview_timemarkers_03.png)
+
+ * [Implementing View-ViewModel ]({{slug:implementing-view-viewmodel-}})

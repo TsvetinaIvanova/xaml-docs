@@ -112,5 +112,7 @@ Now, lets bind the __AppointmentsSource__ to a collection of appointments in our
 
 
 
-To learn more about the Appointments of the RadScheduleView take a look at the [Understanding Appointments]({{slug:understanding-appointments}}) topic.
-        [Understanding Appointments]({{slug:understanding-appointments}})
+To learn more about the Appointments of the RadScheduleView take a look at the [Getting Started - Add/Edit/Delete Appointments](598C6122-0FC6-429B-BF7F-C512EE468432) topic.
+        
+
+ * [Understanding Appointments]({{slug:understanding-appointments}})

@@ -51,7 +51,13 @@ __RadScheduleView__ key features list:
 
 ____
 
-A complete list with all key features can be found [Key Features]({{slug:key-features}}).
+A complete list with all key features can be found [here](E04CB0D0-76CC-4AE5-AB3A-3C621B40DDED).
         
 
-Check out the online demo at:[http://demos.telerik.com/wpf/](http://demos.telerik.com/wpf/)[http://demos.telerik.com/silverlight/](http://demos.telerik.com/silverlight/)[Key Features]({{slug:key-features}})[Getting Started]({{slug:getting-started}})[Understanding Appointments]({{slug:understanding-appointments}})
+Check out the online demo at:[http://demos.telerik.com/wpf/](http://demos.telerik.com/wpf/)[http://demos.telerik.com/silverlight/](http://demos.telerik.com/silverlight/)
+
+ * [Key Features]({{slug:key-features}})
+
+ * [Getting Started]({{slug:getting-started}})
+
+ * [Understanding Appointments]({{slug:understanding-appointments}})

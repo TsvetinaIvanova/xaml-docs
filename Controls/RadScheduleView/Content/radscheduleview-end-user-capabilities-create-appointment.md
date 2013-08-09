@@ -76,4 +76,10 @@ You can add new appointment using the code. Here are the steps to accomplish thi
 
 
 
-[Understanding Appointments]({{slug:understanding-appointments}})[Edit Appointment]({{slug:edit-appointment}})[Delete Appointment]({{slug:delete-appointment}})
+
+
+ * [Understanding Appointments]({{slug:understanding-appointments}})
+
+ * [Edit Appointment]({{slug:edit-appointment}})
+
+ * [Delete Appointment]({{slug:delete-appointment}})

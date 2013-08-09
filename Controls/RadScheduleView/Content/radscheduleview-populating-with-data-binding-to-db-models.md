@@ -79,8 +79,8 @@ We need to generate a brush value from the string stored in the database. What w
 
 # See Also
 
-# Other Resources[View and ViewModel]({{slug:view-and-viewmodel}})
+# Other Resources[](fd6aa057-699f-4d00-8881-ce5401508c46)
 
 # See Also
 
-# Other Resources[View and ViewModel]({{slug:view-and-viewmodel}})
+# Other Resources[](022f9398-339a-4468-85cd-69db0bb54f28)

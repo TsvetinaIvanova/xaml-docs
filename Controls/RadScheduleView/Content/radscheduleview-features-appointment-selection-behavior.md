@@ -14,7 +14,7 @@ AppointmentSelectionBehavior is responsible for executing the selection logic of
 
 # Disable_Multiple_appointments_selectionDisable multiple appointments selection based on ResourceName
 
-This tutorial will go through on how to create a custom AppointmentSelectionBehavior in the scenario when there are different resources in the ScheduleView control and it is required to disable simultaneous selection of appointments in different resource groups.Before proceeding with this tutorial first read about [Resources]({{slug:resources}}).
+This tutorial will go through on how to create a custom AppointmentSelectionBehavior in the scenario when there are different resources in the ScheduleView control and it is required to disable simultaneous selection of appointments in different resource groups.Before proceeding with this tutorial first read about [Resources in RadScheduleView](D7C21926-1825-4792-9FC1-2ED2170D2AC2).
 
 
 
@@ -115,4 +115,8 @@ The end result is:
 
 * With the custom AppointmentSelectionBehavior (before selection):![radscheduleview features appointment selection behavior 2](images/radscheduleview_features_appointment_selection_behavior_2.png)
 
-* With the custom AppointmentSelectionBehavior (after selection with pressed Ctrl or Shift keyboard key):![radscheduleview features appointment selection behavior 3](images/radscheduleview_features_appointment_selection_behavior_3.png)[Resources]({{slug:resources}})[SlotSelectionBehavior]({{slug:slotselectionbehavior}})
+* With the custom AppointmentSelectionBehavior (after selection with pressed Ctrl or Shift keyboard key):![radscheduleview features appointment selection behavior 3](images/radscheduleview_features_appointment_selection_behavior_3.png)
+
+ * [Resources]({{slug:resources}})
+
+ * [SlotSelectionBehavior]({{slug:slotselectionbehavior}})

@@ -228,4 +228,8 @@ where __ResourceTypes__ is the collection to which ResourceTypesSource property 
 
 This will lead to the following result:
 
-![radscheduleview updateresources 2](images/radscheduleview_updateresources_2.png)[Implementing View-ViewModel ]({{slug:implementing-view-viewmodel-}})[Resources]({{slug:resources}})
+![radscheduleview updateresources 2](images/radscheduleview_updateresources_2.png)
+
+ * [Implementing View-ViewModel ]({{slug:implementing-view-viewmodel-}})
+
+ * [Resources]({{slug:resources}})

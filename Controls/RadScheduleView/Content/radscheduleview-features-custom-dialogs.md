@@ -50,7 +50,7 @@ Other important properties of the AppointmentDialogViewModel class include:
 -  ResourceTypes - a list of ResourceTypeViewModel objects.  Each object holds a list of the available resources for the given ResourceType. This collection is used as a DataSource of an ItemsControl with an ItemTemplate where a RadComboBox for each resource type is placed.
 
 -  IsReadOnly – a boolean property bound to the IsEnabled property of all the controls in the dialog. This allows to make the dialog read-only by cancelling the AppointmentEditing event of the ScheduleView – in this case the EditAppointmetDialog will be shown but all the fields will be disabled.
-          Check [Custom Appointment]({{slug:custom-appointment}}) for more details about customizing EditAppointmentDialog.
+          Check [here](401E5B97-3FC0-47ED-9C4A-2DDE80D769A3) for more details about customizing EditAppointmentDialog.
         
 
 * EditRecurrenceDialog – shown when a recurrence is created or edited: 
@@ -60,7 +60,7 @@ Other important properties of the AppointmentDialogViewModel class include:
 
 __EditRecurrenceDialogStyle__ property is used to customize this dialog.  The DataContext of the dialog is a RecurrenceDialogViewModel object. It provides information about the RecurrencePattern which is set to the RecurrenceRule of the appointment.
         
-          More information about the recurring patterns can be found [Overview]({{slug:overview}}).
+          More information about the recurring patterns can be found [here](BCB6FF3C-AD83-450A-91D5-1617A42A3A0E).
         
 
 * DeleteAppointmentConfirmDialog - shown when the selected appointments are going to be deleted: 

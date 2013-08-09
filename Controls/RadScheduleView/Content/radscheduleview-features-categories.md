@@ -133,4 +133,6 @@ Finally, set the DataContext:
 
 Here is how the new categories look like:
 
-![radscheduleview categories 03](images/radscheduleview_categories_03.png)[Implementing View-ViewModel ]({{slug:implementing-view-viewmodel-}})
+![radscheduleview categories 03](images/radscheduleview_categories_03.png)
+
+ * [Implementing View-ViewModel ]({{slug:implementing-view-viewmodel-}})

@@ -232,4 +232,6 @@ Now we will add in the Appointment ToolTip the text (Done) only for the tasks wh
 
 This is what the Appointment ToolTip should look like now:![](images/custom_appointment7.png)
 
-By completing this last modification, we have reached the end of the process needed to create a custom appointment in RadScheduleView control.[Understanding Appointments]({{slug:understanding-appointments}})
+By completing this last modification, we have reached the end of the process needed to create a custom appointment in RadScheduleView control.
+
+ * [Understanding Appointments]({{slug:understanding-appointments}})

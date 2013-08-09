@@ -135,7 +135,7 @@ The end result in DayViewDefinition with both Horizontal and Vertical Orientatio
 
 
 
-The __AppointmentStyleSelector__ is a regular Style Selector and allows you to apply different appointment styles based on some custom logic. In the following example, we will apply a different style to appointments belonging to different [Resources]({{slug:resources}}).
+The __AppointmentStyleSelector__ is a regular Style Selector and allows you to apply different appointment styles based on some custom logic. In the following example, we will apply a different style to appointments belonging to different [Resource Types](D7C21926-1825-4792-9FC1-2ED2170D2AC2).
 				
 
 We will use a scenario in which we have an application containing a RadScheduleView with three conference rooms set as three resources. We assume that we already have an Appointment collection which is set as an __AppointmentSource__ of RadScheduleView , and each Appointment has been set a ResourceName and ResourceType via its __Resource__ property.
@@ -298,4 +298,10 @@ And assign it to the ScheduleView:
 
 
 Now that we have our Resources set and our __AppointmentStyleSelector__ ready, let's see the final result. The appointment styles are applied in accordance with each Resource:
-				![radscheduleview appointment style 2](images/radscheduleview_appointment_style_2.png)[Resources]({{slug:resources}})[Understanding Appointments]({{slug:understanding-appointments}})[Custom Appointment]({{slug:custom-appointment}})
+				![radscheduleview appointment style 2](images/radscheduleview_appointment_style_2.png)
+
+ * [Resources]({{slug:resources}})
+
+ * [Understanding Appointments]({{slug:understanding-appointments}})
+
+ * [Custom Appointment]({{slug:custom-appointment}})

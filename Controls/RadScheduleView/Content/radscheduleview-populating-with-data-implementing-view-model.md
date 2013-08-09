@@ -264,4 +264,6 @@ The purpose of this tutorial is to show you how to bind a __RadScheduleView__ wi
 
 	Me.DataContext = New MyViewModel()
 
-[Implementing View-ViewModel ]({{slug:implementing-view-viewmodel-}})
+
+
+ * [Implementing View-ViewModel ]({{slug:implementing-view-viewmodel-}})

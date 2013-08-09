@@ -8,7 +8,7 @@ publish:True
 ---
 
 
-__RadScheduleView__ includes support for recurring events on daily, weekly, monthly and yearly basis. Exceptions to the recurrence rules are also permitted. To support this recurrence behavior, the __IAppointment__ interface includes the __RecurrenceRule__ property. When an appointment is promoted into a recurring event its __RecurrenceRule__ is set with correct [RecurrencePattern]({{slug:recurrencepattern}}).
+__RadScheduleView__ includes support for recurring events on daily, weekly, monthly and yearly basis. Exceptions to the recurrence rules are also permitted. To support this recurrence behavior, the __IAppointment__ interface includes the __RecurrenceRule__ property. When an appointment is promoted into a recurring event its __RecurrenceRule__ is set with correct [RecurrencePattern](3F113E6D-5519-40FD-A3B3-6A46B2489318).
       
 
 The __RecurrenceRule__ class is the engine for creating and evaluating recurrence rules.
@@ -41,7 +41,7 @@ The next several sections describe which are the main properties and methods exp
 
 # RecurrencePatternRecurrencePattern
 
-The __RecurrenceRule__ class exposes a __RecurrencePattern__ property, which allows you to get\set the recurrence pattern associated with the current rule. For more information about the __RecurrencePattern__, take a look at the [RecurrencePattern]({{slug:recurrencepattern}}) topic, which is entirely dedicated to recurrence patterns.
+The __RecurrenceRule__ class exposes a __RecurrencePattern__ property, which allows you to get\set the recurrence pattern associated with the current rule. For more information about the __RecurrencePattern__, take a look at the [RecurrencePattern](3F113E6D-5519-40FD-A3B3-6A46B2489318) topic, which is entirely dedicated to recurrence patterns.
         
 
 # ExceptionsExceptions
@@ -155,7 +155,7 @@ One possible scenario of adding an exception to a recurrence rule is shown in th
 
 
 * 
-            Create a [RecurrencePattern]({{slug:recurrencepattern}}).
+            Create a [RecurrencePattern](3F113E6D-5519-40FD-A3B3-6A46B2489318).
           
 
 

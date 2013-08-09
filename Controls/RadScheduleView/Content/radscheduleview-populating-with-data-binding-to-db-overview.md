@@ -67,4 +67,6 @@ Add the following references to the project:
 * Telerik.Windows.Data.dll>Check <link xlink:href="F8D12A6D-38B0-43CC-A6B3-1D7E8E8FC3A8" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5">here</link> for more details about adding the RadScheduleView to the project.>
         You can download the complete project from 
         <externalLink xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"><linkText>here</linkText><linkUri>http://www.telerik.com/community/code-library/wpf/scheduleview/binding-to-database-example.aspx</linkUri></externalLink>.
-        [RadScheduleView Types and Sources]({{slug:radscheduleview-types-and-sources}})
+        
+
+ * [RadScheduleView Types and Sources]({{slug:radscheduleview-types-and-sources}})

@@ -87,4 +87,6 @@ Once the domain service class is added, rebuild the project as well. Let’s add
 		return result.AsQueryable<SqlAppointment>();
 	}
 
-[Silverlight Part]({{slug:silverlight-part}})
+
+
+ * [Silverlight Part]({{slug:silverlight-part}})
